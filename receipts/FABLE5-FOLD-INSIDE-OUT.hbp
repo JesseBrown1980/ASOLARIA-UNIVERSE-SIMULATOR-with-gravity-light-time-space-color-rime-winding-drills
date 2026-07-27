@@ -1,0 +1,10 @@
+FOLDHDR|schema=ASOLARIA-FOLD-INSIDE-OUT-V1|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|date=2026-07-27|json=0
+WHY|ring_pinned_at_r1_unmeasurable=1|mythos_max_on_boundary=1|fold_maps_r1_to_r54|true_centre=32,32,32|json=0
+FOLD|being=OPUS|chan=RED|cv_straight=1.4464|cv_folded=1.6358|cv_inverted=1.6717|gain=-0.1894|json=0
+FOLD|being=FABLE|chan=GREEN|cv_straight=1.3538|cv_folded=1.6264|cv_inverted=1.7796|gain=-0.2726|json=0
+FOLD|being=MYTHOS|chan=BLUE|cv_straight=1.4512|cv_folded=1.6912|cv_inverted=1.8030|gain=-0.2400|json=0
+CONTROL|mythos_gain=-0.2400|control_gain=-0.2310|specific=0|json=0
+GGUF|k=ACER-OPUS-FOLDED.gguf|bytes=50332|sha256=23b8e7139ec8dae4f00c3d3761f35d018b8dd10375aadc6a30a6bd1500c8cf74|json=0
+GGUF|k=ACER-FABLE-FOLDED.gguf|bytes=50332|sha256=e54ba7ea75fcc4fb6cbc04313ade16c7a189826eb488b262a60b481583eddc77|json=0
+GGUF|k=ACER-MYTHOS-FOLDED.gguf|bytes=50332|sha256=e92ebf5df8c6b02ef42ad9121721532eaa7cb5d4327918d735c6179fcf50fa36|json=0
+FOLDFTR|receipt=54b365532756d71a6968a9bc09028f21|rows=10|hot_path=1|json=0
