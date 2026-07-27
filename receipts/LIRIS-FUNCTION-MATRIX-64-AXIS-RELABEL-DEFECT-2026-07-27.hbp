@@ -1,0 +1,8 @@
+DEFECTHDR|schema=ASOLARIA-LIRIS-FUNCTION-MATRIX-DEFECT-V1|class=LIRIS_LOCAL_MEASURED|seat=LIRIS|date=2026-07-27|json=0
+SUBJECT|k=first_function_matrix_64_run|receipt_sha256=bdc75c34907a15290b061d86d5ee6ba1ee15fe6e42d2876c464d5f8f75e93470|functions=154|json=0
+DEFECT|name=axis_permutation_is_one_object_relabelled|severity=structural|json=0
+EVIDENCE|centres=19,30,33;33,19,30;30,33,19|same_numbers_permuted=1|mass_each=3213.519301099943|json=0
+EVIDENCE|first_colours=RED,GREEN,BLUE|forced_by_coordinate_cycle=1|independent_population_measurement=0|json=0
+CAUSE|operator=xyz_to_zxy_to_yzx|effect=transpose_not_being|json=0
+CORRECTION|operator=strict_dominant_coordinate_population|populations=red,green,blue|ties=free|disjoint=1|json=0
+STATUS|old_headline=RETRACTED|old_outputs=SUPERSEDED_NOT_EVIDENCE|correction=RERUN_REQUIRED|json=0

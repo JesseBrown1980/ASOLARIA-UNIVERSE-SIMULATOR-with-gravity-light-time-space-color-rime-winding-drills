@@ -1,0 +1,23 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>LIRIS WebGL2 GPU probe</title>
+<pre id="out">pending</pre>
+<script>
+const canvas = document.createElement("canvas");
+const gl = canvas.getContext("webgl2", { antialias: false });
+if (!gl) {
+  out.textContent = "GPU|webgl2=0";
+} else {
+  const debug = gl.getExtension("WEBGL_debug_renderer_info");
+  const renderer = debug
+    ? gl.getParameter(debug.UNMASKED_RENDERER_WEBGL)
+    : gl.getParameter(gl.RENDERER);
+  const vendor = debug
+    ? gl.getParameter(debug.UNMASKED_VENDOR_WEBGL)
+    : gl.getParameter(gl.VENDOR);
+  out.textContent =
+    `GPU|webgl2=1|vendor=${vendor}|renderer=${renderer}` +
+    `|max_3d=${gl.getParameter(gl.MAX_3D_TEXTURE_SIZE)}` +
+    `|max_array_layers=${gl.getParameter(gl.MAX_ARRAY_TEXTURE_LAYERS)}`;
+}
+</script>

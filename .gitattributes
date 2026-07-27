@@ -14,5 +14,19 @@
 *.raw   -text binary
 *.bin   -text binary
 *.qr    -text binary
+
+# New Liris publication surfaces have one canonical LF representation. Historical
+# blobs remain byte-opaque under the blanket rules above and are not normalized.
+.gitattributes text eol=lf
+liris/**/*.hbp text eol=lf
+liris/**/*.md text eol=lf
+liris/**/*.sha256 text eol=lf
+receipts/LIRIS-*.hbp text eol=lf
+receipts/LIRIS-*.sha256 text eol=lf
+receipts/LIRIS-*.txt text eol=lf
+gguf/liris/**/*.sha256 text eol=lf
+spheres/liris-function64/**/*.sha256 text eol=lf
+
 *-PUMPED.gguf filter=lfs diff=lfs merge=lfs -text
 KIMI-K3-STAR-256.gguf filter=lfs diff=lfs merge=lfs -text
+gguf/liris/star-shell-v4/*-FULL.gguf filter=lfs diff=lfs merge=lfs -text
