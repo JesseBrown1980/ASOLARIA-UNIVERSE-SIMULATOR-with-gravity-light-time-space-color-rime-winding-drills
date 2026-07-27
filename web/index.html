@@ -86,6 +86,16 @@ b{color:var(--ink)}
   </div>
 
   <div class="card note">
+    <b>Three channels, three failures.</b> The <b>chain</b> catches tampering &mdash; alter
+    or delete a record and every link after it breaks. The <b>count</b> catches omission
+    &mdash; a withheld record keeps its slot and is still counted, so refusing to show
+    content leaves a hole with a number on it. The <b>marker</b> catches concealed omission
+    &mdash; clear the withheld flag to forge the arithmetic and the marker, derived from the
+    position alone, is still recomputable by anyone. A hash alone proves only that what is
+    present did not change; it says nothing about what was never entered.
+  </div>
+
+  <div class="card note">
     <b>Addressing before the freeze. Compression after it.</b> Against arbitrary data
     with no shared bank, this is an address: it names your input and cannot rebuild it.
     Once the generating structure is banked, the same 3,078 bytes compress everything that
@@ -126,6 +136,14 @@ async function run(data){
   $('bits').textContent = (wasm.trit_bits_x10000()/10000).toFixed(4) + '  vs 1.0000 binary';
   const h = await crypto.subtle.digest('SHA-256', seed);
   $('sha').textContent = bytesToHex(new Uint8Array(h)).slice(0,32);
+  const cc = wasm.count_channel();
+  const dec = cc>>>20, prod = (cc>>>10)&1023, wh = cc&1023;
+  const ok = dec === prod + wh;
+  $('cnt').innerHTML = `<span class="tag ${ok?'ok':'no'}">${prod} + ${wh} = ${dec}</span>`;
+  const ci = wasm.chain_intact();
+  $('chn').innerHTML = `<span class="tag ${ci?'ok':'no'}">${ci?'intact':'BROKEN'}</span>`;
+  const hh = wasm.hidden_holes();
+  $('hid').innerHTML = `<span class="tag ${hh===0?'ok':'no'}">${hh}</span>`;
   $('hex').textContent = bytesToHex(seed.subarray(0,96)).replace(/(.{2})/g,'$1 ').trim();
   draw(seed);
 }

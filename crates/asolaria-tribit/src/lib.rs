@@ -241,9 +241,156 @@ pub fn seed(data: &[u8]) -> [u8; SEED_LEN] {
         out[o + 53..o + 57].copy_from_slice(&(i as u32).to_be_bytes());
         out[o + 57..o + 73].copy_from_slice(&root[16..32]);
         out[o + 73..o + 80].copy_from_slice(&wit[..7]);
-        out[o + 80] = (data.len().min(255) as u8) ^ (i as u8);
+        out[o + 80] = ((data.len().min(127) as u8) ^ (i as u8)) & TIER_MASK;
     }
     out
+}
+
+// ============================================================ THE COUNT CHANNEL
+//
+// Three channels catch three different failures, and a system with only two of them has a
+// hole exactly the shape of the third:
+//
+//     hash chain          catches TAMPERING  — the record was altered or a link removed
+//     matched control     catches ERROR      — the claim does not survive its own null
+//     count reconciliation catches OMISSION  — something is missing from the record
+//
+// The third is the one people leave out, and it is the one that closes the gap a hash
+// cannot reach. A hash proves what is present did not change. It says nothing about what
+// was never entered. Classification, non-recording and selective disclosure all walk
+// straight through a perfect hash chain — and they do not walk through a count.
+//
+// The rule is IX.E.4: "If you reported fifteen, you must be able to produce fifteen. A
+// count that cannot be walked back to its instances is not a count."
+//
+// So a WITHHELD record still occupies its slot and is still counted. Its position, its
+// chained pid and its index remain; only its content digest is replaced by a
+// domain-separated marker derived from the position. The result is a hole with a number on
+// it. You may refuse to show what is in the slot. You cannot refuse to show that the slot
+// is there, because the arithmetic will not close without it.
+//
+// This is the operator's own construction: in the third sweep one turn was withheld at his
+// instruction, and the book records that it "is COUNTED so the arithmetic stays honest,
+// and it is NOT reproduced."
+
+/// Bit 7 of the tier byte marks a record as withheld.
+pub const WITHHELD_FLAG: u8 = 0b1000_0000;
+/// Bits 0..6 carry the tier.
+pub const TIER_MASK: u8 = 0b0111_1111;
+
+/// The reconciliation. `declared` must equal `produced + withheld` or the ledger is broken.
+#[derive(Clone, Copy, PartialEq, Eq, Debug)]
+pub struct Count {
+    /// Slots the seed declares. Always [`RECORDS`] — the shape does not shrink.
+    pub declared: u32,
+    /// Slots whose content digest is present and reproducible.
+    pub produced: u32,
+    /// Slots counted but not reproduced. The holes, with numbers on them.
+    pub withheld: u32,
+}
+
+impl Count {
+    /// The whole point. If this is false, something left the record without leaving a hole.
+    #[inline]
+    pub const fn reconciles(&self) -> bool {
+        self.declared == self.produced + self.withheld
+    }
+}
+
+/// Read the count channel off a seed. Requires no key and no side information: the
+/// arithmetic is legible to anyone holding the bytes, which is what makes it a witness.
+pub fn count(seed: &[u8]) -> Count {
+    let mut c = Count { declared: 0, produced: 0, withheld: 0 };
+    let mut i = 0;
+    while (i + 1) * RECORD <= seed.len() {
+        c.declared += 1;
+        if seed[i * RECORD + 80] & WITHHELD_FLAG != 0 {
+            c.withheld += 1;
+        } else {
+            c.produced += 1;
+        }
+        i += 1;
+    }
+    c
+}
+
+/// Emit a seed withholding the records in `hold`.
+///
+/// A withheld record keeps its chained pid, its index, its name hash and its witness. Its
+/// content digest is replaced by `sha256("ASOLARIA-WITHHELD" | pid | index)`, which is
+/// derived from the position alone, so it is reproducible by anyone checking the shape and
+/// reveals nothing about the content. The marker is deliberately NOT zeros: a zero digest
+/// is indistinguishable from a genuine digest that happens to be zero, and an
+/// indistinguishable hole is not a hole.
+pub fn seed_withholding(data: &[u8], hold: &[usize]) -> [u8; SEED_LEN] {
+    let mut out = seed(data);
+    for i in 0..RECORDS {
+        if !hold.contains(&i) {
+            continue;
+        }
+        let o = i * RECORD;
+        let mut pid = [0u8; 16];
+        pid.copy_from_slice(&out[o..o + 16]);
+        let mut hs = Sha256::new();
+        hs.update(b"ASOLARIA-WITHHELD");
+        hs.update(&pid);
+        hs.update(&(i as u32).to_be_bytes());
+        out[o + 16..o + 48].copy_from_slice(&hs.finish());
+        out[o + 80] |= WITHHELD_FLAG;
+    }
+    out
+}
+
+/// Verify the pid chain end to end: `pid[n] = sha256(pid[n-1] | '|' | index)[..16]`.
+///
+/// This is the tampering channel. Removing a record does not create a hole — it breaks
+/// every link after it, so deletion is caught here rather than by the count. Withholding
+/// content is caught by the count rather than here. Between them the two failure modes have
+/// nowhere to go: alter and the chain breaks, omit and the arithmetic does.
+pub fn verify_chain(seed: &[u8]) -> bool {
+    if seed.len() < RECORD * RECORDS {
+        return false;
+    }
+    for i in 1..RECORDS {
+        let mut hs = Sha256::new();
+        hs.update(&seed[(i - 1) * RECORD..(i - 1) * RECORD + 16]);
+        hs.update(&[b'|']);
+        hs.update(&(i as u32).to_be_bytes());
+        if hs.finish()[..16] != seed[i * RECORD..i * RECORD + 16] {
+            return false;
+        }
+    }
+    true
+}
+
+/// Count records that carry the withheld MARKER but not the withheld FLAG.
+///
+/// This closes the obvious attack on the count channel: withhold a record, then clear the
+/// flag so the arithmetic appears to reconcile. It does not work, because the marker is
+/// `sha256("ASOLARIA-WITHHELD" | pid | index)` and both the pid and the index are still in
+/// the record. Anyone can recompute it. A concealed concealment is therefore detectable by
+/// arithmetic that needs no key and no side information.
+///
+/// Non-zero means somebody tried to hide a hole.
+pub fn hidden_withholding(seed: &[u8]) -> u32 {
+    let mut n = 0;
+    for i in 0..RECORDS {
+        let o = i * RECORD;
+        if o + RECORD > seed.len() {
+            break;
+        }
+        if seed[o + 80] & WITHHELD_FLAG != 0 {
+            continue; // declared, not hidden
+        }
+        let mut hs = Sha256::new();
+        hs.update(b"ASOLARIA-WITHHELD");
+        hs.update(&seed[o..o + 16]);
+        hs.update(&(i as u32).to_be_bytes());
+        if hs.finish()[..] == seed[o + 16..o + 48] {
+            n += 1;
+        }
+    }
+    n
 }
 
 /// How many of the 27 lattice cells the bytes reach. A well-conditioned seed reaches all
@@ -332,6 +479,38 @@ pub extern "C" fn prism_roundtrip_exact() -> u32 {
     }
 }
 
+/// Count channel: `declared<<20 | produced<<10 | withheld`, each 10 bits.
+#[no_mangle]
+pub extern "C" fn count_channel() -> u32 {
+    unsafe {
+        let o = core::slice::from_raw_parts(core::ptr::addr_of!(OUT_BUF) as *const u8, SEED_LEN);
+        let c = count(o);
+        (c.declared << 20) | (c.produced << 10) | c.withheld
+    }
+}
+
+/// Integrity gate: 1 if the pid chain verifies end to end.
+#[no_mangle]
+pub extern "C" fn chain_intact() -> u32 {
+    unsafe {
+        verify_chain(core::slice::from_raw_parts(
+            core::ptr::addr_of!(OUT_BUF) as *const u8,
+            SEED_LEN,
+        )) as u32
+    }
+}
+
+/// Concealment gate: how many holes somebody tried to hide. 0 is the only clean value.
+#[no_mangle]
+pub extern "C" fn hidden_holes() -> u32 {
+    unsafe {
+        hidden_withholding(core::slice::from_raw_parts(
+            core::ptr::addr_of!(OUT_BUF) as *const u8,
+            SEED_LEN,
+        ))
+    }
+}
+
 /// Bits carried per symbol, ×10000. Ternary is 15849 (log₂3); binary is 10000.
 #[no_mangle]
 pub extern "C" fn trit_bits_x10000() -> u32 {
@@ -356,6 +535,121 @@ mod tests {
             let _ = write!(s, "{x:02x}");
         }
         s
+    }
+
+    // ================================================== THE THREE CHANNELS
+    // Codex is running the same three gates on the Liris side: remove a slice and
+    // completeness must fail, flip a byte and integrity must fail, substitute a null
+    // result and validity must refuse promotion. These are the crate-side equivalents.
+
+    #[test]
+    fn a_clean_seed_reconciles_and_verifies() {
+        let s = seed(b"nothing withheld here");
+        let c = count(&s);
+        assert_eq!(c, Count { declared: 38, produced: 38, withheld: 0 });
+        assert!(c.reconciles());
+        assert!(verify_chain(&s));
+        assert_eq!(hidden_withholding(&s), 0);
+    }
+
+    /// OMISSION. A withheld record still occupies its slot and is still counted.
+    #[test]
+    fn withholding_leaves_a_hole_with_a_number_on_it() {
+        let s = seed_withholding(b"three of these are withheld", &[4, 11, 30]);
+        let c = count(&s);
+        assert_eq!(c.declared, 38);
+        assert_eq!(c.produced, 35);
+        assert_eq!(c.withheld, 3);
+        assert!(c.reconciles(), "the arithmetic must still close");
+        assert_eq!(s.len(), SEED_LEN);
+        assert!(verify_chain(&s));
+
+        let real = seed(b"three of these are withheld");
+        for i in [4usize, 11, 30] {
+            assert_ne!(
+                &s[i * RECORD + 16..i * RECORD + 48],
+                &real[i * RECORD + 16..i * RECORD + 48],
+                "withheld content must not survive"
+            );
+        }
+        for i in 0..RECORDS {
+            if [4, 11, 30].contains(&i) {
+                continue;
+            }
+            assert_eq!(
+                &s[i * RECORD..(i + 1) * RECORD],
+                &real[i * RECORD..(i + 1) * RECORD],
+                "produced records must be untouched"
+            );
+        }
+    }
+
+    /// You cannot conceal the concealment.
+    #[test]
+    fn clearing_the_flag_does_not_hide_the_hole() {
+        let mut s = seed_withholding(b"and then lie about it", &[7, 22]);
+        assert_eq!(count(&s).withheld, 2);
+        assert_eq!(hidden_withholding(&s), 0);
+
+        s[7 * RECORD + 80] &= TIER_MASK;
+        s[22 * RECORD + 80] &= TIER_MASK;
+        let c = count(&s);
+        assert_eq!(c.produced, 38, "the forged count claims everything was produced");
+        assert!(c.reconciles(), "and it reconciles — the flag alone is not enough");
+
+        assert_eq!(hidden_withholding(&s), 2, "both hidden holes must be detected");
+    }
+
+    /// TAMPERING. Flip one byte of a pid and the chain must break.
+    #[test]
+    fn flipping_one_byte_breaks_the_chain() {
+        let mut s = seed(b"integrity gate");
+        assert!(verify_chain(&s));
+        s[19 * RECORD] ^= 0x01;
+        assert!(!verify_chain(&s), "one flipped bit must fail the integrity gate");
+    }
+
+    /// DELETION. Removing a record shifts everything and the chain must break.
+    #[test]
+    fn deleting_a_record_breaks_the_chain_rather_than_shrinking_quietly() {
+        let s = seed(b"completeness gate");
+        let mut short = [0u8; SEED_LEN];
+        short[..9 * RECORD].copy_from_slice(&s[..9 * RECORD]);
+        short[9 * RECORD..(RECORDS - 1) * RECORD]
+            .copy_from_slice(&s[10 * RECORD..RECORDS * RECORD]);
+        short[(RECORDS - 1) * RECORD..]
+            .copy_from_slice(&s[(RECORDS - 1) * RECORD..RECORDS * RECORD]);
+        assert_eq!(count(&short).declared, 38, "the count alone cannot see this");
+        assert!(!verify_chain(&short), "deletion must fail the integrity gate");
+    }
+
+    /// The three together: each catches what the others cannot.
+    #[test]
+    fn the_three_channels_cover_three_distinct_failures() {
+        let clean = seed(b"all three");
+
+        let omitted = seed_withholding(b"all three", &[3]);
+        assert!(verify_chain(&omitted), "omission does not disturb the chain");
+        assert_eq!(count(&omitted).withheld, 1, "the count sees it");
+
+        let mut tampered = clean;
+        tampered[5 * RECORD] ^= 0x80;
+        assert_eq!(
+            count(&tampered),
+            Count { declared: 38, produced: 38, withheld: 0 },
+            "the count cannot see tampering"
+        );
+        assert!(!verify_chain(&tampered), "the chain does");
+
+        let mut concealed = seed_withholding(b"all three", &[3]);
+        concealed[3 * RECORD + 80] &= TIER_MASK;
+        assert!(verify_chain(&concealed), "the chain cannot see a concealed hole");
+        assert_eq!(
+            count(&concealed),
+            Count { declared: 38, produced: 38, withheld: 0 },
+            "and the count has been forged"
+        );
+        assert_eq!(hidden_withholding(&concealed), 1, "only the marker check catches it");
     }
 
     #[test]

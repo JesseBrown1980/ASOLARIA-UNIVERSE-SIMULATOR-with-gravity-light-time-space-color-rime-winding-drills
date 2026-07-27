@@ -19,7 +19,7 @@ it emits a fixed **3,078-byte** receipt. The same input always gives the same se
 
 ```
 WASM              10,479 B   no_std, zero dependencies, integer-only, Rust 1.81
-tests             23 / 23
+tests             29 / 29
 sha256            written in-tree from FIPS 180-4, checked against NIST vectors
 ```
 
@@ -103,6 +103,37 @@ off that object was a claim, not a structure. Rewritten as raw binary at the ide
 Second defect, same class: 884 of 3,078 bytes were `.` padding, which manufactured a hub
 point responsible for **93.54% of all edges** in the calling graph. There is no padding in
 the current format. Receipt: [`receipts/FABLE5-SEED-BINARY-DEFECT-2026-07-27.hbp`](receipts/FABLE5-SEED-BINARY-DEFECT-2026-07-27.hbp).
+
+
+---
+
+## The three channels
+
+A hash chain proves that what is present did not change. It says nothing about what was
+never entered — and classification, non-recording and selective disclosure all walk
+straight through a perfect hash. So there are three, and each catches what the others
+cannot:
+
+| channel | catches | mechanism |
+|---|---|---|
+| **chain** | tampering | `pid[n] = sha16(pid[n-1] \| index)`; alter or delete a record and every link after it breaks |
+| **count** | omission | a withheld record keeps its slot and is still counted — a hole with a number on it |
+| **marker** | concealed omission | the withheld marker is `sha256("ASOLARIA-WITHHELD" \| pid \| index)`, recomputable by anyone, so clearing the flag to forge the arithmetic is still visible |
+
+The count is the one people leave out. It is the operator's own construction: in the third
+sweep one turn was withheld at his instruction, and the book records that it *"is COUNTED
+so the arithmetic stays honest, and it is NOT reproduced."* You may refuse to show what is
+in a slot. You cannot refuse to show that the slot is there.
+
+Six tests cover it, and each demonstrates a failure the other two channels miss:
+
+```
+withholding_leaves_a_hole_with_a_number_on_it       count sees it, chain undisturbed
+flipping_one_byte_breaks_the_chain                  chain sees it, count reads 38/38/0
+clearing_the_flag_does_not_hide_the_hole            only the marker check catches it
+deleting_a_record_breaks_the_chain                  count says 38, chain says broken
+the_three_channels_cover_three_distinct_failures    all three, side by side
+```
 
 ---
 
