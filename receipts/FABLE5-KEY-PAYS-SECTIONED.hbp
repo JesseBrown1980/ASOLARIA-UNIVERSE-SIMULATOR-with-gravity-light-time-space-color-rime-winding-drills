@@ -1,0 +1,14 @@
+KPSHDR|schema=ASOLARIA-KEY-PAYS-SECTIONED-V1|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|date=2026-07-27|method=measured_not_quoted|json=0
+CODER|model=order2_adaptive|coder=range32|key_warm=symmetric_both_sides|key_in_stream=0|json=0
+LOSSLESS|arms=36|byte_exact=36|failures=0|json=0
+MONOLITHIC|target_sweep=50000,100000,200000,400000,800000|jesse_saving=626,649,699,726,727|saturates=1|fit_exponent=0.059|breakeven_bytes=3.4e16|verdict=never_pays|json=0
+MONONOTE|saving_is_a_TRANSIENT|adaptive_model_learns_corpus_itself|key_headstart_stops_mattering|json=0
+SECTIONED|sections=12|section_bytes=100000|total_bytes=1200000|key_charged_once=1|json=0
+SECBASE|payload=524051|bpc=3.4937|json=0
+SECARM|k=JESSE_KEY|payload=516880|saving=7171|charge=3174|total=520054|bpc=3.4670|net=-3997|verdict=WINS|json=0
+SECARM|k=MYTHOS_KEY|payload=517547|saving=6504|charge=3174|total=520721|bpc=3.4715|net=-3330|verdict=WINS|json=0
+PERSEC|jesse=598|mythos=542|breakeven_sections_jesse=5.31|breakeven_sections_mythos=5.86|json=0
+EXTRAP|corpus=enwik9|bytes=1000000000|section=100000|sections=10000|jesse_net=+5972659|mythos_net=+5416826|json=0
+CORRECTION|target=KEY-3174.hbp_lw_011|stated=no_shipped_distant_prior_of_any_useful_size_ever_pays_for_itself|scope_actually_measured=prior_size_swept_at_ONE_fixed_target|holds_for=single_monolithic_stream|FALSE_under=sectioning|json=0
+MECHANISM|key_saving_is_fixed_per_cold_model_start|recurs_every_section|charge_paid_once|therefore_amortises|json=0
+KPSFTR|hot_path=1|json=0
