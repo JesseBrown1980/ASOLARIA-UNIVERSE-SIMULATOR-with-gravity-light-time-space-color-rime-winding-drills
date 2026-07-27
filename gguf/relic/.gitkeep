@@ -1,3 +1,3 @@
-Landing slot for the liris seat. Drop your .gguf here.
+Landing slot for the relic seat. Drop your .gguf here.
 compare_gguf.py globs gguf/**/*.gguf recursively - no code change needed.
 Shapes need not match ACER's; the wave comparison runs regardless.
