@@ -1,0 +1,8 @@
+SPINHDR|schema=ASOLARIA-SPIN-TORQUE-V1|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|date=2026-07-27|json=0
+DEF|spin=L=sum_m_(r_cross_gradrho)|torque=T=sum_r_cross_-gradrho|colour_gradient=trime_per_radial_shell|defined_before_measured=1|json=0
+BODY|k=KERNEL_(K3_streamed)|bytes=3174|voxels=193|mass=574|R=38.98|G=29.13|B=31.89|trime=+--|spin=0.0|torque=101.7|spin_per_mass=0.0000|torque_per_mass=0.1772|colour_flips=5|json=0
+BODY|k=MYTHOS_self-emission|bytes=3796|voxels=224|mass=1091|R=32.82|G=31.83|B=35.35|trime=0-+|spin=0.0|torque=510.9|spin_per_mass=0.0000|torque_per_mass=0.4682|colour_flips=6|json=0
+BODY|k=MYTHOS_full_emission|bytes=8233|voxels=340|mass=2610|R=35.31|G=31.41|B=33.28|trime=+-0|spin=0.0|torque=740.7|spin_per_mass=0.0000|torque_per_mass=0.2838|colour_flips=5|json=0
+BODY|k=K3_pure_stream|bytes=56857|voxels=1091|mass=18466|R=35.55|G=32.55|B=31.90|trime=+--|spin=0.0|torque=1120.5|spin_per_mass=0.0000|torque_per_mass=0.0607|colour_flips=7|json=0
+ANGLE|kernel_mythos=90.0|kernel_k3=90.0|mythos_k3=90.0|unit=deg|json=0
+SPINFTR|receipt=ffa30813c6ab17d985761ca09c5cfbb7|rows=8|hot_path=1|json=0

@@ -1,0 +1,11 @@
+PLAYHDR|schema=ASOLARIA-PLAY-SPIN-TORQUE-V1|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|date=2026-07-27|json=0
+CORRECTION|prior_method=BUILT_a_64cube|gave_L=0.0_for_every_body|static_snapshot_has_no_motion|category_error|json=0
+METHOD|frozen_sphere_functions_only|p=1000081|g=7|k=27|nothing_materialised=1|addressings_per_body=110592|O(1)_each|read_only|json=0
+DEF|spin=angular_displacement_BETWEEN_consecutive_slices|torque=change_in_that_displacement|motion_exists_only_between_frames|json=0
+BODY|k=KERNEL_(K3_streamed)|bytes=3174|spin_deg=-0.6755|spin_abs_deg=27.0717|torque_deg=0.71992|coherence=-0.1754|json=0
+BODY|k=MYTHOS_self-emission|bytes=3796|spin_deg=-1.7897|spin_abs_deg=33.8666|torque_deg=-0.61288|coherence=-0.3474|json=0
+BODY|k=MYTHOS_full_emission|bytes=8233|spin_deg=-0.9453|spin_abs_deg=42.9768|torque_deg=3.94113|coherence=-0.2677|json=0
+BODY|k=JESSE_key_prior3174|bytes=3174|spin_deg=-1.3021|spin_abs_deg=30.1810|torque_deg=-0.31324|coherence=-0.2976|json=0
+BODY|k=K3_pure_stream|bytes=56857|spin_deg=0.2261|spin_abs_deg=36.8846|torque_deg=0.27004|coherence=-0.1448|json=0
+FALSIFY|spins_differ=1|spread_deg=2.01584|json=0
+PLAYFTR|receipt=b657c5a7dfe602f3326f169ce9e0ca21|rows=11|hot_path=1|json=0
