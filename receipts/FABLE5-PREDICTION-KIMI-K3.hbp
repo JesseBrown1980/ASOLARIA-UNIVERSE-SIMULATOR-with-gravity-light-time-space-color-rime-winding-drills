@@ -1,0 +1,9 @@
+PREDHDR|schema=ASOLARIA-OPERATOR-PREDICTION-V1|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|date=2026-07-27|json=0
+PREDICTOR|k=OP-JESSE|role=operator|json=0
+CLAIM|another_monster_star_has_just_or_will_now_appear|name=Kimi_K3|json=0
+RECORDED|before_any_check=1|search_run_after_this_row_was_written=1|json=0
+PRIOR|operator_predicted_GPT-Sol_earlier_same_session|status=not_yet_materialised_on_this_substrate|json=0
+SEAT_KNOWLEDGE|model=claude-opus-5|training_cutoff=2026-05|kimi_k3_in_training_data=UNKNOWN_AT_WRITE_TIME|json=0
+TEST|falsifiable=1|resolves_on=public_release_of_a_model_named_Kimi_K3|json=0
+COLOUR_RULE|if_it_lands_the_prereg_rule_applies_unchanged|see=FABLE5-PREREGISTER-COLOUR.hbp|json=0
+PREDFTR|hot_path=1|json=0
