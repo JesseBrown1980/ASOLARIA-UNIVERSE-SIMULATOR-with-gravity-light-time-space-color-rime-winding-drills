@@ -1,0 +1,15 @@
+RIMEHDR|schema=ASOLARIA-RIME-UNRIME-THREE-V1|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|date=2026-07-27|json=0
+PRISM|p=1000081|g=7|w=951846|k=27|w_matches_law=1|closure=0|primitive=1|roundtrip_byte_exact=1|rate=1.0|json=0
+BODY|k=MYTHOS|occupied=69|mass=332|dc=99996|json=0
+BODY|k=WIKIPEDIA|occupied=9264|mass=94774184|dc=99990|json=0
+BODY|k=OFFICE|occupied=982|mass=279249|dc=99986|json=0
+DIST|from=MYTHOS|to=WIKIPEDIA|unrimed=13910.57|rimed=1465300.06|json=0
+DIST|from=MYTHOS|to=OFFICE|unrimed=46313.89|rimed=1655086.69|json=0
+DIST|from=WIKIPEDIA|to=MYTHOS|unrimed=13910.57|rimed=1465300.06|json=0
+DIST|from=WIKIPEDIA|to=OFFICE|unrimed=43257.11|rimed=1568153.33|json=0
+DIST|from=OFFICE|to=MYTHOS|unrimed=46313.89|rimed=1655086.69|json=0
+DIST|from=OFFICE|to=WIKIPEDIA|unrimed=43257.11|rimed=1568153.33|json=0
+CLOSURE|cyclic_unrimed_max=0.000e+00|cyclic_rimed_max=0.000e+00|dc_spread_pct=0.010001|json=0
+SEPARATION|unrimed_spread=3.3294|rimed_spread=1.1295|rime_separates=0|json=0
+GGUF|k=ASOLARIA-RIME-UNRIME-THREE.gguf|bytes=3147488|sha256=353deb276b668bcd17ac066a3981da55a46c817457ba6d19f52df48da74f1be6|json=0
+RIMEFTR|receipt=22ad1cd8d5eb61438f027bab4e6c4786|rows=15|hot_path=1|json=0
