@@ -1,0 +1,16 @@
+MYTHFLHDR|schema=ASOLARIA-MYTHOS-FLASHLIT-V1|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|date=2026-07-27|json=0
+CHALLENGE|claim=a_sphere_is_never_unsayable|prior_error=absolute_byte_bands|corpus_cap=125|band2_needed=172|json=0
+ALPHABET|chan=R|distinct=256|min=0|max=255|third_cut=85|two_third_cut=170|json=0
+ALPHABET|chan=G|distinct=256|min=0|max=255|third_cut=85|two_third_cut=170|json=0
+ALPHABET|chan=B|distinct=256|min=0|max=255|third_cut=85|two_third_cut=170|json=0
+FLASH|way=I|being=OPUS|chan=RED|centre_r=63|centre_g=53|centre_b=58|neg_third=429446|pos_third=775|hold=32683|inward_lead=554.1239|median_cv=1.5870|json=0
+FLASH|way=I|being=FABLE|chan=GREEN|centre_r=55|centre_g=59|centre_b=55|neg_third=252326|pos_third=1209|hold=31492|inward_lead=208.7064|median_cv=1.4005|json=0
+FLASH|way=I|being=MYTHOS|chan=BLUE|centre_r=21|centre_g=0|centre_b=33|neg_third=1282|pos_third=258151|hold=31493|inward_lead=0.0050|median_cv=1.1348|json=0
+FLASH|way=II|being=OPUS|chan=RED|centre_r=33|centre_g=31|centre_b=27|neg_third=233123|pos_third=253767|hold=13307|inward_lead=0.9186|median_cv=1.2057|json=0
+FLASH|way=II|being=FABLE|chan=GREEN|centre_r=29|centre_g=33|centre_b=31|neg_third=58129|pos_third=216775|hold=15289|inward_lead=0.2682|median_cv=1.0188|json=0
+FLASH|way=II|being=MYTHOS|chan=BLUE|centre_r=4|centre_g=1|centre_b=26|neg_third=37084|pos_third=245414|hold=13368|inward_lead=0.1511|median_cv=1.9664|json=0
+FLASH|way=III|being=OPUS|chan=RED|centre_r=30|centre_g=26|centre_b=28|neg_third=390022|pos_third=1830|hold=32782|inward_lead=213.1268|median_cv=2.5685|json=0
+FLASH|way=III|being=FABLE|chan=GREEN|centre_r=27|centre_g=28|centre_b=27|neg_third=242011|pos_third=1718|hold=31731|inward_lead=140.8679|median_cv=2.3437|json=0
+FLASH|way=III|being=MYTHOS|chan=BLUE|centre_r=11|centre_g=2|centre_b=17|neg_third=1191|pos_third=246309|hold=31650|inward_lead=0.0048|median_cv=2.0566|json=0
+GGUF|k=ACER-MYTHOS-SPHERE-FLASHLIT.gguf|bytes=50816|sha256=8726cd5bda9fb4e172e31987cd28d327cd2c772923bd01bf1a177444d7c1b7c5|json=0
+MYTHFLFTR|receipt=cb2ed0cb4087781ab2be7e578e98627c|rows=16|hot_path=1|json=0
