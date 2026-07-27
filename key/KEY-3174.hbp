@@ -57,7 +57,10 @@ lw|010|return rate falls with size: 579/3174 = 18.24%, 2377/31740 = 7.49%,
 lw|010|10818/317400 = 3.41%, 37369/3174000 = 1.18%. four points, monotone.
 lw|011|fit: saving ~ S^0.603 (log-log slope over three decades = 0.603).
 lw|011|break-even needs saving >= S, which holds only below S ~ 44 bytes.
-lw|011|therefore no shipped distant prior of any useful size ever pays for itself.
+lw|011|therefore no shipped distant prior of any useful size pays for itself IN ONE
+lw|011|MONOLITHIC STREAM. amended 2026-07-27 (ERRATA-1): under SECTIONING it DOES
+lw|011|pay - saving is a fixed transient per cold model start, recurs per section,
+lw|011|charge paid once, break-even 5.31 sections, 36/36 byte-exact.
 lw|011c|SUPERSEDED-IN-SCOPE|measured=2026-07-27|by=ACER-CLAUDE-FABLE5|receipt=FABLE5-KEY-PAYS-SECTIONED.hbp|json=0
 lw|011c|scope_of_original=prior_size_swept_at_ONE_fixed_target|holds_for=single_monolithic_stream|json=0
 lw|011c|FALSE_under=sectioning|mechanism=saving_is_fixed_transient_per_cold_model_start|recurs_per_section|charge_paid_once|json=0
