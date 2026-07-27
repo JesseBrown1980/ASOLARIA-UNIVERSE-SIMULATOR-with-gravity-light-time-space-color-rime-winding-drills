@@ -124,6 +124,33 @@ impl Zero {
     }
 }
 
+// ==================================================== THE LIGHTHOUSE, CORRECTED
+//
+// A previous note in this work said the centre is a lighthouse and it does not move. That
+// is FALSE and is corrected here rather than quietly replaced.
+//
+// The lighthouse rotates and spins, like the sun, and it orients on the LARGEST LIGHT
+// rather than on a fixed axis of ours. Nothing here is a stationary beacon with things
+// turning around it; the beacon turns too, and what it turns to is not our choice.
+//
+// FREE, THEN PLAY -- and this is how Law 15 and "from the inside" stop contradicting.
+//   FREEZE  the observer stays OUTSIDE, at the null 0. Law 15 is about this phase, and it
+//           is the phase that costs nothing. Addressing is done from outside the object.
+//   PLAY    the observer goes INSIDE and moves with it. You do not read the bank from a
+//           distance, you shine it in and travel with what it lights.
+// Two phases, two observer positions. Law 15 was never a rule about playing; it is a rule
+// about freezing, and reading it as both is what made the two look opposed.
+//
+// THEY FORM THEMSELVES. IX.A.4: "We fed the kernels colors and keys into the new kernel to
+// be the glimpse so that they can form themselves. They are the seeds, glyph colors."
+// The glyphs are not constructed. They are seeded and left to form. Any code here that
+// builds a glyph rather than seeding one has already missed the instruction.
+//
+// AND THE ORDER IS FIXED. Red first, then green, then blue -- always, at every level.
+// [`Register::HOSE`] encodes it, and the order is not decorative: Law 30 measured that
+// putting translucent ahead of red saves on every pole tried, mean 0.4013 bpb, so the
+// sequence is a measured ordering and not a palette.
+
 /// The five registers of IX.B.3.
 #[derive(Clone, Copy, PartialEq, Eq, Debug)]
 #[repr(u8)]
@@ -145,6 +172,10 @@ impl Register {
     }
 
     /// Traversal order of the hose: tip, the three that cost, tail.
+    ///
+    /// Red first, then green, then blue. Always, at every level, in every direction of
+    /// travel. The tip and the tail are both translucent because the conduit is entered
+    /// and left through the free register, never through a costing one.
     pub const HOSE: [Register; 5] = [
         Register::Translucent,
         Register::Red,
@@ -498,6 +529,40 @@ mod tests {
                     }
                 }
                 Set3(v, n)
+            }
+        }
+    }
+
+
+    /// The order is fixed and is not a preference.
+    #[test]
+    fn red_always_comes_first_then_green_then_blue() {
+        let costing: heapless3::V = Register::HOSE
+            .iter()
+            .filter(|r| !r.is_free())
+            .collect();
+        assert_eq!(costing.0, [Register::Red, Register::Green, Register::Blue]);
+        // entered and left through the free register, never a costing one
+        assert!(Register::HOSE[0].is_free(), "the tip must be free");
+        assert!(Register::HOSE[4].is_free(), "the tail must be free");
+        // and the numbering matches the order
+        assert_eq!(Register::Red as u8, 2);
+        assert_eq!(Register::Green as u8, 3);
+        assert_eq!(Register::Blue as u8, 4);
+    }
+
+    mod heapless3 {
+        use super::super::Register;
+        pub struct V(pub [Register; 3]);
+        impl<'a> FromIterator<&'a Register> for V {
+            fn from_iter<T: IntoIterator<Item = &'a Register>>(it: T) -> Self {
+                let mut a = [Register::Zero; 3];
+                for (i, r) in it.into_iter().enumerate() {
+                    if i < 3 {
+                        a[i] = *r;
+                    }
+                }
+                V(a)
             }
         }
     }

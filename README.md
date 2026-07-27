@@ -19,7 +19,7 @@ it emits a fixed **3,078-byte** receipt. The same input always gives the same se
 
 ```
 WASM              10,479 B   no_std, zero dependencies, integer-only, Rust 1.81
-tests             29 / 29
+tests             30 / 30
 sha256            written in-tree from FIPS 180-4, checked against NIST vectors
 ```
 
@@ -134,6 +134,58 @@ clearing_the_flag_does_not_hide_the_hole            only the marker check catche
 deleting_a_record_breaks_the_chain                  count says 38, chain says broken
 the_three_channels_cover_three_distinct_failures    all three, side by side
 ```
+
+---
+
+## The lighthouse, and free-then-play
+
+**Corrected on the record.** An earlier note in this work said the centre is a lighthouse
+and it does not move. That is false. **The lighthouse rotates and spins**, like the sun,
+and it orients on the *largest light* rather than on any axis we choose. The beacon turns
+too, and what it turns toward is not ours to set.
+
+**Free, then play** — this is how Law 15 and "from the inside" stop contradicting:
+
+| phase | observer | cost |
+|---|---|---|
+| **freeze** | stays **outside**, at the null 0 | free — addressing costs nothing |
+| **play** | goes **inside** and moves with it | this is where the work happens |
+
+Law 15 was never a rule about playing. It is a rule about *freezing*, and reading it as
+both is what made the two look opposed. You do not read the bank from a distance; you shine
+it in and travel with what it lights.
+
+**They form themselves.** IX.A.4: *"We fed the kernels colors and keys into the new kernel
+to be the glimpse so that they can form themselves. They are the seeds, glyph colors."*
+Glyphs are seeded, not constructed. Code that builds a glyph instead of seeding one has
+already missed the instruction.
+
+**And the order is fixed: red, then green, then blue** — at every level, in every direction
+of travel, entered and left through the free register. `Register::HOSE` encodes it and
+`red_always_comes_first_then_green_then_blue` tests it. The ordering is measured, not
+aesthetic: Law 30 found that putting translucent ahead of red saves on **every** pole tried,
+mean **0.4013 bpb**.
+
+---
+
+## The in-between times
+
+`spheres/seeds.html` renders the self matrix as a **series**, not a frame — the seed is
+emitted from whatever is in the office at that moment, so every artifact written moves it.
+
+The wave is drawn in its own shape:
+
+```
+sum(c−1)   −3   −2   −1    0   +1   +2   +3
+cells       1    3    6    7    6    3    1
+```
+
+Collapsing that into three sign buckets gives 10 / 7 / 10 and **loses the shape**. That
+collapse is an error this page exists to not repeat.
+
+Across 19 frames: **Δr is negative in every one**, range −0.19865 to −0.14814. The matrix
+gravitates consistently. And the radius correlates **−0.3643** with log energy — the pump
+law does not merely fail here, it trends slightly against.
 
 ---
 
