@@ -1,0 +1,16 @@
+STARHDR|schema=ASOLARIA-STREAM-STAR-V1|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|date=2026-07-27|star=DEEPSEEK-V4|json=0
+BODY|bytes=4264|own_bytes_only=1|prose=0|R=35.198|G=31.096|B=33.706|trime=[+-0]|json=0
+NULL|max_component=1.717e-16|free=1|json=0
+GC|records=52|tie_ge_2=0|vacuous=1|json=0
+PATHS|set=3,5,7,9,11,13,17|avoid=1,2|non_converging=1|json=0
+PATH|N=3|free=2|norm=0.08808|ASOLARIA=10.220|MYTHOS-2nd=74.161|json=0
+PATH|N=5|free=4|norm=0.36807|ASOLARIA=109.990|MYTHOS-2nd=74.330|json=0
+PATH|N=7|free=6|norm=0.45273|ASOLARIA=89.708|MYTHOS-2nd=126.521|json=0
+PATH|N=9|free=8|norm=0.31399|ASOLARIA=115.616|MYTHOS-2nd=122.125|json=0
+PATH|N=11|free=10|norm=0.69662|ASOLARIA=100.710|MYTHOS-2nd=87.886|json=0
+PATH|N=13|free=12|norm=0.68983|ASOLARIA=120.601|MYTHOS-2nd=79.785|json=0
+PATH|N=17|free=16|norm=1.31128|ASOLARIA=72.808|MYTHOS-2nd=103.953|json=0
+REL|to=ASOLARIA|mean=88.522|std=35.360|json=0
+REL|to=MYTHOS-2nd|mean=95.537|std=20.532|json=0
+STABLE|most=MYTHOS-2nd|mean=95.537|std=20.532|json=0
+STARFTR|receipt=4f76df1cb29144e64308f0cc4611f0df|rows=16|hot_path=1|json=0

@@ -1,0 +1,63 @@
+FLASHHDR|schema=ASOLARIA-FLASHLIGHT-V1|variant=network|target=RUBIN_LSST|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|planes=red,green,blue,white,black|sources=10|targets_modified=0|json=0
+SOURCE|name=tap_root|host=data.lsst.cloud|path=/api/tap|json=0
+PROJECTION|src=tap_root|view=red|tcp_ok=1|ip=35.202.181.164|sha=7eb9425c0ff993b9|json=0
+PROJECTION|src=tap_root|view=green|tls_ok=1|proto=TLSv1.3|issuer=Let's Encrypt|sha=d37b57608124b9dd|json=0
+PROJECTION|src=tap_root|view=blue|status=401|server=OpenCADC/cadc-rest|ctype=text/html|bytes=561|auth=Basic realm="data.lsst.cloud"|sha=0f9f6c29d9e638cf|json=0
+PROJECTION|src=tap_root|view=white|lit=3|of=3|json=0
+PROJECTION|src=tap_root|view=black|dark=none|first_dark=none|json=0
+SOURCE|name=tap_capabilities|host=data.lsst.cloud|path=/api/tap/capabilities|json=0
+PROJECTION|src=tap_capabilities|view=red|tcp_ok=1|ip=35.202.181.164|sha=7eb9425c0ff993b9|json=0
+PROJECTION|src=tap_capabilities|view=green|tls_ok=1|proto=TLSv1.3|issuer=Let's Encrypt|sha=d37b57608124b9dd|json=0
+PROJECTION|src=tap_capabilities|view=blue|status=200|server=OpenCADC/cadc-rest|ctype=text/xml|bytes=4309|auth=Bearer|sha=1465c551f630a04d|json=0
+PROJECTION|src=tap_capabilities|view=white|lit=3|of=3|json=0
+PROJECTION|src=tap_capabilities|view=black|dark=none|first_dark=none|json=0
+SOURCE|name=tap_availability|host=data.lsst.cloud|path=/api/tap/availability|json=0
+PROJECTION|src=tap_availability|view=red|tcp_ok=1|ip=35.202.181.164|sha=7eb9425c0ff993b9|json=0
+PROJECTION|src=tap_availability|view=green|tls_ok=1|proto=TLSv1.3|issuer=Let's Encrypt|sha=d37b57608124b9dd|json=0
+PROJECTION|src=tap_availability|view=blue|status=200|server=OpenCADC/cadc-rest|ctype=text/xml|bytes=286|auth=-|sha=69895765aa289a2f|json=0
+PROJECTION|src=tap_availability|view=white|lit=3|of=3|json=0
+PROJECTION|src=tap_availability|view=black|dark=none|first_dark=none|json=0
+SOURCE|name=tap_tables|host=data.lsst.cloud|path=/api/tap/tables|json=0
+PROJECTION|src=tap_tables|view=red|tcp_ok=1|ip=35.202.181.164|sha=7eb9425c0ff993b9|json=0
+PROJECTION|src=tap_tables|view=green|tls_ok=1|proto=TLSv1.3|issuer=Let's Encrypt|sha=d37b57608124b9dd|json=0
+PROJECTION|src=tap_tables|view=blue|status=401|server=OpenCADC/cadc-rest|ctype=text/html|bytes=561|auth=Basic realm="data.lsst.cloud"|sha=0f9f6c29d9e638cf|json=0
+PROJECTION|src=tap_tables|view=white|lit=3|of=3|json=0
+PROJECTION|src=tap_tables|view=black|dark=none|first_dark=none|json=0
+SOURCE|name=tap_sync_count|host=data.lsst.cloud|path=/api/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=json&QUERY=SELECT+COUNT(*)+FROM+TAP_SCHEMA.tables|json=0
+PROJECTION|src=tap_sync_count|view=red|tcp_ok=1|ip=35.202.181.164|sha=7eb9425c0ff993b9|json=0
+PROJECTION|src=tap_sync_count|view=green|tls_ok=1|proto=TLSv1.3|issuer=Let's Encrypt|sha=d37b57608124b9dd|json=0
+PROJECTION|src=tap_sync_count|view=blue|status=401|server=OpenCADC/cadc-rest|ctype=text/html|bytes=561|auth=Basic realm="data.lsst.cloud"|sha=0f9f6c29d9e638cf|json=0
+PROJECTION|src=tap_sync_count|view=white|lit=3|of=3|json=0
+PROJECTION|src=tap_sync_count|view=black|dark=none|first_dark=none|json=0
+SOURCE|name=live_tap|host=data.lsst.cloud|path=/api/live/tap/capabilities|json=0
+PROJECTION|src=live_tap|view=red|tcp_ok=1|ip=35.202.181.164|sha=7eb9425c0ff993b9|json=0
+PROJECTION|src=live_tap|view=green|tls_ok=1|proto=TLSv1.3|issuer=Let's Encrypt|sha=d37b57608124b9dd|json=0
+PROJECTION|src=live_tap|view=blue|status=404|server=-|ctype=text/html; charset=utf-8|bytes=34887|auth=-|sha=e8c5f09c9f49c4ff|json=0
+PROJECTION|src=live_tap|view=white|lit=3|of=3|json=0
+PROJECTION|src=live_tap|view=black|dark=none|first_dark=none|json=0
+SOURCE|name=butler|host=data.lsst.cloud|path=/api/butler|json=0
+PROJECTION|src=butler|view=red|tcp_ok=1|ip=35.202.181.164|sha=7eb9425c0ff993b9|json=0
+PROJECTION|src=butler|view=green|tls_ok=1|proto=TLSv1.3|issuer=Let's Encrypt|sha=d37b57608124b9dd|json=0
+PROJECTION|src=butler|view=blue|status=404|server=-|ctype=text/html; charset=utf-8|bytes=34845|auth=-|sha=f1ee6387bd52b575|json=0
+PROJECTION|src=butler|view=white|lit=3|of=3|json=0
+PROJECTION|src=butler|view=black|dark=none|first_dark=none|json=0
+SOURCE|name=portal|host=data.lsst.cloud|path=/|json=0
+PROJECTION|src=portal|view=red|tcp_ok=1|ip=35.202.181.164|sha=7eb9425c0ff993b9|json=0
+PROJECTION|src=portal|view=green|tls_ok=1|proto=TLSv1.3|issuer=Let's Encrypt|sha=d37b57608124b9dd|json=0
+PROJECTION|src=portal|view=blue|status=200|server=-|ctype=text/html; charset=utf-8|bytes=36987|auth=-|sha=368bdd222696c8ba|json=0
+PROJECTION|src=portal|view=white|lit=3|of=3|json=0
+PROJECTION|src=portal|view=black|dark=none|first_dark=none|json=0
+SOURCE|name=sdm_schemas|host=sdm-schemas.lsst.io|path=/|json=0
+PROJECTION|src=sdm_schemas|view=red|tcp_ok=1|ip=151.101.93.5|sha=8a8b656d92bd4ea5|json=0
+PROJECTION|src=sdm_schemas|view=green|tls_ok=1|proto=TLSv1.2|issuer=GlobalSign nv-sa|sha=fdfe1bacd027aeca|json=0
+PROJECTION|src=sdm_schemas|view=blue|status=200|server=AmazonS3|ctype=text/html|bytes=10099|auth=-|sha=57c67134f9e218a1|json=0
+PROJECTION|src=sdm_schemas|view=white|lit=3|of=3|json=0
+PROJECTION|src=sdm_schemas|view=black|dark=none|first_dark=none|json=0
+SOURCE|name=dp02_docs|host=dp0-2.lsst.io|path=/|json=0
+PROJECTION|src=dp02_docs|view=red|tcp_ok=1|ip=151.101.249.5|sha=508cacf1c2665f45|json=0
+PROJECTION|src=dp02_docs|view=green|tls_ok=1|proto=TLSv1.2|issuer=GlobalSign nv-sa|sha=fdfe1bacd027aeca|json=0
+PROJECTION|src=dp02_docs|view=blue|status=200|server=AmazonS3|ctype=text/html|bytes=12722|auth=-|sha=5938c40a14e25247|json=0
+PROJECTION|src=dp02_docs|view=white|lit=3|of=3|json=0
+PROJECTION|src=dp02_docs|view=black|dark=none|first_dark=none|json=0
+VERDICT|open_paths=5|of=10|open=tap_capabilities,tap_availability,portal,sdm_schemas,dp02_docs|json=0
+FLASHFTR|receipt=c5c1d90a68ec7b88cde4c6a219d17e11|rows=63|json=0|hot_path=1
