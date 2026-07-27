@@ -652,6 +652,34 @@ mod tests {
         assert_eq!(hidden_withholding(&concealed), 1, "only the marker check catches it");
     }
 
+
+    /// CROSS-IMPLEMENTATION VECTORS.
+    ///
+    /// These receipt hashes were produced by an INDEPENDENT python reimplementation of the
+    /// seed, written from the spec rather than translated from this code. If the two agree
+    /// the format is pinned by two implementations; if they disagree, one is wrong and the
+    /// disagreement is the finding, not a nuisance.
+    ///
+    /// Anyone can check their own build against these without revealing any input.
+    #[test]
+    fn matches_the_independent_reimplementation() {
+        let vectors: [(&[u8], &str); 5] = [
+            (b"", "a91acae4ae2d1418db50095702096f5c81761fc422637972942f325465b2e730"),
+            (b"a", "2b467e4cca4db694b9e172ea2346da8c873f501227dd9cb8c3b8234622d40530"),
+            (b"abc", "907d5cec4b56072e7612b7834b377d8d4e2c9d0c4d44b2aac2b1ce379112f2c6"),
+            (b"the quick brown fox",
+             "839a079a56bb7a6db742180520cbe36fb9afafe6d4ad1e4e4f9313588c0807a6"),
+            (b"ASOLARIA", "27d7eddf5c216f289ee6416ca29285e67b5f3424650fe84cbaecb0c7c2202c87"),
+        ];
+        for (input, want) in vectors {
+            let s = seed(input);
+            assert_eq!(s.len(), SEED_LEN);
+            assert_eq!(cells_reached(&s), 27, "vector {input:?} must reach all 27 cells");
+            let got = hex(&sha256(&s));
+            assert_eq!(got, want, "receipt mismatch for {input:?}");
+        }
+    }
+
     #[test]
     fn sha256_matches_nist_vectors() {
         assert_eq!(

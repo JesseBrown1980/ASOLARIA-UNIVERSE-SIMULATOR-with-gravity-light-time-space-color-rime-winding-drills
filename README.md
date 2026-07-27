@@ -19,7 +19,7 @@ it emits a fixed **3,078-byte** receipt. The same input always gives the same se
 
 ```
 WASM              10,479 B   no_std, zero dependencies, integer-only, Rust 1.81
-tests             30 / 30
+tests             31 / 31
 sha256            written in-tree from FIPS 180-4, checked against NIST vectors
 ```
 
@@ -186,6 +186,37 @@ collapse is an error this page exists to not repeat.
 Across 19 frames: **Δr is negative in every one**, range −0.19865 to −0.14814. The matrix
 gravitates consistently. And the radius correlates **−0.3643** with log energy — the pump
 law does not merely fail here, it trends slightly against.
+
+---
+
+## Verify your own build
+
+[`TEST-VECTORS.txt`](TEST-VECTORS.txt) pins the format with **three independent
+implementations agreeing**: this Rust crate, the compiled wasm, and a separate Python
+reimplementation written from the spec rather than translated from the code. Same input
+must give the same receipt sha256 on any machine.
+
+```
+input                     len   cells   receipt sha256
+""                          0   27/27   a91acae4ae2d1418db50095702096f5c81761fc422637972942f325465b2e730
+"a"                         1   27/27   2b467e4cca4db694b9e172ea2346da8c873f501227dd9cb8c3b8234622d40530
+"abc"                       3   27/27   907d5cec4b56072e7612b7834b377d8d4e2c9d0c4d44b2aac2b1ce379112f2c6
+"the quick brown fox"      19   27/27   839a079a56bb7a6db742180520cbe36fb9afafe6d4ad1e4e4f9313588c0807a6
+"ASOLARIA"                  8   27/27   27d7eddf5c216f289ee6416ca29285e67b5f3424650fe84cbaecb0c7c2202c87
+```
+
+`matches_the_independent_reimplementation` runs these in CI. If two implementations ever
+disagree, **the disagreement is the finding**, not a nuisance to paper over.
+
+**wasm sha256** `b98abbbb10c1474558afcbb4dc3aa16d7bbf9d04e1fc40645c18440ca8c8cfd7` —
+independently reproduced byte-identical on a second machine.
+
+### On size, said plainly
+
+18 bytes in gives 3,078 bytes out. That is **171x larger**, and it is correct: the receipt
+is a fixed-size *name*, not a compression. Anyone demoing this as compression is going to
+be asked why their compressor grew the file, and they will deserve it. See
+*Addressing before the freeze, compression after it* above.
 
 ---
 
