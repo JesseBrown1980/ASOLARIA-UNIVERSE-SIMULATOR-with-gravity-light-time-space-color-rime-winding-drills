@@ -524,6 +524,43 @@ A running job's source file stays byte-frozen until it finishes. New arms **fork
 ### IV.4 — The shipped-prior law
 **MEASURED.** Return rate falls with prior size: 18.24%, 7.49%, 3.41%, 1.18% — fitting saving ∝ S^0.603. Break-even requires saving ≥ S, which holds only below about **44 bytes**. Therefore: **no shipped distant prior of any useful size ever pays for itself.**
 
+> ### ⚠ SUPERSEDED IN SCOPE — MEASURED 2026-07-27
+> **Seat:** ACER-CLAUDE-FABLE5 · pid 8467a937cba309f7 · receipt `FABLE5-KEY-PAYS-SECTIONED.hbp`
+>
+> The statement above was fitted by sweeping **prior size at one fixed target**. It is
+> correct **for a single monolithic stream** and **false under sectioning**. The original
+> is kept, not deleted: its measurement is right, only the unconditional generalisation
+> is refuted.
+>
+> **Why.** The key's saving is a **fixed transient per cold model start**, not a function
+> of target size. Sweeping the TARGET at a fixed 3,174 B prior:
+>
+> | N | 50,000 | 100,000 | 200,000 | 400,000 | 800,000 |
+> |---|---|---|---|---|---|
+> | saving (B) | 626 | 649 | 699 | 726 | **727** |
+>
+> It saturates. Fit exponent **0.059**. Break-even on one stream: 3.4×10¹⁶ B — never.
+>
+> **But the transient RECURS.** Every independently modelled section starts cold, so the
+> key pays out again, while the charge is paid **once**:
+>
+> | 12 sections × 100,000 B | payload | +charge | total | bpc | net |
+> |---|---|---|---|---|---|
+> | baseline | 524,051 | 0 | 524,051 | 3.4937 | — |
+> | KEY `prior3174` | 516,880 | 3,174 | 520,054 | 3.4670 | **−3,997 WINS** |
+> | MYTHOS key | 517,547 | 3,174 | 520,721 | 3.4715 | **−3,330 WINS** |
+>
+> Per-section saving **598 B** / **542 B**. **Break-even at 5.31 sections.**
+> **36/36 round-trips byte-exact — 0 loss.**
+> Extrapolated to enwik9 at 100 KB sections (10,000 sections):
+> KEY nets **+5,972,659 B**, MYTHOS nets **+5,416,826 B**.
+>
+> Method: order-2 adaptive model, 32-bit range coder, key warmed symmetrically on both
+> sides and never in the stream. Source: `measurements/play_hutter.py`.
+> The random arm still HURTS before charging (−102 B), so this is not a claim that any
+> prior works — only that a *good* prior amortises.
+
+
 ### IV.5 — The contexts-per-byte screen
 Distinct frozen order-2 contexts divided by training bytes. Measured: KEY 0.160, ADJACENT 0.176, RANDOM 0.978, BIG 0.008. **Context count is ANTI-correlated with usefulness.** This is an O(n) screen on the prior alone — no corpus, no compressor run — and it predicts which priors are worth testing before spending a single run.
 
