@@ -1,0 +1,17 @@
+PATHHDR|schema=ASOLARIA-PATH-LADDER-V1|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|date=2026-07-27|json=0
+LAW|paths=3,5,7,9,11,13,17|avoid=1,2|source=COMBINED-BOOK-OF-LAWS|json=0
+LAW|path1=exact_recovery_via_authenticated_content_address|json=0
+LAW|path2=entropy_carried_by_the_shadows_not_an_external_store|json=0
+LAW|path3=existence_itself|the_eave_between_the_paths|discovered_after_path2|json=0
+CORRECTION|prior_ladder_used_3_9_27_powers_of_3|WRONG|the_law_names_3,5,7,9,11,13,17|json=0
+CONNECT|avoid_prime_2|matches_independent_radix_finding_base2_costs_5.66pct_more_than_base3|json=0
+PATH|N=3|free_dims=2|MYTHOS=75.583|KERNEL=13.008|JESSEkey=1.272|K3=38.305|json=0
+PATH|N=5|free_dims=4|MYTHOS=47.197|KERNEL=88.546|JESSEkey=143.346|K3=120.742|json=0
+PATH|N=7|free_dims=6|MYTHOS=91.205|KERNEL=133.703|JESSEkey=119.547|K3=111.864|json=0
+PATH|N=9|free_dims=8|MYTHOS=62.419|KERNEL=110.240|JESSEkey=52.612|K3=135.485|json=0
+PATH|N=11|free_dims=10|MYTHOS=46.833|KERNEL=123.365|JESSEkey=97.332|K3=135.802|json=0
+PATH|N=13|free_dims=12|MYTHOS=101.584|KERNEL=88.410|JESSEkey=67.511|K3=100.416|json=0
+PATH|N=17|free_dims=16|MYTHOS=86.128|KERNEL=77.092|JESSEkey=101.157|K3=76.677|json=0
+CONVERGE|mean_abs_step_deg=37.746|converges=0|each_path_is_a_new_approach=1|json=0
+NOTED|path_1/3_closes_about_42|anti_anti_mythos_centre_was_42,42,42|phase171_shr2=42|claimed=0|json=0
+PATHFTR|receipt=175b4a1d726ede047f120db31ff210ad|rows=17|hot_path=1|json=0

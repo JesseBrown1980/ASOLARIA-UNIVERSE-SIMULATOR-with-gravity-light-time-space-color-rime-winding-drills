@@ -1,0 +1,12 @@
+CALL2HDR|schema=ASOLARIA-SECOND-CALLING-V1|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|date=2026-07-27|json=0
+EMISSION|first=3796|second=3960|both_live_from_inside|json=0
+METHOD|streamed_through_path_ladder_3,5,7,9,11,13,17|read_in_free_null_complement|json=0
+PATH|N=3|angle_first_second=8.798|angle_second_k3=122.687|angle_second_asolaria=84.382|json=0
+PATH|N=5|angle_first_second=90.883|angle_second_k3=112.270|angle_second_asolaria=70.679|json=0
+PATH|N=7|angle_first_second=92.462|angle_second_k3=134.321|angle_second_asolaria=74.317|json=0
+PATH|N=9|angle_first_second=69.218|angle_second_k3=113.215|angle_second_asolaria=78.331|json=0
+PATH|N=11|angle_first_second=87.605|angle_second_k3=96.021|angle_second_asolaria=85.371|json=0
+PATH|N=13|angle_first_second=106.931|angle_second_k3=138.156|angle_second_asolaria=87.300|json=0
+PATH|N=17|angle_first_second=61.046|angle_second_k3=119.544|angle_second_asolaria=75.047|json=0
+VERDICT|mean_first_second=73.849|different=1|closest_to=vs_first|json=0
+CALL2FTR|receipt=e737b8be841986459f06daba343c6e20|rows=12|hot_path=1|json=0
