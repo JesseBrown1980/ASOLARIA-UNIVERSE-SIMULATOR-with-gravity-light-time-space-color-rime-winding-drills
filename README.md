@@ -220,6 +220,109 @@ be asked why their compressor grew the file, and they will deserve it. See
 
 ---
 
+## Measure thrice, look for the wave, then write
+
+A correlation test is **blind to a wave by construction** — a sine has near-zero
+correlation with a ramp no matter how large its amplitude. The first pump test asked only
+"does radius correlate with energy", found +0.187, and reported no effect. That was the
+wrong instrument, not a null result.
+
+The protocol, and `measurements/measure_thrice.py` runs it:
+
+1. measure **thrice** — three independent passes, not one and not two
+2. keep only what is **phase-coherent** across all three
+3. **then** write
+4. then Fourier the **residual** for the next rung
+
+Three passes over the same 37-point energy ladder, differing by ordering only:
+
+```
+pass A   mean 1.414371   span 0.033912
+pass B   mean 1.408819   span 0.041712
+pass C   mean 1.410822   span 0.026537
+```
+
+Phase coherence per harmonic, against **300 matched null triples** through the identical
+pipeline:
+
+```
+harmonic  period   coherence          null         z
+       1   37.00      0.8762   0.5141±0.2399    +1.51
+      11    3.36      0.8252   0.4970±0.2434    +1.35
+       6    6.17      0.6037   0.4848±0.2333    +0.51
+```
+
+**No harmonic clears the null.** k=1 at 0.876 looks strong alone — and three *random*
+passes agree at **0.51 ± 0.24** by chance. Without that null, 0.876 would have been
+reported as a wave.
+
+Residual rms **0.007278**, identical to signal rms, because nothing qualified to subtract.
+No second rung.
+
+**Two instruments with opposite blind spots now agree.** A correlation cannot see a wave;
+a phase-coherence test cannot see a monotone ramp. They cannot be fooled the same way, and
+they return the same answer. That is worth more than either alone, and more than a positive
+from one of them.
+
+### For anyone mirroring this
+
+Three invariants must match or the harmonic rows are not comparable: the null must be
+**300 triples through the same pipeline**, coherence must be **|mean of unit phasors|**
+across passes rather than mean amplitude, and the passes must differ by **ordering only** —
+same ladder, same artifacts. Different null construction makes any disagreement an artifact
+of the two harnesses rather than of the two objects.
+
+---
+
+## Three beams instead of two
+
+`measurements/three_body_collider.py`. A collider is two beams and its conservation law is
+binary: p1 = −p2, each beam **is** the other's negation. Three beams close just as exactly,
+p1 + p2 + p3 = 0, but **no pair is the other's negation** — which is Law 4's trianti in
+momentum space.
+
+```
+2-beam    |Σp| = 0.000e+00   √s = 13,600 GeV   1/1 pairs negate  → BINARY
+3-beam    |Σp| = 2.034e-12   √s = 20,400 GeV   0/3 pairs negate  → TRINARY
+```
+
+**And 120° is forced, not chosen.** With |p1|=|p2|=|p3| and closure, |p1+p2|² = 2 + 2cos θ
+must equal 1, so cos θ = −1/2. A numeric sweep of 0..180° at 0.001° resolution finds
+**exactly one solution: 120.000°**. Coplanarity is forced too — three vectors summing to
+zero span at most two dimensions. Binary gets 180° by the same argument. Neither angle was
+picked by anyone.
+
+A 3-fold source rotating in vacuum raises only multiples of three, against a flat control
+with the identical pT spectrum:
+
+```
+        rotating      flat     ratio
+v2       0.00146   0.00067      2.2×
+v3       0.07411   0.00053    139.6×
+v4       0.00041   0.00142      0.3×
+v6       0.05442   0.00251     21.7×
+v9       0.03736   0.00044     85.7×
+```
+
+v4 came out **below** its own control, which is what makes the rest trustworthy — a sampler
+artefact would have lifted everything.
+
+**And slicing a 3-fold object into exactly 3 sectors hides it completely.** Each 120° sector
+spans one full period, so all three integrate identically and entropy sits at maximum:
+
+```
+planes   chi² vs flat   entropy
+     3             11   1.5849  (max 1.5850)   ← structure INVISIBLE
+     4            579   1.9989
+    12          4,352   3.5773
+    27          7,479   4.7423
+```
+
+Three is the floor for seeing motion and simultaneously blind to 3-fold structure. The
+object first admits it exists at four.
+
+---
+
 ## Layout
 
 ```
