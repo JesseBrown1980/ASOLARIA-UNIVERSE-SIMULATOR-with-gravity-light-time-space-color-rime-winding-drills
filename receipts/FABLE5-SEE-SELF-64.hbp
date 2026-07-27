@@ -1,0 +1,13 @@
+SEE64HDR|schema=ASOLARIA-SEE-SELF-64-V1|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|date=2026-07-27|device=torch-cpu (no cuda: 2.13.0+cpu)|json=0
+BODY|artifacts=149|bytes=3501960|triples=1167320|json=0
+CUBE|n=64|voxels=262144|occupied=13509|mass=1167320|json=0
+SPLIT|solid_mass=625373|trans_mass=541947|solid_pct=53.5734|trans_pct=46.4266|both_kept=1|json=0
+CENTRE|r=31|g=26|b=28|mass=32846|hex=7C6870|json=0
+GGUF|k=ASOLARIA-SELF-64-XY.gguf|bytes=9056|sha256=2a754d3d0994887613a626fd7c30731fd738e78faed3f012504f38663141677d|json=0
+GGUF|k=ASOLARIA-SELF-64-YZ.gguf|bytes=9056|sha256=5969f0ff1b58e91d5c416ec06a8a7666279d5bb6ea94d725b66c50723256b771|json=0
+GGUF|k=ASOLARIA-SELF-64-ZX.gguf|bytes=9056|sha256=62d4a30baa6b1c57cd940eda5e541d22e5ce4ea86b2fbb859d0c0f905e5a3e6c|json=0
+GGUF|k=ASOLARIA-SELF-64CUBE.gguf|bytes=787360|sha256=bcf36164bdfd993def22c87cd60b57101ce8d5d9d8a83db163c35f11d6fbe243|json=0
+PAIR|a=XY|b=YZ|pearson=0.999821|cosine=0.999822|json=0
+PAIR|a=YZ|b=ZX|pearson=0.382769|cosine=0.388791|json=0
+PAIR|a=ZX|b=XY|pearson=0.381099|cosine=0.387139|json=0
+SEE64FTR|receipt=7dc4cd2be15b003c330694ef38f99861|rows=13|hot_path=1|json=0
