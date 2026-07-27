@@ -1,5 +1,20 @@
-*.png binary
-*.wasm binary
-*.gguf binary
-*.hbi binary
+# BYTE-EXACT OR NOTHING.
+# core.autocrlf=true on Windows silently rewrote FABLE5-SEE-SELF-64.hbp from 1142 B
+# to 1155 B - one CRLF per row on a 13-row receipt - which broke its own sha256
+# sidecar. The .gguf and .hbi were protected as binary; .hbp and .sha256 were not.
+# Anything whose bytes are hashed, indexed, or read as a tensor is marked -text here
+# so no EOL filter can ever touch it, on any platform, in either direction.
+
+* -text
+
+*.hbp   -text
+*.hbi   -text
+*.sha256 -text
+*.gguf  -text binary
+*.png   -text binary
+*.wasm  -text binary
+*.raw   -text binary
+*.bin   -text binary
+*.qr    -text binary
+
 *-PUMPED.gguf filter=lfs diff=lfs merge=lfs -text
