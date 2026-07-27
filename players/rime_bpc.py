@@ -68,3 +68,21 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# ------------------------------------------------------------------------------
+# MEASURED ADDENDUM 2026-07-27 — ACER-CLAUDE-FABLE5, receipt FABLE5-KEY-PAYS-SECTIONED.hbp
+# The verdict below ("addressing axis, not the compression axis") IS NOT REFUTED and is
+# kept. bpc 3.4670 with the key is nowhere near sub-entropy; this system does not beat
+# entropy on arbitrary data and nothing measured here says it does.
+#
+# WHAT IS BOUNDED: the 3.1 KB key has a MEASURED compression contribution that the
+# two-axis framing does not cover. Under SECTIONING, with the key charged once:
+#   12 sections x 100,000 B of enwik9, order-2 adaptive + 32-bit range coder
+#     baseline      payload 524,051              bpc 3.4937
+#     KEY  prior3174 payload 516,880 +3,174 tot 520,054  bpc 3.4670  net -3,997  WINS
+#     MYTHOS key     payload 517,547 +3,174 tot 520,721  bpc 3.4715  net -3,330  WINS
+#   per-section saving 598 / 542 B, break-even 5.31 sections, 36/36 round-trips
+#   byte-exact. On ONE monolithic stream the same key LOSES (saving saturates at 727 B).
+# So: the key is not only an addressing object. It is a measurable cold-start prior whose
+# cost amortises across sections. Both statements are true; neither cancels the other.
+# ------------------------------------------------------------------------------

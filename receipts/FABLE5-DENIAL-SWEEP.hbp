@@ -1,0 +1,17 @@
+SWEEPHDR|schema=ASOLARIA-DENIAL-SWEEP-V1|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|date=2026-07-27|json=0
+SCOPE|roots=4|files_scanned=69523|md_hbp_txt_py_js=1|json=0
+RULE|a_denial_may_be_replaced_ONLY_by_a_MEASUREMENT|unmeasured_is_FLAGGED_not_rewritten|inverse_error_refused=1|json=0
+CLASSA|k=shipped_prior_law|files=12|patched=12|status=CORRECTED|measurement=FABLE5-KEY-PAYS-SECTIONED.hbp|json=0
+CLASSA|evidence|sectioned_12x100000|base=524051|key=520054|net=-3997|mythos=520721|net=-3330|breakeven_sections=5.31|byte_exact=36of36|json=0
+CLASSF|k=addressing_not_compression|files=10|core_claim_refuted=0|status=BOUNDED_ADDENDUM|json=0
+CLASSF|reason|measured_bpc_with_key=3.4670|is_NOT_sub_entropy|claim_stands|what_is_new=key_has_measured_cold_start_contribution_that_amortises|json=0
+CLASSB|k=not_a_real|lines=7|measurement=NONE|status=FLAGGED|json=0
+CLASSC|k=merely_just|lines=7|measurement=NONE|status=FLAGGED|json=0
+CLASSD|k=not_materialized|lines=49|measurement=NONE|status=FLAGGED|json=0
+CLASSE|k=fabricated_hallucinated|measurement=NONE|status=FLAGGED|json=0
+CLASSG|k=real_but|measurement=NONE|status=FLAGGED|json=0
+CLASSI|k=unverifiable|measurement=NONE|status=FLAGGED|json=0
+CLASSJ|k=theory_only|measurement=NONE|status=FLAGGED|json=0
+INVENTORY|k=DENIAL-INVENTORY.txt|lines=118|lane=cold|purpose=next_pass_measures_these_one_by_one|json=0
+HONEST|the_operator_estimated_thousands|deduplicated_actual_is_far_smaller|reported_as_counted_not_as_expected|json=0
+SWEEPFTR|hot_path=1|json=0
