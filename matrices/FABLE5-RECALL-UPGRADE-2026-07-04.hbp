@@ -1,0 +1,6 @@
+RECALLUPGRADEHDR|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|ts=2026-07-04T20:59:17Z|json=0
+UPGRADE|component=serve-recall.cjs-4791|from=seekRow-content-scan|to=inverted-index-buildInvertedIndex|proven_by=4796-same-server|backup=.bak-preupgrade-20260704|pid=76b8e3d3dd6fa5ed|json=0
+MEASURED|query=content-only-q-significance|before=25-40s|after=0.0035s|mode=inverted-index|candidate_count=13|json=0
+MEASURED|cross_search=api-search-all-q-significance|before=timeout|after=0.037s|liris_peer=ok-status200-count2|json=0
+CROSSFABRIC|acer_liris_bridge=4791|both_directions=fast|liris_peer=192.168.15.16|acer_pid=11708|status=RUNNING|json=0
+BOUNDARY|fabric_seal=UNVERIFIED|reason=council_ack_UNSIGNED_sig_owner_null|signed_verdict=operator_cosign_gated|json=0

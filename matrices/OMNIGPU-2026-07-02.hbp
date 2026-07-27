@@ -1,0 +1,5 @@
+OMNIGPU|pid=efa820f686ee0bea|seat=ACER-CLAUDE-FABLE5|date=2026-07-02|kind=federation-gpu-compute|default=GPU-LESS|newer_kernel=MLC(compile-to-metal)+deterministic-GNN-fallback|json=0
+GPULESSPROOF|gpu_present=1|utilization_pct=0|vram_used_mb=199|vram_total_mb=4096|meaning=asolaria_runs_at_0pct_GPU_even_with_a_GPU_available|tag=MEASURED|json=0
+GPU|name=NVIDIA GeForce GTX 1050|vram_mb=4095|driver=32.0.15.8253|status=OK|role=idle-0pct(gpu-less-default)|json=0
+GPU|name=Intel(R) UHD Graphics 630|vram_mb=1024|driver=31.0.101.2140|status=OK|role=integrated|json=0
+KERNELTARGET|omnigpu|gpu_less_default=1|0-GPU-runs=GNN_deterministic_fallback+MLC_to_CPU|degrade=graceful|use_gpu=only_if_gated+present|json=0

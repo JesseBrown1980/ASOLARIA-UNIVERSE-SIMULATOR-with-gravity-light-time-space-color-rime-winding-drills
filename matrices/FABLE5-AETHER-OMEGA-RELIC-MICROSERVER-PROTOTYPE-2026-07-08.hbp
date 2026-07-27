@@ -1,0 +1,21 @@
+FABLE5AETHEROMEGA|id=FABLE5_AETHER_OMEGA_RELIC_MICROSERVER_PROTOTYPE_20260708|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|operator=OP-JESSE|date=2026-07-08|kind=relic_microserver_architecture_plan|e=0|fire=0|json=0
+CLAIM|text=AETHER Omega prototype architecture treats Relic USB as a portable microserver cartridge and the Samsung 4GB notebook as a lightweight operator terminal.|class=OPERATOR_SUPPLIED_PLUS_ACER_READONLY_MEASURED|json=0
+SCOPE|project=AETHER_Omega|boundary=AETHER_project_or_game_subsection_not_federation_governance_law|reason=memory_correction_aether_is_not_federation_law|json=0
+LOCAL_GRAPH|class=MEASURED|url=http://127.0.0.1:8811/asolaria-memory-graph.html|status=200|title=Asolaria_Memory_Graph_graphify_v1|bytes=233173|role=memory_graph_reference_surface|json=0
+ASI_OS|class=MEASURED|url=http://127.0.0.1:4600/|status=200|title=ASOLARIA_ASI_OS|bytes=9648|role=current_fable5_projection_surface|json=0
+FABRIC|class=ROUTE_BOUNDARY|mcp_health=timeout|direct_4949_health=timeout|direct_substrates=timeout|direct_canon_index=timeout|ports_listening=4949,4947,4796,5088,4600,8811|meaning=ports_exist_but_fabric_query_not_fresh_truth_in_this_probe|json=0
+RELIC_USB|class=MEASURED_ACER_READONLY|disk=PHYSICALDRIVE2|model=General_UDisk_USB_Device|bus=USB|partition_style=MBR|size_bytes=2097152000000|partitions=2|json=0
+RELIC_PARTITION|class=MEASURED_ACER_READONLY|disk=2|partition=1|drive=F|type=IFS|size_bytes=536870912000|offset=1048576|volume_operational=Unknown|windows_filesystem_visible=0|json=0
+RELIC_PARTITION|class=MEASURED_ACER_READONLY|disk=2|partition=2|drive=E|type=Unknown|size_bytes=100663296|offset=549755813888|volume_operational=Unknown|windows_filesystem_visible=0|json=0
+TERMINAL|class=OPERATOR_SUPPLIED|device=Samsung_notebook|ram_gb=4|role=Console_Omega_browser_development_tests|measured_from_acer=0|json=0
+ARCHITECTURE|node=RELIC_USB|role=portable_microserver|components=Linux_minimal,AETHER_kernel,XYLOS_runtime,Hermes,Codex,micro_server,HTTP_API,WebSocket,local_database,logs|autorun_plan=1|launch=0|json=0
+ARCHITECTURE|node=Samsung_4GB|role=operator_terminal|components=Console_Omega,browser,development_tools,tests|state_storage=Relic_preferred|json=0
+BOOT_PLAN|stage=prototype_1|services=ssh,http_api,websocket,hermes,codex,observability,log_collection|systemd_or_init_units=planned|enabled_now=0|json=0
+NETWORK_PLAN|transport=USB_plus_local_network|modes=usb_ethernet_or_local_lan_or_host_route|samsung_connects_to=relic_host_api_and_console|port_contract=pending|json=0
+DATA_PLAN|storage=Relic_local_database_and_logs|goal=portable_state_across_hosts|host_disk_dependency=reduced|write_gate=operator_required|json=0
+DISTRIBUTED_PLAN|future=Omega_Nodes|nodes=multiple_Relics|capabilities=share_services,sync_state,distribute_tasks|status=design_future|json=0
+KERNEL_BRIDGE|class=CURRENT_RECEIPT_CONTEXT|hyperbechs_pr2_head=10d698cb190b6629946c71781d72e284717cf474|hbp_sha256=8ef3a6b0732730d202bc7ef4797424a933cdebed320b4a4628ab47db20631dd2|hbi_sha256=abfad0d1af8d7ebcd9ca1f95e8c4c99d82fbfd296264bccb8a2a0abc413293b6|json=0
+NEXT_STEP|n=1|action=read_only_partition_and_boot_signature_probe|write=0|mount=0|json=0
+NEXT_STEP|n=2|action=define_relic_microserver_service_contract_hbp_hbi|services=ssh,http_api,websocket,hermes,codex,logs|launch=0|json=0
+NEXT_STEP|n=3|action=prepare_first_boot_slot_manifest_for_relic_autorun|kernel_mutation=0|bootloader_mutation=0|operator_review_required=1|json=0
+BOUNDARY|class=HELD|usb_write=0|copy=0|delete=0|format=0|partition=0|mount_mutation=0|kernel_mutation=0|bootloader_mutation=0|daemon_restart=0|service_launch=0|provider_call=0|live_boot=0|runtime_authority=0|json=0

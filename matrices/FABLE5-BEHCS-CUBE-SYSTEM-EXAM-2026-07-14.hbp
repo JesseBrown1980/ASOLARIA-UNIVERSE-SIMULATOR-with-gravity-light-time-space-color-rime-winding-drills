@@ -1,0 +1,10 @@
+FABLE5CUBEEXAMHDR|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|date=2026-07-14|kind=behcs-cube-system-exam-receipt|workflow=wf_263f4c99-fe9|agents=10|skeptics_upheld=5of5|json=0
+VERDICT|new_broke_old=no|destroyed=0|forward_compat_seams=2|json=0
+SEAM1|hbi_dialects_8days=4|seq=HBISTREAM_0702,EMITfamily_0704-0708,HBIid_0708,HBIOFFSETV1_0710|renderer_parses=EMIT_only|silent_drop=hbi_0708+0710|renderer_recursive=0|json=0
+SEAM2|sidecar_eras=3|june_registered=bundle_hash_not_file|jul02_office=crlf_disk_lf_hash_7fail_content_intact|jul10=lf_raw_match|one_verifier_cannot_pass_all=1|json=0
+INTEGRITY|targets=117|pass=104|fail=7|no_sidecar=6|dashboard_html=byte_exact_pass|json=0
+CHAINLAW|seed=be80843b5ce5de04|law=pid[n]=sha16(pid[n-1]|name)|reproduced=6of6+9of9|status=MEASURED|json=0
+REGISTRY|registered=3663|span=20260529-20260704|dormant_since=20260704T1543|incoming_stuck=30_since_0702|seat_reg_stranded=1|writers_newest=20260613|quintet_core=liris-hbpv1-quintet-helper.mjs|json=0
+OFFICEDAEMONS|composite_resolve_4978=defined_not_listening|op_jesse_4977=defined_not_listening|json=0
+LEDGER|p4949=UNHEALTHY_ZOMBIE_CONFIRMED|p4790=LOOPBACK_PLUS_TAILNET|recal_capability_rows=0of5432|do_not_sign=all_seats|json=0
+FTR|rows=10|json=0|hot_path=1|jsn_emitted=0

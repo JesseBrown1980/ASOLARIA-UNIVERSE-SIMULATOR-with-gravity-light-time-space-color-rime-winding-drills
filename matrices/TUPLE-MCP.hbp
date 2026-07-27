@@ -1,0 +1,5 @@
+TUPLEMCPHDR|office=FABLE5|pid=8467a937cba309f7|kind=tuple-mcp-loaded-with-languages|json=0
+TUPLEMCP|surface=asolaria-fabric MCP|routes=health,council_query,supervisors,canon_index,substrates,glyphs,cosign_chain_live,loop_pending,omni_control_status|form=hyperbehcs_tuple_text
+TUPLEMCP|surface=asolaria-control run-command|plane=remote-control(8-byte-host to subscription)|status=held-safe/vantage-local(NOT down)
+TUPLEMCP|surface=recall:4796|form=BEHCS-TUPLE-TEXT-V1(json_hot_path=false)
+TUPLEMCP|access=all-asolaria-systems-on-demand|pixels_first=1|gate=fire=0|json=0

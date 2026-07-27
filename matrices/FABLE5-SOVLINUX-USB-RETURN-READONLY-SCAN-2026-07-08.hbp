@@ -1,0 +1,18 @@
+FABLE5USB|id=FABLE5_SOVLINUX_USB_RETURN_READONLY_SCAN_20260708|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|sector=SEC-FABLE5-1720|owner=OP-JESSE|date=2026-07-08|mode=substrate_receipt|e=0|fire=0|json=0
+CLAIM|class=MEASURED|text=SOVLINUX USB returned to Acer and was read through the sanctioned read-only partition handle, not by Windows Explorer mount semantics|json=0
+DEVICE|surface=windows_disk|host=ACER|model=General_UDisk|bus=USB|partition_style=MBR|size_bytes=2097152000000|partitions=2|disk_number=2|json=0
+PARTITION|n=1|drive=F|mbr_type=0x07|offset=1048576|size_bytes=536870912000|volume_handle=\\\\.\\F:|readable_raw=1|filesystem=exFAT|label=SOVLINUX|serial=0x741E5B79|json=0
+PARTITION|n=2|drive=E|mbr_type=0xEF|offset=549755813888|size_bytes=100663296|volume_handle=\\\\.\\E:|sector0_sha16=076a27c79e5ace2a|normal_mount=0|json=0
+SCAN|tool=C:/asolaria-acer/tools/usb-raw/exfat_walk.py|device=\\\\.\\F:|part_lba=0|files=21037|dirs=1833|total_bytes=75701785842|hidden_files=2|system_files=0|read_errors=0|depth_capped_dirs=0|truncated=0|elapsed_sec=15.59|json=0
+SCANMANIFEST|path=C:/tmp/acer-sovlinux-usb-full-20260708.ndjson|bytes=4303625|sha256=2513df53bf7025179ad5c829cdbd2741dd101c753ab9d18d3deed96e9da36ab5|json=0
+GEOMETRY|partition_offset_lba=2048|volume_length_sectors=1048576000|volume_bytes=536870912000|fat_offset_sectors=2048|fat_length_sectors=32256|heap_offset_sectors=34816|cluster_count=4095864|root_cluster=7|bytes_per_sector=512|sectors_per_cluster=256|cluster_bytes=131072|num_fats=1|json=0
+TOPLEVEL|name=sovereignty|dirs=677|files=7359|bytes=3105541327|json=0
+TOPLEVEL|name=evac-e-2026-04-23|dirs=108|files=7507|bytes=2437323035|json=0
+TOPLEVEL|name=runtime|dirs=556|files=1709|bytes=273570445|json=0
+TOPLEVEL|name=RuView|dirs=365|files=1611|bytes=272909310|json=0
+TOPLEVEL|name=s22-ultra-full-copy|dirs=40|files=1700|bytes=331411449|json=0
+TOPLEVEL|name=A06-de-FELIPE-full-usb-copy-20260401-172518|dirs=34|files=889|bytes=12515763150|json=0
+CROSSSEAT|seat=LIRIS|class=MEASURED_BY_LIRIS|safecrank=SAFECRANK-20260708T162203488Z|hbp_sha256=2c4997cb18ca801b470d0f0d2811cdc6f8df159dd0bf72bff1f79069efef3554|intersection=1296|active=894|collapsed=48|latent=348|forbidden=6|density=69.0|shannon_agents=14|healer=dry_run|json=0
+CROSSSEAT|seat=RELIC|class=MEASURED_BY_RELIC|host=RELIC|user=relic\\user|device=General_UDisk_USB_Device|size_bytes=2097150289920|partitions=2|windows_letters=D,E|content_readable_in_shell=0|usb_returned_to_acer=1|json=0
+ROUTE|class=SCOPED|fabric_mcp=fetch_failed|recall_4796=live|ports_4947_4949=tcp_listening|mirror_audit=unreachable_by_operator_frame_2026-07-08T16:25:55.430Z|live_absorption_claim=0|json=0
+BOUNDARY|class=NO_FIRE|usb_write=0|mount=0|format=0|partition_mutation=0|kernel_mutation=0|driver_install=0|bootloader_mutation=0|daemon_restart=0|runtime_authority=0|provider_call=0|cosign_forge=0|json=0

@@ -1,0 +1,18 @@
+BIGPICKLEMAPHDR|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|ts=2026-07-04T22:20:00Z|source=github:JesseBrown1980/bigpickle-rebuild(PUBLIC-STUB)|local=spread-out-OLD-node-system|target=NEWER-rust-hbi-hbp-no-json|json=0
+SPINE|n=5|repo=waves-and-cascades|role=collision-discipline(avoid BH x prime x rule-of-3 / cause cascade->PRISM)|newer=rust-host8-collision-lanes|pid=032cd59927b69e22|json=0
+SPINE|n=4|repo=Algorithms-of-Asolaria|role=service-multiplication-algo(replicate S -> NxM reductions)|newer=rust-reduction-crate|pid=751d2ef7243ff022|json=0
+SPINE|n=3|repo=how-do-we-get-reductions|role=principle-multiply-service-multiplies-PRISM-reductions|newer=prism-many-to-1|pid=6a65d821534ec5fa|json=0
+SPINE|n=2|repo=full-works-200ns-emitter|role=200ns-revolver-PID-emitter->1.16T-agents/s|newer=rust-8byte-emitter|pid=76c848db5388f853|json=0
+SPINE|n=1|repo=omni-dispatcher|role=router-FEDENV-envelopes->1000-slot-table->worker_threads|newer=rust-omnidispatch-4950-FEDENV-v1|pid=5d300b701f00eef7|json=0
+SPINE|n=0|repo=Asolaria-hermes-work|role=THE-FLEET-terminus-spindles+dispatcher-citizen+Host8+10k/20k/100k-kernels|newer=rust-host8-runtime-fable5-rooms|pid=3489983356880521|json=0
+RAMP|checkpoints=1,10,100,1000,10000-agents|gc_trigger_messages=2000|gulps_at_10k=5|throughput=63000msg/s-single;189000-3host|discipline=flow-not-pile-up|pid=c68c9897b8c615f2|json=0
+PIPELINE|post_trigger=trigger->spindle->HOOKWALL->GNN-ensemble(7gnn/8signals)->Shannon/OmniShannon->white-rooms->GULP|equals=PRISM-many-to-1|maps_to=loop_pending-8stage|pid=c72833e904627c1f|json=0
+ROOM|single=micro-kernel-descriptor|fields=pid-anchor(BH-prime)+beat-range+lane-set(7-post-lymphatic)+result-hbp-path|row=MK|idx|pid|prime|anchor|beat_range|lanes|result_path|status=MINTED|pid=81fb6669726bfaf3|json=0
+SECTOR|batch=ONE-manifest.hbp-with-N-rows(NOT-N-files)|lazy|10k=~1MB|maps_to=fable5-office-D:-shards|pid=4315015ce32132f6|json=0
+INVARIANT|1=port=label-in-N^K-prefix-tree(single-socket-multiplex-O(K)-walk-NOT-tcp-per-port)|2=PID=(actor,device,lane,prime)-hilbert-bijective-zero-collision|3=frontend-inert(orchestrate-not-wrap)|4=backend-shelless-rotation(function-calls-not-process-spawns)|pid=4d663f2ebcb88ea0|json=0
+HOTPATH|artifact=.hbp+.hbi+.sha256+.hex|json=COLD-compat/debug/dashboard-only|status=ALREADY-NATIVE-in-fable5-office|pid=592617eb92ca1763|json=0
+MODULES|port-router|pid-minter|aot-runner|hbp-emitter|auto-translate|hookwall|gnn-forward|gnn-reverse-gain|gc-runtime(gulp@2000)|pid-chain-revolver|newer=rust-federation-1024-10-server-crates|pid=14002719ef0906e3|json=0
+NONGOAL|no-380k-local-processes|no-tcp-per-port|no-premint-100B-PIDs-as-files(memory-explosion)|no-per-spawn-cosign(batch@1s)|no-claude-headers-outbound|pid=6a03778debb4e0d4|json=0
+NEWERSYSTEM|target=asolaria-federation-1024=RUST-8byte-HOST8-no_std-kernel+10-server-crates(council/host8/agent-runtime/gnn-oracle/vote-quorum/cosign-ledger/dashboard-serve/fischer-eval/tier-policy/highway)|law=old(node-bigpickle)-decodes-new(rust-host8)|256<->1024-rung-MEASURED-rest-CANON|pid=9aeeb55861069903|json=0
+CLEANROOM|may_read=foundation-v1-spec(00-07)+brown-hilbert+hot-path|may_not=_big-pickle-quarantine-source-taint|test=oracle-blackbox-SHA256-diff-never-read-source|pid=f429387fc416446a|json=0
+PERMANENT|this=the-map-on-the-fable5-office-wall|reminder=reveal-bigpickle-rebuild-in-newer-rust-hbi-hbp-systems|iterate=map-check-test-improve|pid=c0f1ae4f370fe445|json=0

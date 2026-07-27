@@ -1,0 +1,9 @@
+KABHDR|schema=ASOLARIA-KERNEL-ABSORB-V1|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|cube=37fc2e5929587960|prior=bd6797358bb77d69|date=2026-07-26|json=0
+MODULE|path=kernel/core/src/absorb/mod.rs|lang=rust|no_std=1|alloc=0|io=0|const_table=1|archives=9|tag=MEASURED|json=0
+WIRED|lib_rs=pub_mod_absorb|line_added=1|tag=MEASURED|json=0
+TESTS|absorb=7|passed=7|failed=0|suite_before=313|suite_after=319|suite_failed=0|toolchain=1.81.0|tag=MEASURED|json=0
+TESTNAMES|total_matches_the_master_cube+every_prime_is_distinct_and_ordered+every_pid_is_sixteen_hex_chars+lookup_round_trips_by_prime_and_key+sentinel_is_the_largest_section_space+banding_matches_the_recorded_row+no_archive_claims_zero_sections|json=0
+UEFI|target=x86_64-unknown-uefi|builds=1|efi_bytes=31232|efi_sha256=23ca6c0fdf22d7991f2ca0f3d38f9f637d23b948218ec762cf8558d42281bd55|unchanged_from_pre_absorb=1|tag=MEASURED|json=0
+BOOTPATH|absorb_in_efi=0|reason=no_boot_path_reference_linker_strips_const_table|meaning=absorbed_into_library_not_yet_carried_by_bootable_image|next=reference_from_boot_to_land_it_in_the_image|tag=MEASURED|json=0
+SPACE|sections=166367593|params_addressed=861608300000|bands256=649873|remainder=105|json=0
+KABFTR|receipt=5e9edb4cd700ddefc9eb4b9c301dc95d|rows=9|json=0|hot_path=1

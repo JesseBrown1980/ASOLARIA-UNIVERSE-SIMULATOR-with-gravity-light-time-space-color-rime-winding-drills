@@ -1,0 +1,2 @@
+GCCRANKHDR|class=acer-gc-crank-compact-not-delete|date=2026-07-03|seat=ACER-CLAUDE-FABLE5|operator_crank=OP-JESSE|posture=compact_not_delete|delete=0|fire=0|json=0
+GCCRANK|artifact=outbox.ndjson|before_bytes=223290665|after_gz_bytes=3747294|freed_mb=209|sha256_preserved=0c6d1d7f76173e80ce88a12b9e9e39bbc39bce87125c18ab1850d064a4b74809|recoverable=gunzip|state=cold_since_2026-06-01|json=0

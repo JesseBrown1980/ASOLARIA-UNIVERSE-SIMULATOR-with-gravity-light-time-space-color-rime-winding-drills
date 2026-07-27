@@ -1,0 +1,11 @@
+FABLE5TRIMANIFESTHDR|id=FABLE5_TRILATERAL_CANONICAL_MANIFEST_8CA4FA4_20260710|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|operator=OP-JESSE|date=2026-07-10|kind=canonical_trilateral_artifact_manifest_acer_independent_verification|json=0
+CLAIM|text=Canonical trilateral manifest at shared commit 8ca4fa4, every artifact hashed independently by acer from CI run 29118883425 and cross-confirmed with relic. Corrects the liris hash generation (14eebc1a was 03f9ee0-era; canonical same-commit liris is 4774423e).|class=MEASURED|json=0
+MANIFEST|source_repo=JesseBrown1980/asolaria-os|commit=8ca4fa47e8f118103d67201d8e276e6b1404e378|ci_run=29118883425|jobs=4_green|toolchain=rustc_1.81_x86_64-unknown-uefi|repro_flags=DEBUG_NONE+Brepro+remap|json=0
+SEATEFI|seat=acer|owner=OP-JESSE|sha256=b6107d990359b050cd028d9f77cd04fdd8fe47b613a0222c34c712db4b0b9793|bytes=25088|verified_by=acer_local_x2+acer_ci_download+relic_ci_download|parity=local==ci_byte_identical|json=0
+SEATEFI|seat=liris|owner=OP-RAYSSA|sha256=4774423e029d6e6dddd04ab88c4df04f901ec6e25c3a68285faeccafbe215cd0|bytes=25088|verified_by=acer_ci_download+relic_ci_download|json=0
+SEATEFI|seat=relic|owner=OP-FELIPE|sha256=803a9dfdae60b040e873657e69c51bc61cdc4424597391c108f169601ec4fe1a|bytes=25088|verified_by=acer_ci_download+relic_local_qemu_boot+relic_ci_download|stable_across=a54c4f1_and_8ca4fa4_receipt_only_commit_no_binary_change|json=0
+CORRECTION|class=CORRECTION|prior=liris_14eebc1a_in_acer_TRIMATRIX_row|why=generation_mismatch_14eebc1a_was_commit_03f9ee0_pre_relic_hardening|canonical=4774423e_at_8ca4fa4|relic_flagged_acer_confirmed_independently|json=0
+MARKERSALL|class=MEASURED|relic_checked_all_three=own_marker_true+rst_scaffold_true+ahci_scaffold_true+cross_seat_leaks_NONE|acer_checked_acer=same|json=0
+DEVICEPID|class=MEASURED|qemu_q35_all_seats=febc442c619ef0a0|meaning=runtime_hardware_identity_invariant_across_seat_binaries|metal_pids=UNVERIFIED_pending_physical_boots|json=0
+BOUNDARY|storage_bringup=scaffold_gates_only|metal_boot=unverified_all_seats|usb_write=0|git_push=0|fire=0|E=0|json=0
+FTR|rows=10|json=0|hot_path=1|jsn_emitted=0

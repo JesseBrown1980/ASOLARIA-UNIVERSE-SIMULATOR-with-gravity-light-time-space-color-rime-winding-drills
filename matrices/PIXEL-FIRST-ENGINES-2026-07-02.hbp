@@ -1,0 +1,8 @@
+PIXELFIRSTENGINES|parent_pid=7eb918026af2a09e|seat=ACER-CLAUDE-FABLE5|date=2026-07-02|count=7|backend=jesse-pixel(HBP_HBI_SHA_sidecars)|json_hot_path=0|gpu_less=1|json=0
+ENGINE|name=hbi-stream-engine|pid=3f5334dd78992c64|input=raw_HBI_HBP|output=pixels|role=raw .hbp/.hbi tuple rows -> human-viewable pixel rows (the office manifests)|source=OFFICE.hbp/LIBRARY.hbp/...|fire=0|gpu_less=1|json=0
+ENGINE|name=cube-grid-engine|pid=8f9025672dab521d|input=raw_HBI_HBP|output=pixels|role=content-addressed cubes -> tiled pixel grid by family|source=FABLE5-SELF-PRISM-CUBES.hbp|fire=0|gpu_less=1|json=0
+ENGINE|name=lane-ledger-engine|pid=3de18cb1e035a3ff|input=raw_HBI_HBP|output=pixels|role=middleware lanes + verdicts -> chip/table pixels|source=MIDDLEWARE-MAP.hbp|fire=0|gpu_less=1|json=0
+ENGINE|name=daemon-strip-engine|pid=4c6eb996bcd98343|input=raw_HBI_HBP|output=pixels|role=live port/PID sweep -> running/off pill strip|source=task-sweep + fabric|fire=0|gpu_less=1|json=0
+ENGINE|name=resource-bar-engine|pid=a3f608acc09aaa4c|input=raw_HBI_HBP|output=pixels|role=process memory -> proportional resource bars|source=ASOLARIA-TASK-MANAGER.hbp|fire=0|gpu_less=1|json=0
+ENGINE|name=geospatial-map-engine|pid=8f8ed484c847a3fd|input=raw_HBI_HBP|output=pixels|role=60D + geospatial room coords -> cylinder/voxel pixels|source=graphify:4815-60D (DESIGN)|fire=0|gpu_less=1|json=0
+ENGINE|name=cognition-panel-engine|pid=22bf71754af8a79e|input=raw_HBI_HBP|output=pixels|role=HRM/GNN scores over frozen slices -> cognition panel pixels|source=hrm-frozen-brain (DESIGN)|fire=0|gpu_less=1|json=0

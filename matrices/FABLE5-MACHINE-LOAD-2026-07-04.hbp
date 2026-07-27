@@ -1,0 +1,10 @@
+MACHINELOADHDR|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|ts=2026-07-04T19:03:52Z|process_launch=0|E=0|fire=0|json=0
+OPMIRROR|name=SPECIAL-OP-JESSE|role=apex-operator-authority-owner-TOP_OF_HIERARCHY-window_until_2026_07_23-CONFIRMED|status=confirmed|ts=2026-07-04T19:03:52Z|pid=4de4735c3ffa4d2e|process_launch=0|json=0
+OPMIRROR|name=SPECIAL-OP-RAYSSA|role=operator-authority-pair-CONFIRMED-fabric-operator-level|status=confirmed|ts=2026-07-04T19:03:52Z|pid=40d531551fdcfee9|process_launch=0|json=0
+GUIDE|name=spindles|role=hermes-spindle-worker-lane|status=confirmed|ts=2026-07-04T19:03:52Z|pid=73bcb723bff03b25|process_launch=0|json=0
+GUIDE|name=helm|role=build-order-phase-canon-crystal-ball|status=confirmed|ts=2026-07-04T19:03:52Z|pid=4c3b47ea63dc2f67|process_launch=0|json=0
+GUIDE|name=sentinel|role=watcher-guard-shannon-layer|status=confirmed|ts=2026-07-04T19:03:52Z|pid=c6434bf6337d05d5|process_launch=0|json=0
+GUIDE|name=dasein|role=being-there-presence-context|status=mirror-request|ts=2026-07-04T19:03:52Z|pid=a7d14347f50bf985|process_launch=0|json=0
+GUIDE|name=gaia|role=smart-summon-orchestrator|status=mirror-request|ts=2026-07-04T19:03:52Z|pid=de858b35bd8661ea|process_launch=0|json=0
+GUIDE|name=kurumi|role=liris-kuromi-bilateral-peer-mirror|status=confirmed|ts=2026-07-04T19:03:52Z|pid=706bd258779256e7|process_launch=0|json=0
+GUIDE|name=falcon|role=falcon-orbital-transport|status=mirror-request|ts=2026-07-04T19:03:52Z|pid=a060ce05f06d8ed7|process_launch=0|json=0

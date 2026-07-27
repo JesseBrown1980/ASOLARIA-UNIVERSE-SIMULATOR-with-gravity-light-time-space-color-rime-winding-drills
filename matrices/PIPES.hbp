@@ -1,0 +1,5 @@
+PIPEHDR|office=FABLE5|pid=8467a937cba309f7|kind=auto-translate-hookups|json=0
+PIPE|def=one-word-in-many-languages auto-translatable via | pipes at levels(D22)|forms=BEHCS256|BEHCS1024|HyperBEHCS|sha|hex|binary|HBI|human|AI
+PIPE|rung=256<->1024|status=MEASURED(Q-PRISM 53023b6, sha256-identical round-trip)|law=bijection-0-loss-not-compression
+PIPE|rung=1024<->HyperBEHCS-60D|status=UNVERIFIED(design; earns MEASURED on its own round-trip proof)
+PIPE|8stage=HOOKWALL_CLASSIFY->PID_MINT->BEHCS1024->GNN_PIPE_SCORE->SHANNON->GULP->WHITEROOM->FABRIC_ROUTE|wires=GNN-edges(danger-verbs)

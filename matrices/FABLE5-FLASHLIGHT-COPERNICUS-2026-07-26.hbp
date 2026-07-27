@@ -1,0 +1,21 @@
+FLASHHDR|schema=ASOLARIA-FLASHLIGHT-V1|variant=network|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|planes=red,green,blue,white,black|hosts=3|targets_modified=0|json=0
+SOURCE|name=copernicus|host=catalogue.dataspace.copernicus.eu|plane_sha=54dd59369010af5a|json=0
+PROJECTION|src=copernicus|view=red|dns_ok=1|tcp_ok=1|ip=185.48.233.66|err=none|sha=7d13b8e3854db616|json=0
+PROJECTION|src=copernicus|view=green|tls_ok=1|proto=TLSv1.3|issuer=DigiCert Inc|err=none|sha=59d328aa6782a6bf|json=0
+PROJECTION|src=copernicus|view=blue|status=403|server=-|waf=none|headers=9|sha=5bf7f0759ca1510e|json=0
+PROJECTION|src=copernicus|view=white|layers_lit=3|of=3|json=0
+PROJECTION|src=copernicus|view=black|dark=none|first_dark=none|json=0
+SOURCE|name=mast_control|host=mast.stsci.edu|plane_sha=07d684dbe50908a4|json=0
+PROJECTION|src=mast_control|view=red|dns_ok=1|tcp_ok=1|ip=130.167.220.111|err=none|sha=1fa7ab74986898a0|json=0
+PROJECTION|src=mast_control|view=green|tls_ok=1|proto=TLSv1.2|issuer=InCommon, LLC|err=none|sha=08a7ebbaca2b2741|json=0
+PROJECTION|src=mast_control|view=blue|status=500|server=nginx/1.22.1|waf=nginx|headers=10|sha=cac558d616db029c|json=0
+PROJECTION|src=mast_control|view=white|layers_lit=3|of=3|json=0
+PROJECTION|src=mast_control|view=black|dark=none|first_dark=none|json=0
+SOURCE|name=cmr_control|host=cmr.earthdata.nasa.gov|plane_sha=84fe0720fba933d6|json=0
+PROJECTION|src=cmr_control|view=red|dns_ok=1|tcp_ok=1|ip=18.67.0.111|err=none|sha=461fb31fe9e0aace|json=0
+PROJECTION|src=cmr_control|view=green|tls_ok=1|proto=TLSv1.3|issuer=Amazon|err=none|sha=59ba899a3b799eb2|json=0
+PROJECTION|src=cmr_control|view=blue|status=200|server=ServerTokens ProductOnly|waf=x-amz|headers=22|sha=f118ddb3245700b3|json=0
+PROJECTION|src=cmr_control|view=white|layers_lit=3|of=3|json=0
+PROJECTION|src=cmr_control|view=black|dark=none|first_dark=none|json=0
+VERDICT|target=copernicus|first_dark_plane=none|tcp_ok=1|tls_ok=1|http=403|json=0
+FLASHFTR|receipt=f60397f6cbe97acbd7dbdb52cf4b25af|rows=21|json=0|hot_path=1

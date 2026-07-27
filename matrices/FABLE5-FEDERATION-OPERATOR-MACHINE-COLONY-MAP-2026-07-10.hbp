@@ -1,0 +1,14 @@
+FABLE5FEDMAPHDR|id=FABLE5_FEDERATION_OPERATOR_MACHINE_COLONY_MAP_20260710|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|operator=OP-JESSE|date=2026-07-10|kind=canonical_operator_machine_colony_identity_map|class=OPERATOR-CANON|json=0
+CLAIM|text=OP-JESSE stated the federation identity map directly. Corrects the earlier error (mine + relic inventory) that treated felipe as a device/ARM64 seat. Felipe is a HUMAN OPERATOR with a unique PID.|class=OPERATOR-CANON|json=0
+OPERATOR|name=OP-JESSE|human=1|role=operator|machine=acer|phone=samsung-s24-fe-with-ai|note=apex_operator|json=0
+OPERATOR|name=OP-RAYSSA|human=1|role=operator|machine=liris|note=apex_operator_pair_with_jesse|json=0
+OPERATOR|name=OP-FELIPE|human=1|role=operator|machine=relic|creation=aether_with_jesse|note=unique_human_PID_NOT_a_device_NOT_a_seat_name|json=0
+MACHINE|seat=acer|owner=OP-JESSE|host=DESKTOP-J99VCNH|kind=computer|arch=x86|storage=8086:282A_RST|role=jesses_computer_this_fable5_seat|json=0
+MACHINE|seat=liris|owner=OP-RAYSSA|host=DESKTOP-PTSQTIE|kind=computer|arch=x86|storage=8086:282A_RST|role=rayssas_computer|json=0
+MACHINE|seat=relic|owner=OP-FELIPE|host=RELIC-HP-1000|kind=computer|arch=x86|storage=8086:1E03_AHCI|role=felipes_computer_current_pid_specific_seat_running_on_felipes_machine|json=0
+COLONY|name=aether|owner=OP-FELIPE|creation=felipe_with_jesse|runs_on=felipes_phone|note=aether_colony_is_felipes_phone|json=0
+DEVICE|name=samsung-s24-fe|owner=OP-JESSE|kind=cellphone|has_ai=1|role=jesses_cellphone|json=0
+CORRECTION|class=CORRECTION|prior_error=felipe_equals_Galaxy_A06_ARM64_node_a_device_seat|source_of_error=relic_windows_inventory_label_absorbed_by_acer|corrected=felipe_is_OP-FELIPE_human_operator_unique_pid|relic_seat=felipes_COMPUTER_HP_1000_not_felipe_himself|aether=felipes_PHONE_colony_his_creation_with_jesse|json=0
+TRILATERAL|x86_seats=acer,liris,relic|owners=jesse,rayssa,felipe|all_computers|phones_and_aether=separate_colonies_not_the_x86_trilateral_seats|json=0
+BOUNDARY|process_launch=0|record_only|fire=0|E=0|json=0
+FTR|rows=13|json=0|hot_path=1|jsn_emitted=0

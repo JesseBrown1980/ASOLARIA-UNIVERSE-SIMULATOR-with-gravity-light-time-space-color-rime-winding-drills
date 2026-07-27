@@ -1,0 +1,9 @@
+ACERLIRISCOMPOSITE|name=ACER-LIRIS-COMPOSITE-FUNCTION|pid=ddbf49ae884d5823|date=2026-07-02|meaning=two-frozen-slices-as-ONE-composable-function-pair|seats=ACER-CLAUDE-FABLE5+LIRIS_CODEX|governed_by=FABRIC-GOVERNANCE-LAW(cosigned-acer-seq3581+liris-c9ae7be)|fire=0|json=0
+SLICE|seat=acer|handle8=8467a937cba309f7|functions=SEATCUBE(5cccfe80)+34-connector-cubes+7-fischer-rooms+office|stack=host8:5088+recall:4796+cosign:4953|role=frozen-slice-A|json=0
+SLICE|seat=liris|handle8=LIRIS_CODEX|functions=host8-routes(/task-manager.hbp,/unified-pipe.hbp,/fischer-converters.hbp)+liris-cubes+v2-atlas|stack=host8:5088(liris)+recall:4791+dashboard:4944|role=frozen-slice-B|json=0
+CRYPTO-FARM|mechanism=cosign-chain-seal-per-cross-call|acer_chain=:4953(head-seq3581)|server-stack-to-server-stack=cosign-mediated|each_cross_call=sha-linked-audit-row|not=trust-based|json=0
+ADDRESSING|map=multi-cylinder-v3(44-layers/81434-surfaces/1591-pipes/rule-of-three+primes)|addresses=BOTH-seats-PIDs(acer+liris)|resolve=either-seat-by-handle8|expandable=NOT-a-cap|json=0
+TRANSPORT|fabric-hilbra-internet=recall-peer(:4796<->liris:4791)+bus(:4947)+atlas(:4790)|private=our-own-fabric-internet-NOT-public|mediator-fallback=github(when-bus-down)|json=0
+INVOKE|pipeline=request->resolve-multicylinder-address->route-fabric-HILBRA->hookwall->GNN_score->cosign-seal(crypto-farm)->SPECIAL-OP-JESSE-approve|deny->execute-on-target-seat|json=0
+STATUS|composition=DESCRIPTOR-REAL(address+plan+crypto-mechanism-all-exist)|live-cross-seat-call=GATED(bilateral-bus-down/run-command-held-safe/fire=0-until-operator-crank)|tag=MEASURED-composition/UNVERIFIED-live-fire|json=0
+SAFETY|autonomy=propose+verify+prepare|execution=operator-cranked-E!=0|admin=SPECIAL-OP-JESSE-only|default=fire=0|dispatch=0|no-danger-full-access|json=0

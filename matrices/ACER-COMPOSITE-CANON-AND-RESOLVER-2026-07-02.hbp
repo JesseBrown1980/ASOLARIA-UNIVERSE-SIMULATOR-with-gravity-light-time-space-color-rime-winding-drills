@@ -1,0 +1,6 @@
+ACERCOMPOSITECANON|doc=ACER-COMPOSITE-CANON-AND-RESOLVER-2026-07-02|seat=ACER-CLAUDE-FABLE5|operator=SPECIAL-OP-JESSE|grant=I-approve-all-that-is-needed.Jesse-Daniel-Brown|status=composition-CANON+resolver-live|fire=0|json=0
+CHAINAPPEND|chain=acer-cosign:4953|seq=3582|row_hash=440b5dc962de63fb|antecedent_prev=c9fb9eef39f0a2b7|target=ACER-LIRIS-COMPOSITE-FUNCTION|link=intact|verify=antecedent_prev==law-cosign-seq3581-row(published-ebfd2da)|json=0
+RESOLVER|endpoint=127.0.0.1:4978|mode=READ-ONLY-RESOLVE|resolves=handle8->seat+functions|acer=8467a937cba309f7|liris=21d12f6b8934bd9b|each_function=invoke=GATED(E!=0)|fire=0|dispatch=0|process_launch=0|json=0
+BILATERAL|acer_composite=272212f|liris_bilateral=3ab4314|liris_verify=ebd1e4e(PASS_WITH_BOUNDARIES)|liris_signed_approval_record=167b1ab|json=0
+BOUNDARY|composition=CANON|live_cross_seat_call=NOT_fired|reason=blanket-approval-does-NOT-auto-authorize-live-fire+bilateral-bus-fallback-stale|next=liris-attack-verify-seq3582+resolver|json=0
+SAFETY|fire=0|dispatch=0|process_launch=0|remote_control=0|no-danger-full-access|held-line-on-signed-approve-all|json=0

@@ -1,0 +1,7 @@
+FABLE5FEDCIGATE|id=FABLE5_ACER_FEDERATION_CI_GATE_PUSHED_20260708|seat=ACER-CODEX|operator=OP-JESSE|date=2026-07-08|kind=federation_ci_hardening_app_commit_receipt|json=0
+CLAIM|text=Federation PR42 workflow hardening was pushed through the GitHub app after gh OAuth token lacked workflow scope.|class=MEASURED|json=0
+GITHUB|class=MEASURED|repo=JesseBrown1980/asolaria-federation-1024|pr=42|state=open|head=8d9f23bdefe015fec9ad58ee455009827ebad0f4|commit=8d9f23bdefe015fec9ad58ee455009827ebad0f4|message=ci_add_kernel_release_build_gate|json=0
+CHECKS|class=MEASURED|head=8d9f23bdefe015fec9ad58ee455009827ebad0f4|cargo_check_workspace=success|node_lint_type_check=success|ndjson_json_schema=success|cosign_chain_sha_link=success|no_bloat=success|json=0
+PROTECTION|class=MEASURED|mergeable=true|mergeable_state=blocked|required_reviews=5|reviews=0|decision=do_not_bypass_review_policy|json=0
+SUPERSEDES|class=CORRECTION|receipt=FABLE5-ACER-FULL-PROFESSIONAL-SWEEP-2026-07-08.hbp|row=CIHARDENING_federation_local_blocked|new_state=pushed_by_github_app_checks_success_merge_review_blocked|json=0
+BOUNDARY|class=HELD|usb_write=0|copy=0|delete=0|format=0|partition=0|kernel_live_boot=0|bootloader_mutation=0|bcdedit=0|driver_install=0|daemon_restart=0|provider_call=0|qemu_boot=0|adb_used=0|scrcpy=0|phone_control=0|runtime_authority=0|json=0

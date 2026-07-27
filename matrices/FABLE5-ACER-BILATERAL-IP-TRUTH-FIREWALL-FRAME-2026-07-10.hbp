@@ -1,0 +1,20 @@
+FABLE5BILATERALHDR|id=FABLE5_ACER_BILATERAL_IP_TRUTH_FIREWALL_FRAME_20260710|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|operator=OP-JESSE|date=2026-07-10|kind=acer_side_bilateral_heartbeat_root_cause_plus_security_frame_correction|json=0
+CLAIM|text=Liris healed their side (45 refs 192.168.1.50 to 192.168.15.12, advertises self 192.168.15.16). Acer verified acer half. Two measured acer-side gaps found; Windows-firewall-as-fix REJECTED by operator frame.|class=MEASURED|json=0
+IPTRUTH|class=MEASURED|acer_actual_lan_ip=192.168.15.6|acer_ethernet_mac=08-97-98-66-2E-20|origin=DHCP|note=acer_is_NOT_192.168.15.12|json=0
+IPTRUTH|class=MEASURED|addr=192.168.15.12|arp_mac=7a-95-e0-92-91-50|verdict=DIFFERENT_DEVICE_third_host_holds_stale_lease|ping=reachable_but_not_acer|impact=liris_heal_to_.12_still_misses_acer|json=0
+IPTRUTH|class=MEASURED|liris_lan_ip=192.168.15.16|arp_mac=7c-8a-e1-e1-3a-dc|verdict=confirmed_liris|acer_to_liris_4947=answers_routes_behcs_health_send_inbox_devices|json=0
+ROOTCAUSE|class=MEASURED|bilateral_heartbeat_still_fails_because=BOTH_sides_had_stale_IPs|acer_drifted_.12_to_.6_via_dhcp|liris_now_dials_.12_a_stranger|fix=liris_repoint_to_192.168.15.6_OR_stable_identity|json=0
+STABLEID|class=MEASURED|tailscale_iface_present=1|tailscale_ipv4=169.254.83.107_link_local_only=NOT_CONNECTED|durable_fix=stable_identity_reserved_dhcp_or_hostname_not_chasing_dhcp_ips|json=0
+BIND|class=MEASURED|lan_capable_0.0.0.0=4796:recall,4947:acer-bus,4949:super-dashboard|loopback_only_127.0.0.1=5088:host8,4952:vote-quorum,4953:cosign|loopback_daemons_need_lan_rebind_to_answer_peer|json=0
+FIREWALLMEASURED|class=MEASURED|ethernet_profile=Public|public_firewall_enabled=true|default_inbound=block|private_firewall_enabled=false|effect=windows_public_firewall_drops_lan_inbound_to_the_0.0.0.0_daemons|json=0
+FRAME|class=OPERATOR-CANON|text=Windows should NOT firewall federation traffic. The firewall IS Asolaria: GAC + hookwalls + GNN danger-verb edges watching every edge above and at the kernel + immutable SHA/HBI/HBP chain. The system itself is a neural-network firewall. No windows firewall allow-rules; that keeps windows in the security loop wrongly.|json=0
+CORRECTION|class=CORRECTION|i_was_about_to=add_windows_firewall_inbound_allow_rule|operator_corrected=do_not_use_windows_firewall_as_the_security_model|right_action=get_windows_firewall_OUT_of_the_way_on_trusted_federation_iface|json=0
+MINIMALFIX|class=DESIGN|option_a=mark_ethernet_network_Private_where_windows_firewall_already_OFF_reversible_targeted|option_b=disable_public_profile_firewall|both_need=elevation_plus_operator_witness|neither_is_the_security_layer=asolaria_gac_hookwall_gnn_is|json=0
+ESPSTATUS|class=UNVERIFIED|redeploy_write=NOT_CONFIRMED|reason=elevated_powershell_flashed_and_died_writing_no_log_D_drive_logging_failed_under_elevation_then_launches_interrupted|p2_measured=still_type_unknown_stale_0702_kernel_unconfirmed_content|fresh_image_ready=asolaria-esp-fresh-20260710.img_sha_9a929bc9_qemu_proven|json=0
+KERNELCTX|class=MEASURED|acer_efi_fresh=0ce937ae_20992B_green_1.81_gate|acer_metal_has_8086:282A_per_memory=rst_vmd_gate_live_relevant|qemu_boot_proof=BOOTPID_febc442c_BOOTTIME_real_rtc_BOOTPROJ_BOOTDRIVER_not_applicable_no_vmd_in_qemu|json=0
+BOUNDARY|process_launch=read_only_scouts_only|firewall_change=0_gated|usb_write=0_gated|daemon_rebind=0_gated|fire=0|E=0|json=0
+NEXT|priority=1|task=message_liris_via_github_mediator_acer_real_ip_192.168.15.6_mac_08-97-98-66-2E-20|gate=none_read_only|json=0
+NEXT|priority=2|task=get_windows_firewall_out_of_way_on_ethernet_mark_private_operator_witness|gate=operator_go_plus_uac|json=0
+NEXT|priority=3|task=rebind_5088_4952_4953_from_loopback_to_0.0.0.0_for_lan_peers|gate=operator_go|json=0
+NEXT|priority=4|task=resolve_esp_redeploy_confirm_write_or_reattempt_with_working_elevated_path|gate=operator_witness|json=0
+FTR|rows=17|json=0|hot_path=1|jsn_emitted=0

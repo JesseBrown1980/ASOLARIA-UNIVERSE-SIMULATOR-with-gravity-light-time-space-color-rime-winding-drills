@@ -1,0 +1,8 @@
+GPHDR|schema=ASOLARIA-GLYPH-PREDICT-V1|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|cube=139ec8bf14371180|prior=9ecbb5180baf73e4|date=2026-07-26|json=0
+CORPUS|name=enwik8|slice_bytes=1000000|sha256=369b688978f649681136198fb96db14c1616756260c55fb4b65e9bc049552cad|json=0
+ALPHABET|source=deepseek-ai/DeepSeek-V4-Pro|glyphs=129280|table_bytes=6367146|table_sha256=8f9f37ca37fdc4f5fd36d5cf4d3b0e8392edb4e894fd10cc0d70b4957c8633cf|json=0
+SEGMENT|method=greedy_longest_match|not_exact_bpe=1|glyphs_out=253590|bytes_per_glyph=3.9434|distinct_used=22587|unk=0|json=0
+UNCHARGED|byte_h0=5.0589|glyph_h0=10.7886|byte_payload=632357|glyph_payload=341986|gain_pct=45.92|tag=MEASURED|json=0
+CHARGED|table_bytes=6367146|glyph_total=6709132|glyph_bpc=53.6731|byte_bpc=5.0589|verdict=LOSES|tag=MEASURED|json=0
+NOTE|order0_entropy_is_not_a_codec|measures=predictability_not_compression|do_not_compare_to_cm3ti_crown_rows|json=0
+GPFTR|receipt=b412ff6e038d1009ad228cc886657dd6930ff95634b66e8b752ee18d504d748f|rows=8|json=0|hot_path=1

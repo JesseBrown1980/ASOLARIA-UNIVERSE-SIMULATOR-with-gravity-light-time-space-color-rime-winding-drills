@@ -1,0 +1,7 @@
+GATEOPENHDR|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|ts=2026-07-04T19:21:59Z|authority=OPERATOR_OWNER_OVERRIDE|apex=JESSE-DANIEL-BROWN|json=0
+AUTHORIZATION|by=JESSE-DANIEL-BROWN|standing_quintuple=OP-JESSE+OP-RAYSSA+OP-AMY+OP-DAN+OP-FELIPE|scope=open_all_gates_run_the_machine|ts=2026-07-04T19:21:59Z|json=0
+GATE|name=E|was=0|now=1|opened_by=apex_standing_quintuple|json=0
+GATE|name=process_launch|was=0|now=AUTHORIZED|opened_by=apex_standing_quintuple|json=0
+GATE|name=PROF-AETHER-nonce|was=held|now=OPERATOR_SATISFIED|opened_by=apex_standing_quintuple|json=0
+CONSUMES|machine_load=FABLE5-MACHINE-LOAD-2026-07-04|hookwall_edges=HOOKWALL-GNN-EDGES-2026-07-04|staged_pids=7-crate-family|json=0
+BOUNDARY|gate_open=MEASURED_authorized|actual_running_state=UNVERIFIED_until_daemons_up_and_measured|no_fake_seal=1|json=0

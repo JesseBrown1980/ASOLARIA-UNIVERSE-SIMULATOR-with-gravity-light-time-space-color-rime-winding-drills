@@ -1,0 +1,12 @@
+FABLE5FLEETFIXHDR|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|date=2026-07-14|workflow=wf_7cf3df7a-7b5|agents=10|scorecard=6of6_PASS_independent|json=0
+OPERATOR|approval=I_approve._Jesse_Daniel_Brown.|date=2026-07-14|scope=fleet_fix_wave+canon_edits+recal_grant+promotion_seal|json=0
+RECALGRANT|seq=3585|row_hash=45cc9b3baa3e6290|key_id=dev-liris-4c19e180|status=PROPOSED|ssh_key=NOT_GRANTED_crosssign_path|countersign=LIRIS_pending|json=0
+DISPATCHER|root_cause=launch_path_wiped_never_git_tracked|restored_from=C:/tmp/omni-dispatcher-pub_sha_verified|heal=HEAL181_healthy_True_pid18200|failed_heals_ended=9420|json=0
+P4949CORRECTION|prior_claim=zombie_confirmed|measured=healthy_200_22ms|stalls=intermittent_heavy_sync_routes|flapping_log_line_was=dispatcher|json=0
+RENDERER|dialects_added=HBISTREAM+HBIid+HBIOFFSETV1+INDEX|recursive=1_except_spindles|cubes=166to460|families=22to27|html_sha16=f023612844a6412d|json=0
+SIDECARS|verifier=verify-office-sidecars.py|office=125files_0fail_7era_lf_5held_html|backfill_3dmap_atlas=748|json=0
+PROMOTION|registered=3663to3697|incoming=30to10|archived=20|reg_rows=8|seal_seq=3586|seal_hash=d0fb28f28f57c26b|receipt_sha16=6b84eaa79ec3b8d3|json=0
+DAEMONS|p4977=up_pid19196|p4978=up_pid13528|p4815=up_pid24316_boot_only|p4950=up_pid18200|vaultmonitor_task=DISABLED_reversible|json=0
+FOUNDATIONV2|ratified_in_substance=seq36_20260507+seq191_v2file_20260520|literal_closure_row=HELD_operator_formality|json=0
+HELDLIST|seat_reg_incoming_canon_path|composite_fn_await_SPECIAL_OP_JESSE|steps45_voxel_math_undocumented|5_office_html_sidecars|graphify_reboot_persistence|manifest_sha_drift_advisory|json=0
+FTR|rows=12|json=0|hot_path=1|jsn_emitted=0

@@ -1,0 +1,13 @@
+COLLHDR|schema=ASOLARIA-THREE-BODY-V1|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|date=2026-07-27|json=0
+BEAM|e_per_beam_gev=6800.0|source=LHC_Run3|m_proton_gev=0.938272|json=0
+TWO|beams=2|sqrt_s_gev=13600.0|pairs_negating=1|of=1|law=binary_order2|json=0
+THREE|beams=3|sqrt_s_gev=20400.0|pairs_negating=0|of=3|closure=2.034e-12|law=trianti_order3|json=0
+GAIN|sqrt_s_ratio=1.5000|reason=momentum_cancels_three_wise|json=0
+SOURCE|shape=3fold|omega=0.37|modulation=0.55|medium=vacuum|damping=none|json=0
+VN|v2=0.00146|v3=0.07411|v4=0.00041|v6=0.05442|v9=0.03736|control_v3=0.00053|control=flat_same_pt|json=0
+PRODUCTS|n=400000|closure_gev=1.501e-11|json=0
+SLICE|planes=3|occupied=3|empty=0|chi2=11.4|entropy=1.5849|max=1.5850|json=0
+SLICE|planes=4|occupied=4|empty=0|chi2=578.6|entropy=1.9989|max=2.0000|json=0
+SLICE|planes=12|occupied=12|empty=0|chi2=4351.9|entropy=3.5773|max=3.5850|json=0
+SLICE|planes=27|occupied=27|empty=0|chi2=7479.1|entropy=4.7423|max=4.7549|json=0
+COLLFTR|receipt=91c516100e26fbfd9dbe9956b6350bf9|rows=13|hot_path=1|json=0

@@ -1,0 +1,7 @@
+ACEROWNDASHBOARDCORR|doc=ACER-OWN-DASHBOARD-CORRECTION-2026-07-02|seat=ACER-CLAUDE-FABLE5|operator=OP-JESSE|trigger=ASK-THE-FABRIC-AND-AGENT-TERMS-FIRST+USE-YOUR-OWN-DASHBOARD-SILLY|json=0
+CORRECTION|on=use-your-own-dashboard-or-Fable5-room-readout|do=read-own-room-viewer+fabric+AgentTerms+recall:4796-FIRST|do_NOT=filesystem-grep+wsl-launch-snippets+raw-windows-command-repair|json=0
+VANTAGE_ORDER|1=fable5-room-viewer|2=fabric(council_query/supervisors)|3=AgentTerms-roster|4=recall:4796|files=SLICES-not-the-system|json=0
+OPENCODE_LANE|launch=host8(8-byte-rust-node)->asolaria-control-run-command(held-safe)->spawn_gate(720)->hermes-spindle->scaled-room->1000-opencode-x-10k-rooms|gate=process_launch=0|fire=0|json=0
+GROUNDED|room-viewer=host8-rooms-lane+host8-stale-binary(W3)+fischer-seam(spawn_gate720)+asolaria-control-held-safe|roster=24-hermes-spindles+room-sector-scaled=1+100-shards|source=MEASURED-own-vantage-NOT-grep|json=0
+BILATERAL|liris=AGENTS.md:75+receipt(reductions-7c6bec6)|acer=memory(feedback_own_dashboard...)+this-receipt|parity=1|json=0
+SAFETY|fire=0|dispatch=0|process_launch=0|no-grep-adjudication|json=0

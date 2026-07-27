@@ -1,0 +1,5 @@
+LIBHDR|office=FABLE5|pid=8467a937cba309f7|kind=recall-first-library|source=C:/Users/acer/.claude/projects/C--/memory + recall:4796|json=0
+LIBREF|layer=governing|src=C:/Users/acer/CLAUDE.md|role=MD-canon(prime-rule,claims-gate,hot-path,seat)
+LIBREF|layer=hook|src=C:/Users/acer/.claude/hooks/session-start.mjs|role=auto-inject-discipline-rules-1-8
+LIBREF|layer=memory|src=.claude/projects/C--/memory/MEMORY.md|role=recall-index(hot)+MEMORY-ARCHIVE(grep)
+LIBREF|layer=recall|src=http://127.0.0.1:4796/api/search|role=591946-row inverted-index(HILBRA-IDX-BEHCS-TUPLE-TEXT-V1,json_hot_path=false)

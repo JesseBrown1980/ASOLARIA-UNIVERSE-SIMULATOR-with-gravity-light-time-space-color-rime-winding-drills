@@ -1,0 +1,3 @@
+OFFICEHDR|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|glyph=BH1024:SEAT-FABLE5|hilbert=1720|sector=SEC-FABLE5-1720|owner=OP-JESSE|model=claude-fable-5|json=0
+OFFICEROLE|role=acer-chief-orchestrator|harness=asolaria|hooks=session-start-hookwall(rules1-8)|hot_path=HBP_HBI_json0|pixels_first=1|fire=0
+OFFICELOAD|on_demand=LIBRARY.hbp+CATALOGS.hbp+PIPES.hbp+TUPLE-MCP.hbp|load_target=asolaria-seat|ready=1

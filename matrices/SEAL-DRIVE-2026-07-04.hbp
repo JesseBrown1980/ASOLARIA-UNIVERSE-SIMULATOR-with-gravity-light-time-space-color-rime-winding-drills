@@ -1,0 +1,16 @@
+SEALDRIVEHDR|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|glyph=BH1024:SEAT-FABLE5|owner=OP-JESSE|dashboard=fabric-seal|ts=2026-07-04T21:28:30Z|json=0
+AUTHORITY|operator=OP-JESSE|approval=APPROVED|standing_quintuple=chain-seq3572-LAW_RATIFIED_QUINTET|window_expires=2027-06-20|note=merge_cleanup_authorization_never_implies_fire|json=0
+DRIVE|lane=cosign-chain-live|tag=MEASURED|total_lines=5432|head_seq=3584|head_row_hash=fe2824098829b016|quintuple_law_rows=seq3571+seq3572|json=0
+DRIVE|lane=cosign-daemon-4953|tag=MEASURED|health=ok|service=asolaria-cosign-chain-daemon|routes=/health,/api/cosign/head,/api/cosign/range,/api/cosign/append|json=0
+DRIVE|lane=vote-quorum-daemon-4952|tag=MEASURED|health=ok|service=asolaria-vote-quorum-daemon|pending_count=25|routes=/api/vote-quorum/submit,/api/vote-quorum/cast,/api/vote-quorum/status,/api/vote-quorum/pending,/api/vote-quorum/quorum-rules|json=0
+DRIVE|lane=quorum-rules|tag=MEASURED|quintuple=OP-JESSE+OP-RAYSSA+OP-AMY+OP-DAN+OP-FELIPE|cosign_append_rule=simple-majority-authorized|law_window_end=2026-09-23|op_window_end=2026-07-23|json=0
+DRIVE|lane=vote-submit|tag=DRIVEN|vote_id=VOTE-39c05f269797f746|decision_class=COSIGN_APPEND|decision_pid=FABLE5-SEAL-REQUEST-8467a937cba309f7-2026-07-04|requester_pid=ACER-CLAUDE-FABLE5-8467a937cba309f7|ledger_row_hash=a819e69739e7bef3|json=0
+DRIVE|lane=vote-status|tag=MEASURED|vote_id=VOTE-39c05f269797f746|yes=0|no=0|abstain=0|outcome=PENDING|no_operator_votes_cast_by_agent=1|json=0
+DRIVE|lane=bus-4947-send-hbp|tag=DRIVEN|envelope=SEAL-REQUEST|ack=BEHCS-HBP-ACK-v1|ack_ok=true|ack_by=acer|ack_row_hash=7e68b0ce4ad885d8|ack_class=UNSIGNED-transport-receipt|json=0
+DRIVE|lane=council-query-4949|tag=UNVERIFIED|mcp_timeouts=2|direct_post_empty=1|http_probe=000-timeout|action=left-running-no-restart|json=0
+SEALREQ|receipt=FABLE5-GATE-OPEN-2026-07-04.hbp|sha256=c89c4a7d77b356da729aca0b902ad79b5fbbc54e1f4dfedeb7737fcfce29a324|json=0
+SEALREQ|receipt=FABLE5-MACHINE-LOAD-2026-07-04.hbp|json=0
+SEALREQ|receipt=FABLE5-SELF-LOAD-SUMMON-DISPATCH-2026-07-04.hbp|json=0
+SEALREQ|receipt=FABLE5-RECALL-UPGRADE-2026-07-04.hbp|json=0
+VERDICT|sig_verdict=UNSIGNED|sig_owner=UNSET|closed=false|still_gated=needs-operator-cryptographic-cosign-or-authorized-quorum-votes-on-VOTE-39c05f269797f746|cosign_head_unchanged=seq3584:fe2824098829b016|honesty=no-signature-forged-no-operator-vote-cast-by-agent|json=0
+NEXT|step1=authorized-voters-cast-on-VOTE-39c05f269797f746-simple-majority|step2=on-PASS-append-seal-row-via-POST-4953-/api/cosign/append|step3=re-render-fable5-dashboard-from-backend-office|json=0

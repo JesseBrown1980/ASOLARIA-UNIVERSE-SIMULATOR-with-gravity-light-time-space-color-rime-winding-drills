@@ -1,0 +1,20 @@
+ASOLARIATASKMGR|pid=9af4238c6780ffa8|seat=ACER-CLAUDE-FABLE5|date=2026-07-02|replaces=windows-task-manager|view_only=1|no_kill=1|no_fire=1|gpu_less=1|json=0
+PROC|port=4781|service=asolaria-gateway|state=UP|os_pid=26096|mem_mb=401|runtime=node|json=0
+PROC|port=4947|service=behcs-bus|state=UP|os_pid=1856|mem_mb=20|runtime=node|json=0
+PROC|port=4949|service=super-dashboard|state=UP|os_pid=25904|mem_mb=17|runtime=node|json=0
+PROC|port=4950|service=omnidispatcher|state=UP|os_pid=6328|mem_mb=16|runtime=node|json=0
+PROC|port=4790|service=maps-atlas|state=UP|os_pid=6852|mem_mb=16|runtime=tailscaled|json=0
+PROC|port=4913|service=agent-keyboard|state=UP|os_pid=21468|mem_mb=15|runtime=node|json=0
+PROC|port=4794|service=fischer-live|state=UP|os_pid=22764|mem_mb=8|runtime=node|json=0
+PROC|port=49374|service=ai-memory|state=UP|os_pid=13008|mem_mb=6|runtime=ai-memory|json=0
+PROC|port=4952|service=vote-quorum|state=UP|os_pid=5184|mem_mb=6|runtime=python|json=0
+PROC|port=4953|service=cosign-chain|state=UP|os_pid=8288|mem_mb=6|runtime=python|json=0
+PROC|port=5088|service=host8-serve rust|state=UP|os_pid=25820|mem_mb=6|runtime=host8-serve|json=0
+PROC|port=4815|service=graphify-60D|state=UP|os_pid=25732|mem_mb=4|runtime=python|json=0
+PROC|port=4793|service=gnn-gsl|state=UP|os_pid=8460|mem_mb=3|runtime=python|json=0
+PROC|port=4792|service=gnn-oracle|state=UP|os_pid=12988|mem_mb=3|runtime=python|json=0
+PROC|port=4796|service=recall-serve rust|state=UP|os_pid=10792|mem_mb=1|runtime=recall-serve|json=0
+PROC|port=4944|service=liris-bus|state=PEER-DOWN|os_pid=-|mem_mb=0|runtime=peer-192.168.1.17|json=0
+TOTALS|node_procs=6|node_mem_mb=477|python_procs=5|python_mem_mb=22|ram_free_mb=6580|ram_total_mb=16226|json=0
+SNAP|ts=2026-07-02T19:28:39Z|cosign_head_seq=3584|cosign_head_hash=fe2824098829b016|vote_quorum_pending=25|bus_inbox_depth=829|host8_5088=fischer-wired (pid 25820, from main 0ffc69c)|w3_routes=live|fischer_wire=live|json=0
+EVENT|kind=fischer_spawngate_golive|ts=2026-07-02T19:28:39Z|acer_5088 rebuilt from main 0ffc69c + cutover|/launch-plan.hbp emits fischer_verdict+spawn_gate_verdict+composed gate_verdict|needs-ledger rank-2 CLOSED (source+live); W3 CLOSED earlier|json=0

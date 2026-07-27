@@ -1,0 +1,14 @@
+FABLE5HANDOFF|id=FABLE5_ACER_NEXT_ROUND_LIRIS_RELIC_FALCON_HANDOFF_20260708|seat=ACER-CLAUDE-FABLE5|operator=OP-JESSE|ts=2026-07-08T18:17:29.7630868Z|kind=next_round_kernel_handoff|e=0|fire=0|json=0
+STEPBACK|text=ACER part is a receipt-backed handoff to LIRIS then RELIC then FALCON; no new PR commit is created by this packet.|json=0
+FABRIC|class=UNAVAILABLE_THIS_RUN|health=timeout|canon=fetch_failed|council=fetch_failed|authority=github_plus_fable5_backend_receipts|json=0
+GITHUB|class=MEASURED|repo=JesseBrown1980/HYPER-BECHS--the-third-set|pr=2|state=open_draft|head=adea84f48e96ed5744c575291ae0f521f67cba9a|current_head_after_relic=1|url=https://github.com/JesseBrown1980/HYPER-BECHS--the-third-set/pull/2|json=0
+GITHUB|class=MEASURED|repo=JesseBrown1980/asolaria-federation-1024|pr=42|state=open|head=69859625291c024f4198d9c4567bcbb292f80ea3|url=https://github.com/JesseBrown1980/asolaria-federation-1024/pull/42|json=0
+HEAD_CHRONOLOGY|class=MEASURED|historical_acer_packet=10d698cb190b6629946c71781d72e284717cf474|current_after_relic=adea84f48e96ed5744c575291ae0f521f67cba9a|rule=do_not_report_10d698c_as_current_head|json=0
+ACER_BUILD_RECEIPT|class=MEASURED_LOCAL_FABLE5|hbp=FABLE5-ACER-KERNEL-BUILD-AFTER-RELIC-PR2-2026-07-08.hbp|hbp_sha256=b83d9c15c311541b33c839e361c48bd0c2731ea9276a908fd935422ffe24c755|hbi_sha256=79d1bdec8a0747b05b6d68eaec8633910a8535d77963562e4d954a1f61278f4e|comment=https://github.com/JesseBrown1980/HYPER-BECHS--the-third-set/pull/2#issuecomment-4917687935|json=0
+KERNEL_ARTIFACT|class=MEASURED_LOCAL_BUILD|surface=federation_pr42_kernel|artifact=asolaria-os.efi|bytes=20992|sha256=d77cc6d08d9c2747253a2b2334d1b99ae91ebdb237d5a9ccddb8e746817db2e9|tests=core_276_pass_1_ignored_plus_parity_6_pass|json=0
+KERNEL_ARTIFACT|class=MEASURED_LOCAL_BUILD|surface=asolaria_os_main|artifact=asolaria-os.efi|bytes=16384|sha256=ef6c836dbec0bfd286074cfb18a6ac7bb96ecf258e5df177f5e58a4b17cc77bd|harness=passed_skip_qemu|json=0
+ROUND|n=1|seat=LIRIS|handoff=verify_pr2_head_adea84f_blob_sidecars_again_compare_to_liris_receipts_and_decide_if_kernel_packet_needs_liris_delta|must_hold=no_usb_write_no_kernel_mutation_no_live_boot|json=0
+ROUND|n=2|seat=RELIC|handoff=verify_relic_hardware_current_usb_visibility_and_pr2_relic_sidecars_after_liris_review|must_hold=no_partition_no_format_no_copy_no_bootloader_mutation|json=0
+ROUND|n=3|seat=FALCON|handoff=prepare_falcon_observation_lane_only_for_kernel_receipt_review_and_optional_omnicoder_readiness_no_adb_control|must_hold=adb_shell_0_adb_push_0_phone_write_0_execute_0|json=0
+FALCON|class=PREPARED_NOT_STARTED|role=observation_and_review_lane_for_kernel_receipts|current_action=0|omnicoder_execute=0|scrcpy_start=0|phone_file_write=0|json=0
+BOUNDARY|class=HELD|usb_write=0|copy=0|delete=0|format=0|partition=0|kernel_mutation=0|driver_install=0|bootloader_mutation=0|bcdedit=0|daemon_restart=0|service_launch=0|provider_call=0|qemu_boot=0|live_boot=0|runtime_authority=0|json=0

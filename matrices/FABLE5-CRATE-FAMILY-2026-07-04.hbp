@@ -1,0 +1,8 @@
+CRATEFAMILYHDR|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|date=2026-07-04|fire=0|json=0
+PIECE|key=asolaria-hbi-hbp|status=MEASURED-5/5|role=HBI/HBP bridge codec|json=0
+PIECE|key=dbbh-coms-quant-prism|status=MEASURED-19/19|role=Path1 lossless recall from store|json=0
+PIECE|key=path2-two-shadow-recovery|status=MEASURED-PR1-merged-30/30-both-seats|role=Path2 two-shadow no-store + multi-cyl + PIE + watcher + omnibit|json=0
+PIECE|key=qprism-3d-slice-harness|status=MEASURED-8/8|role=3D Q-PRISM + prime-atlas correction2|json=0
+PIECE|key=deterministic-slice-time-harness|status=MEASURED-10/10|role=slice-time + MtpMovementMatrix reversible retrodiction + arrow-of-time falsifier|json=0
+PIECE|key=holographic-wormhole-codec|status=MEASURED-9/9|role=unified DBBH->DBWH throat + NQPrismNexus uniform room|json=0
+PIECE|key=asolaria-office-service|status=MEASURED|role=automated render+GC+officer office service|json=0

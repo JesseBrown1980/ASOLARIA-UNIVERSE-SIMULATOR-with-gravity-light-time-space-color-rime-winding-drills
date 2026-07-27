@@ -1,0 +1,5 @@
+CATHDR|office=FABLE5|pid=8467a937cba309f7|owner_root=PROF-MCP|json=0
+CAT|name=mcp-ability-method|servers=44|verbs=310|src=C:/asolaria-acer/tools/graphify/ACER-CAPABILITY-MAP-2026-07-01.json|note=Higgsfield-12-cubes-absorbed
+CAT|name=cubes|src=C:/asolaria-acer/tools/graphify/HIGGSFIELD-CUBES-2026-07-01.json + office/incoming|form=content-addressed-sha16+BEHCS1024-glyph
+CAT|name=glyphs|alphabet=BEHCS-1024|bridge=BEHCS-256|frame=HyperBEHCS-60D|src=fabric /api/glyphs
+CAT|name=office-pids|src=D:/PID-Registration-Office/{registered,3d-map-registrations,atlas-registrations}|role=3643-registered+voxel-coords

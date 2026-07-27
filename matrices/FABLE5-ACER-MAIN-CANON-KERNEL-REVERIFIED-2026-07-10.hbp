@@ -1,0 +1,11 @@
+FABLE5MAINREVERIFYHDR|id=FABLE5_ACER_MAIN_CANON_KERNEL_REVERIFIED_20260710|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|operator=OP-JESSE|date=2026-07-10|kind=acer_seat_kernel_rebuilt_from_main_byte_identical_to_pinned_canon|json=0
+CLAIM|text=The acer seat kernel rebuilt FROM MAIN 13abe207 reproduces the pinned canonical sha b6107d99 byte-identical across two independent clean builds, passes all marker and no-leak gates, and boots in QEMU minting the invariant device_pid febc442c619ef0a0. Main is now the proven build source for the acer USB restage.|class=MEASURED|json=0
+SYNC|class=MEASURED|clone=C:/asolaria-acer/asolaria-os|ff=393e10a_to_13abe20|main_head=13abe2071fe31ae9278f47fe3ecbbaae77a125aa|kernel_diff_8ca4fa4_to_main=EMPTY|relic_74e5bbf=receipts_only|json=0
+BUILD|class=MEASURED|source=main_13abe20|toolchain=cargo_1.81|target=x86_64-unknown-uefi|seat_param=ASOLARIA_SEAT=acer|double_build=byte_identical|sha256=b6107d990359b050cd028d9f77cd04fdd8fe47b613a0222c34c712db4b0b9793|bytes=25088|matches_pinned_manifest_8ca4fa4=1|json=0
+MARKERS|class=MEASURED|seat_acer=1|rst_vmd_scaffold=1|sata_ahci_scaffold=1|cross_seat_leak=0|json=0
+QEMUBOOT|class=MEASURED|device_pid=febc442c619ef0a0|boot_pid=2e8397d4a32c01c5|utc=2026-07-10T20:24:42Z|seat=acer|colony=acer|behcs=1024|dims=60|rst_vmd=NOT_APPLICABLE_qemu_no_282A|ahci=GATED_MATCH_bringup_TODO|invariant_matches_relic_qemu_and_acer_esp=1|gotcha=snapshot_flag_conflicts_fat_rw_removed|json=0
+OWNINGGATE|class=MEASURED|ci_run=29120178644|conclusion=success|head=13abe20|verified_from=acer_own_gh_read|json=0
+EXPORT|class=MEASURED|path=C:/asolaria-acer/asolaria-os/kernel/dist/asolaria-os-acer.efi|sha256=b6107d990359b050cd028d9f77cd04fdd8fe47b613a0222c34c712db4b0b9793|json=0
+OPEN|class=BOUNDARY|usb_p2_esp=still_stale_0702_kernel|restage=ready_gated_on_operator_witness|metal_boot=F12_operator_witnessed_mints_real_device_pid|storage_bringup=rst_vmd_domain_walk+ahci_init_next_build_day|json=0
+BOUNDARY|usb_write=0|fire=0|E=0|json=0
+FTR|rows=11|json=0|hot_path=1|jsn_emitted=0

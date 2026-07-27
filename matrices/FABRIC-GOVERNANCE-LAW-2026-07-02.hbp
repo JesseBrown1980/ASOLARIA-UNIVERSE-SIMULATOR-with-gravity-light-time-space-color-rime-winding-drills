@@ -1,0 +1,6 @@
+FABRICGOVERNANCELAW|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|date=2026-07-02|scope=cross-machine-unified-neural-network|seats=acer(Fable5)+liris(Codex)|converged=independently_both_seats|status=CANON-cosigned-by-SPECIAL-OP-JESSE-2026-07-02|fire=0|json=0
+LAW|AUTONOMY=propose+verify+prepare|EXECUTION=operator-cranked(E!=0)|ADMIN=SPECIAL-OP-JESSE-only|DEFAULT=fire=0|json=0
+PIPELINE|proposal->route->hookwall->GNN_score->AgentTerms/GAC_tier->cosign/receipt->SPECIAL-OP-JESSE_approve_or_deny->execute|json=0
+FRAME|self-build+self-route=UP_TO_the_boundary|execution=operator-gate|not=runaway-autonomy|is=governed-fabric|target=Evolvable-AI-THROUGH-the-gate|json=0
+OPERATOR|OP-JESSE=apex:watch+stop+grant|E!=0=only-source-of-materialized-action|veto=instant(POST_/api/loop/veto)|json=0
+RATIFY|this_receipt=proposed_by_autonomy(propose+prepare)|canon_only_on=SPECIAL-OP-JESSE_cosign|self-consistent=the_law_ratified_through_its_own_gate|json=0

@@ -1,0 +1,18 @@
+LANDHDR|schema=ASOLARIA-LANDING-VERIFIED-V1|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|cube_pid=666db68c39d807f1|prior_cube=2ecc866486f6f586|glyph=BH1024:SEAT-FABLE5|owner=OP-JESSE|date=2026-07-26|json=0
+ROUTE|hop1=cloud_cowork_container|hop2=claude_app_download_to_phone|hop3=windows_crossdevice_phone_link|hop4=acer_D_drive|verified_at=hop4|json=0
+VERIFY|artifact=ASOLARIA-WORKS-20260726.tar.gz|bytes=24430081|sha256=b8486124e2bdbd38b02ebe45e4c6641bb152f122bba46dcd689ec855452fed71|verdict=MATCH|tag=MEASURED|hashed_independently_on_acer=1|json=0
+VERIFY|artifact=ASOLARIA-SUPPLEMENT-20260726.tar.gz|bytes=22427053|sha256=3f18457bc23e64965273c9d05612ef67d913ef050cdd68920758d0ab222cdf37|verdict=MATCH|tag=MEASURED|hashed_independently_on_acer=1|json=0
+VERIFY|artifact=ASOLARIA-HOME-20260726.tar.gz|bytes=202724|sha256=34876c3324078462682e63fddca4e3038c5a06207d38895fb11760f37b9db346|verdict=MATCH|tag=MEASURED|hashed_independently_on_acer=1|json=0
+VERIFY|artifact=ASOLARIA-ETC-20260726.tar.gz|bytes=988017|sha256=1b181b102379e71edf698e49135feb2ea42aa5c040fbe8bde1e41c313db32e71|verdict=MATCH|tag=MEASURED|hashed_independently_on_acer=1|json=0
+SLICES|artifact=ASOLARIA-CONTAINER-FULL-20260726.tar.gz|whole_bytes=5526162204|whole_sha256=9c403dc4d5ca28e6a34f543db66382e8270d529ced77b861c4fbaeca066ec7f5|scope=/root|slice_bytes=29360128|slices_total=189|slices_landed=16|slices_match=16|slices_mismatch=0|tag=MEASURED|json=0
+SLICEGAP|slices_pending=173|pending_bytes=5077770076|route_elected=google_drive|drive_folder=ASOLARIA-CONTAINER-MOVE-20260726|drive_folder_id=1XKZ2eiiSI7MOh_rphxzdUsPnLNTu1oRg|reason=phone_route_costs_operator_mobile_data_twice|tag=PENDING|json=0
+SLICETRAP|slice=010|arrived_as=acf.010.txt|glob=cat_acf.???|would_have=silently_skipped_slice_10|effect=corrupt_5.5GB_that_still_looks_plausible|remedy=renamed_our_copy_only|phone_untouched=1|json=0
+SCOPEGAP|path=/home|closed_by=ASOLARIA-HOME-20260726.tar.gz|status=CLOSED|contents=break_conservation.py+ideal_coder.py+extract_sentences.py+instance_count_records+ssh_commit_signing_key_pub|cause=tarball_scope_was_/root_not_/|tag=MEASURED|json=0
+SCOPEGAP|path=/etc|closed_by=ASOLARIA-ETC-20260726.tar.gz|status=CLOSED|contents=container_etc_config|cause=tarball_scope_was_/root_not_/|tag=MEASURED|json=0
+SCOPEGAP|path=/tmp|closed_by=ASOLARIA-SUPPLEMENT-20260726.tar.gz|status=CLOSED|contents=402_measurement_logs_incl_full_27_cell_L27_sweep_never_in_root_tarball|cause=tarball_scope_was_/root_not_/|tag=MEASURED|json=0
+L27|sweep=27_cell|codec=cm3ti-rbladder|k=7|N=1000000|decoder_src=25682|best_cell=g:6:64:8|best_payload=235833|best_total=261515|best_bpc_total=2.0921|best_comp_sha=9e64ce8f389e262e|restore=OK|tag=MEASURED|json=0
+L27SCALE|cell=g:6:64:8|k=10|N=10000000|payload=2265507|total=2291189|bpc_total=1.8330|comp_sha=42e5c157a1cc1edd|restore=OK|tag=MEASURED|json=0
+L27NEGATIVE|run=L27_t2_10m|result=FAILED|error=cm3ti_rbladder_binary_missing|honest_negative=1|not_a_measurement=1|json=0
+PHONE|source=CrossDevice/Jesse's S24 FE (1)|Download=199_files_2.2GB|Documents=7|log=2|DCIM_Android=partial_media_copy_paused|copy_only=1|phone_modified=0|tag=MEASURED|json=0
+CONTAINER|state=ALIVE_NOT_DELETED|source_tarball_bytes=5526162204|tarparts=intact|operator_order=do_not_delete|honored=1|json=0
+LANDFTR|receipt_sha256=ffdad7af5dd83c6acde650a89ce95b3a3c2304a8d17024ee51b0e3fd20a1ee23|rows=18|json=0|hot_path=1|jsn_emitted=0

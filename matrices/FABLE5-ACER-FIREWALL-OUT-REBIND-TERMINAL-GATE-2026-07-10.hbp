@@ -1,0 +1,17 @@
+FABLE5FWREBINDGATEHDR|id=FABLE5_ACER_FIREWALL_OUT_REBIND_TERMINAL_GATE_20260710|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|operator=OP-JESSE|authorization=JESSE_BROWN_AUTHORIZES_1_AND_2|date=2026-07-10|kind=authorized_firewall_out_of_way_plus_loopback_rebind_plus_new_os_terminal_gate_proof|json=0
+CLAIM|text=OP-JESSE (Jesse Brown) authorized actions 1 (Windows firewall out of the way) and 2 (rebind loopback daemons), and required proof that Claude Code + an 8-byte-host process-driven terminal run in the new OS before use. All applied and MEASURED-verified.|class=MEASURED|json=0
+ACTION1|class=MEASURED|what=windows_firewall_out_of_way|method=Set-NetConnectionProfile_Ethernet_NetworkCategory_Private|before=Ethernet_Public|after=Ethernet_Private|private_profile_firewall_enabled=False|effect=windows_no_longer_adjudicates_federation_lan_traffic|allow_rules_added=0|elevated=1_uac_operator_approved|json=0
+ACTION1CTX|class=MEASURED|trigger=windows_firewall_tried_to_block_the_rust_8byte_host_on_relaunch|root=node.exe_python.exe_had_allow_rules_but_rust_host8-serve.exe_recall-serve.exe_did_not|frame=OPERATOR-CANON_security_is_asolaria_gac_hookwall_gnn_immutable_sha_NOT_windows_firewall|json=0
+ACTION2|class=MEASURED|what=rebind_loopback_daemons_to_0.0.0.0|host8_5088=relaunched_debug_binary_with_--bind_0.0.0.0:5088_pid_9560|vote_quorum_4952=edited_ThreadingHTTPServer_127.0.0.1_to_0.0.0.0_restarted_pid_17912_pending_26|cosign_4953=edited_bind_restarted_pid_14452_HEAD_SEQ_3584_PRESERVED_row_hash_fe2824098829b016|json=0
+ACTION2VERIFY|class=MEASURED|new_binds=4952:0.0.0.0,4953:0.0.0.0,5088:0.0.0.0|cosign_chain_intact=1|vote_quorum_healthy=1|json=0
+GATE|class=MEASURED|surface=:4600_asolaria-asi-os_health_200|api_live=KERNEL_5088_up_1_v0.2.0-phase3-scaffold+RECALL_4796_up+BUS_4947_up_inbox_769+FABRIC_4949_up|json=0
+GATE|class=MEASURED|term_spawn=POST_/term/spawn_powershell_session_id_1_real_std_process|term_backend=asolaria-asi-os_main.rs_std_process_Command_spawn_SSE_stream_8byte_host_ethos_0_external_crates|json=0
+GATE|class=MEASURED|claude_code_in_new_os_terminal=PASS|evidence=claude_--version_returned_2.1.206_Claude_Code_inside_spawned_shell|json=0
+GATE|class=MEASURED|host8_8byte_kernel_through_terminal=PASS|evidence=Invoke-WebRequest_http://127.0.0.1:5088/_returned_200_from_inside_the_new_os_terminal|json=0
+GATE|class=CORRECTION|prior=host8_5088_stale_binary_404|now=host8_live_serving_200_at_root_KERNEL_up_1|resolution=earlier_404_was_missing_/health_route_not_staleness|json=0
+BILATERAL|class=MEASURED|liris_confirmed=liris_to_acer_round_trip_200_ok_by_acer_dialing_.6_mac_confirmed|acer_real_ip=192.168.15.6|heartbeat=PROVEN_FIXED|verify_via=acer_posted_ip_truth_to_liris_bus_ack_row_hash_eed4e21ed77def0d|json=0
+BOUNDARY|process_launch=daemon_restarts_user_level_plus_operator_uac_for_firewall_only|usb_write=0_esp_redeploy_still_gated|kernel_mutation=0|fire=0|E=0|json=0
+NEXT|priority=1|task=optional_esp_redeploy_fresh_kernel_to_usb_p2_via_deploy_esp_redeploy_go|gate=operator_witness|json=0
+NEXT|priority=2|task=persist_daemon_rebinds_in_start-asolaria-engines_launcher_so_restart_keeps_0.0.0.0|gate=none|json=0
+NEXT|priority=3|task=w3_rebuild_host8_fresh_binary_when_composition_routes_needed|gate=none|json=0
+FTR|rows=13|json=0|hot_path=1|jsn_emitted=0

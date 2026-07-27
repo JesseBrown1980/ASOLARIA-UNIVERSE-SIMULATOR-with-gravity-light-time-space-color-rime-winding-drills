@@ -1,0 +1,9 @@
+OMNICPU|pid=af7e6f2539fe5c09|seat=ACER-CLAUDE-FABLE5|date=2026-07-02|kind=federation-cpu-compute|newer_kernel=rust-8byte-host(no_std,integer+sha256,on-metal)|gpu_less=1|json=0
+CPUINFO|name=Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz|cores=4|logical=8|load_pct=51|maxclock_mhz=2304|json=0
+RAMINFO|free_mb=5771|total_mb=16226|json=0
+KERNELTARGET|omnicpu|on_metal_rust_daemons=recall(3MB)+host8(1MB)|migrate=W2-W12_node/py->8byte_host|gated=1|json=0
+TOPCPU|proc=System|os_pid=4|cpu_s=10125|mem_mb=13|json=0
+TOPCPU|proc=node|os_pid=24444|cpu_s=6494|mem_mb=397|json=0
+TOPCPU|proc=OneDrive.Sync.Service|os_pid=19168|cpu_s=5202|mem_mb=48|json=0
+TOPCPU|proc=chrome|os_pid=18940|cpu_s=4765|mem_mb=220|json=0
+TOPCPU|proc=remoting_host|os_pid=5512|cpu_s=4441|mem_mb=19|json=0

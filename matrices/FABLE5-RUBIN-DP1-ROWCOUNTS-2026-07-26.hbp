@@ -1,0 +1,16 @@
+DP1HDR|schema=ASOLARIA-ABSORB-SKY-V1|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|cube=bd6797358bb77d69|prior=ee947ec42da1bbe5|date=2026-07-26|json=0
+SOURCE|archive=RUBIN_LSST|release=DP1|via=dp1.lsst.io/overview/observations.html|auth_required=0|http=200|released=2025-06-30|updated=2026-01-08|tag=MEASURED|json=0
+SUPERSEDES|was=ROWCOUNTS_rubin_BEHIND_401|now=MEASURED_DP1_INVENTORY|route=published_release_docs|accounts_created=0|json=0
+DP1|fields=7|visits=1786|nights=55|bands=6|tracts_listed=28|tracts_unique=27|camera=LSSTComCam|tag=MEASURED|json=0
+BANDVISITS|u=106+g=469+r=548+i=313+z=285+y=65|tag=MEASURED|json=0
+FIELD|k=47tuc|pid=3f456ab3316e858f|prime=2|visits=66|epochs=4|tracts=2|lanes=7|status=MEASURED|json=0
+FIELD|k=lowecliptic|pid=b88180056551be58|prime=3|visits=159|epochs=5|tracts=6|lanes=7|status=MEASURED|json=0
+FIELD|k=fornax|pid=36aa1f6bdab64d4e|prime=5|visits=42|epochs=2|tracts=4|lanes=7|status=MEASURED|json=0
+FIELD|k=ecdfs|pid=4bfccdb02323556c|prime=7|visits=855|epochs=21|tracts=4|lanes=7|status=MEASURED|json=0
+FIELD|k=edfs|pid=03fab7f1505cfd02|prime=11|visits=272|epochs=9|tracts=4|lanes=7|status=MEASURED|json=0
+FIELD|k=lowgalactic|pid=a843e041a82d90aa|prime=13|visits=292|epochs=10|tracts=4|lanes=7|status=MEASURED|json=0
+FIELD|k=seagull|pid=71d6bd31a29d4705|prime=17|visits=100|epochs=4|tracts=4|lanes=7|status=MEASURED|json=0
+OBSERVATION|edfs_tract_list_repeats_2234|listed=4|unique=3|source=rubin_published_table|not_corrected_here|json=0
+DP2|status=PENDING|early_release=2026-07-27|full_release=2026-10_to_12|quote=data_preview_2_has_not_yet_been_released|camera=LSSTCam|json=0
+SECTION|law=visits_are_the_functions_in_sections|unit=visit|independently_fetchable=1|via=butler_dataId|json=0
+DP1FTR|receipt=d0fd1c7b231be8517be70b761ab241f6|rows=16|json=0|hot_path=1

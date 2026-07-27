@@ -1,0 +1,9 @@
+ROUTEMAPHDR|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|ts=2026-07-04T21:30:00Z|task=asi-os-4600-render-route|emitter=fable5-subagent-omnispindle|json=0
+MEASURED|port=4600|win_pid=2380|up=1|api_live=ASIOSLIVE-tuple-ok|routes=/,/index.html,/health,/api/live,/term/spawn,/term/input,/term/kill,/term/stream,/win/launch|office_route=NONE|catchall=404|json=0
+MEASURED|probes_404=/fable5-dashboard.html,/fable5,/fable5-dashboard,/office,/offices,/render,/dashboard,/api/office,/api/render,/offices/FABLE5-8467a937cba309f7/fable5-dashboard.html|binary_consistent_with_source=1|source=C:/asolaria-acer/asolaria-asi-os/src/main.rs@82-124|json=0
+MEASURED|port=4949|win_pid=15996|listening=1|answers=0|stall_probe=45s_zero_bytes|known_cause=unbounded_visualFieldState_single_thread_stall|cause_source=commit_8d423e0b_message|json=0
+MEASURED|owning_fable5_routes=:4949/fable5-hub,:4949/fable5,:4949/api/fable5/unified-pipe.hbp|wired_by=commit_8d423e0b_2026-07-02|serves=fable5-hub.html_9632B+FABLE5-UNIFIED-DASHBOARD-PIPE-2026-07-02.hbp|not_the_render=1|json=0
+MEASURED|render_file=D:/PID-Registration-Office/offices/FABLE5-8467a937cba309f7/fable5-dashboard.html|bytes=245003|mtime=2026-07-04T17:59|served_by=NO_ROUTE_ANYWHERE|grep_4949_server=no_match|grep_4600_source=no_match|json=0
+WIRING|lane=A|target=:4600|edit=add_match_arm_GET_/fable5-dashboard.html+/fable5_in_main.rs_before_line123_catchall|body=std::fs::read_office_file_per_request|then=cargo_build_release+restart_win_pid_2380|per_request_read_means_rerenders_surface_without_further_restart=1|json=0
+WIRING|lane=B|target=:4949|edit=add_/fable5-dashboard_block_beside_line_1871_super-dashboard-server.mjs_readFileSync_fable5-dashboard.html|then=node_process_restart_which_also_unwedges_stall|json=0
+BOUNDARY|restart=GATED_not_performed_per_run_constraint|no_fake_seal=1|no_system_affirmed=1|fabric_mcp_manifest+sister_organ=timeout_via_4949_stall|render_file_untouched=1|no_rerender_cranked=1|json=0

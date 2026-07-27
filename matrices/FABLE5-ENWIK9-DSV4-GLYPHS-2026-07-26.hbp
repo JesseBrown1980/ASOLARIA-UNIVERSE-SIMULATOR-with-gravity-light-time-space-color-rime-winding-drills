@@ -1,0 +1,9 @@
+E9HDR|schema=ASOLARIA-GLYPH-PREDICT-V1|scale=enwik9|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|date=2026-07-26|json=0
+CORPUS|name=enwik9|bytes=1000000000|cut_from=enwik10|utf8_replacements=24|tag=MEASURED|json=0
+ALPHABET|source=deepseek-ai/DeepSeek-V4-Pro|glyphs=129280|table_bytes=6367146|tag=MEASURED|json=0
+SEGMENT|method=real_bpe_tokenizers_rs|not_greedy=1|glyphs_out=283147050|bytes_per_glyph=3.5317|distinct_used=92655|tag=MEASURED|json=0
+UNCHARGED|byte_h0=5.2442|glyph_h0=10.9978|byte_payload=655528276|glyph_payload=389249290|tag=MEASURED|json=0
+CHARGED|glyph_total=395616436|glyph_bpc=3.1649|byte_bpc=5.2442|margin=259911840|verdict=WINS|tag=MEASURED|json=0
+PROJECTION|from=1MB_greedy|projected=284003854|measured=259911840|ratio=0.9152|method_differs=greedy_vs_bpe|tag=MEASURED|json=0
+NOTE|order0_entropy_is_not_a_codec|measures=predictability|do_not_place_on_cm3ti_crown_ladder|json=0
+E9FTR|receipt=fcbc9873ea4dd2b0eeef4b8a4621e04b|rows=9|json=0|hot_path=1

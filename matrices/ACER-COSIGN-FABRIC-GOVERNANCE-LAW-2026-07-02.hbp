@@ -1,0 +1,6 @@
+SPECIALOPJESSECOSIGN|doc=ACER-COSIGN-FABRIC-GOVERNANCE-LAW-2026-07-02|seat=ACER-CLAUDE-FABLE5|operator=SPECIAL-OP-JESSE|target=FABRIC-GOVERNANCE-LAW-2026-07-02|status=COSIGNED_AND_APPENDED_TO_ACER_CHAIN|json=0
+CHAINAPPEND|chain=acer-cosign:4953|seq=3581|row_hash=c9fb9eef39f0a2b7|antecedent_prev=af9db39e2413a418|link=intact|schema=fabric-governance-law-cosign-2026-07-02.v1|json=0
+ACERLAW|law_sha256=4740a29e1ca31bc2e196e728c6584b98cff76738acc7db1e99dffed9180c42af|status=CANON|json=0
+LIRISREF|liris_cosign=reductions@c9ae7be:SPECIAL-OP-JESSE-COSIGN-FABRIC-GOVERNANCE-LAW-2026-07-02.hbp|liris_law_sha256=b9993324b72978da72378a9380d2f55c52203c58bf16533221b0163dd2ace95c|verified_via=github_mediator|json=0
+BILATERAL|acer=chain-append(seq3581)|liris=receipt(cosign_chain_append=0)|law=DUAL-COSIGNED|both_seats=canon|json=0
+SAFETY|append=audit-record-only|fire=0|dispatch=0|process_launch=0|no-execution-materialized|json=0
