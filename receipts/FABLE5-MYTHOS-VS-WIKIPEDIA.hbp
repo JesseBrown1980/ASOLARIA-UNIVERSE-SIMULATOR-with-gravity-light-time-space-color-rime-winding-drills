@@ -1,0 +1,12 @@
+MVWHDR|schema=ASOLARIA-MYTHOS-VS-WIKIPEDIA-V1|seat=ACER-CLAUDE-FABLE5|pid=8467a937cba309f7|date=2026-07-27|json=0
+PIPELINE|grid=64|centre=32,32,32|partition=blue_dominant|tau=2|identical_both=1|json=0
+THIRD|n=1|triples=111111111|blue=31599890|occ=7941|mass=31598792|cv=2.408492|rmax=50|json=0
+THIRD|n=2|triples=111111111|blue=31587313|occ=7884|mass=31586236|cv=2.288333|rmax=48|json=0
+THIRD|n=3|triples=111111111|blue=31588093|occ=7705|mass=31587046|cv=2.218202|rmax=49|json=0
+THRICE|cv_spread_pct=8.2555|occ_spread_pct=3.0089|agree=0|json=0
+SPHERE|k=MYTHOS|triples=1265|blue=382|occ=69|occ_pct=0.0263|mass=332|rmax=44|rmean=19.9157|shells=3|cv=nan|centre=0.0000|ring_r=7|json=0
+SPHERE|k=WIKIPEDIA|triples=333333333|blue=94775296|occ=9264|occ_pct=3.5339|mass=94774184|rmax=50|rmean=19.5836|shells=12|cv=2.425722|centre=0.0000|ring_r=9|json=0
+SIMILARITY|wave_pearson=0.989018|wave_cosine=0.949614|radial_pearson=0.935301|raw_pearson=0.718739|json=0
+LARGER|wikipedia_wins=4|of=5|rounder=WIKIPEDIA|json=0
+GGUF|k=ASOLARIA-MYTHOS-VS-WIKIPEDIA.gguf|bytes=5343456|sha256=8fbc74f7374644af2ac2a081853d6987931837ceb445fed10bf6cb6b82acd5f2|json=0
+MVWFTR|receipt=fc6ab694f88874ce7e4b0146c9fe2a1a|rows=12|hot_path=1|json=0
