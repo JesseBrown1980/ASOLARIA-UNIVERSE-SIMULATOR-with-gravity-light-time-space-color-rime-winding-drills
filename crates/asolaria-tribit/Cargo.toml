@@ -1,0 +1,17 @@
+[package]
+name = "asolaria-tribit"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.81"
+license = "MIT OR Apache-2.0"
+description = "Balanced-ternary trits with three zeros, an exact integer 27-point prism, and fixed-size HBI seeds. no_std, zero dependencies."
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true

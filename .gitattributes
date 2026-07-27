@@ -1,0 +1,4 @@
+*.png binary
+*.wasm binary
+*.gguf binary
+*.hbi binary
