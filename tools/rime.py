@@ -13,7 +13,7 @@ without ever materialising the body.
 
 Stdlib only. No dependencies. Python 3.8+.
 """
-import sys, os, struct, hashlib, bisect
+import sys, os, struct, hashlib, bisect, tempfile, threading
 
 MAGIC = b"RIME1\x00"
 HDR = struct.Struct("<6sQI32s")
@@ -35,7 +35,8 @@ def carve(raw):
 
 
 def write_rime(path, out=None):
-    raw = open(path, "rb").read()
+    with open(path, "rb") as source:
+        raw = source.read()
     runs = carve(raw)
     out = out or path + ".rime"
     with open(out, "wb") as f:
@@ -48,20 +49,55 @@ def write_rime(path, out=None):
 
 class Body:
     def __init__(self, path):
+        self.path = path
         self.f = open(path, "rb")
-        magic, self.total, nruns, self.sha = HDR.unpack(self.f.read(HDR.size))
-        if magic != MAGIC:
-            raise ValueError("not a .rime file: " + path)
-        self.offs, self.pos, self.lens = [], [], []
-        p = HDR.size
-        for _ in range(nruns):
-            self.f.seek(p)
-            off, ln = RUN.unpack(self.f.read(RUN.size))
-            self.offs.append(off)
-            self.pos.append(p + RUN.size)
-            self.lens.append(ln)
-            p += RUN.size + ln
-        self.slice_bytes = p
+        self._io_lock = threading.Lock()
+        try:
+            size = os.fstat(self.f.fileno()).st_size
+            header = self.f.read(HDR.size)
+            if len(header) != HDR.size:
+                raise ValueError("truncated .rime header: " + path)
+            magic, self.total, nruns, self.sha = HDR.unpack(header)
+            if magic != MAGIC:
+                raise ValueError("not a .rime file: " + path)
+            max_runs = max(0, (size - HDR.size) // (RUN.size + 1))
+            if nruns > max_runs:
+                raise ValueError("impossible run count in .rime file: " + path)
+
+            self.offs, self.pos, self.lens = [], [], []
+            p, previous_end = HDR.size, 0
+            for _ in range(nruns):
+                self.f.seek(p)
+                packed = self.f.read(RUN.size)
+                if len(packed) != RUN.size:
+                    raise ValueError("truncated .rime run header: " + path)
+                off, ln = RUN.unpack(packed)
+                data_pos = p + RUN.size
+                run_end = off + ln
+                if ln == 0 or off < previous_end or run_end > self.total:
+                    raise ValueError("invalid or overlapping .rime run: " + path)
+                if data_pos + ln > size:
+                    raise ValueError("truncated .rime run payload: " + path)
+                self.offs.append(off)
+                self.pos.append(data_pos)
+                self.lens.append(ln)
+                previous_end = run_end
+                p = data_pos + ln
+            if p != size:
+                raise ValueError("trailing bytes in .rime file: " + path)
+            self.slice_bytes = p
+        except Exception:
+            self.f.close()
+            raise
+
+    def close(self):
+        self.f.close()
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type, exc, tb):
+        self.close()
 
     def __len__(self):
         return self.total
@@ -78,8 +114,13 @@ class Body:
             off, ln = self.offs[i], self.lens[i]
             lo, hi = max(off, start), min(off + ln, end)
             if hi > lo:
-                self.f.seek(self.pos[i] + (lo - off))
-                out[lo - start:hi - start] = self.f.read(hi - lo)
+                wanted = hi - lo
+                with self._io_lock:
+                    self.f.seek(self.pos[i] + (lo - off))
+                    chunk = self.f.read(wanted)
+                if len(chunk) != wanted:
+                    raise ValueError("truncated .rime payload during read: " + self.path)
+                out[lo - start:hi - start] = chunk
             i += 1
         return bytes(out)
 
@@ -90,13 +131,46 @@ class Body:
             yield self.read(p, n)
             p += n
 
+    def sha_matches(self):
+        digest = hashlib.sha256()
+        for chunk in self.stream():
+            digest.update(chunk)
+        return digest.digest() == self.sha
+
 
 def human(n):
     return format(n, ",")
 
 
+def parse_byte_range(value, total):
+    """Return an inclusive (start, end) pair for one RFC 7233 byte range."""
+    if not value:
+        return None
+    if not value.startswith("bytes="):
+        raise ValueError("unsupported range unit")
+    spec = value[6:].strip()
+    if not spec or "," in spec or "-" not in spec:
+        raise ValueError("invalid byte range")
+    first, last = spec.split("-", 1)
+    if not first:
+        if not last.isdigit() or int(last) <= 0 or total <= 0:
+            raise ValueError("invalid suffix byte range")
+        count = min(int(last), total)
+        return total - count, total - 1
+    if not first.isdigit() or (last and not last.isdigit()):
+        raise ValueError("invalid byte range")
+    start = int(first)
+    if start >= total:
+        raise ValueError("unsatisfiable byte range")
+    end = total - 1 if not last else min(int(last), total - 1)
+    if end < start:
+        raise ValueError("unsatisfiable byte range")
+    return start, end
+
+
 def cmd_stat(path):
-    raw = open(path, "rb").read()
+    with open(path, "rb") as source:
+        raw = source.read()
     runs = carve(raw)
     sl = HDR.size + sum(RUN.size + len(c) for _, c in runs)
     z = raw.count(0)
@@ -118,37 +192,66 @@ def cmd_slice(path, out=None):
 
 
 def cmd_restore(rp, out=None):
-    b = Body(rp)
     out = out or (rp[:-5] if rp.endswith(".rime") else rp + ".out")
-    h = hashlib.sha256()
-    with open(out, "wb") as f:
-        for c in b.stream():
-            f.write(c)
-            h.update(c)
-    ok = h.digest() == b.sha
-    print("  restored %s  %s B" % (out, human(b.total)))
-    print("  sha256 %s" % ("MATCHES the original" if ok else "*** MISMATCH ***"))
-    return 0 if ok else 1
+    out_abs = os.path.abspath(out)
+    if os.path.abspath(rp) == out_abs:
+        raise ValueError("restore output cannot replace the .rime input")
+    out_dir = os.path.dirname(out_abs) or os.curdir
+    prefix = "." + os.path.basename(out_abs) + "."
+    fd, temporary = tempfile.mkstemp(prefix=prefix, suffix=".rime-restore", dir=out_dir)
+    os.close(fd)
+    try:
+        with Body(rp) as b:
+            h = hashlib.sha256()
+            with open(temporary, "wb") as f:
+                for c in b.stream():
+                    f.write(c)
+                    h.update(c)
+                f.flush()
+                os.fsync(f.fileno())
+            ok = h.digest() == b.sha
+            if not ok:
+                print("  refused to replace %s" % out)
+                print("  sha256 *** MISMATCH ***")
+                return 1
+            os.replace(temporary, out_abs)
+            temporary = None
+            print("  restored %s  %s B" % (out, human(b.total)))
+            print("  sha256 MATCHES the original")
+            return 0
+    finally:
+        if temporary and os.path.exists(temporary):
+            os.unlink(temporary)
 
 
 def cmd_verify(rp, orig):
-    b = Body(rp)
-    h = hashlib.sha256()
-    for c in b.stream():
-        h.update(c)
-    real = hashlib.sha256(open(orig, "rb").read()).hexdigest()
-    mine = h.hexdigest()
-    print("  original   " + real)
-    print("  from slice " + mine)
-    print("  " + ("BYTE-EXACT" if real == mine else "*** MISMATCH ***"))
-    print("  slice resident: %s B for a %s B body  (%.0fx)"
-          % (human(b.slice_bytes), human(b.total), b.total / float(max(1, b.slice_bytes))))
-    return 0 if real == mine else 1
+    with Body(rp) as b:
+        h = hashlib.sha256()
+        for c in b.stream():
+            h.update(c)
+        real_hash = hashlib.sha256()
+        with open(orig, "rb") as original:
+            while True:
+                chunk = original.read(1 << 22)
+                if not chunk:
+                    break
+                real_hash.update(chunk)
+        real = real_hash.hexdigest()
+        mine = h.hexdigest()
+        print("  original   " + real)
+        print("  from slice " + mine)
+        print("  " + ("BYTE-EXACT" if real == mine else "*** MISMATCH ***"))
+        print("  slice resident: %s B for a %s B body  (%.0fx)"
+              % (human(b.slice_bytes), human(b.total), b.total / float(max(1, b.slice_bytes))))
+        return 0 if real == mine else 1
 
 
 def cmd_serve(rp, port=8731):
     from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
     body = Body(rp)
+    if not body.sha_matches():
+        body.close()
+        raise ValueError("stored body SHA does not match reconstructed bytes")
 
     class H(BaseHTTPRequestHandler):
         protocol_version = "HTTP/1.1"
@@ -168,20 +271,34 @@ def cmd_serve(rp, port=8731):
             self.end_headers()
 
         def do_HEAD(self):
-            self._send(200, body.total)
+            rng = self.headers.get("Range")
+            if not rng:
+                self._send(200, body.total)
+                return
+            try:
+                start, end = parse_byte_range(rng, body.total)
+            except ValueError:
+                self._send(416, 0, {"Content-Range": "bytes */%d" % body.total})
+                return
+            self._send(206, end - start + 1,
+                       {"Content-Range": "bytes %d-%d/%d" % (start, end, body.total)})
 
         def do_GET(self):
             rng = self.headers.get("Range")
-            if rng and rng.startswith("bytes="):
-                a, _, b2 = rng[6:].partition("-")
-                start = int(a) if a else 0
-                end = int(b2) if b2 else body.total - 1
-                end = min(end, body.total - 1)
+            if rng:
+                try:
+                    start, end = parse_byte_range(rng, body.total)
+                except ValueError:
+                    self._send(416, 0, {"Content-Range": "bytes */%d" % body.total})
+                    return
                 self._send(206, end - start + 1,
                            {"Content-Range": "bytes %d-%d/%d" % (start, end, body.total)})
                 p = start
                 while p <= end:
-                    c = body.read(p, min(1 << 20, end - p + 1))
+                    wanted = min(1 << 20, end - p + 1)
+                    c = body.read(p, wanted)
+                    if len(c) != wanted:
+                        raise IOError("short .rime read")
                     self.wfile.write(c)
                     p += len(c)
             else:
@@ -191,13 +308,17 @@ def cmd_serve(rp, port=8731):
 
     srv = ThreadingHTTPServer(("127.0.0.1", port), H)
     print("  body   %s B" % human(body.total))
-    print("  slice  %s B resident   (%.0fx)"
-          % (human(body.slice_bytes), body.total / float(max(1, body.slice_bytes))))
+    print("  slice file  %s B, %s indexed runs   (%.0fx body/slice)"
+          % (human(body.slice_bytes), human(len(body.offs)),
+             body.total / float(max(1, body.slice_bytes))))
     print("  http://127.0.0.1:%d/   Range supported. body never materialised." % port)
     try:
         srv.serve_forever()
     except KeyboardInterrupt:
         print("stopped")
+    finally:
+        srv.server_close()
+        body.close()
 
 
 def main(argv):
