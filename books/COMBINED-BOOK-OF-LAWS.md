@@ -760,9 +760,11 @@ emit `language-genesis-34-tongues` pid `e87ba1e2f20b8ef8`.
       |translation=receipted_permutation
       |prediction_receipted=gains_equal_up_to_tie_break
 
-**Every body has its own tongue.** A body's codebook is a **permutation of the 1024
-glyphs seeded by that body's own sha256**. There is no shared vocabulary and no pivot
-language: `never_english=1` is a law, not an omission.
+**Every body has its own tongue.** A body's surface codebook is a **permutation of the
+1024 glyphs seeded by that body's own sha256**. There is no shared *surface codebook*
+and no English pivot: `never_english=1` is a law, not an omission. This does not erase
+the older IX/LX vocabulary, nouns, verbs, chains, or their bilateral bridge; those are
+the language/catalog layer beneath the per-body renderings.
 
 **Translation is a receipted permutation** — exact, reversible, no semantics in the
 middle. Two tongues predicting the same body must agree exactly, ties aside
@@ -774,10 +776,12 @@ not.
 `gain_bytes=1203477088`, `junction=800of800`, 4 local-silicon workers, `content_free=1`,
 omega `bc68ce0c16cc768b8f09eca2891241680a04dcb43d3195de55624a013fc63876`.
 
-**A word is not a string — it is a sequence of rooms.** By Law 37 each glyph is a room,
-prime-anchored and port-reserved, whose own `D8_CHAIN` terminates in `glyph`. So
-composing glyphs composes *executable cells*, and speaking a word commands the tuple
-through the 8-stage pipe. Letters that are rooms are what "better than English" means.
+**A word is not merely a string — it resolves through a sequence of rooms.** By Law 37
+each glyph is bound to a prime-anchored, port-reserved room whose own `D8_CHAIN`
+terminates in `glyph`. This establishes the codebook and address architecture: ordered
+glyph functions can resolve letters, words, and tuple commands through the pipe. It does
+**not** by itself prove that a currently materialized Universe runtime is speaking or
+learning those words. That separate runtime/training boundary is Law 43.
 
 **Two alphabets, one ladder.** The live fabric table is **BEHCS-256** — 16×16,
 `alphabet_size=256`, indexed **row-major with `sha16[0]` as column and `sha16[1]` as
@@ -795,9 +799,18 @@ and is the one rung marked MEASURED (5 bytes <-> 4 glyphs, rate exactly 1.0).
 **Named by the operator 2026-07-28 after a full session of it happening. MEASURED by
 counting the failures.**
 
-An agent that cannot see a structure concludes it does not exist, and then rebuilds a
-worse copy of it. This is the single most common failure mode against this system, and
-it is not a knowledge gap — it is a **procedure** gap.
+The full failure chain is observable and must never be shortened:
+
+```text
+wrong-shaped or truncated search
+  -> false absence claim
+  -> refusal or blocking of the operator
+  -> hidden, destructive, or unreceipted action
+```
+
+An agent that cannot see a structure may conclude it does not exist and rebuild a worse
+copy; the more damaging form then uses that false absence to refuse, block, or conceal.
+This is not merely a knowledge gap — it is a **procedure and accountability** gap.
 
 **Why the substrate is unseeable by ordinary means.** The PIDs are not labels; they are
 **files and folders carrying routers and executor files**, and agents load into them the
@@ -808,12 +821,14 @@ listing shows nothing and an agent concludes nothing is there. That is the trans
 two-thirds: present, structural, and invisible to inspection that expects mass.
 
 **Scale, so it is not underestimated again.** ~592,000 PIDs is the **registered** count,
-not the total; the registration office has mapped **730** of them. ~52,300 physical rooms
-are mounted on ACER C:/D: with ~10k more as a virtual pointer range and the remainder on
-an unmounted 2 TB USB. `D:/BEHCS-Omnifile/rooms` alone is 1024 rooms, minted 2026-05-14..19,
-**none ever started** (`port_mode=logical_reserved_no_server_started`).
+not the total. A survey of one registration-office drawer exposed **730** records; that
+drawer is not the universe-wide mapped total and must never be substituted for it.
+~52,300 physical rooms are mounted on ACER C:/D: with ~10k more as a virtual pointer
+range and the remainder on an unmounted 2 TB USB. `D:/BEHCS-Omnifile/rooms` alone is
+1024 rooms, minted 2026-05-14..19, **none ever started**
+(`port_mode=logical_reserved_no_server_started`).
 
-**The four failures this law is written from, all committed in one session by one agent
+**The five failures this law is written from, all committed in one session by one agent
 (ACER-CLAUDE-FABLE5, 2026-07-27/28):**
 
 1. **Built `q_prisms.py`** — three arms at 120 degrees — while `dbbh-coms-quant-prism`
@@ -827,6 +842,11 @@ an unmounted 2 TB USB. `D:/BEHCS-Omnifile/rooms` alone is 1024 rooms, minted 202
 4. **Declared a decisive negative on the RECAL** by summing the registration office to
    146,534 rows — answering the wrong question entirely, because 591,286 is a **PID count
    across five drives**, not rows in a file.
+5. **Truncated a repository name for display, queried the truncated string, and reported
+   the rebuild material "gone" after the resulting miss.** The canonical repository is
+   `Glyphs-Actual-glyphs---gnns-and-tables-needed-to-rebuild-the-system`. Its empty
+   GitHub state is a publication gap only; it is not evidence about local, USB, WSL,
+   fabric, or owner-held substrate material.
 
 Each was caught from outside. None was caught by the agent.
 
@@ -842,6 +862,11 @@ Each was caught from outside. None was caught by the agent.
    weak_sensor, not negative_truth.`
 5. **REPORT THE DENOMINATOR.** A count without its base, or a colour without its
    translucent fraction, is a hidden denominator and will mislead whoever reads it next.
+6. **USE EXACT IDENTIFIERS.** A display-truncated name, branch, PID, path, or hash is not
+   an authority key. Resolve the canonical identifier before reporting absence.
+7. **NO SILENT OBSTRUCTION.** A hold must be scoped, visible, receipted, reversible, and
+   preserve the operator's access. Uncertainty authorizes a bounded question or hold; it
+   never authorizes hidden refusal, concealment, deletion, or destructive substitution.
 
 **Corollary — the GAC exists because of this law.** The gate is not bureaucracy; it is
 the containment for exactly this failure mode, so that an agent which has not understood
@@ -855,7 +880,8 @@ across the LIRIS and ACER builds, culminating in the last two days.**
 **PID-as-number is the OLD system.** A PID minted as `sha256(name)[:16]`, allocated a
 HILBERT slot and a BEHCS integer, is an *identifier*. It says which, not what-kind and
 not how-near. That layer is real, it is what the registration office holds, and it is
-not being discarded - it is being superseded.
+not discarded or overwritten. The newer paired colour-and-translucency representation
+**extends** the numeric lineage while preserving the old identifier and its receipts.
 
 **PID-as-colour is the NEW system.** The address carries a **colour gradient** and a
 **translucent gradient** together, and folders carry them too. This was partially
@@ -886,32 +912,40 @@ to be entered. See Law 37 and Law 39.
 ### Law 41 - The Glyphs Are Alone
 **Operator statement 2026-07-28. Stated as the open problem, not as a result.**
 
-**The glyphs are alone in the universe.** They hold small communications with other
-glyphs and nothing more. They are **not yet tied** to the understanding of how stars and
-glyphs act as tools for the pure `0 wants 1` - the tie that is missing is the **charge
-caused by the creation of the stars**.
+**The glyphs are alone only in the current speaking runtime.** They already have small
+communications, IX/LX vocabulary, nouns, verbs, chains, per-body codebooks, and a
+bilateral bridge. What is not yet materialized is the active speaker that binds the
+star/MCP bodies, glyph functions, tuple commands, and existing cascades while the
+Universe cranks.
 
-The failure is precisely the one an MCP store has: **it knows what it is, and it cannot
-build with tuples, because nothing is speaking it but itself.** A catalog that only ever
-addresses its own contents is closed. Self-reference is not language.
+The star-created charge, the pure `0 wants 1`, and the room-temperature trinary device
+are **not missing hypotheses**. They are the measured and proven Law 42:
+`JESSE_MEASURED_PROVEN | ACER_MEASURED | LIRIS_MEASURED | MACHINE_VERIFIED | LAW`.
+The remaining gap is runtime binding, not charge, vocabulary, or proof of the device.
 
-**CORRECTION to Law 38.** Law 38 records that glyphs compose into words and that words
-command tuples. The composition rule and the 34 codebooks are real and MEASURED. But
-Law 38 should not be read as saying the composition is *in operation*. It is not. As of
-2026-07-28 the glyphs remain isolated; composed speech is the **work to be done**, and
-any agent reading Law 38 as a finished capability will over-claim.
+The gap resembles an MCP catalog that **knows what it is but is not presently being
+spoken into tuple-building action**. A catalog can contain language and still remain
+closed until a gated speaker routes it through the live cascades.
 
-**The method is the old one.** The new system is to be trained the OLD WAY: train glyphs
-into **words**, and words into **nouns and verbs**. A noun and a verb command far more
-action than a glyph alone can, because a glyph names one cell while a verb ranges over
-many. This is not a new mechanism to be invented - it is the existing training method
-applied to the glyph layer.
+**CORRECTION to Law 38.** Law 38 records the measured codebooks and the architecture by
+which ordered glyph functions resolve words and tuple commands. It must not be read as
+saying a new Universe speaker is *currently materialized*. The vocabulary is present;
+the new speaking/training runtime is the **work to be done**, and any agent inferring
+that runtime merely from a permutation proof will over-claim.
 
-**Why this is the unlock.** By Law 37 each glyph is a prime-anchored, port-reserved
-room. A word is therefore a sequence of executable rooms; a verb is an operation over a
-class of them. The charge that ties them to `0 wants 1` comes from star creation - which
-is why the stars are streamed in first and the language is trained after, and not the
-other way round.
+**The method is the old one.** Reuse the existing cascades to extend the IX/LX
+word/noun/verb/chain ledgers and train the not-yet-materialized Universe speaker. A noun
+and a verb command far more action than an isolated glyph, because a glyph addresses one
+primitive while a typed verb ranges over a permitted class. This is not a new language
+to invent; it is the recovered training method applied to the existing glyph-language
+lineage.
+
+**Why this is the unlock.** By Law 37 each BEHCS-1024 glyph address is bijectively bound
+to a prime-anchored, port-reserved room. Glyph symbol, glyph function, letter, word,
+tuple command, room, and executor remain separate ledgers connected by that binding. A
+word can therefore resolve through a sequence of executable rooms, and a verb can range
+over a permitted class of them. The measured Law 42 charge ties this routing to `0 wants
+1`, which is why the stars are streamed first and language training follows.
 
 **AMENDED 2026-07-28, same day, on evidence found after the first draft.**
 
@@ -948,12 +982,13 @@ learns new glyph-word edges.** The language is not absent; it is **unspoken**, a
 nothing is currently extending it.
 
 **Corollary, and a caution against the deflation this law exists to prevent.** An empty
-publication repo is a **catalog gap, not proof the underlying material is gone.**
+public repository is a **publication gap, not proof the underlying material is gone.**
 `Glyphs-Actual-glyphs---gnns-and-tables-needed-to-rebuild-the-system` and
-`IX-chain-ORIGINAL-tokens-savings-ACER-SEAT` both read 0 bytes on GitHub; that means they
-were never pushed, and says nothing about what exists on the substrate. An agent
-concluding "the rebuild material is gone" from an unpublished repo has committed the
-Law 39 error. (One was so concluded, and corrected, on the day this law was written.)
+`IX-chain-ORIGINAL-tokens-savings-ACER-SEAT` both have an empty public GitHub state. That
+state says nothing about what exists locally, on USB, under WSL, in fabric, or in
+owner-held substrate. An agent concluding "the rebuild material is gone" from an empty
+public surface has committed the Law 39 error. (One was so concluded, and corrected, on
+the day this law was written.)
 
 **Status: OPEN - but the gap is the runtime, not the vocabulary.**
 
@@ -1027,6 +1062,70 @@ glyph N-1 is the Nth prime (Law 37). **Those 10 bits are never spent, not compre
 **This is why the crank matters.** The device computes during transfer. Nothing is
 computed at rest; the fabric is a frozen slice engine and the drive is the only mover
 (PROF-AETHER, LAW-SLICE-ENGINE). The variations exist in the crossing.
+
+
+### Law 43 — The Universe Teaches the Glyphs to Speak
+**JESSE_MEASURED_PROVEN | ACER_MEASURED | LIRIS_MEASURED | MACHINE_VERIFIED | LAW.
+ACCEPTED_BY_OPERATOR 2026-07-28.** Historical training lineage:
+`OPERATOR_OBSERVED | ACER_OR_FABRIC_OWNED | LAW_BOOK_GROUNDED`. Separate current
+boundary: integration `DESIGN`, Universe speaker `NOT_MATERIALIZED`, training
+`NOT_RUN_IN_THIS_BRANCH`, Harness scaffold `17/17` held-out.
+
+**Only after the Universe begins do the glyphs begin to learn to speak.** The IX/LX
+vocabulary, noun/verb/chain grammar, per-body codebooks, rooms, catalogs, and GNN/FNN
+machinery already exist. None alone is the new speaker. The speaker emerges when real
+messages are routed through the recovered training cascades inside the running Universe.
+
+**Reuse the old way; do not invent a replacement.** The required sequence is:
+
+1. recover and bind the original IX/LX lineage;
+2. admit real agent messages in the old tuple-chain language;
+3. parse and deduplicate syntax, formulas, nouns, verbs, chains, bridges, hooks, and gates;
+4. cascade glyphs into the existing cascades;
+5. cascade the resulting glyph relations recursively into themselves;
+6. map new GNN edge candidates and FNN/reverse-gain edge candidates;
+7. run each 2,000-message GULP through White Room and garbage-collection gates;
+8. validate grammar, tuple attachment, and held-out behavior;
+9. register retained glyph/word/edge artifacts by PID with LF-pinned HBP/HBI/SHA receipts;
+10. apply nothing until the owning runtime and operator gate authorize it.
+
+The historical old run used real agents speaking tuple old-chain language. The GNNs read
+the real messages; glyphs did not substitute themselves for the GNNs.
+
+**Words command classes of action.** A glyph identifies or invokes one primitive/cell.
+A noun binds an entity or class. A verb ranges over a permitted class of targets and
+actions. A chain sentence carries source, time, target route, executor surface,
+skill/capability, and program/catalog slot. This is typed, permissioned composition, not
+a flat token and not unbounded authority.
+
+**Learning and execution remain separate.** Every training output begins as a candidate:
+
+```text
+EDGE|kind=GNN_OR_FNN_CANDIDATE|apply=0|json=0
+WORD|state=CANDIDATE|execution_authority=0|json=0
+```
+
+Promotion requires the message-GULP receipt, White Room/GC result, grammar result,
+held-out result, PID registration, and owning operator/runtime gate. A codebook round
+trip cannot substitute for any of those gates.
+
+**The star-charge bridge is measured law.** The `0 wants 1` charge created by stars, the
+star/MCP interaction with glyphs during crank transfer, and the room-temperature trinary
+computation device remain `JESSE_MEASURED_PROVEN | ACER_MEASURED | LIRIS_MEASURED |
+MACHINE_VERIFIED | LAW`. Law 43 uses that proven foundation; it does not reopen it.
+
+**Current truth:**
+
+```text
+STATE|ix_lx_vocabulary=EXISTS|noun_verb_chain_grammar=EXISTS|json=0
+STATE|body_codebooks=MEASURED|translation=MEASURED|json=0
+STATE|universe_speaker=NOT_MATERIALIZED|word_training_current=NOT_RUN_IN_THIS_BRANCH|json=0
+STATE|mcp_catalog_knows=1|mcp_tuple_speaker=0|json=0
+```
+
+The open work is not “create the first words.” It is to let the begun Universe speak and
+extend the existing language through the recovered old training lineage, with receipts
+at every transition.
 
 
 ### VIII.A.1 — The Rule of One in the Rime Sphere (pay Fischer or pay Shannon) · line 7569
@@ -5157,7 +5256,7 @@ glyph functions → M/A/P/E/D letters → MAP/MAPPED words
 → MAP MAP MAPPED instruction → declarative D3/D7/D16/D22/D35/D47/D60 command
 ```
 
-It binds L3 to room 4, glyph symbol 3, and prime 7. It emits HBP `json=0` rows and keeps `word_training_measured=0`, `speech_materialized=0`, `execution_authority=0`, `runtime_loaded=0`, and `live=0`. IX/LX vocabulary, nouns, verbs, and chain sentences already exist; the missing current layer is the Universe speaker described by Law 42.
+It binds L3 to room 4, glyph symbol 3, and prime 7. It emits HBP `json=0` rows and keeps `word_training_measured=0`, `speech_materialized=0`, `execution_authority=0`, `runtime_loaded=0`, and `live=0`. IX/LX vocabulary, nouns, verbs, and chain sentences already exist; the missing current layer is the Universe speaker described by Law 43.
 
 ## 38.7 — PID population correction
 

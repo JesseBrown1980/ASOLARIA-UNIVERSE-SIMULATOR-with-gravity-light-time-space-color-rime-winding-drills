@@ -94,7 +94,7 @@ The fixture is a grammar specimen, not a claim that the Universe learned or spok
 
 ## The old training method
 
-Law 42 requires the original sequence:
+Law 43 requires the original sequence:
 
 1. real agent messages in old tuple-chain language;
 2. syntax/formula deduplication;

@@ -1,6 +1,6 @@
 # Law 38 — The Thirty-Four Tongues Before Speech
 
-**Status:** `ACCEPTED_BY_OPERATOR 2026-07-28` · `MEASURED_LIRIS_LOCAL` for the sealed LANGUAGEGENESIS receipt · `MEASURED_GITHUB` for the public IX↔LX bridge · `OPERATOR_OBSERVED` / `ACER_MEASURED_TRANSCRIPT` for Acer-local counts · `DESIGN` for the current Universe speaker · `UNVERIFIED` as a loaded live-kernel feature. This is a SkillOpt scaffold, not full SkillOpt.
+**Status:** `ACCEPTED_BY_OPERATOR 2026-07-28` · `VALIDATION_ACCEPTED` by the Harness-edit scaffold at `17/17` held-out scenarios · `MEASURED_LIRIS_LOCAL` for the sealed LANGUAGEGENESIS receipt and repository tests · `MEASURED_GITHUB` for the public IX↔LX bridge · `OPERATOR_OBSERVED` / `ACER_MEASURED_TRANSCRIPT` for Acer-local counts. The language/codebook law is measured; the separate current Universe speaker is `NOT_MATERIALIZED` in this branch. This is a SkillOpt scaffold, not full SkillOpt.
 
 ## 38.0 — Codebook is not speech
 
@@ -106,7 +106,7 @@ Asolaria MCP, Asolaria Code Wiki, Google Code Wiki, and WebMCP can catalog, map,
 mcp_catalog_knows=1|mcp_tuple_speaker=0|catalog_is_not_authority=1
 ```
 
-The missing current layer is the Universe learner/speaker defined by Law 42.
+The missing current layer is the Universe learner/speaker defined by Law 43.
 
 ## 38.7 — Evidence boundary
 

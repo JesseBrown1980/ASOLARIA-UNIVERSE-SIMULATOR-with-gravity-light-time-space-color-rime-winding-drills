@@ -2,12 +2,15 @@
 # core.autocrlf=true on Windows silently rewrote FABLE5-SEE-SELF-64.hbp from 1142 B
 # to 1155 B - one CRLF per row on a 13-row receipt - which broke its own sha256
 # sidecar. The .gguf and .hbi were protected as binary; .hbp and .sha256 were not.
-# Anything whose bytes are hashed, indexed, or read as a tensor is marked -text here
-# so no EOL filter can ever touch it, on any platform, in either direction.
+# Binary tensors remain -text. Text receipts, law books, and checksum sidecars are
+# canonical LF on every seat so their committed bytes and SHA-256 proofs agree.
 * -text
-*.hbp   -text
+*.md    text eol=lf
+*.hbp   text eol=lf
 *.hbi   -text
-*.sha256 -text
+*.sha256 text eol=lf
+.gitattributes text eol=lf
+receipts/LIRIS-*.hbi text eol=lf
 *.gguf  -text binary
 *.png   -text binary
 *.wasm  -text binary
