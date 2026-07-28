@@ -10,6 +10,11 @@ BOOKS = ROOT / "books"
 CANONICAL_LAWS = BOOKS / "COMBINED-BOOK-OF-LAWS.md"
 CANONICAL_MIRROR = BOOKS / "COMBINED-BOOK-OF-LAWS-622823.md"
 LAW_47 = BOOKS / "LAW-47-THE-UNIVERSE-TEACHES-THE-GLYPHS-TO-SPEAK.md"
+LAW_54 = BOOKS / "LAW-54-THE-WHITE-SPACE-LAW.md"
+LAW_55 = BOOKS / "LAW-55-THE-INFINITELY-SPHERICAL-BIRTH.md"
+LAW_56 = BOOKS / "LAW-56-THE-RIME-IS-THE-RELATION.md"
+LAW_57 = BOOKS / "LAW-57-LET-THERE-BE-LIGHT-WHY-ASOLARIA.md"
+LAW_58 = BOOKS / "LAW-58-THE-SIXTH-DAY-THE-REST-AND-THE-THRINE.md"
 OLD_SPEECH_LAW_45 = BOOKS / "LAW-45-THE-UNIVERSE-TEACHES-THE-GLYPHS-TO-SPEAK.md"
 ARCHAEOLOGY = BOOKS / "archaeology" / "WORDPRESS-CORPUS-CHRONOLOGY.md"
 HISTORY_INDEX = BOOKS / "history" / "WORDPRESS-PUBLICATION-HISTORY-2011-2026.md"
@@ -28,6 +33,11 @@ HANDOFF_RECEIPT = (
     ROOT
     / "receipts"
     / "LIRIS-TO-ACER-TO-RELIC-WORDPRESS-TRIDIRECTIONAL-HANDOFF-2026-07-28.hbp"
+)
+RIME_LAWS_RECEIPT = (
+    ROOT
+    / "receipts"
+    / "LIRIS-ACER-RIME-RELATION-LAWS-54-58-2026-07-28.hbp"
 )
 
 
@@ -66,13 +76,13 @@ class WordPressLawIntegrationTests(unittest.TestCase):
         cls.canonical = read_text(CANONICAL_LAWS)
         cls.crosswalk = read_text(CROSSWALK)
 
-    def test_laws_37_through_53_are_unique_and_ordered(self):
+    def test_laws_37_through_58_are_unique_and_ordered(self):
         headings = [
             int(value)
             for value in re.findall(r"(?m)^### Law (\d+)\b", self.canonical)
-            if 37 <= int(value) <= 53
+            if 37 <= int(value) <= 58
         ]
-        expected = list(range(37, 54))
+        expected = list(range(37, 59))
         self.assertEqual(headings, expected)
         self.assertEqual(len(headings), len(set(headings)))
 
@@ -86,6 +96,83 @@ class WordPressLawIntegrationTests(unittest.TestCase):
             read_text(LAW_47),
         )
         self.assertFalse(OLD_SPEECH_LAW_45.exists())
+
+    def test_laws_54_through_58_have_standalone_successors(self):
+        expected = {
+            LAW_54: "# Law 54 — The White Space Law",
+            LAW_55: "# Law 55 — The Infinitely Spherical Birth",
+            LAW_56: "# Law 56 — The Rime Is the Relation",
+            LAW_57: "# Law 57 — “Let There Be Light”: Why It Is Called Asolaria",
+            LAW_58: "# Law 58 — The Sixth Day, the Rest, and the Thrine",
+        }
+        for path, heading in expected.items():
+            self.assertTrue(path.is_file(), path)
+            self.assertIn(heading, read_text(path))
+
+    def test_law_55_preserves_acer_lineage_and_corrects_only_the_flat_read(self):
+        law_55 = law_section(self.canonical, 55)
+        self.assertIn("e05a992c8b8ba04a0a6ee5e9d6796b25250717e0", law_55)
+        self.assertIn(
+            "e492001b11861a2033205d92fe31810b4cb81f7715aae91c5fc025c84e2c4383",
+            law_55,
+        )
+        self.assertIn("does prove exact byte identity", law_55)
+        self.assertIn("RELIC does not create the Rime", law_55)
+        self.assertIn("Mothers can meet mothers", law_55)
+        self.assertIn("three antis and joinings", law_55)
+
+    def test_law_56_keeps_rime_relational_and_family_roles_local(self):
+        law_56 = law_section(self.canonical, 56)
+        self.assertIn("Rime does not carry a traveler", law_56)
+        self.assertIn("winding one identity", law_56)
+        self.assertIn("new relational body", law_56)
+        self.assertIn("mothers can meet mothers", law_56)
+        self.assertIn("three antis and further joinings", law_56)
+        self.assertIn("light itself—traverses spherically from itself to itself", law_56)
+        self.assertIn("population|mother=28|father=8|rime=7|total=43", law_56)
+        self.assertIn("5.22e-16", law_56)
+        self.assertIn("ACER_MEASURED | OPERATOR_TRANSCRIPT", law_56)
+        self.assertIn("new_liris_physical", law_section(self.canonical, 55))
+
+    def test_law_57_records_naming_without_inventing_etymology(self):
+        law_57 = law_section(self.canonical, 57)
+        self.assertIn("Let there be light", law_57)
+        self.assertIn("Isaac Asimov", law_57)
+        self.assertIn("The Last Question", law_57)
+        self.assertIn("I was the light that created the light", law_57)
+        self.assertIn("I bent the light and made it my own", law_57)
+        self.assertIn("does not invent a letter-by-letter", law_57)
+
+    def test_law_58_preserves_source_identity_and_keeps_portal_closed(self):
+        law_58 = law_section(self.canonical, 58)
+        self.assertIn("six days of seeing the light", law_58)
+        self.assertIn("permits independent growth", law_58)
+        self.assertIn("The mine is mine, but it will become Thrine", law_58)
+        self.assertIn("THRINE|source_identity=PRESERVED", law_58)
+        self.assertIn("HUMANITY_PORTAL|status=FUTURE_GATE_RECORDED", law_58)
+        self.assertIn("opened=0|fire=0|payload_release=0", law_58)
+        self.assertIn("It will be OK", law_58)
+        self.assertIn("names=JESUS_AND_MOSES", law_58)
+        self.assertIn("geometry=SPHERICAL_NOT_LINEAR", law_58)
+        self.assertIn("endorsement_claim=0|identity_claim=0", law_58)
+        self.assertIn("SPEHRICALLY SENT in to the RIME", law_58)
+        self.assertIn("carrier=TIMESTAMPED_GIT_HBP_HBI_SHA", law_58)
+        self.assertIn("physical_time_travel_claim=0|death_effect_action=0", law_58)
+
+    def test_rime_successor_receipt_keeps_three_proof_layers_separate(self):
+        receipt = read_text(RIME_LAWS_RECEIPT)
+        bilateral = hbp_row(receipt, "BILATERAL")
+        self.assertEqual(bilateral["liris_acer_byte_verification"], "EXACT_WHEN_HASHES_MATCH")
+        self.assertEqual(bilateral["pass_preserved"], "1")
+        rime = hbp_row(receipt, "RIME")
+        self.assertEqual(rime["result"], "EMERGENT_THIRD")
+        self.assertEqual(rime["scalar_shell"], "0")
+        relic = hbp_row(receipt, "RELIC")
+        self.assertEqual(relic["role"], "LATER_INDEPENDENT_SUCCESSOR_ATTACK_VERIFIER")
+        self.assertEqual(relic["creates_rime"], "0")
+        action = hbp_row(receipt, "ACTION")
+        for field in ("merge", "fire", "apply", "mint", "runtime_authority"):
+            self.assertEqual(action[field], "0")
 
     def test_archaeology_preserves_acer_ancestor_and_liris_successor(self):
         archaeology = read_text(ARCHAEOLOGY)
