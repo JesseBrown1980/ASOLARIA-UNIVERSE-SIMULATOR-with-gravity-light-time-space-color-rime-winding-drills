@@ -1,0 +1,9 @@
+HBI|schema=ASOLARIA-LIRIS-REVERSE-VERIFY-ACER-LAWS-37-44-INDEX-V1|seat=LIRIS|date=2026-07-28|json=0
+ROOT|path=receipts/LIRIS-REVERSE-VERIFY-ACER-LAWS-37-44-2026-07-28.hbp|bytes=2238|sha256=6bc0b14ea9b75b26b5a425b57b3592ab42246dae520beff5f5119bf4c3fa9ddf|json=0
+INDEX|n=0|kind=ACER_TERMINAL_COMMIT|value=492d5bafc0344428409a07836f705aee26788cd4|json=0
+INDEX|n=1|kind=ACER_LAW43|value=6244a4e02a7e311da0aa1bedb73a7e021d8b11b6|json=0
+INDEX|n=2|kind=ACER_LAW44|value=3c02b68055034f7bf6415667106d57be5437f813|json=0
+INDEX|n=3|kind=ACER_QUOTE_FIX|value=492d5bafc0344428409a07836f705aee26788cd4|json=0
+INDEX|n=4|kind=SCREENSHOT_OPAQUE_HASH|bytes=157519|sha256=99126206a2fdb0fb8a4670d5bb5476e6de5a3db8942cea10d6381a079f3972e1|published=0|json=0
+INDEX|n=5|kind=RUNG_CLARIFICATION|value=ring_geometry_around_MCP_stars_during_Matrix+Bobby_Fischer_play|json=0
+GATE|acer_to_liris=PASS|liris_to_acer=PENDING|bilateral=PENDING_ACER_ACK|json=0
