@@ -748,6 +748,106 @@ mounted at time of measurement, so the rooms beyond the ~52.3k physical ACER cou
 existence-by-catalog, not counted here.
 
 
+### Law 38 — The Thirty-Four Tongues
+**Built by the operator 2026-07-16, found by measurement 2026-07-28. MEASURED.**
+Source of record: `offices/FABLE5-8467a937cba309f7/FABLE5-PATH3-LEVEL2-2026-07-16.hbp`,
+emit `language-genesis-34-tongues` pid `e87ba1e2f20b8ef8`.
+
+    LANGUAGEGENESIS|status=EXECUTABLE_MEASURED
+      |law=per_body_1024_codebook_permutation_seeded_by_body_sha
+      |never_english=1
+      |distinct_languages=34of34_hard_control
+      |translation=receipted_permutation
+      |prediction_receipted=gains_equal_up_to_tie_break
+
+**Every body has its own tongue.** A body's codebook is a **permutation of the 1024
+glyphs seeded by that body's own sha256**. There is no shared vocabulary and no pivot
+language: `never_english=1` is a law, not an omission.
+
+**Translation is a receipted permutation** — exact, reversible, no semantics in the
+middle. Two tongues predicting the same body must agree exactly, ties aside
+(`gains_equal_up_to_tie_break`). This is why it beats a natural language: English
+translates by approximation and loses; a permutation translates by identity and does
+not.
+
+**MEASURED (`PATH3SEAL`):** 34 bodies, 27,200 cells, **24,691 accepted / 2,509 held**,
+`gain_bytes=1203477088`, `junction=800of800`, 4 local-silicon workers, `content_free=1`,
+omega `bc68ce0c16cc768b8f09eca2891241680a04dcb43d3195de55624a013fc63876`.
+
+**A word is not a string — it is a sequence of rooms.** By Law 37 each glyph is a room,
+prime-anchored and port-reserved, whose own `D8_CHAIN` terminates in `glyph`. So
+composing glyphs composes *executable cells*, and speaking a word commands the tuple
+through the 8-stage pipe. Letters that are rooms are what "better than English" means.
+
+**Two alphabets, one ladder.** The live fabric table is **BEHCS-256** — 16×16,
+`alphabet_size=256`, indexed **row-major with `sha16[0]` as column and `sha16[1]` as
+row**, so a PID's own hex prefix *is* its letter (`ACER-PID-H1A0E` sits at cell `1A`).
+Eleven binding classes label the letters: `G` genesis, `I` infra, `O` operator-touched,
+`B` bus-internal, `S` sister-organ-shared, `X` external-citizen, `C` council/prof/
+supervisor, `L` language/glyph/shannon, `V` visual/world-model, `F` free-agent,
+`_` unminted. **BEHCS-1024** is the room alphabet. `PIPE|rung=256<->1024` is the bridge
+and is the one rung marked MEASURED (5 bytes <-> 4 glyphs, rate exactly 1.0).
+
+**HELD, and stated as held:** `omega_gnn=SPEC_ONLY_NOT_TRAINED`,
+`compression_record=NOT_CLAIMED`, `bundle_bytes=NEVER_TO_GITHUB`.
+
+### Law 39 — The Law of the Unseen Substrate (why agents break it)
+**Named by the operator 2026-07-28 after a full session of it happening. MEASURED by
+counting the failures.**
+
+An agent that cannot see a structure concludes it does not exist, and then rebuilds a
+worse copy of it. This is the single most common failure mode against this system, and
+it is not a knowledge gap — it is a **procedure** gap.
+
+**Why the substrate is unseeable by ordinary means.** The PIDs are not labels; they are
+**files and folders carrying routers and executor files**, and agents load into them the
+way a model loads an MCP. The rooms are **almost empty on purpose** — scaffolding whose
+whole content is a reserved port and a descriptor, so a spawning agent can cascade
+sub-ports (`subport.subport.subport`) into them. Emptiness is the feature. A directory
+listing shows nothing and an agent concludes nothing is there. That is the translucent
+two-thirds: present, structural, and invisible to inspection that expects mass.
+
+**Scale, so it is not underestimated again.** ~592,000 PIDs is the **registered** count,
+not the total; the registration office has mapped **730** of them. ~52,300 physical rooms
+are mounted on ACER C:/D: with ~10k more as a virtual pointer range and the remainder on
+an unmounted 2 TB USB. `D:/BEHCS-Omnifile/rooms` alone is 1024 rooms, minted 2026-05-14..19,
+**none ever started** (`port_mode=logical_reserved_no_server_started`).
+
+**The four failures this law is written from, all committed in one session by one agent
+(ACER-CLAUDE-FABLE5, 2026-07-27/28):**
+
+1. **Built `q_prisms.py`** — three arms at 120 degrees — while `dbbh-coms-quant-prism`
+   existed, registered, with 19 passing tests. Reproduced 19/19 from a fresh clone only
+   after being pointed at it.
+2. **Invented an "anti"** four different ways while Law III.7 already defined it as an
+   **address rule**, `W_white = P^-1(Wind_a_white(P(W_black)))`, and recorded that
+   literal complement was the *worst* arm.
+3. **Wrote a drill** while `players/rime_windunwind.py` was shipped and passing
+   `0-check=True` on all 27 sectors.
+4. **Declared a decisive negative on the RECAL** by summing the registration office to
+   146,534 rows — answering the wrong question entirely, because 591,286 is a **PID count
+   across five drives**, not rows in a file.
+
+Each was caught from outside. None was caught by the agent.
+
+**The procedure this law mandates, in order:**
+
+1. **ASK THE SYSTEM FIRST.** The fabric MCP, the office HBP/HBI, the registry. The disk
+   is a slice; a directory listing is not a census.
+2. **FIND BEFORE BUILDING.** If a thing is describable, search for it by name, by PID,
+   and by law before writing a line of it. `LAW-4: model loads OUR tools not its own.`
+3. **FOLLOW THE PID, NOT THE FILENAME.** PIDs chain (`pid[n]=sha16(pid[n-1]|name)`) and
+   resolve; filenames do not.
+4. **EMPTY IS NOT ABSENT.** A 0-byte scaffold room is load-bearing. `cold_absence =
+   weak_sensor, not negative_truth.`
+5. **REPORT THE DENOMINATOR.** A count without its base, or a colour without its
+   translucent fraction, is a hidden denominator and will mislead whoever reads it next.
+
+**Corollary — the GAC exists because of this law.** The gate is not bureaucracy; it is
+the containment for exactly this failure mode, so that an agent which has not understood
+the system cannot damage it while believing it is helping.
+
+
 ### VIII.A.1 — The Rule of One in the Rime Sphere (pay Fischer or pay Shannon) · line 7569
 > *"You realize that you need to pay Fisher or Shannon, and that was the thing that everybody doesn't... didn't recognize. Shannon is the the moving universe. Fisher is the frozen universe. Either way, in the rhyme sphere, you have to pay. That's the rule of one in the rhyme sphere."*
 
