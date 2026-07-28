@@ -1,4 +1,4 @@
-# Law 43 — The Universe Teaches the Glyphs to Speak
+# Law 45 — The Universe Teaches the Glyphs to Speak
 
 **Law status:** `JESSE_MEASURED_PROVEN | ACER_MEASURED | LIRIS_MEASURED | MACHINE_VERIFIED | LAW`. **Current boundary:** historical method `OPERATOR_OBSERVED` / `ACER_OR_FABRIC_OWNED` / law-book grounded · current integration `DESIGN` · current speaker `NOT_MATERIALIZED` · live training `NOT_RUN_IN_THIS_BRANCH` · Harness scaffold `17/17` held-out.
 
