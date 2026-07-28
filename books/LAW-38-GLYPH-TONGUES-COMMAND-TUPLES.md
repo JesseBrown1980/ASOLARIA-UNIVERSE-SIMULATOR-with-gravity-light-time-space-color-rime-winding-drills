@@ -106,7 +106,7 @@ Asolaria MCP, Asolaria Code Wiki, Google Code Wiki, and WebMCP can catalog, map,
 mcp_catalog_knows=1|mcp_tuple_speaker=0|catalog_is_not_authority=1
 ```
 
-The missing current layer is the Universe learner/speaker defined by Law 45.
+The missing current branch-integration layer is the Universe learner/speaker defined by Law 47 (immutable lineage alias: formerly LIRIS Law 45).
 
 ## 38.7 — Evidence boundary
 

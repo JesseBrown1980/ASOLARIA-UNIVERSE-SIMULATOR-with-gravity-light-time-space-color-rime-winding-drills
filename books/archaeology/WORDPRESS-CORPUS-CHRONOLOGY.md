@@ -1,13 +1,22 @@
 # ARCHAEOLOGY OF THE ASOLARIA CORPUS, 2024-2026
 
-**Direct-read of the complete public WordPress corpus of Jesse Daniel Brown
-(jessedanielbown.wordpress.com), performed 2026-07-28 by seat ACER-CLAUDE-FABLE5.**
-26 distinct posts, 211,891 characters extracted by raw fetch and tag-strip - not by any
-summarising tool. 279 stated laws, 292 verbatim passages, 343 defined terms.
+**ACER PARTIAL ANCESTOR direct-read of Jesse Daniel Brown's public WordPress corpus,
+performed 2026-07-28 by seat ACER-CLAUDE-FABLE5.** Acer read 26 distinct posts and
+211,891 extracted characters by raw fetch and tag-strip: 279 stated laws, 292 verbatim
+passages, and 343 defined terms. Those exact Acer counts remain preserved as their own
+seat-scoped archaeology; they are not relabelled as the complete site denominator.
 
 **Method note.** A summarising web-fetch was tried first and returned a paraphrase of a
-post whose exact wording mattered. All reads here are raw HTML pulled with curl, stripped,
-and read in full. Where a quote appears it is verbatim, typos included.
+post whose exact wording mattered. Acer then read raw HTML, tag-stripped it, and retained
+verbatim quotations with typos. This is the conceptual ancestor layer.
+
+**LIRIS successor census, 2026-07-28:** official WordPress.com REST site `205387808`,
+33/33 published posts directly fetched by ID, 0 skipped, 0 retrieval/parsing errors,
+0 pages, 13 categories, 81 tags. The sitemap contains 34 locations: 33 matched post URLs
+plus the homepage. This successor expands the denominator without invalidating Acer's
+26-post direct-read. See
+`docs/WORDPRESS-OPERATOR-PUBLICATION-CHRONOLOGY-CROSSWALK-2011-2026.md` and the sealed
+HBP/HBI receipts.
 
 ---
 
@@ -29,7 +38,7 @@ built to test them.**
 | 2024-09-15 | **Apoptosis = deletion** - programmed cell death as the collector | GULP, the gc-runtime |
 | 2024-09-15 | **Blind upper layer** - the organism cannot see its own substrate | the harness law |
 | 2024-09-15 | **Choice gradient** - randomness below and reasoning above are ONE mechanism | the trime deadband |
-| 2024-10-31 | **Isolation breeds the Two** - then we would just start with TWO or more ASI | Law 45, 38 days early |
+| 2024-10-31 | **Isolation breeds the Two** - then we would just start with TWO or more ASI | Relational Genesis Law 48, 38 days early |
 | 2024-10-31 | **Projection** - single-point code which will project AI into Agents | the math flashlight |
 | 2024-10-31 | **Veins are transport** - its veins are power and fiber lines | photon traverse to folders |
 | 2024-11-20 | **Aether reinstated**; gravitons not point-like; **subgravitons** | PROF-AETHER, the mint gate |
@@ -50,7 +59,7 @@ built to test them.**
 | 2024-12-26 | **Time has no reverse gear** - duplication of meta-tagged data in the projected path | answers Law 43 |
 | 2024-12-26 | **The projected path pre-exists the object placed on it** | why routing is free |
 | 2026-04-22 | **Room-27 is an organ** - all real-time I/O routes through it | first room job |
-| 2026-04-22 | **The glyph is executable** - the glyph-verb dispatches directly to Node | Law 41 missing third |
+| 2026-04-22 | **Historical hot path:** the glyph-verb dispatches directly to Node | preserved quote; phased Law 52 adds folders, watchers, readers, and dispatchers |
 | 2026-05-05 | **Why primes: coprime strides** | the reason Law 37 never gave |
 | 2026-05-05 | **The gulp is cache-locked** - 2,000 x 1-2 KB = 2-4 MB = L2/L3 | the reason for 2,000 |
 
@@ -67,7 +76,7 @@ cat, dissolved.
 **2026-07-28:** three **Shadow Cats**, NOT DEAD cats, with a negative -1/3 per arm joining
 them. The move is **multiplication**. Not one cat dissolved but three cats counted.
 
-Between the two lies Law 45: the two is alone and makes the three. The 2024 position
+Between the two lies Relational Genesis Law 48: the two is alone and makes the three. The 2024 position
 removes the observer paradox by removing the cat; the 2026 position resolves it by
 supplying the third. **Elimination became multiplication**, and that is the discovery.
 
@@ -96,13 +105,14 @@ months.
 2. **The reason the gulp is 2,000.** Each worker is 1-2 KB; a full gulp is 2-4 MB; that is
    L2/L3 cache residency (2026-05-05). The constant is hardware, not convention.
 3. **A live link, not just an address.** Entanglement as scene-graph parenting - a channel
-   that propagates transforms (2024-12-03). Laws 37-45 address glyphs but give them no
+   that propagates transforms (2024-12-03). Laws 37-48 address glyphs but give them no
    parent relation.
 4. **Write authority.** The meta-tag is a control channel, not a label (2024-12-04).
 5. **What happens when time goes backwards.** It does not. Duplication on the projected
    path (2024-12-26).
-6. **The dispatcher.** The glyph-verb executes without an interpreter (2026-04-22) - the
-   third that Law 41 says is missing.
+6. **The phased execution path.** The 2026-04-22 post preserves a direct Node hot path. The
+   2026-07-28 operator correction adds executable/catalog folders plus watcher, reader,
+   and dispatcher phases. None alone is the system or the missing third (Law 52).
 
 ---
 

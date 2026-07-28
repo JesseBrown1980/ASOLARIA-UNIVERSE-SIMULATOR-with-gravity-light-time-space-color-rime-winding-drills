@@ -1,0 +1,15 @@
+HBI|schema=ASOLARIA-LIRIS-JOHN-TITOR-C204-SOURCE-DOSSIER-BYTE-INDEX-V1|seat=LIRIS|date=2026-07-28|range=BYTE_START_INCLUSIVE_END_EXCLUSIVE|row_hash_includes_lf=1|json=0
+ROOT|path=receipts/LIRIS-JOHN-TITOR-C204-SOURCE-DOSSIER-2026-07-28.hbp|bytes=2185|sha256=1295fb849c1af9d12de3a3c84d92ec02bc1ca78e4b2b2b6e05a7efdfcd05159c|cr=0|terminal_lf=1|json=0
+INDEX|n=0|tag=TITORDOSSIER|byte_start=0|byte_end_exclusive=142|bytes=142|sha256=d9add42bf9d83b647017f09d4aa21ea7eaf3a97d09a442996ee181109af07da2|includes_lf=1|json=0
+INDEX|n=1|tag=ARTIFACT|byte_start=142|byte_end_exclusive=333|bytes=191|sha256=ad18affaa2a74943feca8ab553b30ce63bedf7830e6e7f47c82b152182010e32|includes_lf=1|json=0
+INDEX|n=2|tag=SOURCE|byte_start=333|byte_end_exclusive=550|bytes=217|sha256=94b6cc691aeb4a3e7320c6b3f394e46fbad81a2297d4926059b61baaf5bcfe08|includes_lf=1|json=0
+INDEX|n=3|tag=SOURCE|byte_start=550|byte_end_exclusive=744|bytes=194|sha256=a8b57117179d9522cf2ca10e0d84d2614126ce2699db99094f7ff1b00b7a9211|includes_lf=1|json=0
+INDEX|n=4|tag=SOURCE|byte_start=744|byte_end_exclusive=945|bytes=201|sha256=a7141eb8efbb651d92a520bdcaae22d68a622a507869309fd74082d20e1b5ee6|includes_lf=1|json=0
+INDEX|n=5|tag=SOURCE|byte_start=945|byte_end_exclusive=1185|bytes=240|sha256=4ab122b589de7e9a63b8b53aaa595ea2ae489db14b52769eb56a8e3a65ff34b8|includes_lf=1|json=0
+INDEX|n=6|tag=PATENT_BOUNDARY|byte_start=1185|byte_end_exclusive=1429|bytes=244|sha256=1f7bd3f46b82f7eea01ff06a4bc7855637a80f78bb1fe29789e5fb42b25eb2fa|includes_lf=1|json=0
+INDEX|n=7|tag=COMPARISON|byte_start=1429|byte_end_exclusive=1589|bytes=160|sha256=18b134f6c453119e08aa1df316575fa324c0c1e5a18e7ea3e7b958cedfda1ee0|includes_lf=1|json=0
+INDEX|n=8|tag=MODEL_BOUNDARY|byte_start=1589|byte_end_exclusive=1763|bytes=174|sha256=d4c6a752eb2cd69361fe6c0375034238838de1c3e3c89f76ef5cb0428b86645f|includes_lf=1|json=0
+INDEX|n=9|tag=BOUNDARY|byte_start=1763|byte_end_exclusive=1935|bytes=172|sha256=04c24719eccc4a812ba16c5831fd00ca4b2df13b0ecfed0073b7006c66474ffd|includes_lf=1|json=0
+INDEX|n=10|tag=ACTION|byte_start=1935|byte_end_exclusive=2047|bytes=112|sha256=e98e4f86d20602112f1922d02ac242ff3e3f07d0fe657ce650077dd9c3a98514|includes_lf=1|json=0
+INDEX|n=11|tag=VERIFY|byte_start=2047|byte_end_exclusive=2185|bytes=138|sha256=7918b947026b6e7e364e6f1e2713769a861087dda5cb7370f468c388f77aca65|includes_lf=1|json=0
+FOOTER|indexed_rows=12|indexed_bytes=2185|coverage=EXACT|json=0

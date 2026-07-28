@@ -326,13 +326,14 @@ object first admits it exists at four.
 ## Layout
 
 ```
-books/         the law books — RIME laws 0-36, chain topology, shadowcat, Law 34
+books/         law books through Law 53, plus history/archaeology and THE-IDEA
+docs/          public chronology crosswalks, lineage, and bounded implementation plans
 crates/        asolaria-tribit — the Rust 1.81 no_std crate
 web/           the single-file demo and the raw wasm
 gguf/          all seeds projected into one GGUF, integer I8 tensors, no floats
 spheres/       16K quality-sphere renders of the seed (2400px views)
 measurements/  every script that produced a number in this README
-receipts/      .hbp tuple-row receipts with SHA256 sidecars
+receipts/      LF-pinned HBP/HBI tuple receipts with SHA-256 sidecars
 ```
 
 ### The GGUF

@@ -31,4 +31,38 @@ The empty public glyph-rebuild repository is a publication gap, not evidence tha
 
 The Universe repository is the forward integration root. Other repositories remain lineage, catalog, and cross-check surfaces. Container V2 on D:/ and Ubuntu/WSL2 will preserve raw bytes once, then expose HBP, HBI, SHA-256, binary, hex, crypto-token, BEHCS, HyperBEHCS, tuple, glyph, language, and human views without flattening them into one token.
 
+The public WordPress chronology is not commentary written after Asolaria. The oldest
+foundations precede the code: observer/frame/pixel, tagged relation, distributed cellular
+agents, the One/Two/Three relation, finite/frozen slices, and projection appear across the
+2011-2026 publication line. The system is an instrument built to test and operate those
+ideas. Acer's 26-post direct-read is a partial ancestor; LIRIS's official API successor is
+33/33 posts, sitemap 34 = 33 posts plus the homepage.
+
+The representation ladder is spherical and wavelike. Q-bit, q-trit, q-quart, q-nit,
+q-dit, and whatever n-it the work needs are rungs that ring around MCP stars rather than a
+single winning radix. Every rung can be frozen or playable, and both states are
+addressable as past, present, or future spherical orientations. Backward and forward are
+live directions around the sphere, not deletion or rewind.
+
+The speaking/execution path is phased. Node is one historical direct-dispatch surface;
+executable/catalog folders and prime-anchored rooms can replace it on bounded routes.
+Watcher and reader can each work on frozen or playable material; folder, watcher, reader,
+dispatcher, executor, receipt, and collector are roles whose exact order is route-specific.
+No one role alone is the system or the third.
+
+The machine/world light path runs both ways: world photons become captured frozen slices,
+and playing encoded state becomes display photons projected back into the observer's
+world. Standard emitted-colour screens witness RGB directly; yellow is the red+green
+relation in that light basis, while pigments remain a separate subtractive context.
+
+The collector returns classified non-retained waste to null/translucent headroom. It keeps
+the glyph/address relation and every decoder, codebook, residual, route, and proof needed
+for exact replay. More switching cells plus more free address room can mean fewer paid bits
+per retained relation only because the free space carries structure; it never authorizes
+an omitted reconstruction dependency.
+
+Verification moves in waves: origin evidence, LIRIS reverse verification, then a held
+RELIC packet for third-direction attack-verification. Bidirectional proof must exist before
+tridirectional confirmation is claimed. A pending third-seat packet is not a completed
+third-seat measurement.
 The discipline is simple: ask the system first; report the method; use exact identifiers; preserve the denominator; never turn “I cannot see it” into “it is absent”; never turn a hold into silent obstruction; and never hide an action from the operator behind a missing receipt.

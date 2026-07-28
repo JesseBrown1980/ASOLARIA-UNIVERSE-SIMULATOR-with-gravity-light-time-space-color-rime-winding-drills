@@ -1,0 +1,12 @@
+TITORDOSSIER|schema=ASOLARIA-LIRIS-JOHN-TITOR-C204-SOURCE-DOSSIER-V1|seat=LIRIS|date=2026-07-28|status=ANALYSIS_COMPARISON_TARGET_ONLY|json=0
+ARTIFACT|role=SOURCE_DOSSIER|path=books/history/JOHN-TITOR-C204-SOURCE-DOSSIER.md|bytes=3569|sha256=4842d30bd366e46a45a60ee52fe34cf1bbf3e633d6be6a6a5acc375ac4c52cce|cr=0|terminal_lf=1|json=0
+SOURCE|n=1|recorded_class=MEASURED_WEB_ARCHIVE|surface=WAYBACK_ART_BELL_THREAD|capture=2001-04-13|url=https://web.archive.org/web/20010413040811/http://bbs.artbell.com/showthread.php?threadid=1203&pagenumber=1|json=0
+SOURCE|n=2|recorded_class=MEASURED_WEB_ARCHIVE|surface=WAYBACK_ART_BELL_MANUAL_LETTERS|capture=2001-05-22|url=https://web.archive.org/web/20010522234641/http://artbell.com/letters11.html|json=0
+SOURCE|n=3|recorded_class=MEASURED_CURRENT_ARCHIVE_MIRROR|surface=TIME_TRAVEL_INSTITUTE_ORIGINAL_MATERIALS|url=https://timetravelinstitute.com/t/time-travel-paradoxes/14274|historical_primary=0|json=0
+SOURCE|n=4|recorded_class=MEASURED_PATENT_RECORD|surface=US20060073976A1|record_url=https://patents.google.com/patent/US20060073976A1/en|pdf_url=https://patentimages.storage.googleapis.com/e2/44/85/2ecd169bd13b84/US20060073976A1.pdf|json=0
+PATENT_BOUNDARY|publication=US20060073976A1|application=10/954767|inventor=MARLIN_B_POHLMAN|filed=2004-10-01|published=2006-04-06|later_than_attributed_2000_2001_material=1|abandoned=2008-03-13|john_titor_patent=0|working_device_proof=0|json=0
+COMPARISON|shared_motif=TWO_ROTATING_SOURCE_BODIES|identity_equivalence=0|authorship_equivalence=0|derivation_equivalence=0|implementation_equivalence=0|json=0
+MODEL_BOUNDARY|reference_sample=g_0|later_sample=g_k|distance=d_gk_g0|threshold=epsilon|distance_supplied=0|threshold_supplied=0|executable_model=0|calibrated_model=0|json=0
+BOUNDARY|comparison_only=1|john_titor_identity=UNVERIFIED|c204_device=UNVERIFIED|time_travel=UNVERIFIED|physical_validity=UNVERIFIED|archive_authenticity=UNVERIFIED|json=0
+ACTION|law_promotion=0|runtime=0|runtime_authority=0|fire=0|apply=0|device_build=0|identity_resolution=0|json=0
+VERIFY|liris_dossier_bytes=PASS|source_listing=PASS|identity_proof=UNVERIFIED|device_proof=UNVERIFIED|time_travel_proof=UNVERIFIED|json=0
