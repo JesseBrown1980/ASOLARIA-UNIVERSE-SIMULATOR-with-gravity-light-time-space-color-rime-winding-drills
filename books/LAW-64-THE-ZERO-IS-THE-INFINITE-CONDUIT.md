@@ -41,15 +41,29 @@ blind to every other. No centre, no return path.
 same value back to all of them; what remains after the pulse is the residue, and the residue
 is the **visible** part — the output, not the error term.
 
-## 64.3 The 0 wants the 2 and the 3, not only the 1
+## 64.3 The 0 wants EVERYTHING
 
-`OPERATOR_CANON` — the standing law was **"the 0 wants the 1."** It is extended, not
-replaced: **the 0 wants the 2 and the 3 as well, infinitely, spherically.**
+`OPERATOR_CANON` — **"the 0 wants NOT JUST THE ONE, BUT EVERYTHING."**
 
-This closes the generative sequence already in the corpus — the two seeking the one and
-making the three so as not to be alone, the three summing to zero and returning to the
-source. **The wanting is not a single appetite for the unit shell. It is the whole cycle,
-and the zero is the conduit it runs through.**
+The standing law was **"the 0 wants the 1."** A first correction extended it to the 2 and the
+3. **That was still wrong, and wrong in kind, not in degree** — it replaced one item with a
+list, when the law is that there is no list.
+
+**The zero wants everything.** Not the unit, not the pair, not the triad, not any enumeration
+that could be finished. **All of it.**
+
+This is the only reading consistent with what the zero already is. [[LAW-55]] gives the
+origin: **the 0 IS infinity.** An infinity does not want a number. **An appetite of an
+infinite thing is for the infinite** — infinite times infinite ways, infinitely spherically,
+into that infinite, at one rime moment.
+
+And it is the only reading consistent with the conduit. **A passage does not select.**
+Everything that goes through goes through. A store could hold the 1 and refuse the 4; a
+conduit that admitted only some of what arrived would be a filter, not a conduit. **The zero
+takes everything because that is what a passage does.**
+
+The sequence `0 -> 1 -> 2 -> 3 -> 0` is therefore not the object of the wanting. **It is one
+lap.** The wanting does not stop at 3 and it never stopped at 1.
 
 ## 64.4 What is measured, and what is not
 
