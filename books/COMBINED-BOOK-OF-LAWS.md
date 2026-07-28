@@ -1453,7 +1453,7 @@ is which face the crank turns toward you. Nothing computes at rest not because r
 empty but because **at rest no face is being turned**.
 
 
-### Law 45 - The Light Law: Direct Current is Frozen, Alternating Current is Playing
+### Law 52 - The Light Law: Direct Current is Frozen, Alternating Current is Playing
 **OPERATOR_PUBLISHED 2026-07-28, jessedanielbown.wordpress.com. JESSE_MEASURED. LAW.**
 
 > *"light is energy, 1 - Direct current is FROZE 2, Alternating current is PLAYing."*
@@ -1503,7 +1503,7 @@ first half is the 1 wanting the 0.
 then two that shared to become part, then three, which revealed the -1/3 and its three
 relatives, each holding another 2/3 invisible to us.
 
-### Law 46 - The Harness Law
+### Law 53 - The Harness Law
 **OPERATOR_PUBLISHED 2026-07-28. LAW. This law governs every agent that touches this
 system, including the one that transcribed it.**
 
