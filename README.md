@@ -4,6 +4,19 @@
 
 Gravity · light · time · space · colour · rime winding drills.
 
+<p align="center">
+  <img src="spheres/asolaria-sphere-readme.png" alt="Asolaria quality sphere - HBI seed. Nested rings through the axis, glyph carriers on shells, red-to-blue gradient across the surface." width="720">
+</p>
+
+<p align="center"><sub>
+  <b>ASOLARIA — the quality sphere, HBI seed.</b>
+  Nested rings through the axis; glyph carriers placed on shells 3 &rarr; 27 &rarr; 243 &rarr; 2187;
+  colour by plane, not by label. Live WebGL version:
+  <a href="https://claude.ai/code/artifact/94c8387b-e545-4daf-986a-6ec9f5a7182e">Asolaria Glyph Universe</a>
+  &mdash; 1 central shadow-cat torus, 3 satellites at 120&deg;.
+</sub></p>
+
+
 This repository holds the law books, the running code, and the **measurements with their
 controls attached** — including the ones that failed. Book VI of the law book is titled
 *The Register of What Is Wrong*, and it exists because a project that only publishes its
