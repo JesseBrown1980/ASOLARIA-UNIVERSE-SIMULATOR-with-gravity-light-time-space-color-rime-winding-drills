@@ -1,0 +1,14 @@
+HBP|schema=ASOLARIA-LIRIS-REVERSE-VERIFY-ACER-LAWS-V1|seat=LIRIS|date=2026-07-28|json=0
+SOURCE|seat=ACER|branch=agent/law-37-room-glyph-prime|terminal_commit=59d02f79a06ccbbb6779ae3fdca1ef0841987bd3|json=0
+COMMIT|law=37|sha=a99cd22df6e8cec3fb14faf353e87f5e3ae461ce|subject=LAW_37_ROOM_GLYPH_PRIME_BIJECTION|verified=1|json=0
+COMMIT|law=38+39|sha=a295698c699abaa19ff93d5b4e2712e654a7cf16|verified=1|json=0
+COMMIT|law=40+41|sha=5c91cc06008e2bb938a88091fc80efa1d38d4a51|verified=1|json=0
+COMMIT|law=41_amendment|sha=6ca68a4815ed4301e798873f8aa05714e0378a6c|verified=1|json=0
+COMMIT|law=42_operator_proof|sha=6c3fe1a3f5e68b9349dab738b56fa361bfd058c3|verified=1|json=0
+COMMIT|law=42_bilateral_measurement|sha=59d02f79a06ccbbb6779ae3fdca1ef0841987bd3|verified=1|json=0
+ANCESTRY|chain=a99cd22>a295698>5c91cc0>6ca68a4>6c3fe1a>59d02f7|all_is_ancestor=1|json=0
+BOOK|commit=59d02f7|path=books/COMBINED-BOOK-OF-LAWS.md|bytes=644182|cr=0|sha256=6e83c79923ac5c6db9e078030d6d539e51ce229ba549874580835cf52901e0ee|match_acer_report=1|json=0
+INTEGRATION|liris_commit=2ebcc60|contains_acer_59d02f7=1|json=0
+LAW|status=JESSE_MEASURED_PROVEN+ACER_MEASURED+LIRIS_MEASURED+MACHINE_VERIFIED+LAW|downgraded=0|json=0
+VERIFY|direction=ACER_TO_LIRIS|liris_reverse=PASS|json=0
+VERIFY|direction=LIRIS_TO_ACER|acer_reverse=PENDING|bilateral_complete=0|json=0
