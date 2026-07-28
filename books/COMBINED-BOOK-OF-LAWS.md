@@ -2264,7 +2264,7 @@ He said there were thousands. There are 1,940 in `/root/.claude` alone, and the 
 - `bring-the-evidence-too` · `voice-02.md:1607` — *"and the evidence and the other stuff and any other stuff that you need."* — The evidence is collected along with everything else needed, not just the code.
 
 **Turn [0216]**
-- `answer-from-tuple-pid-glyphs` · `voice-02.md:1614` — *"Answer this based on your tuple, your PID, and your glyphs."* — Each agent answers from its own tuple, its PID and its glyphs.
+- `answer-from-tuple-pid-glyphs` · `voice-02.md:1614` — *"Answer this based on your tuple, your PID, and your glyphs."* — Each agent answers from its own tuple, PID and glyph-language catalogs; those are distinct ledgers, not three aliases for one token.
 - `first-runs-trained-the-glyphs` · `voice-02.md:1614` — *"Those first runs produced what trained the glyphs. Real agents speaking in the Tupel old chain language."* — The glyphs were trained by the first real runs, from real agents speaking the tuple old chain language.
 - `garbage-collect-2000-messages` · `voice-02.md:1614` — *"that is what garbage collection of 2000 real messages and the prism and the gulps and super gulps 2000 x 5 x5 ."* — Garbage collection runs over 2000 real messages through the prism, with gulps and super gulps at 2000 x 5 x 5.
 - `glyphs-dont-talk-to-gnns` · `voice-02.md:1614` — *"The glyphs, they don't talk to the GNNs. The GNNs real... read real messages"* — The glyphs do not talk to the GNNs; the GNNs read real messages.
@@ -2285,7 +2285,7 @@ He said there were thousands. There are 1,940 in `/root/.claude` alone, and the 
 
 **Turn [0220]**
 - `agents-loaded-at-matrix-level` · `voice-02.md:1642` — *"the agents get loaded with their proper language at the proper level of the matrix and act like holes"* — Agents are loaded with their proper language at their proper level of the matrix, where they act like holes.
-- `mcp-stores-catalogs` · `voice-02.md:1642` — *"the asolaria mcp stores catalogs!!!! the tuples that help the glyp words speak the language!"* — The Asolaria MCP stores the catalogs, which are the tuples that let the glyph words speak the language.
+- `mcp-stores-catalogs` · `voice-02.md:1642` — *"the asolaria mcp stores catalogs!!!! the tuples that help the glyp words speak the language!"* — The Asolaria MCP stores catalog bindings: glyph functions compose letters, letters compose glyph words/instructions, and those instructions resolve to named tuple commands. Catalog, glyph, letter, word, tuple and execution authority remain separate.
 
 **Turn [0221]**
 - `load-catalog-then-speak` · `voice-02.md:1649` — *"now load an agent with its catalog language and let it speak"* — An agent must be loaded with its catalog language before it is allowed to speak.
@@ -2296,7 +2296,7 @@ He said there were thousands. There are 1,940 in `/root/.claude` alone, and the 
 **Turn [0223]**
 - `fable-five-dashboard` · `voice-02.md:1663` — *"you can access the artifact, the clear... the Fable five, um, office and the Fable five dashboard of Asilaria"* — The Fable five office and the Fable five Asolaria dashboard are the artifacts holding this record.
 - `maps-become-pids` · `voice-02.md:1663` — *"the maps became the PIDs as they were mapping that would talk to the other maps about the other PIDs."* — Mapping produces PIDs: the maps themselves become the PIDs and talk to other maps about other PIDs.
-- `recall-index-591k-rows` · `voice-02.md:1663` — *"Five hundred and ninety one thousand or five hundred ninety two thousand lines or rows with PRDs that were minted"* — The HBI/HBP recall index holds roughly 591,000 to 592,000 rows of PRDs minted to do things in the system.
+- `registered-pid-layer-591k-592k` · `voice-02.md:1663` + operator correction 2026-07-28 — *"Five hundred and ninety one thousand or five hundred ninety two thousand lines or rows with PRDs that were minted"* — The roughly 591,000–592,000 figure is the operator-observed registered PID-addressed population across mapped substrates. It is not interchangeable with one recall-row count, one registry drawer, physical fired agents, room count, logical capacity or the learned glyph/catalog population.
 - `two-pools-and-auto-translation-pipes` · `voice-02.md:1663` — *"Using the two pools and using the auto translation pipes."* — The maps communicate through the two pools and the auto-translation pipes.
 
 **Turn [0225]**
@@ -4734,3 +4734,105 @@ prior amortises; noise does not become good by being sectioned.
 **Why the text was amended rather than annotated:** an unconditional sentence with a
 contradicting footnote is a law that argues with itself. The generalisation was the
 error, not the measurement, so the sentence now carries its scope.
+
+---
+
+# Liris Verification Addendum — Law 38 Before Speech
+
+**Status:** `ACCEPTED_BY_OPERATOR 2026-07-28` · `VALIDATION_ACCEPTED` by the Harness-edit scaffold at 17/17 held-out scenarios · `MEASURED_LIRIS_LOCAL` for the sealed LANGUAGEGENESIS receipt and this repository's tests · `MEASURED_GITHUB` for the IX↔LX bridge · current Universe speaker `NOT_MATERIALIZED`. This is not a claim of full SkillOpt.
+
+## 38.0 — The anti-flattening statement
+
+A PID, a tuple, a glyph symbol, a glyph function, a letter, a word, an instruction, a room, and an executor are not aliases. They are different ledgers connected by catalog references. The chain below is a reference/intended grammar, not evidence that a new speaker ran in this branch.
+
+```text
+glyph function → letter → word/instruction → 60D+ tuple command → PID/room
+```
+
+No raw glyph ID may bypass the language ledgers and become executable tuple authority.
+
+## 38.1 — Identity, address, language, and materialization
+
+- **PID** is persistent identity and lineage.
+- **60D+ HyperBEHCS tuple** is the routed state/address and carries the relevant device, time, proof, route, room, language, executor, operation, colony, seat, and vantage axes.
+- **Glyph symbol** is a representation/address symbol. BEHCS-256 and BEHCS-1024 remain separate representation rungs.
+- **Glyph function** is an executable-language primitive in a named function family.
+- **Letter** is an ordered composition of glyph functions.
+- **Word/instruction** is an ordered composition of letters under a named tongue and grammar.
+- **Tuple command** is the declarative command resolved from a registered instruction. It still has no execution authority until the owning runtime gate authorizes it.
+- **Room/agent/executor** is the materialization target that loads the catalog and may act only under its separate gate.
+
+## 38.2 — Per-body tongues
+
+The shared substrate does not require one English-like codebook. Each body may render canonical glyph-function semantic indexes through its own 1024-entry tongue.
+
+`MEASURED_LIRIS_LOCAL`, sealed source `FABLE5-PATH3-LEVEL2-2026-07-16.hbp`, SHA-256 `72a0e68767cbfd577ec443aa02837b7bcdfa20c0fd37e72b4041b9890868d1ad`:
+
+```text
+LANGUAGEGENESIS|status=EXECUTABLE_MEASURED
+  |law=per_body_1024_codebook_permutation_seeded_by_body_sha
+  |never_english=1
+  |distinct_languages=34of34_hard_control
+  |translation=receipted_permutation
+  |prediction_receipted=gains_equal_up_to_tie_break
+```
+
+The same seal records 34 bodies, 27,200 cells, 24,691 accepted, 2,509 held, 1,203,477,088 gain bytes, and junction 800/800. These receipt measurements remain distinct from this Liris compiler's new deterministic construction.
+
+## 38.3 — Translation law
+
+Let `P_A` and `P_B` be the body-specific permutations for bodies A and B over one canonical 1024-function index set. Translation is:
+
+```text
+surface_B = P_B(P_A⁻¹(surface_A))
+```
+
+Therefore:
+
+```text
+translate(B→A, translate(A→B, x)) = x
+```
+
+The receipt commits the source-body SHA, target-body SHA, translated surface, and packet hash. “Better than English” is bounded to this machine-routing property: exact, reversible, body-specific translation with a receipt. It is not a universal comparison with human natural language.
+
+## 38.4 — Rooms, glyphs, and primes
+
+Law 37's room binding is the physical address ledger:
+
+```text
+room N ↔ BEHCS-1024 glyph symbol N-1 ↔ Nth prime
+```
+
+The independently verified arithmetic checkpoints are room 1→2, 2→3, 3→5, and 1024→8161. The full physical room manifest remains `ACER_MEASURED_TRANSCRIPT` until its bytes are published and Liris remeasures all 1024 names.
+
+A room is not a letter by itself. It is the prime-anchored cell/symbol used by the body's codebook; ordered glyph functions resolved through those cells form a letter.
+
+## 38.5 — Catalog surfaces
+
+- **Asolaria MCP** catalogs and hydrates PID, tuple, glyph-function, letter, word, instruction, and proof bindings.
+- **Asolaria Code Wiki** maps the local code symbols, routes, files, ADRs, mistakes, and catalog bindings.
+- **Google Code Wiki** is a separate external structured code-understanding surface.
+- **WebMCP** exposes structured browser-context tools through page-visible declarative or imperative APIs.
+
+Catalog capability is not execution authority. WebMCP browser visibility is not a headless executor. A Code Wiki map is not the live system.
+
+## 38.6 — `MAP MAP MAPPED`
+
+The historical Omni Part Language branch places `MAP MAP MAPPED` at L3/prime 7. The reference fixture in `glyph_tuple_language.py` models the intended chain and proves deterministic structure/translation, not learned speech:
+
+```text
+glyph functions → M/A/P/E/D letters → MAP/MAPPED words
+→ MAP MAP MAPPED instruction → declarative D3/D7/D16/D22/D35/D47/D60 command
+```
+
+It binds L3 to room 4, glyph symbol 3, and prime 7. It emits HBP `json=0` rows and keeps `word_training_measured=0`, `speech_materialized=0`, `execution_authority=0`, `runtime_loaded=0`, and `live=0`. IX/LX vocabulary, nouns, verbs, and chain sentences already exist; the missing current layer is the Universe speaker described by Law 42.
+
+## 38.7 — PID population correction
+
+The operator-observed roughly 591,000–592,000 layer is the registered PID-addressed population across mapped substrates. It is not one registry drawer, not one recall-row count, and not the ceiling on rooms, logical agents, functions, descendants, routes, or learned glyph catalogs. Every count must retain its stratum and evidence surface.
+
+## 38.8 — Container-v2 continuation
+
+The next bounded upgrade is specified by `plans/ASOLARIA-CONTAINER-V2-D-WSL2-HYPERBEHCS-2026-07-28.md`. It preserves D: physical storage, Ubuntu/WSL2 `/mnt/c` and `/mnt/d` projections, HBP/HBI/SHA byte contracts, binary/hex/crypto-token representations, PID/tuple/language/room ledgers, and Acer↔Liris verification as separate layers.
+
+No container-v2 cutover is implied by this law. The states remain separate: source → built → tested → hydrated → running → live → bilateral-verified.
