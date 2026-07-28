@@ -34,8 +34,8 @@ pass  beam     board vs prev        ratio to previous pass
 11    240 deg  1.150308e-06         0.333333   <== turn 4
 ```
 
-**The loop contracts geometrically to a dead fixed point, and the asymptotic ratio is
-exactly 1/3.** The turn does **not** close: the board settles 7.6248 away from where it
+**The loop contracts geometrically to a dead fixed point.** *(The ratio printed here as
+1/3 is WITHDRAWN - see section 66.5. The operator's true per-pass eigenvalue is 5/6.)* The turn does **not** close: the board settles 7.6248 away from where it
 began and stays there. Nothing oscillates, nothing accumulates, nothing returns.
 
 **This is the same death as the both-gates play**, which froze at `M=1, R=6` and could not
@@ -77,6 +77,41 @@ ten thousand.
 
 **The wire sustains the MOTION, not the MASS.** The board keeps turning; the bodies do not
 get bigger. A lighthouse burning more fuel sweeps the same horizon — it does not grow.
+
+## 66.5 CORRECTION 2026-07-28 — the 1/3 in section 66.2 is WITHDRAWN
+
+`RETRACTED` — **the asymptotic ratio is not 1/3, and 1/3 is not a property of this loop.**
+
+Two simulation-side checks were run and **both were instrument readings**: a reduced
+reproduction returned 0.83 rather than 0.333, and a uniform-width control annihilated the
+state to `|state| = 0.000000` and measured nothing. Neither settled it.
+
+**The third route was to leave simulation entirely.** The pass is a *linear* map, so its
+matrix can be built and its spectrum taken exactly — no chunks, no HTTP, no sample to be
+degenerate:
+
+```
+widths used                     per-pass |lambda|
+[4,6,8,10,12,16] x 10  (66.2)      0.833333   = 5/6
+[16] x 60  uniform                 ~0         one-shot projection, no decay at all
+[4,16] x 30  two widths            0.500000
+```
+
+**The true contraction is 5/6, and it tracks the WIDTH MIXTURE — which is my padding
+choice, not the bodies.** With one width there is no geometric contraction whatsoever; the
+map is idempotent. The published `0.333333` is not this operator's eigenvalue and its origin
+is in the data-side normalisation, not in the loop.
+
+**What survives:** the *qualitative* result stands and is unaffected — **closed, the loop
+contracts to a dead fixed point; wired, it holds a floor linear in the drive** across 32x at
+`8.308e-03 +/- 3.05e-04`. That comparison was made under identical widths on both arms, so
+the drive-response is real. **Only the number 1/3 is withdrawn.**
+
+**And [[LAW-67-THE-OTHER-MINUS-ONE-THIRD]] was right to refuse the link, for a stronger
+reason than it gave: there was no second third to link to.**
+
+This is the fifth instrument-reading of the night and the first that
+[[LAW-68-YOU-CANNOT-REFUTE-THE-LIGHT]] predicted before it was found.
 
 ## 66.5 Boundaries
 
