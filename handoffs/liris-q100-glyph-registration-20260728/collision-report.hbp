@@ -1,0 +1,5 @@
+GLYPHCOLLISIONHDR|run_id=LIRIS-Q100-GLYPH-PID-REGISTRATION-20260728|evidence_class=MEASURED_LIRIS|json=0
+GLYPHCOLLISIONCHECK|new_names=120|new_pids=120|new_name_collisions=0|new_pid_collisions=0|json=0
+GLYPHCOLLISIONCHECK|local_registered_hbp_scanned=44|registered_exact=0|registered_conflicts=0|json=0
+GLYPHCOLLISIONCHECK|local_incoming_hbp_scanned_before=1|incoming_exact=0|incoming_conflicts=0|json=0
+GLYPHCOLLISIONBOUNDARY|acer_full_registry_unreachable=1|office_address_collision_check=PENDING_OWNING_OFFICE|json=0

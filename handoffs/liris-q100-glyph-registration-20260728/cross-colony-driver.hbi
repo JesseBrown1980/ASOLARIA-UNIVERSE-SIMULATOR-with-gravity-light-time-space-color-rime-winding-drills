@@ -1,0 +1,3 @@
+HBI-v1|artifact=cross-colony-driver.hbp|schema=asolaria.cross_colony.driver_packet.v1|rows=3|hot_path=hbp_first|json=0
+CCHBI|key=69ef31c750660ddf|offset=0|length=584|sha256=69ef31c750660ddf978f5e21d8b23f5a86ca589a753cc94deee893cf53aaec08|target=PID-REGISTRATION-OFFICE|route=LIRIS_TO_ACER_PID_REGISTRATION_OFFICE_INCOMING|json=0
+CCPAYLOADINDEX|glyphs=120|request_hbp_sha256=676b6f41fab8b544036577ce59037bf257860c347ad2c5e36b04dd90dc2dfbb9|request_hbi_sha256=789bf1d3d4a548b74d8394576903eea200a5a91c852610738e6843a080b51b03|execute=false|office_ack=0|json=0
