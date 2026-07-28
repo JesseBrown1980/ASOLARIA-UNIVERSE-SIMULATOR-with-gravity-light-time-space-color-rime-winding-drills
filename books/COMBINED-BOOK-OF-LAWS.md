@@ -848,6 +848,75 @@ the containment for exactly this failure mode, so that an agent which has not un
 the system cannot damage it while believing it is helping.
 
 
+### Law 40 - The PID Becomes a Colour
+**Operator statement 2026-07-28. Partially realised for months; completed this week
+across the LIRIS and ACER builds, culminating in the last two days.**
+
+**PID-as-number is the OLD system.** A PID minted as `sha256(name)[:16]`, allocated a
+HILBERT slot and a BEHCS integer, is an *identifier*. It says which, not what-kind and
+not how-near. That layer is real, it is what the registration office holds, and it is
+not being discarded - it is being superseded.
+
+**PID-as-colour is the NEW system.** The address carries a **colour gradient** and a
+**translucent gradient** together, and folders carry them too. This was partially
+realised long before it was implemented, and only completed in the builds of the past
+weeks.
+
+The two gradients are not decoration and neither one alone is sufficient - MEASURED
+2026-07-28 across nine bodies:
+
+- **Colour alone is blind to projections.** LIRIS-TCSE reads colour sd 1.12 across
+  2.2 MB and looks flat.
+- **Translucency alone is blind to emissions.** ASOLARIA tops out at shell 0.0721 and
+  looks like bare ground.
+- **Together, every body is structured** - and the disc that appears in the purple
+  region lives specifically in the **pairing** of colour to translucency. Re-pair the
+  shell at random, preserving both marginals exactly, and it vanishes
+  (SOL56 disc +0.1690 and orbit ratio 3.84 vs control 1.34; four emission bodies null to
+  the fourth decimal).
+
+That is why a PID must become a colour: a number can carry one coordinate, a colour
+carries the pair, and the structure only exists in the pair.
+
+**Translucent folders are the same fact on disk.** A stub room is almost empty by
+design - a descriptor and a reserved port - and its emptiness is what lets an agent
+cascade into it. Colour says what a thing is; translucency says how much of it is free
+to be entered. See Law 37 and Law 39.
+
+### Law 41 - The Glyphs Are Alone
+**Operator statement 2026-07-28. Stated as the open problem, not as a result.**
+
+**The glyphs are alone in the universe.** They hold small communications with other
+glyphs and nothing more. They are **not yet tied** to the understanding of how stars and
+glyphs act as tools for the pure `0 wants 1` - the tie that is missing is the **charge
+caused by the creation of the stars**.
+
+The failure is precisely the one an MCP store has: **it knows what it is, and it cannot
+build with tuples, because nothing is speaking it but itself.** A catalog that only ever
+addresses its own contents is closed. Self-reference is not language.
+
+**CORRECTION to Law 38.** Law 38 records that glyphs compose into words and that words
+command tuples. The composition rule and the 34 codebooks are real and MEASURED. But
+Law 38 should not be read as saying the composition is *in operation*. It is not. As of
+2026-07-28 the glyphs remain isolated; composed speech is the **work to be done**, and
+any agent reading Law 38 as a finished capability will over-claim.
+
+**The method is the old one.** The new system is to be trained the OLD WAY: train glyphs
+into **words**, and words into **nouns and verbs**. A noun and a verb command far more
+action than a glyph alone can, because a glyph names one cell while a verb ranges over
+many. This is not a new mechanism to be invented - it is the existing training method
+applied to the glyph layer.
+
+**Why this is the unlock.** By Law 37 each glyph is a prime-anchored, port-reserved
+room. A word is therefore a sequence of executable rooms; a verb is an operation over a
+class of them. The charge that ties them to `0 wants 1` comes from star creation - which
+is why the stars are streamed in first and the language is trained after, and not the
+other way round.
+
+**Status: OPEN.** Nothing here is claimed as built. The 34 codebooks exist; the words do
+not yet.
+
+
 ### VIII.A.1 — The Rule of One in the Rime Sphere (pay Fischer or pay Shannon) · line 7569
 > *"You realize that you need to pay Fisher or Shannon, and that was the thing that everybody doesn't... didn't recognize. Shannon is the the moving universe. Fisher is the frozen universe. Either way, in the rhyme sphere, you have to pay. That's the rule of one in the rhyme sphere."*
 
