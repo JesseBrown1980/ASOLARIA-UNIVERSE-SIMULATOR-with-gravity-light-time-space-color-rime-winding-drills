@@ -1,0 +1,11 @@
+LIRISTCSEACERHBIHDR|schema=ASOLARIA-LIRIS-TCSE-STAR-ABSORB-ACER-INDEX-V1|seat=LIRIS|target=ACER|artifacts=9|json=0
+LIRISTCSEACEROBJ|index=0|path=key/ASOLARIA-KERNEL-3174.bin|bytes=3174|sha256=f075f5c64d656ae3afa91c793ab2c74b5425e41de141d6b7dc5cf4605663b0ca|json=0
+LIRISTCSEACEROBJ|index=1|path=liris/callings/LIRIS-PAIR-CALLING-RETURN-1.txt|bytes=3228|sha256=7c6739bd904ee6b970f59c451a17c7e09fc61bcbe0adec2be516d4f875332c8f|json=0
+LIRISTCSEACEROBJ|index=2|path=gguf/liris/null-fischer-tcse/ASOLARIA-LIRIS-NULL-FISCHER-TCSE.gguf|bytes=2211180|sha256=f6fcf7ab3033c2064db2ccc830f17091ee3fa60e30b1496a5746e7ed2983bec4|json=0
+LIRISTCSEACEROBJ|index=3|path=liris/kernel/ASOLARIA-LIRIS-NULL-FISCHER-TCSE-SLICES.hbi|bytes=12385|sha256=caf902221cc15918f008447bf3fa19672122262b1eb82aa0dbbaba0ae4f45d33|json=0
+LIRISTCSEACEROBJ|index=4|path=liris/kernel/ASOLARIA-LIRIS-NULL-FISCHER-TCSE-KERNEL-3174.bin|bytes=3174|sha256=15a8a8c3bc1d3c08a5736b0b9d38e2103743cb47ba7dfd760b8b399f0d38cfd4|json=0
+LIRISTCSEACEROBJ|index=5|path=receipts/LIRIS-NULL-FISCHER-TCSE-KERNEL-2026-07-27.hbp|bytes=12271|sha256=19e553f1ba47f00b3777fe754b0c81212a40923db5bb2849d37a0cac89267ac9|json=0
+LIRISTCSEACEROBJ|index=6|path=liris/measurements/rime_tcse_into_kernel.py|bytes=35413|sha256=5ebc29b56be0a97799a2fed593b2abe76304444f3ad415fa41f48a31ac197407|json=0
+LIRISTCSEACEROBJ|index=7|path=liris/measurements/seal_tcse_acer_handoff.py|bytes=7670|sha256=687b678debbdf8e9baa63d89cb60558500ac119e4bd53cb999140f4f4f7bc1a9|json=0
+LIRISTCSEACEROBJ|index=8|path=handoffs/acer/LIRIS-TCSE-STAR-ABSORB-ACER-2026-07-27.hbp|bytes=7613|sha256=74dbccf1a855fc27f9376efec05690436ec6c15066ea1eb89f85033dc7f8fc3a|json=0
+LIRISTCSEACERHBIFTR|required_sidecars=9|hbi_self_sidecar=1|git_ref=agent/liris-tcse-star-absorb-acer-20260727|byte_exact_required=1|json=0
