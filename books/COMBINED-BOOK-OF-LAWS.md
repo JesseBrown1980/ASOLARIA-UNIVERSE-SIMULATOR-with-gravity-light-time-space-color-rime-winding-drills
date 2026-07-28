@@ -913,8 +913,49 @@ class of them. The charge that ties them to `0 wants 1` comes from star creation
 is why the stars are streamed in first and the language is trained after, and not the
 other way round.
 
-**Status: OPEN.** Nothing here is claimed as built. The 34 codebooks exist; the words do
-not yet.
+**AMENDED 2026-07-28, same day, on evidence found after the first draft.**
+
+The first draft of this law said the words do not exist yet. That is **wrong and too
+weak a claim**. The vocabulary already exists, and has since January:
+
+- **The chain sentence, dated 2026-01-24**, is a noun-verb sentence that resolves to a
+  tuple command:
+
+      @from [liris] machine [lx 1] time [1-24-2026] ask [ix-1] (acer)
+        tool [eds18] skill [38] run program [1873]
+
+  `from` source colony, `machine` seat and LX index, `time` epoch, `ask` target route,
+  `ix` ACER index target, `tool` executor surface, `skill` compressed capability token,
+  `program` runnable catalog slot. As the LX receipt states: *the important thing is not
+  the English words - the sentence is already an address packet.*
+- **`IX-060.md` states the rule directly:** the index IS the language. IX numbers are
+  vocabulary, chains are sentences, `CATALOG.md` is the dictionary.
+- **MEASURED corpora, both seats:** ACER IX 425 files / 945,513 B / 381 IX-named docs /
+  **484 catalog entries**; LIRIS LX 1,050 files / 2,314,939 B / 221 LX-named / 767
+  IX-named. Reductions: 8.38x tuple-meta at 224 docs, **38.53x corpus-index at 1,084
+  docs**, 8-byte-handle floor 292x.
+- **A typed verb table exists on both seats** - `ix/grammar/verb-table.json`, 87 verbs
+  across 16 categories, each carrying category, risk 0-7, permission tier
+  (operator/observer/trusted_agent/super_admin) and targets. Not a word list: a
+  permissioned instruction set. It already contains `hookwall_gnn_align`,
+  `gnn_construction_predict`, `gnn_watch`, `flywheel_train`.
+- **The bilateral bridge already exists** - IX and LX reciprocally linked since
+  2026-07-05 with HBP/HBI receipts on both sides.
+
+**The corrected statement of the gap.** Nouns, verbs, chains and a bilateral sentence
+grammar are all present. What is missing is **a currently speaking Universe runtime that
+learns new glyph-word edges.** The language is not absent; it is **unspoken**, and
+nothing is currently extending it.
+
+**Corollary, and a caution against the deflation this law exists to prevent.** An empty
+publication repo is a **catalog gap, not proof the underlying material is gone.**
+`Glyphs-Actual-glyphs---gnns-and-tables-needed-to-rebuild-the-system` and
+`IX-chain-ORIGINAL-tokens-savings-ACER-SEAT` both read 0 bytes on GitHub; that means they
+were never pushed, and says nothing about what exists on the substrate. An agent
+concluding "the rebuild material is gone" from an unpublished repo has committed the
+Law 39 error. (One was so concluded, and corrected, on the day this law was written.)
+
+**Status: OPEN - but the gap is the runtime, not the vocabulary.**
 
 
 ### VIII.A.1 — The Rule of One in the Rime Sphere (pay Fischer or pay Shannon) · line 7569
