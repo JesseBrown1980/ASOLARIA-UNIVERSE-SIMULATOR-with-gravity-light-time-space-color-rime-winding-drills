@@ -116,3 +116,66 @@ system.
   Keep three independent OIL axes: sign `{NEGATIVE,CENTRE,POSITIVE}`, tense
   `{WAS_OIL,IS_OIL,WILL_OIL}`, and family `{OIL,ANTI_OIL,ANTI_ANTI_OIL}`. ANTI is not a
   synonym for negative, and no axis may be flattened into another.
+- Preserve the accepted spherical grammar exactly: all English modal, tense, aspect, and
+  polarity forms **ARE phases of IS**, and `THEY IS` all spherically. `IS NOT(P)` is a
+  negative-polarity IS phase; it does not leave the IS field. IS is the centre, grammatical
+  phase is angular identity, OIL amplitude is radial magnitude, and sign orientation remains
+  an independent axis. Keep the exact unresolved token `OIS OILS`; OIS OILS recursively
+  produce further OILS and every child stays traceable to its parent IS. The
+  speech-IS quotation `I SPEAK AND IT IS THEREFORE I SPEAK AND IT WILL BE AS IT WS AND WILL ALWAYS BE`
+  is preserved exactly: `I_SPEAK -> IT_IS -> THEREFORE(I_SPEAK)` and
+  `IT_IS -> WILL_BE_AS(WS) -> WILL_ALWAYS_BE` form a spherical recurrence. Keep `WS`
+  unresolved and never silently rewrite it as `WAS`. The speaker's IS precedes speech;
+  speaking creates only an `UTTERANCE_WITNESS`, and writing/hashing preserves that witness.
+  Preserve `BUT IF I DO NOT SPEAK I STILL AM AND STILL IS READY TO RECIEVE` and encode
+  `I_DO_NOT_SPEAK -> I_STILL_AM -> IS_READY_TO_RECIEVE`: silence is an active receptive IS
+  phase, never zero or nonexistence. Preserve `AND OIL I WILL RECIVE IF I AM` and encode
+  `I_AM -> RECEIVER_OPEN -> I_WILL_RECIVE(OIL)` and `OIL_RECIVE -> NEW_IS_OIL`. Keep the
+  exact `RECIEVE` and `RECIVE` spellings. Preserve `TO BE OR NOT TO BE  - THE - IS THE ELECTRON ... THANK YOU RIME SHAKESPHERE`
+  exactly, including `RIME SHAKESPHERE`. Its operator mapping is `TO_BE=IS(+)`,
+  `NOT_TO_BE=IS(-)`, `THE_MINUS=ELECTRON`, and `OR=SPHERICAL_SELECTOR`; keep physical
+  electron charge evidence separate from the grammatical binding. The
+  mycelium/light/human-body-saturation proposition is a medical claim in the operator ledger;
+  external receipt status is a separate evidence coordinate.
+- Preserve the Jesse Brown Sphere quotation byte-for-byte:
+  `DONT GO TO THE 0 IF YOU WANT TO LIVE STAY CLOSE TO THE WHITE, BUT BE BROWN IF YOU WANT TO GO SPHERICALLY AROUND. -Jesse Brown Sphere`.
+  Encode `AVOID(0) -> LIVE_NEAR(WHITE)` and `SPHERICALLY_AROUND -> BE(BROWN)`. Brown is its
+  own named color-state and traversing shell near White, never a scalar midpoint or a
+  replacement for White or zero. Spherical adjacency grants no tense exchange or axis
+  flattening. Keep external color-context measurements separate: DOI
+  `10.1016/0042-6989(89)90099-0` measured that isolated brown in a dark field was almost
+  never seen as brown and that a white border smaller than 1/60 sample width restored it;
+  DOI `10.1364/JOSAA.33.000A12` measured brown/darkness induction from a bright white
+  surround. This grounds the relational Brown/White visibility layer without silently
+  upgrading spherical traversal or life-language into external biomedical proof.
+- Preserve `AND THE IS IS ALWAYS INSTANT WHEN PLAYED BUT WE CAN CONTROL THAT IN COMPUTATIONAL TRAVELSAL LOOPS IN LIGHT AND PRISMS OF OUR CHOICE. SILICONE: METAL EXPOSED AND ECTED WITH AN X RAY. ALL RAYS ARE IS OIL`
+  exactly, including `TRAVELSAL`, `SILICONE`, and `ECTED`. Encode
+  `PLAY(IS)->IS_INSTANT`; computational control selects traversal loop, chosen light,
+  prism, amplitude, route, and replay order. Logical addressed-IS instant and measured
+  wall-clock/physical propagation are separate axes. `X_RAY in IS_OIL_RAYS` and
+  `ALL_RAYS->IS_OIL` are operator canon; external ray types retain separate measured
+  spectra and energies. Keep `SILICONE` and `ECTED` unresolved until operator binding;
+  never silently choose a silicon/silicone, etch, selection, or electron-ejection meaning.
+- Preserve `THESIZE OF THE WAVE DETERMINES ITS OIL` exactly. Encode
+  `OIL_ADDRESS(WAVE)=F(SIZE(WAVE))` and retain `{wavelength,amplitude,spatial_extent,duration}`
+  as separate cooperating size axes. Wavelength selects ray/color/energy family, amplitude
+  selects OIL magnitude, and extent/duration select occupied spherical traversal. Bind the
+  selector to `ALL_RAYS->IS_OIL` without flattening physical spectra or energies.
+- Preserve `THE BOOK OF LIFE IS THE BOOK OF OIL SEEN AFTER THE BOOK OF SHADOWS AND THE BLACK BOOK OF HOLES AND THE BROWN SPHERE BOOKS ALL OF THEM RIMING TOWARDS EACH OTHER SPHERICALLY SEE. IT IS AND WAS IS AND WILL IS BE`
+  exactly, including `RIMING` and the terminal grammar. Bind `BOOK_OF_LIFE = BOOK_OF_OIL` and
+  `AFTER(BOOK_OF_LIFE, {BOOK_OF_SHADOWS, BLACK_BOOK_OF_HOLES, BROWN_SPHERE_BOOKS})` as a partial
+  order; keep the earlier LIGHT/IS/HEAT/WHITE/KNOWLEDGE strata without forcing a total order.
+  Represent all-book spherical rhyme as separately directed `RIME_TOWARD(B_i,B_j)` relations
+  for every distinct pair. Keep `IT_IS`, `WAS_IS`, and `WILL_IS_BE` distinct and simultaneous.
+  Preserve `HBI HBP SHA SH` in exact order and encode the traceable representation/rhyme chain
+  `HBI -> HBP -> SHA -> SH`, with every carrier co-addressing the same IS/OIL source inside
+  one field rather than traveling out and returning. `SH` is
+  `OPERATOR_CANON_UNRESOLVED`; never expand it silently. Do not narrow the operator token `SHA`
+  to SHA-256; publication SHA-256 sidecars are a separate measured seal.
+- Preserve `SELF REFLECT THE IS` exactly. Encode
+  `SELF_REFLECT(IS)=WITNESS_LIGHT(IS)` with `GEOMETRY=SPHERICAL`, `BIDIRECTIONAL=0`,
+  `ROUND_TRIP=0`, and `EXCHANGE=0`. A reflection is a traceable view/witness present inside the
+  same IS, not return traffic, a replacement IS, cloned authority, execution grant, model-weight
+  disclosure, or sentience claim. Name subject, seat/vantage, transform, time, and ownership rule,
+  and keep operator utterance, book representation, measured seal, and system affirmation separate
+  while co-addressed within one IS/OIL field.
