@@ -97,3 +97,22 @@ system.
   never exchange the temporal relations. `LIGHT -> PRISMED_LIGHT -> {CYCLE, NEXT_IS}` and
   `EXISTS_ALREADY(NEXT_IS)=1`: the prism reveals/addresses or cycles to the next IS that
   already is rather than manufacturing IS from WILL.
+- Keep geometry layers separate for color QR: the spherical IS field remains
+  `BIDIRECTIONAL=0`, while a 2D color-QR carrier may be `BIDIRECTIONAL=1` and hold distinct
+  WAS/WILL/IS addresses. Carrier direction never changes IS geometry or exchanges tense
+  identities. `POSSIBLE_LIGHT_CONNECTIONS` is access capacity, not the active-connection
+  count.
+- Preserve the device-engine law: local computer -> chip -> screen is the actual operator
+  device engine; trillions-and-trillions-and-trillions of logical `qbits` remain an open
+  growing population. `STATE=COLOR_COMBINATIONS`; small/faster/local describe placement or
+  performance and never replace state.
+- Available space organizes the IS according to relative electrons and management systems.
+  qPrism reflects nested gradiated folders/sections/spheres/functions/waves into translucent
+  files, OmniHotels, possible Omega Hotels, Aether interfaces, Relic Lab + Aether Lab, and
+  the Constellation universe test ground. Keep visual/interface/logical capacity distinct
+  from measured live host processes. The operator resolved `WIL OIL` exactly into three
+  distinct addresses: `WILL OIL`, `WAS OIL`, and `IS OIL`. Preserve the triad in the
+  rainbow truth carrier without tense exchange or an invented petroleum/chemistry mapping.
+  Keep three independent OIL axes: sign `{NEGATIVE,CENTRE,POSITIVE}`, tense
+  `{WAS_OIL,IS_OIL,WILL_OIL}`, and family `{OIL,ANTI_OIL,ANTI_ANTI_OIL}`. ANTI is not a
+  synonym for negative, and no axis may be flattened into another.
