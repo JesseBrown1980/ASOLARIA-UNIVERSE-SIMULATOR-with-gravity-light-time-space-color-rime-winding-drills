@@ -1,0 +1,15 @@
+HBI|schema=ASOLARIA-LIRIS-WORDPRESS-PID-REGISTRATION-REQUEST-BYTE-INDEX-V1|seat=LIRIS|date=2026-07-28|range=BYTE_START_INCLUSIVE_END_EXCLUSIVE|row_hash_includes_lf=1|json=0
+ROOT|path=receipts/LIRIS-WORDPRESS-PID-REGISTRATION-REQUEST-2026-07-28.hbp|bytes=1716|sha256=e79897e5a22c1f3dfe28ac935579f459d4f28a822a6c3e64b2799a6b152de378|cr=0|terminal_lf=1|json=0
+INDEX|n=0|tag=PIDREGREQ|byte_start=0|byte_end_exclusive=135|bytes=135|sha256=f42cbfc51c5482da0bbab8f47af0542c7c3b263f3adb08845ecc55cda3e6a0b1|includes_lf=1|json=0
+INDEX|n=1|tag=AUTHORITY|byte_start=135|byte_end_exclusive=277|bytes=142|sha256=3868e79d2c8f4f2e9c62b7eb49d0a9893e40826bb6701c5ca9e50653958b0794|includes_lf=1|json=0
+INDEX|n=2|tag=SUBJECT|byte_start=277|byte_end_exclusive=430|bytes=153|sha256=c6ef834efcaddb88ef9f06b608c598780f49ee1c091c14f6b9bae187378076bf|includes_lf=1|json=0
+INDEX|n=3|tag=ARTIFACT|byte_start=430|byte_end_exclusive=626|bytes=196|sha256=be985773603813be85d95d68c21e636ba0dee5326f8db64ba04d6b05c9c3443d|includes_lf=1|json=0
+INDEX|n=4|tag=ARTIFACT|byte_start=626|byte_end_exclusive=830|bytes=204|sha256=94cd04e9289ab0701e16218e0c7f6b6480efb22a86c5b893f50aaa3c9bd10b97|includes_lf=1|json=0
+INDEX|n=5|tag=ARTIFACT|byte_start=830|byte_end_exclusive=1015|bytes=185|sha256=c5b2cf8402e02e984f046a9e81b34b22084a5071b9df791b8e2f2f47339ba721|includes_lf=1|json=0
+INDEX|n=6|tag=ARTIFACT|byte_start=1015|byte_end_exclusive=1212|bytes=197|sha256=3a13b24a745757010b0b8628a3a9d87b90e7621d07f7cbc2c44c7def86382a7c|includes_lf=1|json=0
+INDEX|n=7|tag=PRIVACY|byte_start=1212|byte_end_exclusive=1328|bytes=116|sha256=be308f2ff14006c051e30bda96c04906796061875967c3ca9efa597db6277ecb|includes_lf=1|json=0
+INDEX|n=8|tag=PIDOFFICERULE|byte_start=1328|byte_end_exclusive=1446|bytes=118|sha256=3d57c06a8794ae299ec2f8a1eceabd2671b268dc5633d52c2ffe4e53502523cc|includes_lf=1|json=0
+INDEX|n=9|tag=BOUNDARY|byte_start=1446|byte_end_exclusive=1573|bytes=127|sha256=b702c45369cf6bad3a49ea351e7b620c48943f9dea90c92368f69e447b72ffe9|includes_lf=1|json=0
+INDEX|n=10|tag=VERIFY|byte_start=1573|byte_end_exclusive=1651|bytes=78|sha256=38dd5e27a2b886c7dd5b6803a571564cf2ecc066b12c8f63bcdb1dd5420aef76|includes_lf=1|json=0
+INDEX|n=11|tag=ACTION|byte_start=1651|byte_end_exclusive=1716|bytes=65|sha256=ddf5e1f96e2027cd926cc34f97b88cdfe0c4fb61a4fae6ae789a4d70f37436d3|includes_lf=1|json=0
+FOOTER|indexed_rows=12|indexed_bytes=1716|coverage=EXACT|json=0

@@ -1,0 +1,15 @@
+HBI|schema=ASOLARIA-WORDPRESS-TRIDIRECTIONAL-HANDOFF-BYTE-INDEX-V1|seat=LIRIS|date=2026-07-28|range=BYTE_START_INCLUSIVE_END_EXCLUSIVE|row_hash_includes_lf=1|json=0
+ROOT|path=receipts/LIRIS-TO-ACER-TO-RELIC-WORDPRESS-TRIDIRECTIONAL-HANDOFF-2026-07-28.hbp|bytes=1615|sha256=11d875ac9cc291d4891283ea09aa8ad93926577e23e9aeb8e71a991ba2274f55|cr=0|terminal_lf=1|json=0
+INDEX|n=0|tag=TRIHANDOFF|byte_start=0|byte_end_exclusive=136|bytes=136|sha256=04680c1127bb7fbecc14ca4773377b06f1bcee2aee10ecdfa347e54d7d8dd2cb|includes_lf=1|json=0
+INDEX|n=1|tag=EVIDENCE|byte_start=136|byte_end_exclusive=280|bytes=144|sha256=405301bd2c64e8a119fbcc3d57d6db6d8c46c619b24aac4d309fd4bad612842b|includes_lf=1|json=0
+INDEX|n=2|tag=EVIDENCE|byte_start=280|byte_end_exclusive=411|bytes=131|sha256=450274be03c99a2e27014112dde403f3b872bfe2809ad19b87127c255d9b56a5|includes_lf=1|json=0
+INDEX|n=3|tag=ARTIFACT|byte_start=411|byte_end_exclusive=595|bytes=184|sha256=97caa495b9c2de949f4d005aec2833e3225165f7a87ebe4515e81542d4fa5707|includes_lf=1|json=0
+INDEX|n=4|tag=ARTIFACT|byte_start=595|byte_end_exclusive=798|bytes=203|sha256=9538159390db6fbbba43b02b9912170497d4982850ef11aadd27931eebf481a3|includes_lf=1|json=0
+INDEX|n=5|tag=ARTIFACT|byte_start=798|byte_end_exclusive=994|bytes=196|sha256=2dbd3b70467acbae2559dcc1475e187fed2623ec84dbbf75eac960006cfc2877|includes_lf=1|json=0
+INDEX|n=6|tag=LEG|byte_start=994|byte_end_exclusive=1094|bytes=100|sha256=7be6eb6ab449ed3ffc5a5d7b00d330868d6b005ef94c4993fe8287921311a96f|includes_lf=1|json=0
+INDEX|n=7|tag=LEG|byte_start=1094|byte_end_exclusive=1195|bytes=101|sha256=3decabbfd08eeb2fd25b3769771e6932f05a92eff97baa9d6c057153f9493170|includes_lf=1|json=0
+INDEX|n=8|tag=LEG|byte_start=1195|byte_end_exclusive=1300|bytes=105|sha256=5d3809390573df3feb9d522460188a6430ade337602ab807d6f0e6f066922668|includes_lf=1|json=0
+INDEX|n=9|tag=GATE|byte_start=1300|byte_end_exclusive=1424|bytes=124|sha256=fa152ba391ca4e1da5dc8aa81d2c2b62b06d0f1bfc4a2bfd1cb7934745f4d1e5|includes_lf=1|json=0
+INDEX|n=10|tag=PRIVACY|byte_start=1424|byte_end_exclusive=1526|bytes=102|sha256=abf2e2433ded9f016bf2f97662d169230999b0840b876dd72d3ee05c87f141cc|includes_lf=1|json=0
+INDEX|n=11|tag=ACTION|byte_start=1526|byte_end_exclusive=1615|bytes=89|sha256=faab886768e7f7caadb632d70513893425bab5fa4391ef4747fc8f534b09a3d1|includes_lf=1|json=0
+FOOTER|indexed_rows=12|indexed_bytes=1615|coverage=EXACT|json=0

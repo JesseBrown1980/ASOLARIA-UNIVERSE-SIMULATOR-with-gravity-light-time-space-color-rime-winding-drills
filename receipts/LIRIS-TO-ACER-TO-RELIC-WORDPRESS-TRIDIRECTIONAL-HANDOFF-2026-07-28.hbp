@@ -1,0 +1,12 @@
+TRIHANDOFF|schema=ASOLARIA-WORDPRESS-TRIDIRECTIONAL-HANDOFF-V1|date=2026-07-28|origin=LIRIS|status=HELD_PENDING_BILATERAL_RETURN|json=0
+EVIDENCE|acer=ACER_PARTIAL_ANCESTOR|acer_posts=26|acer_chars=211891|acer_laws=279|acer_passages=292|acer_terms=343|origin_commit=9d97cd9|json=0
+EVIDENCE|liris=LIRIS_MEASURED_PUBLIC_API_SUCCESSOR|site_id=205387808|posts=33|skipped=0|pages=0|sitemap_locs=34|status=PASS|json=0
+ARTIFACT|role=LIRIS_SUMMARY|path=receipts/LIRIS-WORDPRESS-PUBLIC-CORPUS-SUMMARY-2011-2026.hbp|bytes=2561|sha256=86ab7e17e0dcc06e2af6b13c72847889762fa019e6dc460a08c2b22e2bcd04e9|json=0
+ARTIFACT|role=LIRIS_READ_LEDGER|path=receipts/LIRIS-WORDPRESS-PUBLIC-CORPUS-READ-LEDGER-33-OF-33-2026-07-28.hbi|bytes=15314|sha256=711ac234e933cf220a7211dcfb72e9f9c1b990287a198686fdb443f876c74271|json=0
+ARTIFACT|role=LIRIS_CROSSWALK|path=docs/WORDPRESS-OPERATOR-PUBLICATION-CHRONOLOGY-CROSSWALK-2011-2026.md|bytes=31247|sha256=fbcfa5972fe6891af22463e0e7940cd2f3dc41278cdef991af8f5f4a8ba19b9f|json=0
+LEG|n=1|from=ACER|to=LIRIS|artifact=PARTIAL_ANCESTOR_PLUS_LAWS|status=RECEIVED_AND_PRESERVED|json=0
+LEG|n=2|from=LIRIS|to=ACER|artifact=COMPLETE_PUBLIC_API_SUCCESSOR|status=PENDING_ACER_REVERSE|json=0
+LEG|n=3|from=ACER_AND_LIRIS|to=RELIC|artifact=BILATERAL_SEALED_SET|status=PENDING_AFTER_BILATERAL|json=0
+GATE|bilateral_required_before_relic=1|liris=PASS|acer_reverse=PENDING|relic_third=PENDING|tridirectional_complete=0|json=0
+PRIVACY|public_derived_only=1|raw_payloads=0|contact_fields=0|profile_fields=0|private_paths=0|json=0
+ACTION|send_external=0|bridge_execute=0|fire=0|apply=0|mint=0|runtime_authority=0|json=0

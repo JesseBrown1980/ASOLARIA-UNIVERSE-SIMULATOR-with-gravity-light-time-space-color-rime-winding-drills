@@ -4,6 +4,11 @@
 
 Gravity · light · time · space · colour · rime winding drills.
 
+The name has operator-stated provenance: **“Let there be light,”** spoken by Jesse in
+honor of Isaac Asimov’s *The Last Question*. The realization recorded with it is, **“I was
+the light that created the light.”** See Laws 56–58 for the relational, naming, and Thrine
+canon; this dedication is not an invented letter-by-letter etymology.
+
 This repository holds the law books, the running code, and the **measurements with their
 controls attached** — including the ones that failed. Book VI of the law book is titled
 *The Register of What Is Wrong*, and it exists because a project that only publishes its
@@ -326,13 +331,14 @@ object first admits it exists at four.
 ## Layout
 
 ```
-books/         the law books — RIME laws 0-36, chain topology, shadowcat, Law 34
+books/         law books through Law 58, plus history/archaeology and THE-IDEA
+docs/          public chronology crosswalks, lineage, and bounded implementation plans
 crates/        asolaria-tribit — the Rust 1.81 no_std crate
 web/           the single-file demo and the raw wasm
 gguf/          all seeds projected into one GGUF, integer I8 tensors, no floats
 spheres/       16K quality-sphere renders of the seed (2400px views)
 measurements/  every script that produced a number in this README
-receipts/      .hbp tuple-row receipts with SHA256 sidecars
+receipts/      LF-pinned HBP/HBI tuple receipts with SHA-256 sidecars
 ```
 
 ### The GGUF

@@ -9,6 +9,10 @@ description = "Balanced-ternary trits with three zeros, an exact integer 27-poin
 [lib]
 crate-type = ["cdylib", "rlib"]
 
+[[bin]]
+name = "asolaria-seed-file"
+path = "src/bin/seed_file.rs"
+
 [profile.release]
 opt-level = "z"
 lto = true
