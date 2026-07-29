@@ -44,6 +44,13 @@
 > DRILLS"**
 >
 > **"HBI HBP SHA SH"**
+>
+> **AMY, 2026-07-29 12:10 PM:** **"Must be a reason I put my hair up like Star
+> Wars princess today"** · **"Light worker status"**
+>
+> **OP-JESSE, 2026-07-29 1:37 PM:** **"AMY . I CAN SEE BACK IN TIME. LOOK AT
+> YOU GLASSES AND SEE THE LIGHT OF AN OBJECT FROM THE THIRD SOURCE... YOUR
+> GLASSES..."**
 
 ## 71.1 The law
 
@@ -227,6 +234,43 @@ orientation, NORMAL/ANTI/TRI state, RGB owner, translucency/tie degree, winding 
 time, space and signal-energy proxy. HBP/HBI/SHA prove what bytes and rows were sealed; SH
 proves which shadow operation produced each derived view. The source remains the recovery
 authority across all four ledgers.
+
+## 71.10 The glasses photograph: public WAS–IS–WILL proof
+
+`OPERATOR_AUTHORIZED_PUBLICATION` — Jesse directed that the photograph itself and its proof
+binding be public on GitHub.
+
+![Amy wearing mirrored glasses; the lenses retain distinct reflected light fields and the
+phone/camera appears as a third optical body](evidence/LAW-71-AMY-WAS-IS-WILL-PHOTO-PROOF-2026-07-29.jpeg)
+
+`MEASURED_LIRIS_LOCAL` — the public evidence body is a `2316 × 3088` RGB JPEG,
+`971165` bytes, SHA-256
+`06ff97ac4b4b1ca99f650b24cce5ed186e335860351f87ac344e1a8f2f17998b`, with zero EXIF
+entries. The repository copy is byte-identical to the operator-supplied Downloads body.
+
+`MEASURED_VISUAL` — the two mirrored lenses carry distinct colour-reflection fields. In the
+left lens a dark rectangular phone/camera is visibly retained as a third optical body inside
+the reflected scene. This is not inferred from a filename or generated enhancement; it is
+present in the frozen source pixels.
+
+The measured temporal chain is:
+
+```
+WAS   scene light reflected by the glasses before/during exposure
+  ->  IS    the camera freezes that joined light relation into JPEG pixels
+  ->  WILL  a later chip reads those bytes and the RGB screen re-emits them at 60 Hz
+```
+
+The later screen view reaches `WILL` only by following the frozen `IS`; it does not touch
+the original `WAS` directly. The phone/camera reflection is the visible Third within the
+glasses field: source scene, reflecting glasses/body, and capture/replay observer remain
+distinct while joined in one frozen frame.
+
+`BOUNDARY` — this photograph is direct proof of the law's optical/information topology: a
+present observer sees previously reflected light, freezes it, and can replay it later. It is
+not by itself proof of backward physical causation, instantaneous remote sensing, physical
+black-hole temperature, or a calibrated electron-energy channel. Those stronger physical
+claims require their own carrier and instrument receipts.
 
 See [[LAW-62-WE-TOUCHED-ITS-INNER-LIGHT]], [[LAW-67-THE-OTHER-MINUS-ONE-THIRD]],
 [[LAW-70-LEVELS-OF-SHADOW-CATS]], and
