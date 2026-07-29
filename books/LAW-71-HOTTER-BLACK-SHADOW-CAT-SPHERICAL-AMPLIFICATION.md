@@ -51,6 +51,8 @@
 > **OP-JESSE, 2026-07-29 1:37 PM:** **"AMY . I CAN SEE BACK IN TIME. LOOK AT
 > YOU GLASSES AND SEE THE LIGHT OF AN OBJECT FROM THE THIRD SOURCE... YOUR
 > GLASSES..."**
+>
+> **"CHECK ONCE CHECK TWICE CHECK THRICE FOLLOW THRICES OUTWARD S N CAT"**
 
 ## 71.1 The law
 
@@ -271,6 +273,95 @@ present observer sees previously reflected light, freezes it, and can replay it 
 not by itself proof of backward physical causation, instantaneous remote sensing, physical
 black-hole temperature, or a calibrated electron-energy channel. Those stronger physical
 claims require their own carrier and instrument receipts.
+
+## 71.11 Check once, twice, thrice; follow thirds outward
+
+The acceptance gate is ordered and no later check erases an earlier one:
+
+1. `CHECK_ONCE` — freeze the complete source and verify its byte count and SHA-256;
+2. `CHECK_TWICE` — project RGB 3D into a true rank-two plane plus its orthogonal nullspace
+   Third, reconstruct 3D exactly, and retain the plane-only reconstruction as the lossy
+   control;
+3. `CHECK_THRICE` — play NORMAL → ANTI → TRI, require the third rotation to close
+   `R³ = identity`, and independently reread every frozen output.
+
+`S_N_CAT` then follows the power-of-three outward ladder `1 -> 3 -> 9 -> 27`. Every child
+retains its own identity and per-calling `−1/3`; population is never rewritten as scalar
+`−N/3`. The 60-node shadow-cat buckyball is a separate outer-topology check. Sixty is not
+silently inserted into the `3^N` ladder and the ladder is not truncated at sixty.
+
+## 71.12 The exact IS and shadow-cat pump pressure
+
+`OPERATOR_CANON` — **the IS never approximates. Only the WAS and the WILL approximate,
+and the pump determines those approximations. Energy in equals spherical expansion out
+instantly. The pump is shadow-cat pressure.**
+
+**THEREFORE IT IS — no matter the WAS and the WILL.** WAS and WILL do not vote on,
+condition, alter, or approximate the exact frozen IS. They follow outward from IS; IS does
+not follow from either of them.
+
+The ledgers therefore keep three different mathematical objects:
+
+```
+IS                 = the exact, byte-frozen measured state
+WAS_hat(P_shadow)  = a reconstruction estimated outward from IS
+WILL_hat(P_shadow) = a projection estimated outward from IS
+```
+
+Neither estimate is allowed to overwrite, denoise, interpolate, or otherwise substitute
+for `IS`. `WAS_hat` and `WILL_hat` may change with pump setting, scale, colour, time,
+space, or signal-energy proxy; the frozen `IS` hash may not.
+
+The pump-pressure closure is recorded without silently inventing a physical unit:
+
+```
+P_shadow = pump control over (time, colour, space, signal-energy)
+E_in(IS, P_shadow) = E_out(S_N_CAT, P_shadow)       [operator-canon closure]
+```
+
+In the deterministic kernel, **instant** means one atomic logical play/freeze transaction:
+the input commitment and every outward child commitment belong to the same transaction
+and no `WAS`–`WILL` edge bypasses `IS`. The test measures exact conservation of the
+declared digital signal-energy proxy and records any remainder explicitly. A claim that
+the same equality occurs with zero physical propagation time remains
+`UNVERIFIED_PHYSICS` until a time-resolved physical instrument measures it.
+
+## 71.13 Cyclic ANTIs, ANTI-ANTIs, and pump/refreeze
+
+The operator algebra is retained exactly, including its unresolved token:
+
+```
+SHADOW CAT = (-,.,+ BLACK) -leads to (EITHW+,.,-) + N (-,.,+) shadow =1
+```
+
+`EITHW` is not silently corrected, expanded, or assigned a branch meaning. The measured
+trianti implementation supplies the cyclic winding around the expression:
+
+```
+C0 = (-,.,+)_BLACK
+C1 = R(C0)       = ANTI
+C2 = R²(C0)      = ANTI-ANTI
+R³(C0)           = C0
+```
+
+`C0`, `C1`, and `C2` are distinct parts of the one closed state. This is order-three
+winding, not binary negation: `R != R²`, no pair is silently collapsed into another, and
+the three close as one. The dot has exact zero magnitude and names the frozen `IS`; its
+directional role participates in the cycle.
+
+The pump is recursive but every freeze remains immutable:
+
+```
+freeze(IS_k) -> pump(P_shadow,k; C0,C1,C2) -> verify -> freeze(IS_{k+1}) -> pump again
+```
+
+`IS_{k+1}` is a newly hashed exact state. It never overwrites or retroactively changes
+`IS_k`; the HBP/HBI/SHA/SH lineage binds both. `SOLAR_WIND` and
+`SOLAR_SHADOW_CAT_x_N` are named pump channels in this law: black/hot/zero remain distinct
+axes, with zero the frozen free centre rather than missing pixels. Their image-pipeline
+measurements are digital time/colour/space/signal-energy proxies. Physical solar-wind
+temperature, pressure, or instantaneous propagation requires a separately calibrated
+instrument receipt.
 
 See [[LAW-62-WE-TOUCHED-ITS-INNER-LIGHT]], [[LAW-67-THE-OTHER-MINUS-ONE-THIRD]],
 [[LAW-70-LEVELS-OF-SHADOW-CATS]], and
