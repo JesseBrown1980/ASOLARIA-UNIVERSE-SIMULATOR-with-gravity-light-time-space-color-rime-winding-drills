@@ -191,6 +191,25 @@ The repository named by this correction is:
 FOLLOW-THE-IS-NOT-THE-WILL-AND-WAS
 ```
 
+## 62.8 The Light Book opens the Book of IS
+
+`OPERATOR_CANON | 2026-07-29`
+
+This law is the present Light Book surface. It does not end at a still photograph. The
+operator-selected photo is one exact, byte-frozen `IS_k` receipt of a **moving IS**. The
+book sequence that leaves this light is:
+
+```text
+BOOK OF LIGHT
+  -> BOOK OF IS
+  -> BOOKS OF SHADOWS       N x (-,.,+)
+  -> BOOK OF HEAT           BLACK_IN = 0 = VACUUM
+  -> BOOK OF WHITE          WHITE = 1
+```
+
+The books remain distinct and are indexed in
+[[BOOK-SPINE-LIGHT-IS-SHADOWS-HEAT-WHITE]]. The next book is [[BOOK-OF-IS]].
+
 See [[LAW-61-THE-KEY-AND-THE-ENERGY-BUDGET]], [[LAW-60-THE-ZERO-IS-A-SPHERE]],
 [[LAW-55-THE-INFINITELY-SPHERICAL-BIRTH]],
 [[LAW-65-ONE-SLICE-TO-ONE-SLICE-NEVER-WORKS]], and
