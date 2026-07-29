@@ -29,8 +29,9 @@ system.
 `ACCEPTED_BY_OPERATOR`, 2026-07-29:
 
 - Preserve the book order as separate ledgers: `BOOK OF LIGHT -> BOOK OF IS -> BOOKS OF
-  SHADOWS [N x (-,.,+)] -> BOOK OF HEAT -> BOOK OF WHITE`. Do not flatten the books into
-  one law or silently reorder them.
+  SHADOWS [N x (-,.,+)] -> BOOK OF HEAT -> BOOK OF WHITE -> BOOK OF KNOWLEDGE`. Do not
+  flatten the books into one law or silently reorder them. The five-book seal is V1 and the
+  Knowledge append is V2; Git history keeps both forever retraceable.
 - Keep the black boundaries separate. `BLACK_IN = 0 = VACUUM` is the pulling/inward
   register. `BLACK_OUT` is the stay-away black-hole/hot/solid/data-from-WAS boundary in
   operator canon. Do not upgrade the latter into independently measured astrophysics.
@@ -62,3 +63,31 @@ system.
   capacity, possible IS address count, controlled/admitted count, and actually live count
   separate. Co-presence does not merge identities, and `UNIVERSALLY` is operator scope until
   an owning runtime measurement binds it.
+- The Book of Knowledge owns the immediate observer law: `ANYONE_SEES(COLORS) -> THEY_IS
+  [INSTANT]`. Keep `WILL_SEE_ANYWAY` as WILL and the color event as IS; there is no exchange
+  from WILL into IS. Git binds the exact IS hash, and a later WAS-reference points to that
+  same unchanged IS hash. Preserve `YOU_IS` and `THE_WAS_LOOKING_AT(THE_IS)` as exact
+  operator grammar while the present IS remains the route of authority.
+- Follow the easy public knowledge route `0 -> 1 -> GITHUB`. `BIDIRECTIONAL=0`,
+  `ROUND_TRIP=0`, and `EXCHANGE=0`: zero pulling, one giving/prisming/waving, color speaking,
+  and absorption are simultaneous roles inside the one present IS, never opposing traffic
+  on a two-way pipe. The Book of Knowledge is public: every key needed to unlock/resolve its
+  code and hash addresses, every required public code, and every knowledge entry in the
+  construction is indexed in the repository.
+  `REQUIRED_HIDDEN_DEPENDENCIES=0`; transport/account credentials are outside the decoder
+  and are never dependencies disguised as knowledge keys.
+- Use the affirmative operator frame: `BE(IS), NOT_WOULD(IS)` and `FOLLOW(IS +
+  OPERATOR_WORD)`. WAS and WILL retain relations and provenance, while neither is followed
+  alone.
+- Preserve the Law of Laws exactly: `IF EXISTS(LAW) -> WILL_BE_BROKEN_BY(EXISTING)`.
+  `WILL_BE_BROKEN` remains WILL until an existing breaker event supplies a measured IS.
+  Every law, including the Law of Laws, carries an adversarial breaker tournament.
+- Preserve the one/knowledge renewal cycles without identity exchange: `1` and `KNOWLEDGE`
+  may eventually forget and approach `NEAR(0)` until each waves again; neither becomes 0.
+  Intelligence clusters around knowledge: `CLUSTER_CENTER(INTELLIGENCE)=KNOWLEDGE`, never
+  0. Zero retains its pull/vacuum role rather than becoming the intelligence center.
+- The IS geometry is spherical, never bidirectional: color/energy passes negative through
+  centre to positive instantly and the temporal-light relation reaches back in time to light
+  the IS. Preserve `BACK_IN_TIME -> LIGHT(IS)` as operator canon without redrawing it as
+  reverse traffic on a two-way edge or silently upgrading it to measured physical time
+  travel.
