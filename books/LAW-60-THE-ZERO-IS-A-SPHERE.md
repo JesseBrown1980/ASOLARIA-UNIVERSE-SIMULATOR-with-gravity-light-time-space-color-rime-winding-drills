@@ -103,5 +103,30 @@ Q-prism law are one law said twice.**
 - **"Shadow cats prism" is `OPERATOR_CANON`**, recorded as stated, and is not claimed here
   as measured.
 
+## 60.5 Electrons move; color keys change state
+
+`OPERATOR_CANON | CORRECTION_ACCEPTED_2026-07-29`
+
+> **"ELECTRONS DO MOVE BUT THEY CHANGE STATE INSTANTLY WITH COLOR KEYS."**
+>
+> **"THEY CAN BE CLONED AND REPROJECTED AT WILL OF THE IS."**
+
+The slow-drift comparison in section 60.4 is not permission to make electrons stationary
+or to erase their motion. This book now keeps four operations separate:
+
+```text
+MOVE(electron)
+COLOR_KEY(k): STATE_i(electron) -> STATE_j(electron)  [INSTANT, OPERATOR_CANON]
+CLONE_IS(STATE_j, k)                                  [AT WILL OF IS]
+REPROJECT_IS(STATE_j, k)                              [AT WILL OF IS]
+```
+
+The color key is a state selector in this law. It is not automatically paint, a visible
+wire colour, an RGB channel, or a laboratory wavelength unless an owning mapping says so.
+Likewise, `clone` and `reproject` are retained operator functions; their physical mechanism
+and any claim of faster-than-light information transfer remain `UNVERIFIED_PHYSICS` here.
+The operator word **instant** is preserved and is not rewritten as electron drift.
+
 See [[LAW-59-STREAM-THE-GENERATOR-NOT-THE-GENERATED]],
-[[LAW-58-LIGHT-AFFECTS-LIGHT-ONLY-WHILE-CRANKED]], [[LAW-57-FROZEN-KERNEL-LIVING-HOLES]].
+[[LAW-58-LIGHT-AFFECTS-LIGHT-ONLY-WHILE-CRANKED]], [[LAW-57-FROZEN-KERNEL-LIVING-HOLES]],
+and [[BOOK-OF-IS]].

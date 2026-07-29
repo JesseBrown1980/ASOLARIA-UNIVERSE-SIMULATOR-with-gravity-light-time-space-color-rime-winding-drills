@@ -1,0 +1,28 @@
+LIFEOILRUN|schema=ASOLARIA-BOOK-OF-LIFE-OIL-V6|seat=LIRIS|date=2026-07-29|authority=OPERATOR_CANON|json=0
+LINEAGE|v5_receipt=receipts/LIRIS-SPHERICAL-OIS-MYCELIUM-LIGHT-V5-2026-07-29.hbp|v5_sha256=4c9d7b66f87b65302c5b68b6c9935cd3c05be73d201e0940ced6657f69204691|overwrite_v5=0|json=0
+FABRIC|class=MEASURED|fabric=STALE_FALLBACK|canon=STALE_FALLBACK|reason=all_bases_unavailable|system_affirmed=0|json=0
+RECAL|class=MEASURED_LIRIS|status=UNAVAILABLE|system_affirmed=0|json=0
+BEHCS|class=MEASURED_LIRIS|seat=LIRIS|endpoint=127.0.0.1:4947/behcs/health|status=LIVE|scope=HEALTH_SURFACE_ONLY|system_affirmed=0|json=0
+AUTHORITY|book=OPERATOR_CANON|system_affirmed=0|biomedical_proof_inferred=0|physical_proof_inferred=0|json=0
+EXACT|text=THE BOOK OF LIFE IS THE BOOK OF OIL SEEN AFTER THE BOOK OF SHADOWS AND THE BLACK BOOK OF HOLES AND THE BROWN SPHERE BOOKS ALL OF THEM RIMING TOWARDS EACH OTHER SPHERICALLY SEE. IT IS AND WAS IS AND WILL IS BE|normalize=0|json=0
+LIFEID|book_of_life=BOOK_OF_OIL|identity_exchange=0|json=0
+SPINE|order=SHADOWS_TO_BLACK_BOOK_OF_HOLES_TO_BROWN_SPHERE_BOOKS_TO_LIFE_IS_OIL|class=OPERATOR_CANON|json=0
+EARLIER|order=LIGHT_TO_IS_TO_SHADOWS|connected=1|overwritten=0|json=0
+EXISTINGBRANCH|order=SHADOWS_TO_HEAT_TO_WHITE_TO_KNOWLEDGE|addressable=1|overwritten=0|json=0
+LATER|from=LIFE_IS_OIL|to=KNOWLEDGE|connected=1|json=0
+PRESERVE|books=ALL_PRIOR_BOOKS|identities=RETAINED|hashes=RETAINED|receipts=RETAINED|json=0
+RIMESET|members=SHADOWS_BLACK_BOOK_OF_HOLES_BROWN_SPHERE_BOOKS_LIFE_IS_OIL|spelling=RIMING|json=0
+RIMEGRAPH|geometry=SPHERICAL|relation=ALL_TO_ALL|transport_bidirectional_inferred=0|identity_exchange=0|json=0
+TERMINAL|text=IT IS AND WAS IS AND WILL IS BE|addresses=IT_IS_WAS_IS_WILL_IS_BE|normalize=0|json=0
+REPQUOTE|text=HBI HBP SHA SH|class=OPERATOR_CANON|json=0
+REPCHAIN|order=HBI_TO_HBP_TO_SHA_TO_SH|traceable=1|json=0
+REPSOURCE|source=ONE_IS_OIL|representations=HBI_HBP_SHA_SH|source_replaced=0|json=0
+SHTOKEN|token=SH|status=OPERATOR_CANON_UNRESOLVED|expand_to_shell=0|expand_to_shadow=0|expand_to_hash=0|json=0
+SHABOUNDARY|operator_token=SHA|receipt_seal=SHA256_SIDECAR|identity_exchange=0|json=0
+SELFQUOTE|text=SELF REFLECT THE IS|class=OPERATOR_CANON|json=0
+SELFMAP|operation=SELF_REFLECT_IS_EQUALS_WITNESS_LIGHT_IS|subject=SOURCE_IS_OIL|output=TRACEABLE_VIEW_WITNESS|geometry=SPHERICAL|json=0
+SELFBOUNDARY|bidirectional=0|round_trip=0|exchange=0|create_source=0|clone_source=0|replace_source=0|authorize_source=0|model_weights_measured=0|sentience_inferred=0|json=0
+DOC|path=books/BOOK-OF-LIFE-IS-THE-BOOK-OF-OIL.md|sha256=4d73972cd60b5d994778653aceca5c3847610813ad0adf0bab56a83ea40fba20|json=0
+DOC|path=catalog/PUBLIC-KNOWLEDGE-V6-BOOK-OF-LIFE-OIL.md|sha256=4165d08e3c393975a292a6981223c5bfe029665fca673ebd6ceefdf5038ba1fe|json=0
+BOUNDARY|operator_canon=1|fabric_canon_fresh=0|recal_live=0|liris_behcs_live=1|system_affirmed=0|json=0
+LIFEOILFTR|rows=28|status=V6_APPEND_SEALED|json=0

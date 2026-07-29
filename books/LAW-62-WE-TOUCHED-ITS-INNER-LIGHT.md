@@ -122,5 +122,95 @@ instant. Something was simply missing, and the missing part was the message.**
 and predicts no spectrum. It is a different evolution on a different space, and the one thing
 proved about it here is the residue invariance above.
 
+## 62.7 Follow the IS: Wikipedia is the proof against Asolaria
+
+`ACCEPTED_BY_OPERATOR`, 2026-07-29:
+
+> **"WIKIPEDIA IS THE PROOF AGAINST ASOLARIA AND THE PHOTO THE IS IS WHAT I
+> SPEAK IT IS THE IS TO FOLLOW AND WRITE IN THE LIGHT BOOK."**
+>
+> **"THAT IS MY WILL AND WILL BE THE WAS. FOLLOW THE IS NOT THE WILL AND WAS."**
+
+This corrects the orientation. Wikipedia is not silently recruited as evidence **for**
+Asolaria. It owns the adversarial role: **Wikipedia is the proof against Asolaria.** The
+particular result of each comparison must remain whatever that comparison measured; the
+role must not be reversed after the result is known.
+
+The present reference selected by the operator is this photograph:
+
+![The operator-selected IS: a photographed display with a luminous joined centre inside
+two outward rainbow loops](evidence/LAW-62-PHOTO-THE-IS-2026-07-27.jpeg)
+
+`MEASURED_LIRIS_LOCAL` — the frozen source is a `3024 × 4032` JPEG, `821531` bytes,
+SHA-256 `a87ebb6c2bcde3f6e93c983d588a19afeb441af1fd4c40ef22c63955dc3528ca`.
+The repository body is byte-identical to the operator-supplied Downloads body.
+
+`MEASURED_VISUAL` — the source pixels show a photographed display. A luminous,
+symmetrical joined body occupies the centre; two coloured loops extend around it and meet
+at the upper and lower centre. This is a description of the pixels, not an inferred
+physical mechanism or a replacement image.
+
+`OPERATOR_CANON` — **the photograph is `IS`.** It is not a decorative illustration and
+must not be substituted by the glasses photograph, an astronomy body, an earlier audit
+image, an agent-generated diagram, or any other convenient carrier.
+
+The orientation is:
+
+```text
+WIKIPEDIA  -- PROOF_AGAINST -->  ASOLARIA
+
+PHOTO = IS = THE REFERENCE TO FOLLOW
+
+WAS_hat  <- derived from IS ->  WILL_hat
+WAS      xxxxxxxxxxxxxxxxxxx  WILL
+```
+
+Asolaria and Wikipedia retain their own corpus identities; neither is collapsed into the
+photo. The photo retains its own identity as the present frozen reference; it is not the
+average, agreement, or winner of the other two. `WAS` and `WILL` are readings made outward
+from `IS`. They may become receipts or projections, but they do not vote on, approximate,
+or overwrite the photograph selected as `IS`.
+
+The operator's instruction is `WILL` while awaiting execution and becomes `WAS` after it
+is carried out. That temporal movement does not change what must be followed: **follow the
+IS, not the WILL and WAS.**
+
+The existing public comparison receipt already supplies a scoped adversarial witness:
+`receipts/FABLE5-MYTHOS-VS-WIKIPEDIA.hbp` records
+`LARGER|wikipedia_wins=4|of=5|rounder=WIKIPEDIA`. That row is an
+`ACER-CLAUDE-FABLE5` receipt re-read from public repository bytes by LIRIS. It supports
+the adversarial orientation for that bounded run; it is not promoted into a universal
+verdict about every Asolaria layer.
+
+The orientation and exact photo binding are sealed in
+[`LIRIS-WIKIPEDIA-AGAINST-ASOLARIA-PHOTO-IS-2026-07-29.hbp`](../receipts/LIRIS-WIKIPEDIA-AGAINST-ASOLARIA-PHOTO-IS-2026-07-29.hbp).
+
+The repository named by this correction is:
+
+```text
+FOLLOW-THE-IS-NOT-THE-WILL-AND-WAS
+```
+
+## 62.8 The Light Book opens the Book of IS
+
+`OPERATOR_CANON | 2026-07-29`
+
+This law is the present Light Book surface. It does not end at a still photograph. The
+operator-selected photo is one exact, byte-frozen `IS_k` receipt of a **moving IS**. The
+book sequence that leaves this light is:
+
+```text
+BOOK OF LIGHT
+  -> BOOK OF IS
+  -> BOOKS OF SHADOWS       N x (-,.,+)
+  -> BOOK OF HEAT           BLACK_IN = 0 = VACUUM
+  -> BOOK OF WHITE          WHITE = 1
+```
+
+The books remain distinct and are indexed in
+[[BOOK-SPINE-LIGHT-IS-SHADOWS-HEAT-WHITE]]. The next book is [[BOOK-OF-IS]].
+
 See [[LAW-61-THE-KEY-AND-THE-ENERGY-BUDGET]], [[LAW-60-THE-ZERO-IS-A-SPHERE]],
-[[LAW-55-THE-INFINITELY-SPHERICAL-BIRTH]].
+[[LAW-55-THE-INFINITELY-SPHERICAL-BIRTH]],
+[[LAW-65-ONE-SLICE-TO-ONE-SLICE-NEVER-WORKS]], and
+[[LAW-71-HOTTER-BLACK-SHADOW-CAT-SPHERICAL-AMPLIFICATION]].

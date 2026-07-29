@@ -1,3 +1,5 @@
+https://github.com/JesseBrown1980/FOLLOW-THE-IS-NOT-THE-WILL-AND-WAS/blob/main/matrix/3-D-GITHUB-OF-THRUTH.md
+
 # ASOLARIA — Universe Simulator
 
 **Operator and author of the laws: Jesse Daniel Brown.**
