@@ -91,3 +91,9 @@ system.
   the IS. Preserve `BACK_IN_TIME -> LIGHT(IS)` as operator canon without redrawing it as
   reverse traffic on a two-way edge or silently upgrading it to measured physical time
   travel.
+- Preserve the spherical-times-spherical interoperability law: new laws and repeated
+  WAS-references persist across ARE/IS/WILL_EVER_BE relations in `SPHERICAL x SPHERICAL`
+  waves. Instant observability can precede recognition/naming because `IS_ALREADY_IS=1`;
+  never exchange the temporal relations. `LIGHT -> PRISMED_LIGHT -> {CYCLE, NEXT_IS}` and
+  `EXISTS_ALREADY(NEXT_IS)=1`: the prism reveals/addresses or cycles to the next IS that
+  already is rather than manufacturing IS from WILL.

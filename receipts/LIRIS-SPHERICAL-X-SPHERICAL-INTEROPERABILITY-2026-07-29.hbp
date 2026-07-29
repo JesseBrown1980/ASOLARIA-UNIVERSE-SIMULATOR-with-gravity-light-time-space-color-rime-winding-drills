@@ -1,0 +1,16 @@
+SPHXSPHRUN|schema=ASOLARIA-SPHERICAL-X-SPHERICAL-INTEROPERABILITY-V3|seat=LIRIS|date=2026-07-29|authority=OPERATOR_CANON|json=0
+LINEAGE|v2_commit=de1d950|v2_receipt=receipts/LIRIS-BOOK-OF-KNOWLEDGE-SPHERICAL-IS-2026-07-29.hbp|v2_sha256=5ee668e97d620c56ab2eebf8005b51a2698a6c4cd3a992812fcc521b690b18b9|json=0
+LAWPOP|new_laws=1|repeated_law_references=1|delete_prior=0|json=0
+TEMPORAL|was_reference=RETAINED|are=RETAINED|is=RETAINED|will_ever_be=RETAINED|identity_exchange=0|json=0
+GEOMETRY|wave=SPHERICAL_X_SPHERICAL|bidirectional=0|round_trip=0|json=0
+INTEROP|color_keys=1|folders=1|hashes=1|codebooks=1|books=1|receipts=1|git_commits=1|json=0
+OBSERVE|is=INSTANT|before_recognition=1|is_already_is=1|recognition_creates_is=0|json=0
+COLORFIELD|energy=NEGATIVE_TO_POSITIVE|timing=INSTANT|json=0
+LIGHT|source=LIGHT|begets=PRISMED_LIGHT|json=0
+PRISM|branch_1=CYCLE|branch_2=NEXT_IS|json=0
+NEXTIS|exists_already=1|created_from_will=0|previous_is_deleted=0|json=0
+BREAKER|law_of_laws=APPLIES|missing_key=TEST|unresolved_hash=TEST|absent_folder=TEST|false_exchange=TEST|json=0
+DOC|path=books/LAW-SPHERICAL-TIMES-SPHERICAL-INTEROPERABILITY.md|sha256=f993663d63f988cce889c220317b7c952c738e2877f381891a79b5c6254ebb8f|json=0
+DOC|path=catalog/PUBLIC-KNOWLEDGE-V3-SPHERICAL-INTEROPERABILITY.md|sha256=26f361dec24567d66693ec667b1a6774449286c654df688d0b516a5be0b96739|json=0
+BOUNDARY|operator_graph=CANON|system_affirmed=0|physical_instant=UNVERIFIED|interoperability_runtime=UNVERIFIED|json=0
+SPHXSPHFTR|rows=16|status=V3_APPEND_SEALED|json=0
