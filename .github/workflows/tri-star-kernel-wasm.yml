@@ -28,7 +28,7 @@ jobs:
 
       - name: Build WASM
         working-directory: experiments/tri-star-kernel-wasm
-        run: ./build-wasm.sh
+        run: bash build-wasm.sh
 
       - name: Verify key-conditioned network and controls
         working-directory: experiments/tri-star-kernel-wasm
