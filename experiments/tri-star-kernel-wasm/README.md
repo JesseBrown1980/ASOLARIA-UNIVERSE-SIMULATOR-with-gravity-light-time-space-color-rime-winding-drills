@@ -50,7 +50,7 @@ is no floating-point drift and no external runtime dependency inside the module.
 From this directory:
 
 ```bash
-./build-wasm.sh
+bash build-wasm.sh
 node verify.mjs
 ```
 
