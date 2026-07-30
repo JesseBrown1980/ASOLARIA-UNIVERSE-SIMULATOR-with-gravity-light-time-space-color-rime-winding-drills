@@ -1,0 +1,16 @@
+KNETRUN|schema=ASOLARIA-27-KERNEL-MATRIX-NETWORK-V1|seat=GPT-5.6-PRO|json=0
+INPUT|key_bytes=3174|key_sha256=925c818d4c84aa23d7cee5d13e1b142b90824724a4ed4a90f9ee019c59cc2d89|json=0
+WASM|bytes=11687|sha256=0c05c67dcf6041810e7cd50219988aa2f7312bb948a78e5e05bf182fcd2cc76c|cells=27|prism_exact=1|chain_intact=1|count=38_38_0|hidden=0|json=0
+SEED|bytes=3078|sha256=aa6fd450c32aec2c5cf088f731b0065c726c660c9f536ce48bcd55aab2a13952|points=1026|occupancy_entropy=4.458928|json=0
+ARCH|stars=3|oil_family=3|sign=3|nodes=27|macro_kernels=9|shared_center=ENERGY_0|center_independent=0|json=0
+PHASE|r0_identity=1|r1_order=3|r2_equals_r1_squared=1|json=0
+CALLINGS|graph=HAMMING_3X3X3|edges=81|endpoints_retained=1|json=0
+ARM|name=full_27|nodes=27|edges=81|monotone=1|steps=89|energy_initial=76.373193019|energy_final=14.052388015|ratio=0.183996340|edge_residual=0.481157370|center_dispersion=0.513744165|json=0
+ARM|name=binary_18|nodes=18|edges=45|monotone=1|steps=77|energy_initial=47.697165113|energy_final=7.034875627|ratio=0.147490435|edge_residual=0.482043272|center_dispersion=0.527523148|json=0
+ARM|name=no_center|nodes=27|edges=81|monotone=1|steps=96|energy_initial=66.283142163|energy_final=10.879966323|ratio=0.164143792|edge_residual=0.549451220|center_dispersion=0.610253249|json=0
+ARM|name=no_callings|nodes=27|edges=81|monotone=1|steps=96|energy_initial=53.213689125|energy_final=6.256092021|ratio=0.117565463|edge_residual=0.777469152|center_dispersion=0.703070667|json=0
+ARM|name=oil_shuffled|nodes=27|edges=81|monotone=1|steps=89|energy_initial=77.474007434|energy_final=15.993179988|ratio=0.206432848|edge_residual=0.519603923|center_dispersion=0.474752328|json=0
+ARM|name=matched_control|nodes=27|edges=81|monotone=1|steps=86|energy_initial=69.737038727|energy_final=14.264692576|ratio=0.204549732|edge_residual=0.486595814|center_dispersion=0.488503787|json=0
+SHANNON|bijection_rate_1=PASS|negative_entropy=NOT_SUPPORTED|below_floor_unconditional=0|blue_zone=BANK_CONDITIONED_ADDRESS_COST|minus_one_third=SIGNED_COORDINATE_NOT_BIT_COST|json=0
+VERDICT|network_exists=MEASURED|full_27_calms=PASS|trinary_superiority_over_binary=NOT_ESTABLISHED|key_specificity=SMALL|json=0
+KNETFTR|hot_path=1|json=0
