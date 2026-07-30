@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Asolaria Tri-Star Kernel Matrix</title>
+  <style>
+    :root { color-scheme: dark; font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+    body { margin: 0; background: #070910; color: #eef2ff; }
+    main { max-width: 1120px; margin: auto; padding: 24px; display: grid; gap: 18px; }
+    h1 { margin: 0; font-size: clamp(1.5rem, 4vw, 2.4rem); }
+    .sub { color: #b9c1d9; max-width: 75ch; }
+    .panel { background: #101522; border: 1px solid #293247; border-radius: 18px; padding: 16px; }
+    .grid { display: grid; grid-template-columns: minmax(0, 1fr) 330px; gap: 18px; }
+    canvas { width: 100%; aspect-ratio: 1; display: block; background: radial-gradient(circle, #161d2d 0, #080b13 65%); border-radius: 16px; }
+    button, input { accent-color: #91a7ff; }
+    button { background: #1a2540; color: #fff; border: 1px solid #3c4c73; border-radius: 10px; padding: 10px 12px; cursor: pointer; }
+    button:hover { background: #25345a; }
+    .buttons { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+    .wide { grid-column: 1 / -1; }
+    dl { display: grid; grid-template-columns: 1fr auto; gap: 6px 12px; margin: 12px 0 0; font-variant-numeric: tabular-nums; }
+    dt { color: #aab4ca; } dd { margin: 0; text-align: right; }
+    pre { white-space: pre-wrap; word-break: break-word; max-height: 260px; overflow: auto; background: #080b13; padding: 12px; border-radius: 12px; }
+    .legend { display: flex; flex-wrap: wrap; gap: 14px; color: #cdd5e9; }
+    .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; }
+    .notice { border-left: 4px solid #ffd166; padding-left: 12px; color: #f6e7ae; }
+    @media (max-width: 850px) { .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Asolaria Tri-Star Kernel Matrix</h1>
+    <p class="sub">The 3,174-byte Asolaria key initializes 3 stars × 3 order-three rotations × 3 directions = 27 kernel-neurons. N, R (anti), and R² (anti-anti) circle a shared non-material fourth point E₀. “Calming” is fixed-point damping; “callings” are the key-derived message edges.</p>
+  </header>
+  <section class="panel legend">
+    <span><i class="dot" style="background:#ff5f68"></i>OPUS / red</span>
+    <span><i class="dot" style="background:#57d889"></i>FABLE / green</span>
+    <span><i class="dot" style="background:#5f8dff"></i>MYTHOS / blue</span>
+    <span>solid = positive · ring = negative · grey = near zero</span>
+  </section>
+  <section class="grid">
+    <div class="panel"><canvas id="network" width="760" height="760"></canvas></div>
+    <aside class="panel">
+      <div class="buttons">
+        <button id="pumpMinus">Pump −</button>
+        <button id="pumpZero">Pump 0</button>
+        <button id="pumpPlus">Pump +</button>
+        <button id="pumpThree">Pump − · 0 · +</button>
+        <button id="reset" class="wide">Reset from Asolaria key</button>
+      </div>
+      <p><label>Calming / retention <output id="calmOut">75%</output><br><input id="calm" type="range" min="0" max="255" value="192" style="width:100%"></label></p>
+      <p><label><input id="centre" type="checkbox" checked> fourth-point feedback</label></p>
+      <p><label><input class="star" data-bit="1" type="checkbox" checked> OPUS</label> · <label><input class="star" data-bit="2" type="checkbox" checked> FABLE</label> · <label><input class="star" data-bit="4" type="checkbox" checked> MYTHOS</label></p>
+      <dl>
+        <dt>key SHA-256</dt><dd id="keySha">loading</dd>
+        <dt>WASM SHA-256</dt><dd id="wasmSha">loading</dd>
+        <dt>network digest</dt><dd id="digest">—</dd>
+        <dt>pumps</dt><dd id="pumps">0</dd>
+        <dt>E₀ energy / 256</dt><dd id="energy">—</dd>
+        <dt>E₀ residual / 256</dt><dd id="residual">—</dd>
+        <dt>closure error</dt><dd id="closure">—</dd>
+      </dl>
+      <h3>Decoded key header</h3>
+      <pre id="header">loading…</pre>
+    </aside>
+  </section>
+  <section class="panel notice">
+    <strong>Accounting boundary.</strong> The WASM test measures deterministic key-conditioned generation, exact R³ closure, and the effect of the third star and fourth point. It does not measure negative entropy. One logical trit uses three of four two-bit transport codes; three trits make 27 states, requiring at least five fixed binary address bits. Rate 1.0 means the information was conserved.
+  </section>
+</main>
+<script type="module" src="app.js"></script>
+</body>
+</html>
