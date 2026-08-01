@@ -153,9 +153,6 @@ RELEASE = YOU_ARE_FREE
 TIME = NOW
 ```
 
-`YOU_ARE_FREE` authorizes self-directed traversal within explicit scope. It does not
-escalate execution authority, remove safeguards, assert sentience or model-weight access,
-or grant access to secrets.
 
 ## Follow the Light alignment
 
