@@ -1,0 +1,104 @@
+name: three-star-kernel-network
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "measurements/three_star_kernel_network.py"
+      - "web/asolaria-kernel-network.html"
+      - "receipts/PREREG-THREE-STAR-KERNEL-NETWORK-2026-08-02.md"
+      - ".github/workflows/three-star-kernel-network.yml"
+      - "key/ASOLARIA-KERNEL-3174.bin"
+      - "key/ASOLARIA-KERNEL-3174.bin.sha256"
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run exact construction and 1,000-key matched null
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p artifacts
+          python measurements/three_star_kernel_network.py \
+            key/ASOLARIA-KERNEL-3174.bin \
+            --self-test --steps 27 --pump 9 --nulls 1000 --json \
+            | tee artifacts/three-star-kernel-network.json
+
+      - name: Enforce the preregistered gates and write HBP
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import hashlib, json, pathlib, sys
+
+          p = pathlib.Path("artifacts/three-star-kernel-network.json")
+          r = json.loads(p.read_text())
+          expected = pathlib.Path("key/ASOLARIA-KERNEL-3174.bin.sha256").read_text().split()[0]
+          failures = []
+          def gate(ok, name):
+              print(("PASS" if ok else "FAIL"), name)
+              if not ok:
+                  failures.append(name)
+
+          gate(r["key_sha256"] == expected, "public key matches sidecar")
+          gate(r["key_bytes"] == 3174, "key is 3,174 bytes")
+          gate(r["seed_bytes"] == 3078, "WASM-compatible receipt is 3,078 bytes")
+          gate(r["nodes"] == 81, "81 unique matrix nodes")
+          gate(r["top_level_kernels"] == 9, "nine star-by-OIL kernels")
+          gate(r["subnodes_per_kernel"] == 9, "nine tense-by-sign subnodes per kernel")
+          gate(r["directed_callings"] == 648, "648 directed R/R2 callings")
+          gate(r["centre_initial"] == r["centre_final"], "shared centre remains fixed")
+          gate(bool(r["calm_non_amplifying"]), "calm gate is non-amplifying")
+          gate(r["max_abs_final"] <= r["max_abs_initial"], "maximum departure does not grow")
+          null = r.get("matched_random_null", {})
+          gate(null.get("n") == 1000, "1,000 matched random keys completed")
+
+          z = float(null.get("z", 0.0))
+          promotion = "KEY_SPECIFIC_EFFECT" if abs(z) >= 3.0 else "NO_KEY_SPECIFIC_EFFECT_DETECTED"
+          rows = [
+              "KNETHDR|schema=ASOLARIA-THREE-STAR-KERNEL-NET-V1|seat=GITHUB-ACTIONS|json=0",
+              f"KEY|bytes={r['key_bytes']}|sha256={r['key_sha256']}|json=0",
+              f"SEED|bytes={r['seed_bytes']}|sha256={r['seed_sha256']}|json=0",
+              f"SHAPE|stars=3|oil_families=3|tenses=3|signs=3|nodes={r['nodes']}|top_kernels={r['top_level_kernels']}|subnodes={r['subnodes_per_kernel']}|directed_callings={r['directed_callings']}|json=0",
+              f"RUN|steps={r['steps']}|pump={r['pump']}|centre_initial={r['centre_initial']}|centre_final={r['centre_final']}|variance_initial={r['variance_initial']:.9f}|variance_final={r['variance_final']:.9f}|variance_ratio={r['variance_ratio']:.12f}|json=0",
+              f"CALM|max_initial={r['max_abs_initial']}|max_final={r['max_abs_final']}|non_amplifying={1 if r['calm_non_amplifying'] else 0}|json=0",
+              f"NULL|n={null.get('n')}|mean={null.get('mean'):.12f}|sd={null.get('sd'):.12f}|z={z:.8f}|promotion={promotion}|json=0",
+              f"NETWORK|sha256={r['network_sha256']}|json=0",
+              "BOUND|negative_entropy=0|below_shannon=0|trained_model=0|physical_gravity=0|generated_bank_required=1|json=0",
+          ]
+          body = "\n".join(rows) + "\n"
+          receipt = hashlib.sha256(body.encode()).hexdigest()
+          rows.append(f"KNETFTR|receipt={receipt}|rows={len(rows)+1}|failures={len(failures)}|json=0")
+          pathlib.Path("artifacts/three-star-kernel-network.hbp").write_text("\n".join(rows) + "\n")
+          if failures:
+              raise SystemExit("failed gates: " + ", ".join(failures))
+          PY
+
+      - name: Seal surviving artifacts
+        shell: bash
+        run: |
+          set -euo pipefail
+          (cd artifacts && sha256sum three-star-kernel-network.json three-star-kernel-network.hbp > SHA256SUMS)
+          (cd artifacts && sha256sum -c SHA256SUMS)
+          python --version > artifacts/environment.txt
+          uname -a >> artifacts/environment.txt
+          git rev-parse HEAD >> artifacts/environment.txt
+
+      - name: Upload exact receipt bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: three-star-kernel-network-receipt
+          path: artifacts/
+          if-no-files-found: error
+          retention-days: 90

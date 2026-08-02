@@ -1,0 +1,197 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Asolaria — three-star kernel network</title>
+<style>
+:root{--bg:#07080d;--panel:#10131a;--ink:#edf1f8;--dim:#8a94a8;--rule:#242a36;
+  --gold:#e8c07a;--red:#ff6470;--green:#52dfa0;--blue:#5b9cff;--warn:#ffc857}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 50% -20%,#182038,#07080d 55%);
+color:var(--ink);font:13px/1.55 ui-monospace,"SFMono-Regular",Consolas,monospace}
+main{max-width:1160px;margin:auto;padding:26px 18px 60px;display:grid;grid-template-columns:330px 1fr;gap:18px}
+@media(max-width:850px){main{grid-template-columns:1fr}}
+h1{font:700 21px/1.25 ui-serif,Georgia,serif;margin:0 0 5px}.sub{color:var(--dim);margin:0 0 18px}
+.card{background:rgba(16,19,26,.94);border:1px solid var(--rule);border-radius:12px;padding:15px;margin-bottom:14px}
+button,.file{border:0;border-radius:9px;background:var(--gold);color:#14100b;font:700 12px ui-monospace,monospace;
+padding:11px 14px;cursor:pointer;margin:3px 4px 3px 0}.ghost{background:transparent;color:var(--ink);border:1px solid var(--rule)}
+button:disabled{opacity:.45;cursor:default}input[type=file]{display:none}input[type=range]{width:100%}
+.row{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--rule);padding:4px 0}.row:last-child{border:0}
+.k{color:var(--dim)}.v{text-align:right}.ok{color:var(--green)}.no{color:var(--red)}.warn{color:var(--warn)}
+.lab{font-size:10px;letter-spacing:.13em;color:var(--dim);text-transform:uppercase;margin-bottom:8px;display:block}
+canvas{width:100%;height:auto;background:#05060a;border:1px solid var(--rule);border-radius:12px;display:block}
+textarea{width:100%;min-height:150px;background:#090b10;color:#cbd4e5;border:1px solid var(--rule);border-radius:9px;padding:10px;font:11px/1.5 ui-monospace,monospace;resize:vertical}
+.note{color:var(--dim);font-size:11.5px}.axis{display:grid;grid-template-columns:repeat(4,1fr);gap:5px}.axis div{border:1px solid var(--rule);border-radius:7px;padding:6px;text-align:center;font-size:10px}
+code{color:#dce6ff}
+</style>
+<main>
+<section>
+  <h1>three-star kernel network</h1>
+  <p class="sub">the existing Rust/WASM receipt reads the public Asolaria key; its 81 states become the network.</p>
+
+  <div class="card">
+    <span class="lab">load</span>
+    <button id="load">LOAD PUBLIC KEY + WASM</button>
+    <label class="file ghost" for="file">local key</label><input id="file" type="file">
+    <div class="row"><span class="k">state</span><span class="v" id="state">idle</span></div>
+    <div class="row"><span class="k">key</span><span class="v" id="keyinfo">—</span></div>
+    <div class="row"><span class="k">key sha256</span><span class="v" id="keysha">—</span></div>
+    <div class="row"><span class="k">WASM seed</span><span class="v" id="seedinfo">—</span></div>
+    <div class="row"><span class="k">prism / chain</span><span class="v" id="gates">—</span></div>
+  </div>
+
+  <div class="card">
+    <span class="lab">the matrix</span>
+    <div class="axis"><div>3 stars<br>R G B</div><div>3 families<br>OIL / ANTI / A²</div><div>3 tenses<br>WAS / IS / WILL</div><div>3 signs<br>− / 0 / +</div></div>
+    <p class="note"><b>3 × 3 × 3 × 3 = 81.</b> The top level is nine orbit kernels: three stars multiplied by OIL, ANTI-OIL and ANTI-ANTI-OIL. Each kernel holds nine tense×sign subnodes. The shared black/gold point is the centre energy, stored once.</p>
+  </div>
+
+  <div class="card">
+    <span class="lab">pump / calm</span>
+    <div class="row"><span class="k">mixing strength</span><span class="v" id="pumpv">9 / 27</span></div>
+    <input id="pump" type="range" min="0" max="27" value="9">
+    <button id="step" class="ghost" disabled>one calling</button>
+    <button id="run" class="ghost" disabled>27 callings</button>
+    <button id="reset" class="ghost" disabled>reset</button>
+    <div class="row"><span class="k">step</span><span class="v" id="stepv">0</span></div>
+    <div class="row"><span class="k">centre energy</span><span class="v" id="centre">—</span></div>
+    <div class="row"><span class="k">variance</span><span class="v" id="variance">—</span></div>
+    <div class="row"><span class="k">max departure</span><span class="v" id="maxdev">—</span></div>
+    <div class="row"><span class="k">calm gate</span><span class="v" id="calm">—</span></div>
+  </div>
+
+  <div class="card note">
+    <b>What this is:</b> a deterministic, key-conditioned, integer message-passing network. Every axis uses all three relations: identity, R and R². The pump is a bounded mixing control; the calm gate forbids amplitude growth and holds the centre exactly.<br><br>
+    <b>What this is not:</b> a claim of negative entropy, a trained foundation model, physical gravity, or recovery of arbitrary unseen data. The existing WASM produces a fixed-size address receipt. The bank is still part of the ledger.
+  </div>
+
+  <div class="card note warn">
+    Raw WebRTC offer/answer blocks contain network metadata and short-lived ICE credentials. Exchange them privately, clear them after connection, and never commit them to a public repository.
+  </div>
+</section>
+
+<section>
+  <canvas id="cv" width="900" height="760"></canvas>
+  <div class="card" style="margin-top:14px">
+    <span class="lab">receipt — safe to send through the Light Hub</span>
+    <textarea id="receipt" readonly>load the key first</textarea>
+    <button id="copy" class="ghost">copy receipt</button>
+  </div>
+</section>
+</main>
+<script>
+"use strict";
+const OWNER="JesseBrown1980";
+const REPO="ASOLARIA-UNIVERSE-SIMULATOR-with-gravity-light-time-space-color-rime-winding-drills";
+const ROOT=`https://raw.githubusercontent.com/${OWNER}/${REPO}/HEAD/`;
+const KEY_PATH="key/ASOLARIA-KERNEL-3174.bin";
+const KEY_SHA_PATH=KEY_PATH+".sha256";
+const WASM_PATH="web/asolaria_tribit.wasm";
+const RECORDS=38, RECORD=81, NODES=81;
+const STARS=["RED","GREEN","BLUE"];
+const FAMILIES=["OIL","ANTI-OIL","ANTI-ANTI-OIL"];
+const STAR_COLOURS=["#ff6470","#52dfa0","#5b9cff"];
+const $=id=>document.getElementById(id);
+let key=null, seed=null, wasm=null, initial=null, values=null, stepNo=0, keySha="", seedSha="";
+
+async function hexSha(bytes){
+  const d=await crypto.subtle.digest("SHA-256",bytes);
+  return [...new Uint8Array(d)].map(x=>x.toString(16).padStart(2,"0")).join("");
+}
+function idx(star,family,tense,sign){return ((star*3+family)*3+tense)*3+sign;}
+function coords(i){const sign=i%3;i=Math.floor(i/3);const tense=i%3;i=Math.floor(i/3);const family=i%3;return [Math.floor(i/3),family,tense,sign];}
+function rotate(i,axis,delta){const c=coords(i);c[axis]=(c[axis]+delta)%3;return idx(...c);}
+function roundDiv(n,d){return n>=0?Math.floor((n+Math.floor(d/2))/d):-Math.floor((-n+Math.floor(d/2))/d);}
+function centreOf(a){return roundDiv(a.reduce((x,y)=>x+y,0),a.length);}
+function varianceOf(a){const m=a.reduce((x,y)=>x+y,0)/a.length;return a.reduce((s,x)=>s+(x-m)*(x-m),0)/a.length;}
+function maxDev(a){const c=centreOf(a);return Math.max(...a.map(x=>Math.abs(x-c)));}
+function callWeights(node,axis){const base=(node*17+axis*97)%key.length;return [0,1,2].map(j=>1+key[(base+j*37)%key.length]%3);}
+function derive(s){return Array.from({length:NODES},(_,i)=>{let v=0;for(let r=0;r<RECORDS;r++)v+=s[r*RECORD+i]-128;return v;});}
+function calmStep(a){
+  const pump=+$('pump').value, centre=centreOf(a), dev=a.map(v=>v-centre), out=new Array(NODES);
+  for(let i=0;i<NODES;i++){
+    let total=0,den=0;
+    for(let axis=0;axis<4;axis++){
+      const [w0,w1,w2]=callWeights(i,axis);
+      total+=w0*dev[i]+w1*dev[rotate(i,axis,1)]+w2*dev[rotate(i,axis,2)];den+=w0+w1+w2;
+    }
+    const mixed=roundDiv(total,den);
+    out[i]=centre+roundDiv((27-pump)*dev[i]+pump*mixed,27);
+  }
+  const drift=centre-centreOf(out);if(drift)for(let i=0;i<NODES;i++)out[i]+=drift;
+  if(maxDev(out)>maxDev(a))throw new Error("calm gate failed: max departure increased");
+  return out;
+}
+function topMetrics(){
+  const v0=varianceOf(initial),v=varianceOf(values),m0=maxDev(initial),m=maxDev(values);
+  $('stepv').textContent=stepNo;$('centre').textContent=centreOf(values);
+  $('variance').textContent=`${v.toFixed(2)}  (${(v/v0).toFixed(5)}×)`;
+  $('maxdev').textContent=`${m}  (start ${m0})`;
+  $('calm').textContent=m<=m0?'PASS — non-amplifying':'FAIL';$('calm').className='v '+(m<=m0?'ok':'no');
+}
+function networkBytes(){const b=new Uint8Array(values.length*4),dv=new DataView(b.buffer);values.forEach((v,i)=>dv.setInt32(i*4,v,false));return b;}
+async function updateReceipt(){
+  if(!values)return;
+  const netSha=await hexSha(networkBytes());
+  const v0=varianceOf(initial),v=varianceOf(values),m0=maxDev(initial),m=maxDev(values);
+  $('receipt').value=[
+    `KNET|schema=ASOLARIA-THREE-STAR-KERNEL-NET-V1|key_sha256=${keySha}|wasm_seed_sha256=${seedSha}|json=0`,
+    `SHAPE|stars=3|oil_families=3|tenses=3|signs=3|nodes=81|top_kernels=9|subnodes=9|directed_callings=648|json=0`,
+    `STEP|n=${stepNo}|pump=${$('pump').value}|centre=${centreOf(values)}|variance_initial=${v0.toFixed(6)}|variance=${v.toFixed(6)}|variance_ratio=${(v/v0).toFixed(8)}|max_initial=${m0}|max=${m}|json=0`,
+    `GATE|prism_exact=${wasm.prism_roundtrip_exact()}|chain_intact=${wasm.chain_intact()}|cells=${wasm.make_seed(key.length)}|calm_non_amplifying=${m<=m0?1:0}|json=0`,
+    `NETWORK|sha256=${netSha}|json=0`,
+    `BOUND|kind=DETERMINISTIC_KEY_CONDITIONED_MESSAGE_PASSING|not_trained_model=1|negative_entropy_claim=0|physical_gravity_claim=0|bank_required_for_reconstruction=1|json=0`
+  ].join('\n');
+}
+function draw(){
+  const cv=$('cv'),g=cv.getContext('2d'),W=cv.width,H=cv.height,cx=W/2,cy=H/2;
+  g.clearRect(0,0,W,H);g.fillStyle='#05060a';g.fillRect(0,0,W,H);
+  g.font='11px ui-monospace,monospace';g.textAlign='center';
+  if(!values){g.fillStyle='#8a94a8';g.fillText('load the public key to reveal the 81-node network',cx,cy);return;}
+  const cluster=[];
+  for(let s=0;s<3;s++)for(let f=0;f<3;f++){
+    const q=s*3+f,ang=-Math.PI/2+q*2*Math.PI/9,r=250;
+    cluster[q]={x:cx+Math.cos(ang)*r,y:cy+Math.sin(ang)*r,s,f};
+  }
+  g.lineWidth=1;
+  for(let s=0;s<3;s++){g.strokeStyle=STAR_COLOURS[s]+'70';g.beginPath();for(let f=0;f<3;f++){const p=cluster[s*3+f];f?g.lineTo(p.x,p.y):g.moveTo(p.x,p.y);}g.closePath();g.stroke();}
+  for(let f=0;f<3;f++){g.strokeStyle='#e8c07a45';g.beginPath();for(let s=0;s<3;s++){const p=cluster[s*3+f];s?g.lineTo(p.x,p.y):g.moveTo(p.x,p.y);}g.closePath();g.stroke();}
+  for(const p of cluster){g.strokeStyle='#e8c07a25';g.setLineDash([3,7]);g.beginPath();g.moveTo(cx,cy);g.lineTo(p.x,p.y);g.stroke();}
+  g.setLineDash([]);const centre=centreOf(values);
+  const halo=g.createRadialGradient(cx,cy,0,cx,cy,62);halo.addColorStop(0,'rgba(232,192,122,.48)');halo.addColorStop(1,'rgba(0,0,0,0)');g.fillStyle=halo;g.beginPath();g.arc(cx,cy,62,0,Math.PI*2);g.fill();
+  g.fillStyle='#030407';g.strokeStyle='#e8c07a';g.lineWidth=2;g.beginPath();g.arc(cx,cy,22,0,Math.PI*2);g.fill();g.stroke();g.fillStyle='#e8c07a';g.fillText(`0 · E₀ ${centre}`,cx,cy+4);
+  const globalMax=Math.max(1,maxDev(values));
+  for(const p of cluster){
+    const {s,f}=p;g.fillStyle='#0b0e15';g.strokeStyle=STAR_COLOURS[s];g.lineWidth=1.5;g.beginPath();g.arc(p.x,p.y,55,0,Math.PI*2);g.fill();g.stroke();
+    for(let t=0;t<3;t++)for(let sign=0;sign<3;sign++){
+      const a=-Math.PI/2+t*2*Math.PI/3+sign*.16,rr=18+sign*12,i=idx(s,f,t,sign),v=values[i],amp=Math.abs(v-centre)/globalMax;
+      const x=p.x+Math.cos(a)*rr,y=p.y+Math.sin(a)*rr,rn=3+8*Math.sqrt(amp);
+      g.globalAlpha=.35+.65*amp;g.fillStyle=STAR_COLOURS[s];g.beginPath();g.arc(x,y,rn,0,Math.PI*2);g.fill();g.globalAlpha=1;
+      if(sign===1){g.strokeStyle='#e8c07a88';g.lineWidth=.7;g.beginPath();g.arc(x,y,rn+2,0,Math.PI*2);g.stroke();}
+    }
+    g.fillStyle=STAR_COLOURS[s];g.fillText(`${STARS[s]} · ${FAMILIES[f]}`,p.x,p.y+73);
+  }
+  g.fillStyle='#8a94a8';g.fillText('nine orbit kernels around one shared centre; each kernel contains 3 tense × 3 sign nodes',cx,H-18);
+}
+async function start(k){
+  $('state').textContent='loading';$('state').className='v warn';key=new Uint8Array(k);
+  const [wasmBuf,sidecar]=await Promise.all([fetch(ROOT+WASM_PATH,{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(`WASM HTTP ${r.status}`);return r.arrayBuffer();}),fetch(ROOT+KEY_SHA_PATH,{cache:'no-store'}).then(r=>r.ok?r.text():'')]);
+  keySha=await hexSha(key);const expected=(sidecar.match(/[0-9a-f]{64}/i)||[])[0]?.toLowerCase();
+  if(expected&&keySha!==expected)throw new Error(`key hash mismatch: expected ${expected}, got ${keySha}`);
+  const mod=await WebAssembly.instantiate(wasmBuf,{});wasm=mod.instance.exports;
+  if(key.length>wasm.input_capacity())throw new Error('key exceeds WASM input capacity');
+  new Uint8Array(wasm.memory.buffer,wasm.input_ptr(),key.length).set(key);
+  const cells=wasm.make_seed(key.length),n=wasm.seed_len();seed=new Uint8Array(wasm.memory.buffer,wasm.output_ptr(),n).slice();seedSha=await hexSha(seed);
+  initial=derive(seed);values=initial.slice();stepNo=0;
+  $('state').textContent='open';$('state').className='v ok';$('keyinfo').textContent=`${key.length.toLocaleString()} B · verified`;
+  $('keysha').textContent=keySha.slice(0,16)+'…';$('seedinfo').textContent=`${n.toLocaleString()} B · ${cells}/27 cells`;
+  $('gates').textContent=`${wasm.prism_roundtrip_exact()?'exact':'FAIL'} / ${wasm.chain_intact()?'intact':'FAIL'}`;
+  ['step','run','reset'].forEach(id=>$(id).disabled=false);topMetrics();draw();await updateReceipt();
+}
+$('load').onclick=async()=>{try{await start(await fetch(ROOT+KEY_PATH,{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(`key HTTP ${r.status}`);return r.arrayBuffer();}));}catch(e){$('state').textContent=e.message;$('state').className='v no';}};
+$('file').onchange=async e=>{try{const f=e.target.files[0];if(f)await start(await f.arrayBuffer());}catch(err){$('state').textContent=err.message;$('state').className='v no';}};
+$('pump').oninput=()=>{$('pumpv').textContent=`${$('pump').value} / 27`;};
+$('step').onclick=async()=>{values=calmStep(values);stepNo++;topMetrics();draw();await updateReceipt();};
+$('run').onclick=async()=>{for(let i=0;i<27;i++){values=calmStep(values);stepNo++;}topMetrics();draw();await updateReceipt();};
+$('reset').onclick=async()=>{values=initial.slice();stepNo=0;topMetrics();draw();await updateReceipt();};
+$('copy').onclick=async()=>{await navigator.clipboard.writeText($('receipt').value);$('copy').textContent='copied';setTimeout(()=>$('copy').textContent='copy receipt',900);};
+draw();
+</script>
