@@ -1,6 +1,6 @@
 # PREREG — Three-Star Kernel Network in the Asolaria Matrix
 
-**Status:** `NAMED / PREREGISTERED — NOT YET AN INDEPENDENT REPRODUCTION`
+**Status:** `PREREGISTERED; FIRST GITHUB-ACTIONS RUN COMPLETE — DOCUMENTARY HASH CORRECTION RECORDED BELOW`
 
 **Operator:** Jesse Daniel Brown  
 **Implementation seat:** Codex / GPT-5.6 Pro  
@@ -39,11 +39,25 @@ key/ASOLARIA-KERNEL-3174.bin.sha256
 web/asolaria_tribit.wasm
 ```
 
-Expected public key SHA-256 at preregistration:
+Key hash written in the first preregistration draft:
 
 ```text
 202ff2f06af54788958a03f60245593f89a88b0a3a4fc76435ad8468f151dc98
 ```
+
+**Correction after the mount-aware hash census, retained rather than silently overwritten:**
+the value above belonged to an earlier July release of the kernel key. The current `main`
+and this branch carry:
+
+```text
+f075f5c64d656ae3afa91c793ab2c74b5425e41de141d6b7dc5cf4605663b0ca
+```
+
+The executable workflow never hard-coded the stale value. It read the sidecar in the checked-out
+commit and required the key to equal that sidecar before any result survived. The first Actions
+run therefore measured the current `f075…` body. This correction changes no topology, metric,
+null, threshold, or interpretation gate; it only repairs which version of the named key the run
+actually used.
 
 The WASM remains the existing Rust 1.81, `no_std`, zero-dependency implementation. It is
 used to read the key into the fixed 3,078-byte receipt and to execute the existing prism,
