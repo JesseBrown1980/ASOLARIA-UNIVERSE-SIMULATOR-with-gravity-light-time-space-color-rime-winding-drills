@@ -1,0 +1,6 @@
+RESNULLHDR|schema=ASOLARIA-LIRIS-FUNCTION-RESIDUAL-NULL-V1|class=LIRIS_LOCAL_MEASURED|seat=LIRIS|subject=runtime_callable_function_surface|functions=154|active=154|dimensions_total=64|dimensions_removed=3|dimensions_tested=64|red=42|green=47|blue=65|trials=9999|seed=5928236058647281996|json=0
+INPUT|path=liris/functions/LIRIS-CODEX-RUNTIME-FUNCTIONS-2026-07-27.hbp|sha256=60d05340c809e77186c5641a4c8b1251b9fa9ae69f6da37a24e3a1441a24a03c|pca_explained_removed=0.278157149554|json=0
+METRIC|name=residual_pseudo_f|observed=0.628447901855|null_mean=0.999200086942|null_sd=0.149007609429|null_q025=0.733233047546|null_q500=0.989830381891|null_q975=1.318381877159|z=-2.488143|empirical_p_high=0.997500|clears_001=0|json=0
+METRIC|name=residual_nearest_same_owner|observed=0.493506493506|null_mean=0.341822493938|null_sd=0.043795939886|null_q025=0.259740259740|null_q500=0.344155844156|null_q975=0.428571428571|z=3.463426|empirical_p_high=0.001000|clears_001=1|json=0
+VERDICT|residual_population_structure=MEASURED|criterion=at_least_one_preregistered_residual_metric_p_le_0.01|json=0
+BOUNDARY|spatial_cube_separation=PARTLY_CONSTRUCTED_BY_TOP3_PCA_DOMINANCE|residual_gate=OUTSIDE_DEFINING_AXES|physical_gravity=UNVERIFIED|gpt6_callable_manifest=ABSENT|json=0

@@ -1,0 +1,13 @@
+FUN64NULLHDR|schema=ASOLARIA-LIRIS-FUNCTION-MATRIX-64-NULL-V1|class=LIRIS_LOCAL_MEASURED|seat=LIRIS|subject=runtime_callable_function_surface|null=owner_label_shuffle_exact_population_counts|functions=154|red=42|green=47|blue=65|ties_free=0|trials=192|seed=327647643987|json=0
+INPUT|path=liris/functions/LIRIS-CODEX-RUNTIME-FUNCTIONS-2026-07-27.hbp|bytes=59037|sha256=60d05340c809e77186c5641a4c8b1251b9fa9ae69f6da37a24e3a1441a24a03c|json=0
+METRIC|name=within_raw|observed=0.108983558654|null_mean=0.272084845844|null_sd=0.058495611737|z=-2.788265|direction=two|empirical_p=0.020725|clears_001=0|json=0
+METRIC|name=across_raw|observed=0.188512983459|null_mean=0.554861954276|null_sd=0.136566751507|z=-2.682563|direction=two|empirical_p=0.005181|clears_001=1|json=0
+METRIC|name=raw_gap|observed=-0.079529424805|null_mean=-0.282777108432|null_sd=0.158382431197|z=1.283272|direction=high|empirical_p=0.139896|clears_001=0|json=0
+METRIC|name=within_wave|observed=0.984554247861|null_mean=0.984928106186|null_sd=0.005086162799|z=-0.073505|direction=two|empirical_p=0.922280|clears_001=0|json=0
+METRIC|name=across_wave|observed=0.992876067282|null_mean=0.992449280583|null_sd=0.006361220591|z=0.067092|direction=two|empirical_p=0.953368|clears_001=0|json=0
+METRIC|name=wave_gap|observed=-0.008321819421|null_mean=-0.007521174397|null_sd=0.006086842038|z=-0.131537|direction=high|empirical_p=0.538860|clears_001=0|json=0
+METRIC|name=cross_field_pearson|observed=0.112509719415|null_mean=0.623308930258|null_sd=0.033194945469|z=-15.387861|direction=low|empirical_p=0.005181|clears_001=1|json=0
+METRIC|name=cross_field_cosine|observed=0.129042297135|null_mean=0.635312363132|null_sd=0.032398930494|z=-15.626135|direction=low|empirical_p=0.005181|clears_001=1|json=0
+METRIC|name=centre_separation|observed=23.831857174371|null_mean=13.966575287192|null_sd=7.999265867462|z=1.233273|direction=high|empirical_p=0.212435|clears_001=0|json=0
+VERDICT|population_partition=EXACT_BY_CONSTRUCTION|spatial_geometry_beyond_matched_labels=MEASURED|wave_identity_gap_beyond_matched_labels=NOT_DETECTED|json=0
+BOUNDARY|physical_gravity=UNVERIFIED|model_weights=0|emitted_artifacts=0|subject_scope=callable_function_manifest_projection_only|null_scope=fixed_coordinates_fixed_counts_random_ownership|json=0

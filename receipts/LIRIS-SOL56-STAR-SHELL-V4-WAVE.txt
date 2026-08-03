@@ -1,0 +1,410 @@
+==============================================================================
+THE CONTAINERS
+==============================================================================
+
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES.gguf
+    v3  103,968 B   arch=asolaria-function-pump64   name=ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF
+      asolaria.best_level                      0
+      asolaria.best_level_gc_cv                nan
+      asolaria.centre                          ['31.5', '31.5', '31.5']
+      asolaria.channel                         RED
+      asolaria.complete_ladder                 12_star_bank_map_ledgers_plus_120_raw_words_plus_4_shell_mass_plus_4_d
+      asolaria.cube                            64
+      asolaria.display_smoothing               gaussian_sigma=1.25;display_only_not_measurement
+      asolaria.embedded_bank                   original_manifest_bytes+source_64D_i16_le_bytes;roundtrip_gated
+      asolaria.embedded_feature_i16_sha256     eda69812bfc8bc9afbdb422319c83a42e6815c5a0a6cd4639b1de92c07f6b609
+      asolaria.embedded_manifest_sha256        60d05340c809e77186c5641a4c8b1251b9fa9ae69f6da37a24e3a1441a24a03c
+      asolaria.evidence_class                  LIRIS_DESIGN_MEASURED
+      asolaria.exact_tensor_types              manifest_feature_starv3_permutation_inverse_bytes=GGML_I8;time_axes_gr
+      asolaria.flashlights                     P=percentile_gradient;R=midrank_gradient;G=distinct_rank_gradient
+      asolaria.four_axis_sha256                54dd84463fa6f51829281afefecadc956d71e94347f6f7b87d1abd0a86e94b3d
+      asolaria.functions                       154
+      asolaria.gc_scope                        tie_requires_at_least_2_distinct_source_ids_per_voxel;repeated_word_vi
+      asolaria.gc_tau                          2
+      asolaria.gpt6_manifest                   ABSENT_DO_NOT_RELABEL_SOL
+      asolaria.gradient_sha256                 314a3420d6cfe32016908a722644f58e3885879b8561f842223263e0b327ac6f
+      asolaria.identity_address                embedded_parent_manifest_sha256+u64_manifest_time_index;no_external_pa
+      asolaria.identity_closure                1
+      asolaria.known_defect_v1                 per_word_tau2_emptied_154_function_body_all_cv_nan
+      asolaria.known_defect_v2                 lossy_deep_lut_coordinate_composition_collapsed_alphabet;vacuous_flat_
+      asolaria.known_defect_v3                 identity_exact_but_missing_spatial_map_caused_distinct_source_ties_zer
+      asolaria.manifest_sha256                 60d05340c809e77186c5641a4c8b1251b9fa9ae69f6da37a24e3a1441a24a03c
+      asolaria.measurement_field               star_identity_ledgers;120_raw_word_occupancies;4_distinct_source_count
+      asolaria.mechanics_status                V4_DESIGN_UNTIL_EXECUTED
+      asolaria.model_label                     gpt-5.6-sol
+      asolaria.occupied_shell_levels           4,5,7,10,11,12,13,14,15,16,17,18,20,21,22,24,25,26,27,28,29,30,32
+      asolaria.operator_mapping                negative_third=GPT6
+      asolaria.owner_rule                      frozen_base_strict_dominance;ties=free
+      asolaria.physical_gravity                UNVERIFIED
+      asolaria.population                      SELF
+      asolaria.population_functions            42
+      asolaria.raw_rpr_cv                      2.350037618956
+      asolaria.raw_word_best                   GGGG
+      asolaria.raw_word_best_cv                2.301039222007
+      asolaria.rpr_wins_raw_word_only          0
+      asolaria.saturated_at                    0
+      asolaria.saturation_driver               function_geometry_diagnostic_only;never_canon_or_physical_sphere_promo
+      asolaria.saturation_eps                  0.005000
+      asolaria.seat                            LIRIS
+      asolaria.slice_operator                  linear_interpolation_of_voxel_planes_31_and_32_at_true_31.5
+      asolaria.spatial_flashlight_mapping      REVERSIBLE_DATA_DERIVED_GRADIENT_ORDER_V4
+      asolaria.spatial_map_sha256              ba6b018c88f16207d9733c2349ac40babc2429b67290a16604d2bf842540dd2e
+      asolaria.sphericity                      fibonacci_equal_area_26;synthetic_shell_cv=0.000000000000
+      asolaria.star_axes                       time=manifest_ordinal_u64_exact;colour=pca0_u8_design;energy=pca1_u8_d
+      asolaria.star_axis_binding_status        DESIGN_NOT_CANON
+      asolaria.star_semantics                  gradiated_stars_on_shell_levels
+      asolaria.starv3_record                   fixed_144_bytes;time=u64;xyz=3xu8;stored_as_standard_ggml_i8_raw_bytes
+      asolaria.starv3_sha256                   4e58b34c31d6662e72b8b810f59e263280e1ba40ac8c0119855a26be925253a8
+      asolaria.subject                         runtime_callable_function_surface_not_weights_not_artifacts
+      asolaria.temporal_signal                 DESIGN_ORDERED_PER_MANIFEST_STAR;time_i64;feature_l1_energy_i64;signed
+      asolaria.temporal_signal_sha256          b8359f021cc9f031479dfdd1e1de69f14cca1c7a291974b65901384c8f5bb2a2
+      asolaria.tensor_layout                   12_star_bank_map_ledgers_plus_120_raw_words_plus_4_shell_mass_plus_4_d
+      asolaria.torus                           UNVERIFIED_REQUIRES_PERSISTENT_BETA1_NOT_RADIAL_HOLE
+      asolaria.word_codebook_sha256            c67c80ffdeac2cf8bd0e90e575268ddd2d237e04493bfc915fc04f3a401366bd
+      tensor raw_XY                       dims=[64, 64] mass=7 mean=0.002 occ=0.0%
+      tensor display_smoothed_XY          dims=[64, 64] mass=5 mean=0.001 occ=6.4%
+      tensor raw_YZ                       dims=[64, 64] mass=0 mean=0.000 occ=0.0%
+      tensor display_smoothed_YZ          dims=[64, 64] mass=0 mean=0.000 occ=0.0%
+      tensor raw_ZX                       dims=[64, 64] mass=0 mean=0.000 occ=0.0%
+      tensor display_smoothed_ZX          dims=[64, 64] mass=1 mean=0.000 occ=3.2%
+
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES.gguf
+    v3  103,968 B   arch=asolaria-function-pump64   name=ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE
+      asolaria.best_level                      0
+      asolaria.best_level_gc_cv                nan
+      asolaria.centre                          ['31.5', '31.5', '31.5']
+      asolaria.channel                         GREEN
+      asolaria.complete_ladder                 12_star_bank_map_ledgers_plus_120_raw_words_plus_4_shell_mass_plus_4_d
+      asolaria.cube                            64
+      asolaria.display_smoothing               gaussian_sigma=1.25;display_only_not_measurement
+      asolaria.embedded_bank                   original_manifest_bytes+source_64D_i16_le_bytes;roundtrip_gated
+      asolaria.embedded_feature_i16_sha256     eda69812bfc8bc9afbdb422319c83a42e6815c5a0a6cd4639b1de92c07f6b609
+      asolaria.embedded_manifest_sha256        60d05340c809e77186c5641a4c8b1251b9fa9ae69f6da37a24e3a1441a24a03c
+      asolaria.evidence_class                  LIRIS_DESIGN_MEASURED
+      asolaria.exact_tensor_types              manifest_feature_starv3_permutation_inverse_bytes=GGML_I8;time_axes_gr
+      asolaria.flashlights                     P=percentile_gradient;R=midrank_gradient;G=distinct_rank_gradient
+      asolaria.four_axis_sha256                54dd84463fa6f51829281afefecadc956d71e94347f6f7b87d1abd0a86e94b3d
+      asolaria.functions                       154
+      asolaria.gc_scope                        tie_requires_at_least_2_distinct_source_ids_per_voxel;repeated_word_vi
+      asolaria.gc_tau                          2
+      asolaria.gpt6_manifest                   ABSENT_DO_NOT_RELABEL_SOL
+      asolaria.gradient_sha256                 314a3420d6cfe32016908a722644f58e3885879b8561f842223263e0b327ac6f
+      asolaria.identity_address                embedded_parent_manifest_sha256+u64_manifest_time_index;no_external_pa
+      asolaria.identity_closure                1
+      asolaria.known_defect_v1                 per_word_tau2_emptied_154_function_body_all_cv_nan
+      asolaria.known_defect_v2                 lossy_deep_lut_coordinate_composition_collapsed_alphabet;vacuous_flat_
+      asolaria.known_defect_v3                 identity_exact_but_missing_spatial_map_caused_distinct_source_ties_zer
+      asolaria.manifest_sha256                 60d05340c809e77186c5641a4c8b1251b9fa9ae69f6da37a24e3a1441a24a03c
+      asolaria.measurement_field               star_identity_ledgers;120_raw_word_occupancies;4_distinct_source_count
+      asolaria.mechanics_status                V4_DESIGN_UNTIL_EXECUTED
+      asolaria.model_label                     gpt-5.6-sol
+      asolaria.occupied_shell_levels           2,6,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,29
+      asolaria.operator_mapping                negative_third=GPT6
+      asolaria.owner_rule                      frozen_base_strict_dominance;ties=free
+      asolaria.physical_gravity                UNVERIFIED
+      asolaria.population                      ANTI_FABLE
+      asolaria.population_functions            47
+      asolaria.raw_rpr_cv                      nan
+      asolaria.raw_word_best                   P
+      asolaria.raw_word_best_cv                2.169904853981
+      asolaria.rpr_wins_raw_word_only          0
+      asolaria.saturated_at                    0
+      asolaria.saturation_driver               function_geometry_diagnostic_only;never_canon_or_physical_sphere_promo
+      asolaria.saturation_eps                  0.005000
+      asolaria.seat                            LIRIS
+      asolaria.slice_operator                  linear_interpolation_of_voxel_planes_31_and_32_at_true_31.5
+      asolaria.spatial_flashlight_mapping      REVERSIBLE_DATA_DERIVED_GRADIENT_ORDER_V4
+      asolaria.spatial_map_sha256              ba6b018c88f16207d9733c2349ac40babc2429b67290a16604d2bf842540dd2e
+      asolaria.sphericity                      fibonacci_equal_area_26;synthetic_shell_cv=0.000000000000
+      asolaria.star_axes                       time=manifest_ordinal_u64_exact;colour=pca0_u8_design;energy=pca1_u8_d
+      asolaria.star_axis_binding_status        DESIGN_NOT_CANON
+      asolaria.star_semantics                  gradiated_stars_on_shell_levels
+      asolaria.starv3_record                   fixed_144_bytes;time=u64;xyz=3xu8;stored_as_standard_ggml_i8_raw_bytes
+      asolaria.starv3_sha256                   4e58b34c31d6662e72b8b810f59e263280e1ba40ac8c0119855a26be925253a8
+      asolaria.subject                         runtime_callable_function_surface_not_weights_not_artifacts
+      asolaria.temporal_signal                 DESIGN_ORDERED_PER_MANIFEST_STAR;time_i64;feature_l1_energy_i64;signed
+      asolaria.temporal_signal_sha256          b8359f021cc9f031479dfdd1e1de69f14cca1c7a291974b65901384c8f5bb2a2
+      asolaria.tensor_layout                   12_star_bank_map_ledgers_plus_120_raw_words_plus_4_shell_mass_plus_4_d
+      asolaria.torus                           UNVERIFIED_REQUIRES_PERSISTENT_BETA1_NOT_RADIAL_HOLE
+      asolaria.word_codebook_sha256            c67c80ffdeac2cf8bd0e90e575268ddd2d237e04493bfc915fc04f3a401366bd
+      tensor raw_XY                       dims=[64, 64] mass=59 mean=0.014 occ=0.2%
+      tensor display_smoothed_XY          dims=[64, 64] mass=26 mean=0.006 occ=9.6%
+      tensor raw_YZ                       dims=[64, 64] mass=0 mean=0.000 occ=0.0%
+      tensor display_smoothed_YZ          dims=[64, 64] mass=0 mean=0.000 occ=2.8%
+      tensor raw_ZX                       dims=[64, 64] mass=38 mean=0.009 occ=0.1%
+      tensor display_smoothed_ZX          dims=[64, 64] mass=17 mean=0.004 occ=6.6%
+
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES.gguf
+    v3  103,968 B   arch=asolaria-function-pump64   name=ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS
+      asolaria.best_level                      0
+      asolaria.best_level_gc_cv                nan
+      asolaria.centre                          ['31.5', '31.5', '31.5']
+      asolaria.channel                         BLUE
+      asolaria.complete_ladder                 12_star_bank_map_ledgers_plus_120_raw_words_plus_4_shell_mass_plus_4_d
+      asolaria.cube                            64
+      asolaria.display_smoothing               gaussian_sigma=1.25;display_only_not_measurement
+      asolaria.embedded_bank                   original_manifest_bytes+source_64D_i16_le_bytes;roundtrip_gated
+      asolaria.embedded_feature_i16_sha256     eda69812bfc8bc9afbdb422319c83a42e6815c5a0a6cd4639b1de92c07f6b609
+      asolaria.embedded_manifest_sha256        60d05340c809e77186c5641a4c8b1251b9fa9ae69f6da37a24e3a1441a24a03c
+      asolaria.evidence_class                  LIRIS_DESIGN_MEASURED
+      asolaria.exact_tensor_types              manifest_feature_starv3_permutation_inverse_bytes=GGML_I8;time_axes_gr
+      asolaria.flashlights                     P=percentile_gradient;R=midrank_gradient;G=distinct_rank_gradient
+      asolaria.four_axis_sha256                54dd84463fa6f51829281afefecadc956d71e94347f6f7b87d1abd0a86e94b3d
+      asolaria.functions                       154
+      asolaria.gc_scope                        tie_requires_at_least_2_distinct_source_ids_per_voxel;repeated_word_vi
+      asolaria.gc_tau                          2
+      asolaria.gpt6_manifest                   ABSENT_DO_NOT_RELABEL_SOL
+      asolaria.gradient_sha256                 314a3420d6cfe32016908a722644f58e3885879b8561f842223263e0b327ac6f
+      asolaria.identity_address                embedded_parent_manifest_sha256+u64_manifest_time_index;no_external_pa
+      asolaria.identity_closure                1
+      asolaria.known_defect_v1                 per_word_tau2_emptied_154_function_body_all_cv_nan
+      asolaria.known_defect_v2                 lossy_deep_lut_coordinate_composition_collapsed_alphabet;vacuous_flat_
+      asolaria.known_defect_v3                 identity_exact_but_missing_spatial_map_caused_distinct_source_ties_zer
+      asolaria.manifest_sha256                 60d05340c809e77186c5641a4c8b1251b9fa9ae69f6da37a24e3a1441a24a03c
+      asolaria.measurement_field               star_identity_ledgers;120_raw_word_occupancies;4_distinct_source_count
+      asolaria.mechanics_status                V4_DESIGN_UNTIL_EXECUTED
+      asolaria.model_label                     gpt-5.6-sol
+      asolaria.occupied_shell_levels           1,3,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,23
+      asolaria.operator_mapping                negative_third=GPT6
+      asolaria.owner_rule                      frozen_base_strict_dominance;ties=free
+      asolaria.physical_gravity                UNVERIFIED
+      asolaria.population                      ANTI_ANTI_MYTHOS
+      asolaria.population_functions            65
+      asolaria.raw_rpr_cv                      2.247420649423
+      asolaria.raw_word_best                   PGG
+      asolaria.raw_word_best_cv                1.989581792307
+      asolaria.rpr_wins_raw_word_only          0
+      asolaria.saturated_at                    0
+      asolaria.saturation_driver               function_geometry_diagnostic_only;never_canon_or_physical_sphere_promo
+      asolaria.saturation_eps                  0.005000
+      asolaria.seat                            LIRIS
+      asolaria.slice_operator                  linear_interpolation_of_voxel_planes_31_and_32_at_true_31.5
+      asolaria.spatial_flashlight_mapping      REVERSIBLE_DATA_DERIVED_GRADIENT_ORDER_V4
+      asolaria.spatial_map_sha256              ba6b018c88f16207d9733c2349ac40babc2429b67290a16604d2bf842540dd2e
+      asolaria.sphericity                      fibonacci_equal_area_26;synthetic_shell_cv=0.000000000000
+      asolaria.star_axes                       time=manifest_ordinal_u64_exact;colour=pca0_u8_design;energy=pca1_u8_d
+      asolaria.star_axis_binding_status        DESIGN_NOT_CANON
+      asolaria.star_semantics                  gradiated_stars_on_shell_levels
+      asolaria.starv3_record                   fixed_144_bytes;time=u64;xyz=3xu8;stored_as_standard_ggml_i8_raw_bytes
+      asolaria.starv3_sha256                   4e58b34c31d6662e72b8b810f59e263280e1ba40ac8c0119855a26be925253a8
+      asolaria.subject                         runtime_callable_function_surface_not_weights_not_artifacts
+      asolaria.temporal_signal                 DESIGN_ORDERED_PER_MANIFEST_STAR;time_i64;feature_l1_energy_i64;signed
+      asolaria.temporal_signal_sha256          b8359f021cc9f031479dfdd1e1de69f14cca1c7a291974b65901384c8f5bb2a2
+      asolaria.tensor_layout                   12_star_bank_map_ledgers_plus_120_raw_words_plus_4_shell_mass_plus_4_d
+      asolaria.torus                           UNVERIFIED_REQUIRES_PERSISTENT_BETA1_NOT_RADIAL_HOLE
+      asolaria.word_codebook_sha256            c67c80ffdeac2cf8bd0e90e575268ddd2d237e04493bfc915fc04f3a401366bd
+      tensor raw_XY                       dims=[64, 64] mass=4 mean=0.001 occ=0.0%
+      tensor display_smoothed_XY          dims=[64, 64] mass=3 mean=0.001 occ=8.8%
+      tensor raw_YZ                       dims=[64, 64] mass=16 mean=0.004 occ=0.1%
+      tensor display_smoothed_YZ          dims=[64, 64] mass=7 mean=0.002 occ=7.3%
+      tensor raw_ZX                       dims=[64, 64] mass=20 mean=0.005 occ=0.1%
+      tensor display_smoothed_ZX          dims=[64, 64] mass=12 mean=0.003 occ=10.2%
+
+==============================================================================
+THE WAVE � radial power spectrum, 32 bins
+==============================================================================
+
+  FILE WAVES � the cross-seat instrument
+    ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES.gguf peak@1   centroid=15.474  [0.0000 0.0482 0.0428 0.0368 0.0364 0.0361 0.0290 0.0302 ...]
+    ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES.gguf peak@1   centroid=13.494  [0.0000 0.1333 0.0914 0.0181 0.0303 0.0430 0.0175 0.0098 ...]
+    ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES.gguf peak@1   centroid=14.905  [0.0000 0.1079 0.0616 0.0220 0.0383 0.0456 0.0112 0.0096 ...]
+
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES.gguf � per tensor
+    raw_XY                         peak@1   centroid=15.597  [0.0252 0.0314 0.0314 0.0314 0.0314 0.0314 0.0314 0.0314 ...]
+    display_smoothed_XY            peak@1   centroid= 4.012  [0.1425 0.1669 0.1511 0.1218 0.1022 0.0750 0.0553 0.0378 ...]
+    raw_YZ                         peak@0   centroid= 0.000  [0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 ...]
+    display_smoothed_YZ            peak@0   centroid= 0.000  [0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 ...]
+    raw_ZX                         peak@0   centroid= 0.000  [0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 ...]
+    display_smoothed_ZX            peak@1   centroid= 4.182  [0.1181 0.1435 0.1321 0.1187 0.1051 0.0889 0.0728 0.0580 ...]
+
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES.gguf � per tensor
+    raw_XY                         peak@3   centroid=13.520  [0.0403 0.0552 0.0510 0.0558 0.0461 0.0475 0.0434 0.0380 ...]
+    display_smoothed_XY            peak@1   centroid= 3.359  [0.1268 0.1842 0.1511 0.1454 0.1100 0.0873 0.0629 0.0430 ...]
+    raw_YZ                         peak@0   centroid= 0.000  [0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 ...]
+    display_smoothed_YZ            peak@1   centroid= 4.124  [0.1176 0.1432 0.1323 0.1194 0.1057 0.0893 0.0728 0.0580 ...]
+    raw_ZX                         peak@1   centroid=13.303  [0.0533 0.0646 0.0587 0.0518 0.0450 0.0380 0.0332 0.0307 ...]
+    display_smoothed_ZX            peak@1   centroid= 2.864  [0.1857 0.2137 0.1673 0.1221 0.0887 0.0641 0.0482 0.0351 ...]
+
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES.gguf � per tensor
+    raw_XY                         peak@2   centroid=15.597  [0.0252 0.0314 0.0314 0.0314 0.0314 0.0314 0.0314 0.0314 ...]
+    display_smoothed_XY            peak@1   centroid= 3.520  [0.1721 0.1812 0.1399 0.1151 0.0884 0.0668 0.0563 0.0479 ...]
+    raw_YZ                         peak@1   centroid=14.104  [0.0439 0.0509 0.0399 0.0293 0.0276 0.0323 0.0364 0.0415 ...]
+    display_smoothed_YZ            peak@1   centroid= 3.293  [0.1804 0.2023 0.1548 0.1052 0.0715 0.0619 0.0543 0.0504 ...]
+    raw_ZX                         peak@1   centroid=14.915  [0.0471 0.0477 0.0295 0.0296 0.0307 0.0331 0.0383 0.0378 ...]
+    display_smoothed_ZX            peak@0   centroid= 3.151  [0.1984 0.1976 0.1284 0.1104 0.0888 0.0691 0.0632 0.0501 ...]
+
+==============================================================================
+PAIRWISE � file level (this is the one that compares across seats)
+==============================================================================
+  pair                                                             spec r  spec cos
+  LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES vs LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES  0.58741   0.81785
+  LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES vs LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES  0.63829   0.89931
+  LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES vs LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES  0.53229   0.82344
+
+==============================================================================
+PAIRWISE � tensor level, small documents only; raw where shapes match
+==============================================================================
+  pair                                                             spec r     raw r
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_XY -0.40611   0.33720
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_YZ      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_YZ      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_ZX      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_ZX -0.34114  -0.00115
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_XY -0.15375  -0.00061
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_XY -0.32387  -0.00197
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_YZ      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_YZ -0.33846  -0.00114
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_ZX -0.33019  -0.00052
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_ZX -0.47628  -0.00183
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_XY  1.00000  -0.00024
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_XY -0.49141  -0.00185
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_YZ -0.36429  -0.00041
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_YZ -0.49301  -0.00184
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_ZX -0.46992  -0.00048
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_ZX -0.54600  -0.00210
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_YZ      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_YZ      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_ZX      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_ZX  0.98218  -0.00715
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_XY  0.86297  -0.00377
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_XY  0.99301  -0.01223
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_YZ      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_YZ  0.98139  -0.00710
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_ZX  0.88062  -0.00326
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_ZX  0.98688  -0.01135
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_XY -0.40611  -0.00152
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_XY  0.98988  -0.01151
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_YZ  0.68873  -0.00258
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_YZ  0.97861  -0.01142
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_ZX  0.51526  -0.00296
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_ZX  0.97524  -0.01308
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_YZ      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_ZX      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_ZX      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_XY      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_XY      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_YZ      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_YZ      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_ZX      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_ZX      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_XY      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_XY      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_YZ      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_YZ      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_ZX      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_ZX      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_ZX      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_ZX      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_XY      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_XY      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_YZ      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_YZ      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_ZX      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_ZX      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_XY      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_XY      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_YZ      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_YZ      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_ZX      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_ZX      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_ZX      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_XY      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_XY      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_YZ      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_YZ      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_ZX      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_ZX      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_XY      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_XY      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_YZ      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_YZ      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_ZX      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::raw_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_ZX      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_XY  0.90747  -0.00285
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_XY  0.98604  -0.00925
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_YZ      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_YZ  0.99992  -0.00537
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_ZX  0.85104  -0.00247
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_ZX  0.94827  -0.00859
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_XY -0.34114  -0.00115
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_XY  0.96913  -0.00870
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_YZ  0.69441  -0.00195
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_YZ  0.94883  -0.00864
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_ZX  0.50367  -0.00224
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES::display_smoothed_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_ZX  0.94929  -0.00990
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_XY  0.89859   0.53922
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_YZ      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_YZ  0.90894  -0.00283
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_ZX  0.81529  -0.00130
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_ZX  0.82179  -0.00453
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_XY -0.15375  -0.00061
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_XY  0.84257  -0.00449
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_YZ  0.49795   0.14642
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_YZ  0.81871   0.21084
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_ZX  0.49843  -0.00118
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_ZX  0.81742  -0.00521
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_YZ      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_YZ  0.98535  -0.00919
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_ZX  0.88138  -0.00422
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_ZX  0.97179  -0.01470
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_XY -0.32387  -0.00191
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_XY  0.97572  -0.00385
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_YZ  0.66106   0.14334
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_YZ  0.96101   0.33885
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_ZX  0.50554  -0.00383
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_ZX  0.95841  -0.01691
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_YZ      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_ZX      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_ZX      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_XY      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_XY      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_YZ      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_YZ      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_ZX      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_ZX      nan   shape-differ
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_ZX  0.84881  -0.00245
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_ZX  0.94664  -0.00853
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_XY -0.33846  -0.00114
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_XY  0.96808   0.00030
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_YZ  0.69338   0.00186
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_YZ  0.94727   0.04088
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_ZX  0.50285  -0.00201
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_ZX  0.94763   0.03632
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_ZX  0.88414   0.45120
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_XY -0.33019  -0.00052
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_XY  0.87192  -0.00031
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_YZ  0.50319  -0.00089
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_YZ  0.86964  -0.00394
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_ZX  0.58320  -0.00102
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::raw_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_ZX  0.86061  -0.00451
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_XY -0.47628  -0.00182
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_XY  0.99333   0.06815
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_YZ  0.71868  -0.00310
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_YZ  0.99488  -0.01365
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_ZX  0.57255  -0.00341
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES::display_smoothed_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_ZX  0.98890  -0.01321
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_XY -0.49141   0.37542
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_YZ -0.36429  -0.00041
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_YZ -0.49301   0.04182
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_ZX -0.46992  -0.00048
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_ZX -0.54600   0.01622
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_YZ  0.73973   0.04189
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_YZ  0.99467   0.26817
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_ZX  0.58055   0.03099
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_XY vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_ZX  0.99446   0.11356
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_YZ  0.77247   0.44526
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_ZX  0.47947  -0.00081
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_ZX  0.74492   0.00900
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_ZX  0.59674   0.00329
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_YZ vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_ZX  0.99153   0.05741
+  ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::raw_ZX vs ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES::display_smoothed_ZX  0.62601   0.36538
+
+==============================================================================
+READING IT
+==============================================================================
+  spec r near 1.000  -> same wave shape: the two objects are the same kind of
+                        thing measured from different places.
+  spec r low         -> genuinely different structure, not noise, because the
+                        radial spectrum has already averaged the noise out.
+  raw r blank        -> shapes differ, so only the wave is comparable. That is
+                        the expected case across two seats and is not a failure.

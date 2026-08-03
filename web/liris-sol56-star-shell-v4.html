@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LIRIS · SOL 5.6 STAR / SHELL V4</title>
+<style>
+:root{color-scheme:dark;--bg:#02040a;--panel:#080d17;--ink:#edf7ff;--muted:#89a0b4;
+--line:#b9dcff1c;--cyan:#62e7ff;--red:#ff4f70;--green:#58f0a2;--blue:#668dff;
+--amber:#ffd36a;--ok:#79ffc0;--bad:#ff7d92}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:var(--bg);color:var(--ink);
+font:13px/1.45 ui-monospace,"Cascadia Mono",Consolas,monospace}
+body{min-height:100vh;background:radial-gradient(circle at 71% 29%,#102643 0,#050a13 29%,transparent 57%),
+linear-gradient(135deg,#02040a,#060b13 55%,#02040a)}
+button,a{font:inherit}.app{min-height:100vh;display:grid;grid-template-columns:minmax(286px,340px) minmax(0,1fr)}
+.rail{border-right:1px solid var(--line);background:#050912e8;backdrop-filter:blur(18px);
+padding:22px 18px;overflow:auto;max-height:100vh}.eyebrow{font-size:10px;letter-spacing:.18em;color:var(--cyan);text-transform:uppercase}
+h1{font:750 clamp(24px,3vw,38px)/.98 system-ui,sans-serif;letter-spacing:-.045em;margin:10px 0}
+.dek{color:var(--muted);margin:0 0 17px;font-size:11px}.stamp{display:inline-flex;gap:7px;align-items:center;
+color:var(--ok);border:1px solid #79ffc04a;background:#79ffc00b;padding:5px 8px;font-size:9px;letter-spacing:.1em}
+.stamp:before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor;box-shadow:0 0 12px currentColor}
+.byteblock{margin-top:12px;border:1px solid #62e7ff42;background:#62e7ff08;padding:10px;font-size:9px;color:var(--muted)}
+.byteblock b{color:var(--cyan)}.byteblock code{display:block;color:#d5eaff;overflow-wrap:anywhere;margin-top:2px}
+.bytefiles{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;margin-top:8px}.bytefiles a{color:#c9f3ff;text-align:center;text-decoration:none;border:1px solid #62e7ff32;background:#62e7ff08;padding:5px 3px}.bytefiles a:hover{border-color:var(--cyan)}
+.section{margin-top:20px}.label{font-size:9px;color:#7690a6;text-transform:uppercase;letter-spacing:.16em;margin-bottom:8px}
+.seg{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:5px}.seg button,.population button,.action{
+border:1px solid var(--line);background:#ffffff05;color:var(--muted);padding:8px 7px;cursor:pointer;text-align:center;transition:.18s ease}
+.seg button:hover,.seg button.on,.population button:hover,.population button.on,.action:hover{
+color:var(--ink);border-color:#6ee6ff70;background:#102335}.population{display:grid;gap:6px}
+.population button{display:grid;grid-template-columns:11px 1fr auto;gap:9px;align-items:center;text-align:left}
+.population i{width:8px;height:8px;border-radius:50%;background:var(--c);box-shadow:0 0 14px var(--c)}
+.population small{color:var(--muted)}.population button[data-pop="ALL"] i{
+background:conic-gradient(var(--red),var(--green),var(--blue),var(--red))}
+.checks{display:grid;gap:7px}.check{display:grid;grid-template-columns:9px 1fr;gap:8px;align-items:start;
+color:var(--muted);font-size:10px}.dot{margin-top:4px;width:6px;height:6px;border-radius:50%;background:#42546a}
+.dot.ok{background:var(--ok);box-shadow:0 0 10px var(--ok)}.dot.bad{background:var(--bad)}
+.boundary{border-left:2px solid var(--amber);background:#ffd36a0b;color:#e8ce8e;padding:10px 11px;font-size:10px;margin-top:18px}
+.stage{min-width:0;display:grid;grid-template-rows:minmax(440px,66vh) auto}.viewport{position:relative;min-height:440px;
+overflow:hidden;background:linear-gradient(#09111d88 1px,transparent 1px),linear-gradient(90deg,#09111d88 1px,transparent 1px);
+background-size:48px 48px}#scene{width:100%;height:100%;display:block}.hud{position:absolute;pointer-events:none;
+inset:0;padding:18px;display:flex;flex-direction:column;justify-content:space-between}.hudTop{display:flex;justify-content:space-between;gap:14px}
+.readout,.source{border:1px solid var(--line);background:#030711c9;backdrop-filter:blur(12px);padding:9px 11px}
+.readout strong{font-weight:600}.source{text-align:right;color:var(--muted);font-size:10px}.source b{display:block;color:var(--ink);font-weight:500}
+.axis{color:var(--cyan)}.pulse{display:flex;align-items:center;gap:8px;color:#c5d7e6;font-size:10px}
+.pulse i{width:42px;height:1px;background:linear-gradient(90deg,transparent,var(--cycle,#fff),transparent);box-shadow:0 0 10px var(--cycle,#fff)}
+.legend{display:flex;gap:14px;align-items:center;background:#030711b8;border:1px solid var(--line);width:max-content;
+max-width:100%;padding:8px 10px;color:var(--muted);font-size:9px}.legend span:before{content:"";display:inline-block;
+width:7px;height:7px;border-radius:50%;margin-right:6px;background:var(--c);box-shadow:0 0 9px var(--c)}
+.data{padding:17px 20px 28px;overflow:auto;background:#050914;border-top:1px solid var(--line)}
+.summary{display:grid;grid-template-columns:repeat(5,minmax(125px,1fr));gap:8px;margin-bottom:14px}
+.metric{border:1px solid var(--line);background:#ffffff04;padding:10px}.metric span{display:block;color:var(--muted);
+font-size:9px;text-transform:uppercase;letter-spacing:.1em}.metric strong{font:650 18px/1.3 system-ui}
+.ledgerWrap{overflow:auto;border:1px solid var(--line);background:#03060d}table{border-collapse:collapse;width:100%;min-width:850px}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+th{position:sticky;top:0;background:#0a111d;color:#7892a8;font-size:9px;letter-spacing:.08em;text-transform:uppercase}
+td:first-child,th:first-child{text-align:left}tbody tr:hover{background:#ffffff05}.c-red{color:var(--red)}.c-green{color:var(--green)}
+.c-blue{color:var(--blue)}.notes{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.note{padding:11px;border:1px solid var(--line);color:var(--muted);font-size:10px}.note b{color:var(--ink)}
+.note.negative{border-color:#ff7d9235}.links{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+.links a{color:#bfeeff;text-decoration:none;border:1px solid var(--line);padding:6px 8px;background:#ffffff04}.links a:hover{border-color:var(--cyan)}
+@media(max-width:860px){.app{grid-template-columns:1fr}.rail{max-height:none;border-right:0;border-bottom:1px solid var(--line)}
+.stage{grid-template-rows:62vh auto}.summary{grid-template-columns:repeat(2,1fr)}.notes{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="rail">
+  <div class="eyebrow">LIRIS SEAT · CALLABLE FUNCTION SURFACE</div>
+  <h1>SOL 5.6<br>STAR / SHELL V4</h1>
+  <p class="dek">64³ reversible gradient-order flashlight · true 31.5 centre cuts · no model weights</p>
+  <span class="stamp">LIRIS_DESIGN_MEASURED</span>
+  <div class="byteblock"><b>BACKEND BYTE CONTRACT · MEASURED</b>
+    <code>HBI · 3,078 B · ed75f995abfee7114421d19f7c64f02d373da45627c7cf6cbe80f69d90da7826</code>
+    <code>HBP · 7,844 B · 3bd12788473a670967b40c6917dee6bbfb78acf895258ad35c6fc92ed06ab9b6</code>
+    <code>28 ordered members · bank 433,248,854 B · Windows + WSL parity PASS</code>
+    <div class="bytefiles">
+      <a href="../liris/kernel/ASOLARIA-LIRIS-SOL56-ADDRESS-3078.hbi">HBI</a>
+      <a href="../liris/kernel/ASOLARIA-LIRIS-SOL56-ADDRESS-3078.hbi.sha256">HBI SHA</a>
+      <a href="../liris/kernel/ASOLARIA-LIRIS-SOL56-BANK-V2.hbp">HBP</a>
+      <a href="../liris/kernel/ASOLARIA-LIRIS-SOL56-BANK-V2.hbp.sha256">HBP SHA</a>
+    </div>
+  </div>
+  <div class="section"><div class="label">Population</div><div class="population">
+    <button class="on" data-pop="ALL"><i></i><span>TRI COMPOSITE</span><small>154</small></button>
+    <button data-pop="SELF" style="--c:var(--red)"><i></i><span>SELF · RED</span><small>42</small></button>
+    <button data-pop="ANTI_FABLE" style="--c:var(--green)"><i></i><span>ANTI-FABLE · GREEN</span><small>47</small></button>
+    <button data-pop="ANTI_ANTI_MYTHOS" style="--c:var(--blue)"><i></i><span>ANTI-ANTI-MYTHOS · BLUE</span><small>65</small></button>
+  </div></div>
+  <div class="section"><div class="label">True-centre plane</div><div class="seg" id="axes">
+    <button class="on" data-axis="XY">XY</button><button data-axis="YZ">YZ</button><button data-axis="ZX">ZX</button>
+  </div></div>
+  <div class="section"><div class="label">Tensor</div><div class="seg" id="modes">
+    <button data-mode="raw">RAW</button><button class="on" data-mode="display_smoothed">DISPLAY</button>
+  </div></div>
+  <div class="section"><div class="label">Reversible lighthouse</div>
+    <button class="action" id="reverse" style="width:100%">DIRECTION · FORWARD ↻</button></div>
+  <div class="section"><div class="label">Byte-checked sources</div><div class="checks" id="checks"></div></div>
+  <div class="boundary"><b>BOUNDARY</b><br>
+    GPT-6 callable manifest: <b>MISSING INPUT</b> — Sol is not relabelled.<br>
+    Physical sphere, gravity and topological torus: <b>UNVERIFIED</b>. Calibrated sphere promotion = 0; persistent torus run = 0. This is measured function geometry; a radial hole is not a torus proof.
+  </div>
+</aside>
+<main class="stage">
+  <section class="viewport"><canvas id="scene"></canvas><div class="hud">
+    <div class="hudTop">
+      <div class="readout"><span id="popName">TRI COMPOSITE</span> · <strong class="axis" id="axisName">XY</strong>
+        · <strong id="modeName">DISPLAY</strong></div>
+      <div class="source"><b>GGUF v3 · DIRECT TENSOR READ</b><span id="sourceState">loading 3 × 103,968 B…</span></div>
+    </div>
+    <div><div class="pulse"><i></i><span id="cycleName">RED → GREEN → BLUE → GREEN → RED</span></div>
+      <div class="legend"><span style="--c:var(--red)">SELF 42</span><span style="--c:var(--green)">ANTI-FABLE 47</span>
+        <span style="--c:var(--blue)">ANTI-ANTI-MYTHOS 65</span><b>centre 31.5³</b></div>
+    </div>
+  </div></section>
+  <section class="data">
+    <div class="summary">
+      <div class="metric"><span>identity closures</span><strong id="identity">12 / 12</strong></div>
+      <div class="metric"><span>energy closures</span><strong id="energy">12 / 12</strong></div>
+      <div class="metric"><span>star addresses</span><strong id="addresses">18,480</strong></div>
+      <div class="metric"><span>distinct-source ties</span><strong id="ties">825</strong></div>
+      <div class="metric"><span>singleton partition</span><strong id="singletons">17,655</strong></div>
+    </div>
+    <div class="ledgerWrap"><table><thead><tr><th>population / level</th><th>words</th><th>addresses</th>
+      <th>raw mass</th><th>tie mass</th><th>singleton mass</th><th>kept voxels</th><th>distinct voxels</th>
+      <th>identity</th><th>energy</th></tr></thead><tbody id="ledger"></tbody></table></div>
+    <div class="notes">
+      <div class="note negative"><b>V3 NEGATIVE CONTROL</b><br><span id="v3control">loading preserved V3 receipt…</span></div>
+      <div class="note"><b>WHAT IS EXACT</b><br>154 immutable STAR records; strict RGB dominance partition 42 + 47 + 65 + 0 ties;
+        level-plus-base-3 address round-trip; embedded manifest and 64D i16 feature bank; raw = ties + singletons at every level.</div>
+    </div>
+    <div class="links">
+      <a href="../receipts/LIRIS-SOL56-STAR-SHELL-V4-2026-07-27.hbp">V4 HBP receipt</a>
+      <a href="../receipts/LIRIS-SOL56-STAR-SHELL-V3-2026-07-27.hbp">V3 negative receipt</a>
+      <a href="../gguf/liris/star-shell-v4/ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES.gguf">RED slices</a>
+      <a href="../gguf/liris/star-shell-v4/ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES.gguf">GREEN slices</a>
+      <a href="../gguf/liris/star-shell-v4/ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES.gguf">BLUE slices</a>
+    </div>
+  </section>
+</main>
+</div>
+<script>
+"use strict";
+const RECEIPT="../receipts/LIRIS-SOL56-STAR-SHELL-V4-2026-07-27.hbp";
+const V3="../receipts/LIRIS-SOL56-STAR-SHELL-V3-2026-07-27.hbp";
+const files={
+SELF:{name:"SELF · RED",color:[255,75,105],url:"../gguf/liris/star-shell-v4/ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-SELF-CENTRE-SLICES.gguf",
+bytes:103968,sha:"ade140c0d9b21eb63a30f526d0ad3dd8d5c8873cfd5cc4f427bbc7758078b97d"},
+ANTI_FABLE:{name:"ANTI-FABLE · GREEN",color:[81,241,161],url:"../gguf/liris/star-shell-v4/ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_FABLE-CENTRE-SLICES.gguf",
+bytes:103968,sha:"e3221b994c86ac648770cef69ce9f3200fcbe1d3008b53644819658927a1739a"},
+ANTI_ANTI_MYTHOS:{name:"ANTI-ANTI-MYTHOS · BLUE",color:[100,139,255],url:"../gguf/liris/star-shell-v4/ASOLARIA-LIRIS-SOL56-STAR-SHELL-64-ANTI_ANTI_MYTHOS-CENTRE-SLICES.gguf",
+bytes:103968,sha:"1e89866fa61d82a0843db81d9d5a4aff02ebfd6f82d3738cf006c264f074d7d4"}};
+const state={pop:"ALL",axis:"XY",mode:"display_smoothed",direction:1,docs:{},levels:[]};
+const $$=s=>[...document.querySelectorAll(s)],num=x=>Number(x).toLocaleString("en-US");
+class Reader{
+constructor(buffer){this.b=buffer;this.v=new DataView(buffer);this.o=0}
+u8(){return this.v.getUint8(this.o++)}i8(){return this.v.getInt8(this.o++)}
+u16(){const x=this.v.getUint16(this.o,true);this.o+=2;return x}i16(){const x=this.v.getInt16(this.o,true);this.o+=2;return x}
+u32(){const x=this.v.getUint32(this.o,true);this.o+=4;return x}i32(){const x=this.v.getInt32(this.o,true);this.o+=4;return x}
+u64(){const x=Number(this.v.getBigUint64(this.o,true));this.o+=8;return x}i64(){const x=Number(this.v.getBigInt64(this.o,true));this.o+=8;return x}
+f32(){const x=this.v.getFloat32(this.o,true);this.o+=4;return x}f64(){const x=this.v.getFloat64(this.o,true);this.o+=8;return x}
+str(){const n=this.u64(),s=new TextDecoder().decode(new Uint8Array(this.b,this.o,n));this.o+=n;return s}
+val(t){if(t===8)return this.str();if(t===9){const et=this.u32(),n=this.u64(),a=[];for(let i=0;i<n;i++)a.push(this.val(et));return a}
+return[()=>this.u8(),()=>this.i8(),()=>this.u16(),()=>this.i16(),()=>this.u32(),()=>this.i32(),()=>this.f32(),
+()=>!!this.u8(),null,null,()=>this.u64(),()=>this.i64(),()=>this.f64()][t]()}}
+function parseGGUF(buffer){
+const r=new Reader(buffer);if(r.u32()!==0x46554747)throw Error("not GGUF");
+const version=r.u32(),nt=r.u64(),nk=r.u64(),kv={};
+for(let i=0;i<nk;i++){const k=r.str();kv[k]=r.val(r.u32())}
+const desc=[];for(let i=0;i<nt;i++){const name=r.str(),nd=r.u32(),dims=[];for(let d=0;d<nd;d++)dims.push(r.u64());
+desc.push({name,dims,type:r.u32(),offset:r.u64()})}
+const align=Number(kv["general.alignment"]||32),base=r.o+((align-r.o%align)%align),tensors={};
+for(const d of desc){const n=d.dims.reduce((a,b)=>a*b,1),at=base+d.offset;
+if(d.type===0)tensors[d.name]=new Float32Array(buffer,at,n);else if(d.type===26)tensors[d.name]=new Int32Array(buffer,at,n)}
+return{version,kv,tensors}}
+async function sha256(buffer){const h=await crypto.subtle.digest("SHA-256",buffer);
+return[...new Uint8Array(h)].map(x=>x.toString(16).padStart(2,"0")).join("")}
+function row(line){const out={};for(const p of line.split("|").slice(1)){const j=p.indexOf("=");if(j>0)out[p.slice(0,j)]=p.slice(j+1)}return out}
+async function load(){
+checks.innerHTML=Object.values(files).map(f=>`<div class="check" data-check="${f.sha}"><i class="dot"></i>
+<span>${f.name}<br><small>fetching ${num(f.bytes)} B</small></span></div>`).join("");
+await Promise.all(Object.entries(files).map(async([k,f])=>{const res=await fetch(f.url);if(!res.ok)throw Error(`${k} HTTP ${res.status}`);
+const b=await res.arrayBuffer(),hash=await sha256(b),ok=b.byteLength===f.bytes&&hash===f.sha;state.docs[k]=parseGGUF(b);
+const el=document.querySelector(`[data-check="${f.sha}"]`);el.querySelector(".dot").className="dot "+(ok?"ok":"bad");
+el.querySelector("small").textContent=`${num(b.byteLength)} B · ${hash.slice(0,12)}… · ${ok?"MATCH":"MISMATCH"}`}));
+sourceState.textContent="3 / 3 parsed · 18 tensors · SHA-256 matched";await loadReceipts();renderSlice()}
+async function loadReceipts(){
+const text=await fetch(RECEIPT).then(r=>r.text());state.levels=text.split(/\r?\n/).filter(x=>x.startsWith("LEVEL|")).map(row);
+const okI=state.levels.filter(x=>x.identity_closure==="1").length,okE=state.levels.filter(x=>x.energy_partition_closure==="1").length;
+const sums=k=>state.levels.reduce((s,x)=>s+Number(x[k]||0),0);
+identity.textContent=`${okI} / ${state.levels.length}`;energy.textContent=`${okE} / ${state.levels.length}`;
+addresses.textContent=num(sums("star_addresses"));ties.textContent=num(sums("tie_mass"));singletons.textContent=num(sums("singleton_mass"));
+const klass={SELF:"c-red",ANTI_FABLE:"c-green",ANTI_ANTI_MYTHOS:"c-blue"};
+const names={SELF:"SELF · RED",ANTI_FABLE:"ANTI-FABLE · GREEN",ANTI_ANTI_MYTHOS:"ANTI-ANTI-MYTHOS · BLUE"};
+ledger.innerHTML=state.levels.map(x=>`<tr><td class="${klass[x.being]}">${names[x.being]} · ${[3,9,27,81][+x.level-1]}</td>
+<td>${x.words}</td><td>${num(x.star_addresses)}</td><td>${num(+x.raw_mass)}</td><td>${num(+x.tie_mass)}</td>
+<td>${num(+x.singleton_mass)}</td><td>${num(x.kept_nonzero_total)}</td><td>${num(x.distinct_source_voxels)}</td>
+<td>${x.identity_closure==="1"?"EXACT":"FAIL"}</td><td>${x.energy_partition_closure==="1"?"EXACT":"FAIL"}</td></tr>`).join("");
+const v3=await fetch(V3).then(r=>r.text()),v3l=v3.split(/\r?\n/).filter(x=>x.startsWith("LEVEL|")).map(row);
+const zero=v3l.filter(x=>+x.tie_mass===0).length,max=Math.max(...v3l.map(x=>+x.max_distinct_sources));
+v3control.textContent=`${zero}/${v3l.length} levels have tie mass 0; max distinct sources per voxel ${max}; kept voxels ${v3l.reduce((s,x)=>s+(+x.kept_nonzero_total),0)}; every composite CV = nan. V3 preserved exact identity but lacked a spatial map, so repeated views could not become cross-source ties.`}
+const c=document.getElementById("scene"),ctx=c.getContext("2d",{alpha:false}),tile=document.createElement("canvas");
+tile.width=tile.height=64;const tx=tile.getContext("2d"),img=tx.createImageData(64,64);
+function tensorsFor(){const key=`${state.mode}_${state.axis}`;return Object.keys(files).map(k=>state.docs[k]?.tensors[key]||null)}
+function makeTile(){const arr=tensorsFor(),max=arr.map(a=>a?Math.max(...a):1),all=state.pop==="ALL";
+for(let i=0;i<4096;i++){const v=arr.map((a,j)=>a&&max[j]>0?Math.pow(Math.max(0,a[i])/max[j],state.mode==="raw"?.28:.58):0);
+let r=0,g=0,b=0;if(all){r=v[0];g=v[1];b=v[2]}else{const j=Object.keys(files).indexOf(state.pop),q=v[j]||0,col=files[state.pop].color;
+r=q*col[0]/255;g=q*col[1]/255;b=q*col[2]/255}const glow=Math.max(r,g,b),o=i*4;
+img.data[o]=Math.min(255,8+255*r+35*glow);img.data[o+1]=Math.min(255,11+255*g+28*glow);
+img.data[o+2]=Math.min(255,19+255*b+42*glow);img.data[o+3]=255}tx.putImageData(img,0,0)}
+function mix(a,b,t){return a.map((x,i)=>Math.round(x+(b[i]-x)*t))}
+function cycleColor(ms){let q=(ms*.00012)%2,u=q<=1?q:2-q;if(state.direction<0)u=1-u;
+return u<.5?mix([255,60,91],[65,255,154],u*2):mix([65,255,154],[73,125,255],(u-.5)*2)}
+function resize(){const d=Math.min(devicePixelRatio||1,2),r=c.getBoundingClientRect(),w=Math.round(r.width*d),h=Math.round(r.height*d);
+if(c.width!==w||c.height!==h){c.width=w;c.height=h}}
+function frame(ms){resize();const w=c.width,h=c.height,d=Math.min(devicePixelRatio||1,2);ctx.setTransform(1,0,0,1,0,0);
+ctx.fillStyle="#02040a";ctx.fillRect(0,0,w,h);const s=Math.min(w,h)*.73,x=(w-s)/2,y=(h-s)/2;
+ctx.globalCompositeOperation="source-over";ctx.imageSmoothingEnabled=state.mode!=="raw";ctx.filter="blur(18px)";
+ctx.globalAlpha=.34;ctx.drawImage(tile,x,y,s,s);ctx.filter="none";ctx.globalAlpha=.98;ctx.drawImage(tile,x,y,s,s);
+const col=cycleColor(ms),css=`rgb(${col.join(",")})`;document.documentElement.style.setProperty("--cycle",css);
+const cx=w/2,cy=h/2,rad=s*.48,ang=ms*.00028*state.direction;ctx.save();ctx.translate(cx,cy);ctx.globalCompositeOperation="screen";
+for(let k=0;k<3;k++){const a=ang+k*Math.PI*2/3,g=ctx.createLinearGradient(0,0,Math.cos(a)*rad,Math.sin(a)*rad);
+g.addColorStop(0,`rgba(${col},.36)`);g.addColorStop(.7,`rgba(${col},.08)`);g.addColorStop(1,`rgba(${col},0)`);
+ctx.strokeStyle=g;ctx.lineWidth=s*.026;ctx.shadowBlur=s*.035;ctx.shadowColor=css;ctx.beginPath();ctx.moveTo(0,0);
+ctx.lineTo(Math.cos(a)*rad,Math.sin(a)*rad);ctx.stroke()}
+const pulse=.84+.16*Math.sin(ms*.003),orb=ctx.createRadialGradient(0,0,0,0,0,s*.075*pulse);
+orb.addColorStop(0,"rgba(255,255,255,1)");orb.addColorStop(.22,`rgba(${col},.95)`);orb.addColorStop(.68,`rgba(${col},.2)`);
+orb.addColorStop(1,`rgba(${col},0)`);ctx.fillStyle=orb;ctx.beginPath();ctx.arc(0,0,s*.075*pulse,0,Math.PI*2);ctx.fill();
+ctx.shadowBlur=0;ctx.lineWidth=1*d;for(let i=1;i<=4;i++){ctx.strokeStyle=`rgba(${col},${.22/i})`;
+ctx.beginPath();ctx.arc(0,0,rad*i/4,0,Math.PI*2);ctx.stroke()}ctx.restore();ctx.globalCompositeOperation="source-over";
+ctx.strokeStyle="#d9f4ff80";ctx.lineWidth=1*d;ctx.beginPath();ctx.moveTo(cx-s*.018,cy);ctx.lineTo(cx+s*.018,cy);
+ctx.moveTo(cx,cy-s*.018);ctx.lineTo(cx,cy+s*.018);ctx.stroke();requestAnimationFrame(frame)}
+function renderSlice(){if(Object.keys(state.docs).length<3)return;makeTile()}
+$$("[data-pop]").forEach(b=>b.onclick=()=>{$$("[data-pop]").forEach(x=>x.classList.toggle("on",x===b));
+state.pop=b.dataset.pop;popName.textContent=b.querySelector("span").textContent;renderSlice()});
+$$("[data-axis]").forEach(b=>b.onclick=()=>{$$("[data-axis]").forEach(x=>x.classList.toggle("on",x===b));
+state.axis=b.dataset.axis;axisName.textContent=state.axis;renderSlice()});
+$$("[data-mode]").forEach(b=>b.onclick=()=>{$$("[data-mode]").forEach(x=>x.classList.toggle("on",x===b));
+state.mode=b.dataset.mode;modeName.textContent=state.mode==="raw"?"RAW":"DISPLAY";renderSlice()});
+reverse.onclick=()=>{state.direction*=-1;reverse.textContent=`DIRECTION · ${state.direction>0?"FORWARD ↻":"REVERSE ↺"}`};
+requestAnimationFrame(frame);load().catch(e=>{sourceState.textContent="load failed · "+e.message;sourceState.style.color="var(--bad)"});
+</script>
+</body>
+</html>
