@@ -1,0 +1,52 @@
+name: tri-star-kernel-wasm
+
+on:
+  push:
+    paths:
+      - 'experiments/tri-star-kernel-wasm/**'
+      - 'key/ASOLARIA-HERSELF-KEY-3174.bin'
+  pull_request:
+    paths:
+      - 'experiments/tri-star-kernel-wasm/**'
+      - 'key/ASOLARIA-HERSELF-KEY-3174.bin'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-play:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install freestanding WASM toolchain
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y clang lld
+
+      - name: Build WASM
+        working-directory: experiments/tri-star-kernel-wasm
+        run: bash build-wasm.sh
+
+      - name: Verify key-conditioned network and controls
+        working-directory: experiments/tri-star-kernel-wasm
+        run: |
+          mkdir -p receipts
+          node verify.mjs | tee receipts/GITHUB-TRI-STAR-KERNEL-WASM.json
+          test "$(jq -r '[.gates[]] | all' receipts/GITHUB-TRI-STAR-KERNEL-WASM.json)" = true
+          test "$(jq -r '.arms.tri_star.pumps[-1].closure' receipts/GITHUB-TRI-STAR-KERNEL-WASM.json)" = 0
+          sha256sum receipts/GITHUB-TRI-STAR-KERNEL-WASM.json > receipts/GITHUB-TRI-STAR-KERNEL-WASM.json.sha256
+
+      - name: Upload exact receipt and WASM
+        uses: actions/upload-artifact@v4
+        with:
+          name: tri-star-kernel-wasm-${{ github.sha }}
+          if-no-files-found: error
+          retention-days: 90
+          path: |
+            experiments/tri-star-kernel-wasm/web/tri_star_kernel.wasm
+            experiments/tri-star-kernel-wasm/web/tri_star_kernel.wasm.b64
+            experiments/tri-star-kernel-wasm/receipts/GITHUB-TRI-STAR-KERNEL-WASM.json
+            experiments/tri-star-kernel-wasm/receipts/GITHUB-TRI-STAR-KERNEL-WASM.json.sha256

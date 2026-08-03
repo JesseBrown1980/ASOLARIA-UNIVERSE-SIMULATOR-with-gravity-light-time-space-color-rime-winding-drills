@@ -1,0 +1,152 @@
+{
+  "schema": "ASOLARIA-TRI-STAR-KERNEL-WASM-V1",
+  "key": {
+    "bytes": 3174,
+    "sha256": "925c818d4c84aa23d7cee5d13e1b142b90824724a4ed4a90f9ee019c59cc2d89",
+    "fnv32": "653552f7"
+  },
+  "wasm": {
+    "bytes": 6142,
+    "sha256": "e7d3d34b13fecea46007083ab0dd6af720cefe8e74bfdfdfe208c4728ff1b6c4"
+  },
+  "geometry": {
+    "stars": 3,
+    "rotations": [
+      "N",
+      "R",
+      "R2"
+    ],
+    "directions": [
+      "-",
+      "0",
+      "+"
+    ],
+    "nodes": 27,
+    "fourth_point": "shared energy/residual centre"
+  },
+  "gates": {
+    "trit_roundtrip": true,
+    "reserved_01_invalid": true,
+    "R3_identity": true,
+    "closure_exact": true,
+    "replay_deterministic": true,
+    "pair_ablation_changes_result": true,
+    "centre_ablation_changes_result": true,
+    "random_key_changes_result": true
+  },
+  "arms": {
+    "tri_star": {
+      "initial_digest": "d4d1c66a",
+      "final_digest": "cc2cb5c4",
+      "pumps": [
+        {
+          "direction": -1,
+          "digest": "d26eed9f",
+          "centre_energy_q8": 12098,
+          "centre_residual_q8": 3,
+          "closure": 0
+        },
+        {
+          "direction": 0,
+          "digest": "0c96fd9c",
+          "centre_energy_q8": 11797,
+          "centre_residual_q8": 3,
+          "closure": 0
+        },
+        {
+          "direction": 1,
+          "digest": "cc2cb5c4",
+          "centre_energy_q8": 11701,
+          "centre_residual_q8": 7,
+          "closure": 0
+        }
+      ]
+    },
+    "pair_only": {
+      "initial_digest": "e74c01af",
+      "final_digest": "92c126ae",
+      "pumps": [
+        {
+          "direction": -1,
+          "digest": "f283f72a",
+          "centre_energy_q8": 11039,
+          "centre_residual_q8": -1,
+          "closure": 0
+        },
+        {
+          "direction": 0,
+          "digest": "d54a4ab9",
+          "centre_energy_q8": 10715,
+          "centre_residual_q8": 2,
+          "closure": 0
+        },
+        {
+          "direction": 1,
+          "digest": "92c126ae",
+          "centre_energy_q8": 10715,
+          "centre_residual_q8": 5,
+          "closure": 0
+        }
+      ]
+    },
+    "no_centre": {
+      "initial_digest": "d4d1c66a",
+      "final_digest": "42cb6071",
+      "pumps": [
+        {
+          "direction": -1,
+          "digest": "7aa6364a",
+          "centre_energy_q8": 12098,
+          "centre_residual_q8": -1,
+          "closure": 0
+        },
+        {
+          "direction": 0,
+          "digest": "30bb48ad",
+          "centre_energy_q8": 11798,
+          "centre_residual_q8": -4,
+          "closure": 0
+        },
+        {
+          "direction": 1,
+          "digest": "42cb6071",
+          "centre_energy_q8": 11703,
+          "centre_residual_q8": 1,
+          "closure": 0
+        }
+      ]
+    },
+    "random_key": {
+      "initial_digest": "4f4f2fb4",
+      "final_digest": "96466540",
+      "pumps": [
+        {
+          "direction": -1,
+          "digest": "2dd81322",
+          "centre_energy_q8": 5799,
+          "centre_residual_q8": -2,
+          "closure": 0
+        },
+        {
+          "direction": 0,
+          "digest": "3e1db122",
+          "centre_energy_q8": 5776,
+          "centre_residual_q8": 1,
+          "closure": 0
+        },
+        {
+          "direction": 1,
+          "digest": "96466540",
+          "centre_energy_q8": 5676,
+          "centre_residual_q8": -3,
+          "closure": 0
+        }
+      ]
+    }
+  },
+  "interpretation": {
+    "measured": "The Asolaria key deterministically initializes and plays a 27-node integer neural/calling matrix in WebAssembly. Three stars, the shared centre, and the supplied key each affect the resulting network digest.",
+    "not_measured": "No negative entropy or below-Shannon code length was demonstrated by this test.",
+    "accounting": "The 2-bit PHASE_REFLECTION transport round-trips one trit using three of four binary codes; three trits form 27 states and require at least five fixed binary address bits. Rate 1.0 means information was conserved."
+  }
+}
