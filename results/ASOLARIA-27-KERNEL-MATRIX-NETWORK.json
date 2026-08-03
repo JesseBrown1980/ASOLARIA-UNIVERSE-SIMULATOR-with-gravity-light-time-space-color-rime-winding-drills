@@ -1,0 +1,159 @@
+{
+  "architecture": {
+    "callings": "Hamming-neighbour graph on 3x3x3",
+    "callings_edges": 81,
+    "energy_point_is_independent_information": false,
+    "macro_kernels": 9,
+    "nodes": 27,
+    "oil_family": [
+      "OIL",
+      "ANTI_OIL",
+      "ANTI_ANTI_OIL"
+    ],
+    "phase": "R0/R1/R2, R1^3=I, R2=R1^2",
+    "pump": "deterministic gradient descent with fail-closed backtracking",
+    "shared_energy_fourth_point": "ENERGY_0",
+    "sign_axis": [
+      "NEGATIVE",
+      "CENTRE",
+      "POSITIVE"
+    ],
+    "stars": [
+      "OPUS/RED",
+      "FABLE/GREEN",
+      "MYTHOS/BLUE"
+    ]
+  },
+  "arms": {
+    "binary_18": {
+      "calming_monotone": true,
+      "center_is_independent": false,
+      "center_vector": [-0.03996286882719287, -0.2501085267859989, -0.10176894678420875],
+      "edge_count": 45,
+      "energy_final": 7.034875626730849,
+      "energy_initial": 47.69716511259233,
+      "energy_ratio": 0.14749043491630073,
+      "final_components": {"callings": 2.562809891309363, "center": 1.87839453295654, "center_dispersion": 0.5275231478798984, "data": 2.5936712024649458, "edge_residual": 0.482043272469289, "total": 7.034875626730849},
+      "initial_components": {"callings": 13.400453747441427, "center": 5.91381239102469, "center_dispersion": 0.9360130096456354, "data": 28.382898974126217, "edge_residual": 1.0768575184406406, "total": 47.69716511259233},
+      "macro_kernel_count": 6,
+      "node_count": 18,
+      "pump_steps_accepted": 77,
+      "pump_steps_requested": 96
+    },
+    "full_27": {
+      "calming_monotone": true,
+      "center_is_independent": false,
+      "center_vector": [-0.09154018442170857, -0.16897737917365785, 0.002304704701520118],
+      "edge_count": 81,
+      "energy_final": 14.052388014904203,
+      "energy_initial": 76.37319301857846,
+      "energy_ratio": 0.1839963403322136,
+      "final_components": {"callings": 4.90707555163788, "center": 2.672322299335585, "center_dispersion": 0.5137441645420856, "data": 6.472990163930737, "edge_residual": 0.4811573699803838, "total": 14.052388014904203},
+      "initial_components": {"callings": 23.15950389352548, "center": 10.090050855242433, "center_dispersion": 0.9982726243950281, "data": 43.123638269810556, "edge_residual": 1.044341672718054, "total": 76.37319301857846},
+      "macro_kernel_count": 9,
+      "node_count": 27,
+      "pump_steps_accepted": 89,
+      "pump_steps_requested": 96
+    },
+    "matched_control": {
+      "calming_monotone": true,
+      "center_is_independent": false,
+      "center_vector": [-0.0635666754342869, -0.17971480919338664, 0.06737178050767327],
+      "edge_count": 81,
+      "energy_final": 14.264692576328805,
+      "energy_initial": 69.73703872743553,
+      "energy_ratio": 0.2045497319162317,
+      "final_components": {"callings": 5.213655320988527, "center": 2.4161889933007936, "center_dispersion": 0.48850378704328784, "data": 6.634848262039484, "edge_residual": 0.4865958135734352, "total": 14.264692576328805},
+      "initial_components": {"callings": 24.198018672193477, "center": 9.999654110117488, "center_dispersion": 0.9937908024448353, "data": 35.53936594512456, "edge_residual": 1.0438871759808441, "total": 69.73703872743553},
+      "macro_kernel_count": 9,
+      "node_count": 27,
+      "pump_steps_accepted": 86,
+      "pump_steps_requested": 96
+    },
+    "no_callings": {
+      "calming_monotone": true,
+      "center_is_independent": false,
+      "center_vector": [-0.09408847691057552, -0.22403236120462888, 0.059908032092196854],
+      "edge_count": 81,
+      "energy_final": 6.256092021389387,
+      "energy_initial": 53.21368912505299,
+      "energy_ratio": 0.11756546340336364,
+      "final_components": {"callings": 0.0, "center": 5.004872176277691, "center_dispersion": 0.7030706672086063, "data": 1.2512198451116956, "edge_residual": 0.777469152039303, "total": 6.256092021389387},
+      "initial_components": {"callings": 0.0, "center": 10.090050855242433, "center_dispersion": 0.9982726243950281, "data": 43.123638269810556, "edge_residual": 1.044341672718054, "total": 53.21368912505299},
+      "macro_kernel_count": 9,
+      "node_count": 27,
+      "pump_steps_accepted": 96,
+      "pump_steps_requested": 96
+    },
+    "no_center": {
+      "calming_monotone": true,
+      "center_is_independent": false,
+      "center_vector": [-0.09136188988582832, -0.16731027913688695, 0.0004590676010514627],
+      "edge_count": 81,
+      "energy_final": 10.879966323472985,
+      "energy_initial": 66.28314216333604,
+      "energy_ratio": 0.16414379234862445,
+      "final_components": {"callings": 6.382774480573542, "center": 0.0, "center_dispersion": 0.6102532493599366, "data": 4.4971918428994435, "edge_residual": 0.5494512197176071, "total": 10.879966323472985},
+      "initial_components": {"callings": 23.15950389352548, "center": 0.0, "center_dispersion": 0.9982726243950281, "data": 43.123638269810556, "edge_residual": 1.044341672718054, "total": 66.28314216333604},
+      "macro_kernel_count": 9,
+      "node_count": 27,
+      "pump_steps_accepted": 96,
+      "pump_steps_requested": 96
+    },
+    "oil_shuffled": {
+      "calming_monotone": true,
+      "center_is_independent": false,
+      "center_vector": [-0.12302397341493095, -0.0721807611673821, -0.06300812431153328],
+      "edge_count": 81,
+      "energy_final": 15.993179988290523,
+      "energy_initial": 77.47400743371435,
+      "energy_ratio": 0.20643284784221416,
+      "final_components": {"callings": 5.42878102774249, "center": 2.282071453589306, "center_dispersion": 0.47475232826601865, "data": 8.282327506958726, "edge_residual": 0.5196039234150616, "total": 15.993179988290523},
+      "initial_components": {"callings": 33.748987003411024, "center": 10.090050855242433, "center_dispersion": 0.9982726243950281, "data": 33.6349695750609, "edge_residual": 1.287466842695342, "total": 77.47400743371435},
+      "macro_kernel_count": 9,
+      "node_count": 27,
+      "pump_steps_accepted": 89,
+      "pump_steps_requested": 96
+    }
+  },
+  "claim_gate": {
+    "bijection_rate_1_exact": true,
+    "blue_zone_interpretation": "BANK_CONDITIONED_ADDRESS_COST_BELOW_MATERIALIZATION_COST",
+    "calming": "PASS_FOR_DECLARED_OBJECTIVE; all arms use descent, so this is an implementation gate, not a discovery",
+    "key_specificity_vs_matched_control": "SMALL; full edge residual improves only slightly over matched control",
+    "minus_one_third_interpretation": "SIGNED_COORDINATE_NOT_NEGATIVE_BIT_COST",
+    "negative_entropy_or_unconditional_below_shannon": "NOT_SUPPORTED_BY_THIS_TEST",
+    "trinary_beats_binary_on_this_run": "NOT_ESTABLISHED; edge residual differs by less than one percent",
+    "twenty_seven_address_classes_reached": true
+  },
+  "comparisons": {
+    "full_edge_residual_improvement_vs_binary_18": 0.001837806976056666,
+    "full_edge_residual_improvement_vs_matched_control": 0.011176511267355266,
+    "full_edge_residual_improvement_vs_no_callings": 0.3811235227554597,
+    "full_edge_residual_improvement_vs_no_center": 0.12429465489643153,
+    "full_edge_residual_improvement_vs_oil_shuffled": 0.07399203836258668
+  },
+  "schema": "ASOLARIA-27-KERNEL-MATRIX-NETWORK-V1",
+  "source": {
+    "key_bytes": 3174,
+    "key_rime_metadata": {"closure": 0, "g": 7, "k": 27, "p": 1000081, "rate": 1.0, "w": 951846},
+    "key_sha256": "925c818d4c84aa23d7cee5d13e1b142b90824724a4ed4a90f9ee019c59cc2d89",
+    "key_star_metadata": {
+      "FABLE": {"cv": 2.0512, "occ": 0.719, "owns": 195982, "shells": [1,2,3,4,5,6,7,8,9]},
+      "MYTHOS": {"cv": 1.838, "occ": 0.77, "owns": 194004, "shells": [1,2,3,4,5,6,7,8]},
+      "OPUS": {"cv": 1.9565, "occ": 0.845, "owns": 205903, "shells": [1,2,3,4,5,6,7,8,9]}
+    },
+    "matched_control_seed": {"cells_reached": 27, "max_count": 139, "min_count": 19, "occupancy_cv": 0.6727942464687559, "occupancy_entropy_bits": 4.509899876653875, "points": 1026, "seed_sha256": "81644360fd299e7eb09f9a6ac47a8dda483fcb891ae6ff01a6affa42c8345fd9"},
+    "seed": {"cells_reached": 27, "max_count": 145, "min_count": 16, "occupancy_cv": 0.7479667044950186, "occupancy_entropy_bits": 4.458928266446245, "points": 1026, "seed_sha256": "aa6fd450c32aec2c5cf088f731b0065c726c660c9f536ce48bcd55aab2a13952"},
+    "wasm_decoder_receipt": {
+      "asolaria": {"chain_intact": true, "count_channel": {"declared": 38, "produced": 38, "reconciles": true, "withheld": 0}, "hidden_holes": 0, "input_bytes": 3174, "input_sha256": "925c818d4c84aa23d7cee5d13e1b142b90824724a4ed4a90f9ee019c59cc2d89", "lattice_cells": 27, "prism_roundtrip_exact": true, "seed_bytes": 3078, "seed_sha256": "aa6fd450c32aec2c5cf088f731b0065c726c660c9f536ce48bcd55aab2a13952", "trit_bits": 1.5849},
+      "gate": "PASS",
+      "key_expected_sha256": "925c818d4c84aa23d7cee5d13e1b142b90824724a4ed4a90f9ee019c59cc2d89",
+      "matched_control": {"chain_intact": true, "count_channel": {"declared": 38, "produced": 38, "reconciles": true, "withheld": 0}, "hidden_holes": 0, "input_bytes": 3174, "input_sha256": "f76776596191c631519391e697d3017daaa5a87b96c25bf4d948109edfa76a5a", "lattice_cells": 27, "prism_roundtrip_exact": true, "seed_bytes": 3078, "seed_sha256": "81644360fd299e7eb09f9a6ac47a8dda483fcb891ae6ff01a6affa42c8345fd9", "trit_bits": 1.5849},
+      "runtime": "v22.16.0",
+      "schema": "ASOLARIA-WASM-KEY-DECODE-V1",
+      "wasm_bytes": 11687,
+      "wasm_sha256": "0c05c67dcf6041810e7cd50219988aa2f7312bb948a78e5e05bf182fcd2cc76c"
+    }
+  }
+}
