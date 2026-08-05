@@ -1,0 +1,40 @@
+name: Relic temporal metatag verification
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  relic-temporal-metatags:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out the exact revision
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+
+      - name: Select Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.12'
+
+      - name: Verify Relic model and exact center-sign order
+        run: |
+          python -m unittest -v test_relic_temporal_metatags.py test_relic_generation_comparison.py
+          python relic_temporal_metatags.py --current-level 4 --future-levels 2 > "${RUNNER_TEMP}/relic-temporal.hbp"
+          python compare_relic_metatag_generations.py > "${RUNNER_TEMP}/relic-comparison.hbp"
+          grep -F 'utterance_order=HBI_HBP_SHA_SH_HASH' "${RUNNER_TEMP}/relic-temporal.hbp"
+          grep -F 'transport_chain_inferred=0' "${RUNNER_TEMP}/relic-temporal.hbp"
+          grep -F 'winner=RELIC_TEMPORAL_METATAG_V2_COMBINED' "${RUNNER_TEMP}/relic-comparison.hbp"
+          (cd receipts && sha256sum -c CODEX-RELIC-METATAG-COMPARISON-2026-08-05.hbp.sha256)
+
+      - name: Run simulator root suite
+        run: python -m unittest -v
+
+      - name: Run simulator nested suite
+        run: python -m unittest discover -s tests -p 'test*.py' -v
