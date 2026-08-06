@@ -749,10 +749,13 @@ mod tests {
                 }
             }
         }
-        let frac = same as f64 / total as f64;
+        // integer-exact form of `same/total < 0.02` (operator rule: no float)
+        let per_10k = if total > 0 { same * 10_000 / total } else { 0 };
         assert!(
-            frac < 0.02,
-            "hash fields shared {same}/{total} = {frac:.4}, expected near 1/256"
+            same * 50 < total,
+            "hash fields shared {same}/{total} = {}.{:04}, expected near 1/256",
+            per_10k / 10_000,
+            per_10k % 10_000
         );
     }
 
